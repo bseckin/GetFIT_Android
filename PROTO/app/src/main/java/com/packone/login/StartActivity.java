@@ -41,6 +41,10 @@ public class StartActivity extends Activity {
 		    
 		    
 	}
+
+    public void testMethodeKanyildiz(){
+        Log.i("NICHTS","NICHTS");
+    }
 /*
 
 	@Override
