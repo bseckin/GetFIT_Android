@@ -3,6 +3,7 @@ package com.packone.login;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -47,5 +48,9 @@ public class StartActivity extends Activity {
 		startActivity(new Intent(this, RegisterActivity.class));
 	}
 	*/
+    public void testMethodeSECKIN(){
+        //EXTRA FEATURE HINZUGEFÜGT
+        Log.i("HALLO", "Hallo Welt");
+    }
 
 }
