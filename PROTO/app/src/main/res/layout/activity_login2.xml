@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login2Activity" >
+
+    <EditText
+        android:id="@+id/loguname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="186dp"
+        android:ems="10"
+        android:text="adg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/logpword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="adg"
+        android:layout_below="@+id/loguname"
+        android:layout_alignLeft="@+id/loguname"
+        android:layout_alignStart="@+id/loguname" />
+
+    <Button
+        android:id="@+id/blogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/logpword"
+        android:layout_alignRight="@+id/logpword"
+        android:layout_alignEnd="@+id/logpword" />
+
+</RelativeLayout>
