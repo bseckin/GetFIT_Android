@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GetFIT_Android.iml" filepath="$PROJECT_DIR$/GetFIT_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTO/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/20.0.0.iml" filepath="$PROJECT_DIR$/PROTO/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/20.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTO/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0-rc1/21.0.0-rc1.iml" filepath="$PROJECT_DIR$/PROTO/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0-rc1/21.0.0-rc1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTO/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/PROTO/app/build/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTO/app/src/main/main.iml" filepath="$PROJECT_DIR$/PROTO/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTO/app/build/generated/source/r/r.iml" filepath="$PROJECT_DIR$/PROTO/app/build/generated/source/r/r.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROTO/app/build/generated/source/buildConfig/test/test.iml" filepath="$PROJECT_DIR$/PROTO/app/build/generated/source/buildConfig/test/test.iml" />
     </modules>
   </component>
 </project>
