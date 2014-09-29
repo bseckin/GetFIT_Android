@@ -2,100 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2c50a99-9fc7-47eb-9cd6-fae43ce1dbfe" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\copyright\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\GetFIT_Android.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\app.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\generated\source\buildConfig\debug\com\packone\login\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\generated\source\buildConfig\test\debug\com\packone\login\test\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\generated\source\r\debug\com\packone\login\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\aidl\android\support\v4\app\INotificationSideChannel.aidl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0-rc1\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0-rc1\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0-rc1\libs\internal_impl-21.0.0-rc1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\build\intermediates\model_data.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\lint.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\Contact.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\DatabaseHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\GoalActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\HomeScreen.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\Login2Activity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\RegisterActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\com\packone\login\StartActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\CommunityFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\FindPeopleFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\HomeFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\PagesFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\PhotosFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\WhatsHotFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\adapter\NavDrawerListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\java\info\androidhive\slidingmenu\model\NavDrawerItem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\getfitlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_communities.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_pages.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_people.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_photos.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-hdpi\ic_whats_hot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-ldpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable\counter_bg.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable\list_item_bg_normal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable\list_item_bg_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\drawable\list_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\activity_home_screen.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\activity_login2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\activity_register.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\activity_start.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\drawer_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\fragment_community.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\fragment_find_people.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\fragment_home.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\fragment_pages.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\fragment_photos.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\fragment_whats_hot.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\menu_detail_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\layout\select_goal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\activity_home_screen.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\activity_login.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\activity_login2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\activity_start.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\goal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values-large\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values-w820dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values\color.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values\strings_activity_login.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\app\src\main\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\import-summary.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\PROTO\settings.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\README.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/main.iml" afterPath="$PROJECT_DIR$/app/src/main/main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/gen/com/packone/login/Manifest.java" afterPath="$PROJECT_DIR$/app/src/main/gen/com/packone/login/Manifest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PROTO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +26,23 @@
     <favorites_list name="PROTO" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Manifest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/gen/com/packone/login/Manifest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.058925476" vertical-offset="0" max-vertical-offset="577">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -267,6 +192,13 @@
       </map>
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/gen/com/packone/login/Manifest.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -299,9 +231,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -436,6 +366,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,6 +390,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -485,19 +430,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -575,7 +507,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -603,6 +535,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/gen/com/packone/login/Manifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="221">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/gen/com/packone/login/Manifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.058925476" vertical-offset="0" max-vertical-offset="577">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 
