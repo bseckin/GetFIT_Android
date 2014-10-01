@@ -2,16 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.pack.selectgoal.nutritionFragment"
-    android:background="#fffbfff4">
+    tools:context="info.pack.selectgoal.CardioFragment">
 
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="260dp"
         android:id="@+id/imageView"
-        android:src="@drawable/nutrition"
-        android:layout_gravity="center_horizontal|top" />
+        android:src="@drawable/cardio" />
 
     <Button
         android:layout_width="wrap_content"
@@ -23,3 +21,4 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal|bottom" />
 </FrameLayout>
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->

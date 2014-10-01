@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -17,6 +18,8 @@ import android.view.ViewGroup;
 import com.packone.login.R;
 
 import java.util.Locale;
+
+import info.androidhive.slidingmenu.MainActivity;
 
 public class WLifingActivity extends Activity implements ActionBar.TabListener {
 
@@ -193,6 +196,13 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
             View rootView = inflater.inflate(R.layout.fragment_wlifing, container, false);
             return rootView;
         }
+
+    }
+
+    public void onClick(View view) {
+        Intent intent = new Intent(WLifingActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 }
