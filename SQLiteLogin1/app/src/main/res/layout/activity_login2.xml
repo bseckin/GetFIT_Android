@@ -44,7 +44,6 @@
         android:enabled="true"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:elegantTextHeight="false"
         android:clickable="true"/>
 
     <TextView
