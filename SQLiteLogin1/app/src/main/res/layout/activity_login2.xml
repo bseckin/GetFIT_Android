@@ -25,16 +25,46 @@
         android:inputType="textPassword"
         android:text="adg"
         android:layout_below="@+id/loguname"
-        android:layout_alignLeft="@+id/loguname"
-        android:layout_alignStart="@+id/loguname" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"/>
 
     <Button
         android:id="@+id/blogin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="anmelden"
+        android:layout_marginTop="32dp"
         android:layout_below="@+id/logpword"
-        android:layout_alignRight="@+id/logpword"
-        android:layout_alignEnd="@+id/logpword" />
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:singleLine="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_login_benutzername"
+        android:id="@+id/tv_login_benutzername"
+        android:layout_alignBottom="@+id/loguname"
+        android:layout_alignLeft="@+id/loguname"
+        android:layout_alignStart="@+id/loguname"
+        android:layout_marginBottom="41dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_login_passwort"
+        android:id="@+id/tv_login_passwort"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/logpword"
+        android:layout_alignStart="@+id/logpword"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
