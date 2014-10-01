@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-b77f87391d33326069fa858a481ec79985808828.jar"
+        jar="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-43201eb648f27d893b505a66164ac1aabf9a51b6.jar"
+        jar="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-30d50da2636ac23393acbf86d1facdb343f737e0.jar"
+        jar="C:\Users\Muhammed5\Documents\5BHIT\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+
+</pre-dex-items>
