@@ -7,7 +7,7 @@ import android.view.Menu;
 public class HomeScreen extends Activity {
     // Habe eine Testvariable erstellt - SECKIN BERKAY
     String TESTVARIABLE_SECKIN;
-
+    String test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
