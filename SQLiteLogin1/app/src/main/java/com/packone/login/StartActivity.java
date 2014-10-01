@@ -7,6 +7,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+/**
+ * @author: Kanyilidz Muhammedmehdi
+ * @version: 0.9.1
+ * @date: 01.10.2014
+ * Beschreibung
+ */
 public class StartActivity extends Activity {
 
     @Override

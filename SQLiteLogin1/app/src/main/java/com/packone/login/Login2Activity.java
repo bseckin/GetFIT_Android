@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import info.pack.selectgoal.WLifingActivity;
+
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.8
@@ -63,7 +65,7 @@ public class Login2Activity extends Activity {
                    //.matches vergleicht ein String mit einem regulären Ausdruck(in unserem Fall cn.getUname())
                     if (muname.getText().toString().matches(cn.getUname()) && mpword.getText().toString().matches(cn.getPword())) {
                         checkUname = true; //sind die EIngaben des Benutzers im DB so wurd die boolean Variable auf true gesetzt
-
+                        break; //nur wenn die Eingabe auch im Datenbank existiert wird die schleife unterbrochen ansonsten wird die variable checkuname überschrieben selbst wenn der eintrag existiert
                     } else {
                         checkUname = false; //sind die eingegebenen daten nicht im DB vorhanden wird die Variable auf False gesetzt
                     }
@@ -72,7 +74,7 @@ public class Login2Activity extends Activity {
                 // Hier überprüfen wir ob die Eingabedaten nun im Datenbank waren oder nicht
                 if (checkUname == true) {
                     // Mit Intent(actuelle activity, zielactivity) befördern wir den Benutzer zur nächsten seite
-                    Intent intent = new Intent(Login2Activity.this, GoalActivity.class);
+                    Intent intent = new Intent(Login2Activity.this, WLifingActivity.class);
                     startActivity(intent);
 
                 } else {
