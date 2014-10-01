@@ -44,5 +44,7 @@
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_goal">GoalActivity</string>
+    <string name="tv_login_benutzername">Benutzername:</string>
+    <string name="tv_login_passwort">Passwort:</string>
 
 </resources>
