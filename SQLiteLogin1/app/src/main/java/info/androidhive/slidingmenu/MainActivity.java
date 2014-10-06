@@ -176,7 +176,7 @@ public class MainActivity extends Activity {
 			fragment = new HomeFragment();
 			break;
 		case 1:
-			fragment = new WorkoutFragment();
+			fragment = new FindPeopleFragment();
 			break;
 		case 2:
 			fragment = new PhotosFragment();
