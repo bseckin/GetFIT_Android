@@ -4,10 +4,16 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
+/**
+ * @author: Kanyilidz Muhammedmehdi
+ * @version: 0.9.1
+ * @date: 01.10.2014
+ * Beschreibung
+ */
 public class HomeScreen extends Activity {
     // Habe eine Testvariable erstellt - SECKIN BERKAY
     String TESTVARIABLE_SECKIN;
-    String test;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

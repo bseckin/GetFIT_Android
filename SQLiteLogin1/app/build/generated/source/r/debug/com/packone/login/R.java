@@ -29,49 +29,48 @@ public final class R {
     public static final class drawable {
         public static final int counter_bg=0x7f020000;
         public static final int getfitlogo=0x7f020001;
-        public static final int ic_communities=0x7f020002;
-        public static final int ic_drawer=0x7f020003;
-        public static final int ic_home=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int ic_logout=0x7f020006;
-        public static final int ic_pages=0x7f020007;
-        public static final int ic_people=0x7f020008;
-        public static final int ic_photos=0x7f020009;
-        public static final int ic_whats_hot=0x7f02000a;
-        public static final int list_item_bg_normal=0x7f02000b;
-        public static final int list_item_bg_pressed=0x7f02000c;
-        public static final int list_selector=0x7f02000d;
+        public static final int gewicht=0x7f020002;
+        public static final int ic_communities=0x7f020003;
+        public static final int ic_drawer=0x7f020004;
+        public static final int ic_home=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int ic_logout=0x7f020007;
+        public static final int ic_pages=0x7f020008;
+        public static final int ic_people=0x7f020009;
+        public static final int ic_photos=0x7f02000a;
+        public static final int ic_whats_hot=0x7f02000b;
+        public static final int list_item_bg_normal=0x7f02000c;
+        public static final int list_item_bg_pressed=0x7f02000d;
+        public static final int list_selector=0x7f02000e;
     }
     public static final class id {
-        public static final int action_logout=0x7f0a001c;
-        public static final int action_settings=0x7f0a001b;
-        public static final int bcardio=0x7f0a0018;
-        public static final int blifting=0x7f0a0017;
+        public static final int action_logout=0x7f0a001a;
+        public static final int action_settings=0x7f0a0019;
+        public static final int bcardio=0x7f0a0016;
+        public static final int blifting=0x7f0a0015;
         public static final int blogin2=0x7f0a0002;
-        public static final int bnutrition=0x7f0a0019;
-        public static final int breg=0x7f0a000b;
-        public static final int counter=0x7f0a0014;
-        public static final int detail=0x7f0a0016;
-        public static final int drawer_layout=0x7f0a0005;
-        public static final int email=0x7f0a000c;
-        public static final int frame_container=0x7f0a0006;
-        public static final int icon=0x7f0a0012;
-        public static final int list_slidermenu=0x7f0a0007;
-        public static final int login=0x7f0a0010;
+        public static final int bnutrition=0x7f0a0017;
+        public static final int breg=0x7f0a0009;
+        public static final int counter=0x7f0a0012;
+        public static final int detail=0x7f0a0014;
+        public static final int drawer_layout=0x7f0a0003;
+        public static final int email=0x7f0a000a;
+        public static final int frame_container=0x7f0a0004;
+        public static final int icon=0x7f0a0010;
+        public static final int list_slidermenu=0x7f0a0005;
+        public static final int login=0x7f0a000e;
         public static final int logpword=0x7f0a0001;
         public static final int loguname=0x7f0a0000;
-        public static final int menu_settings=0x7f0a001a;
-        public static final int pword=0x7f0a000e;
-        public static final int registrierung=0x7f0a000f;
-        public static final int relativeLayout=0x7f0a0011;
-        public static final int title=0x7f0a0013;
-        public static final int tv_login_benutzername=0x7f0a0003;
-        public static final int tv_login_passwort=0x7f0a0004;
-        public static final int txtLabel=0x7f0a0015;
-        public static final int uname=0x7f0a000d;
-        public static final int view_email=0x7f0a0009;
-        public static final int view_pword=0x7f0a0008;
-        public static final int view_uname=0x7f0a000a;
+        public static final int menu_settings=0x7f0a0018;
+        public static final int pword=0x7f0a000c;
+        public static final int registrierung=0x7f0a000d;
+        public static final int relativeLayout=0x7f0a000f;
+        public static final int title=0x7f0a0011;
+        public static final int txtLabel=0x7f0a0013;
+        public static final int uname=0x7f0a000b;
+        public static final int view_email=0x7f0a0007;
+        public static final int view_pword=0x7f0a0006;
+        public static final int view_uname=0x7f0a0008;
     }
     public static final class layout {
         public static final int activity_home_screen=0x7f030000;
@@ -121,8 +120,6 @@ public final class R {
         public static final int title_activity_login=0x7f070013;
         public static final int title_activity_login2=0x7f070014;
         public static final int title_activity_start=0x7f070015;
-        public static final int tv_login_benutzername=0x7f070016;
-        public static final int tv_login_passwort=0x7f070017;
     }
     public static final class style {
         /** 

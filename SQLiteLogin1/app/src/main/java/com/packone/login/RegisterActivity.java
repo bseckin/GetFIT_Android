@@ -12,12 +12,19 @@ import android.widget.Toast;
 
 import java.util.List;
 
+/**
+ * @author: Kanyilidz Muhammedmehdi
+ * @version: 0.9.1
+ * @date: 01.10.2014
+ * Beschreibung
+ */
 public class RegisterActivity extends Activity {
 
     private Button mButton;
     private EditText muname;
     private EditText mpword;
     private EditText memail;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,14 +65,13 @@ public class RegisterActivity extends Activity {
                     toast.show();
 
                 } else {
-/*                    Log.d("!!!!!!!!!!!!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
+                    Log.d("!!!!!!!!!!!!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
                     String name = muname.getText().toString();
                     int zahl = db.getContactsCount(name);
 
                     Log.d("!!!!!! ", "WAS EAST " + zahl);
                     Log.d("!!!!!! ", "WAS EAST " + name);
-  */
-  //                  if (db.getContactsCount(muname.getText().toString()) == 0) {
+                   if (db.getContactsCount(muname.getText().toString()) == 0) {
                         Log.d("Insert: ", "Inserting ..");
                       //  db.deleteContact();
 
@@ -87,15 +93,15 @@ public class RegisterActivity extends Activity {
                         startActivity(intent);
 
 
-    //                } else {
-                      /**  Context context = getApplicationContext();
+                    } else {
+                        Context context = getApplicationContext();
                         CharSequence text = "Der User existiert bereits. Bitte geben Sie einen neuen Namen ein.";
                         int duration = Toast.LENGTH_LONG;
 
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
-                       */
-               //     }
+
+                    }
                 }
             }
         });

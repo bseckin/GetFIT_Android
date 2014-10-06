@@ -10,6 +10,12 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author: Kanyilidz Muhammedmehdi
+ * @version: 0.9.1
+ * @date: 01.10.2014
+ * Beschreibung
+ */
 public class DatabaseHandler extends SQLiteOpenHelper {
 
     // All Static variables
@@ -169,12 +175,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             this.exists = 0;
         }
 */
-        SQLiteDatabase db = this.getReadableDatabase();
-        // String countQuery = "SELECT COUNT(uname) AS total FROM login WHERE uname = " + "'" + name + "'";
-        // assuming your table has `id` column as primary key or unique key.
-        Cursor dataCount = db.rawQuery("SELECT COUNT(uname)FROM login WHERE uname = " + "'" + name + "'", null);
-        Log.d("!!!!!!!!!!!","WAS EAST::::::::!!!!!!!!!!!!" + dataCount.getCount());
-       return dataCount.getCount();
+
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String count = "SELECT count(uname) FROM login where uname = ?";
+        Cursor mcursor = db.rawQuery(count, new String [] {name});
+        mcursor.moveToFirst();
+        int icount = mcursor.getInt(0);
+
+        return icount;
 
 
 

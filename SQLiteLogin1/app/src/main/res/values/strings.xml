@@ -4,18 +4,9 @@
     <string name="app_name">SQLiteLogin</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="action_settings">
-
-        <item>Sign Out</item>
-    </string>
-    <string name="action_logout">
-
-        <item>Logout</item>
-    </string>
-    <string name="action_settings_was">
-
-        <item>settings</item>
-    </string>
+    <string name="action_settings"><item>Sign Out</item></string>
+    <string name="action_logout"><item>Logout</item></string>
+    <string name="action_settings_was"><item>settings</item></string>
     <string name="title_activity_start">StartActivity</string>
     <string name="title_activity_login2">Login2Activity</string>
     <string name="title_activity_home_screen">HomeScreen</string>
@@ -44,7 +35,10 @@
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_goal">GoalActivity</string>
-    <string name="tv_login_benutzername">Benutzername:</string>
-    <string name="tv_login_passwort">Passwort:</string>
+    <string name="title_activity_wlifing">WLifingActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

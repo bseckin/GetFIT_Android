@@ -7,7 +7,12 @@ import android.view.View;
 
 import info.androidhive.slidingmenu.MainActivity;
 
-
+/**
+ * @author: Kanyilidz Muhammedmehdi
+ * @version: 0.9.1
+ * @date: 01.10.2014
+ * Beschreibung
+ */
 public class GoalActivity extends Activity {
 
     @Override
