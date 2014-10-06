@@ -19,7 +19,6 @@ public class RegisterActivity extends Activity {
     private EditText mpword;
     private EditText memail;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
