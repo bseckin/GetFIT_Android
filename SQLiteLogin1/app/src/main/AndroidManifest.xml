@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="20" />
 
     <application
         android:allowBackup="true"
@@ -37,6 +37,7 @@
             android:name=".GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
+        <activity android:name="info.pack.selectgoal.WLifingActivity" />
     </application>
 
 </manifest>
