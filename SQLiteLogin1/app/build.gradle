@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 20
     buildToolsVersion "20.0.0"
 
     defaultConfig {
         applicationId "com.packone.login"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 20
     }
 
     buildTypes {
@@ -19,5 +19,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
+    compile "com.android.support:support-v4:20.0.+"
+    compile "com.android.support:support-v13:20.0.+"
 }

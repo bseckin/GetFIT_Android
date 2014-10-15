@@ -1,40 +1,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Login2Activity" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
 
-    <EditText
-        android:id="@+id/loguname"
-        android:layout_width="wrap_content"
+                android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="186dp"
-        android:ems="10"
-        android:text="adg"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        >
 
-        <requestFocus />
-    </EditText>
+        <EditText
+            android:id="@+id/loguname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
 
-    <EditText
-        android:id="@+id/logpword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="adg"
-        android:layout_below="@+id/loguname"
-        android:layout_alignLeft="@+id/loguname"
-        android:layout_alignStart="@+id/loguname" />
+            android:padding="10dp"
+            android:hint="Benutzername"
+            android:textColorHint="#ff919191"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"/>
 
-    <Button
-        android:id="@+id/blogin2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_below="@+id/logpword"
-        android:layout_alignRight="@+id/logpword"
-        android:layout_alignEnd="@+id/logpword" />
+        <EditText
+            android:id="@+id/logpword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
 
-</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/AndroidstudioProjects/SQLiteLogin1/app/src/main/res/layout/activity_login2.xml -->
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Passwort"
+            android:textColorHint="#ff919191"
+            android:password="true"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/blogin2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="anmelden"
+            style="@style/DefaultButtonText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff000000"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_login2.xml -->
