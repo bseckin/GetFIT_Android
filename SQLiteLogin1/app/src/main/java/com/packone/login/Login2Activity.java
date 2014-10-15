@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import info.pack.selectgoal.WLifingActivity;
+import info.androidhive.slidingmenu.MainActivity;
 
 /**
  * @author: Kanyilidz Muhammedmehdi
@@ -74,7 +74,7 @@ public class Login2Activity extends Activity {
                 // Hier überprüfen wir ob die Eingabedaten nun im Datenbank waren oder nicht
                 if (checkUname == true) {
                     // Mit Intent(actuelle activity, zielactivity) befördern wir den Benutzer zur nächsten seite
-                    Intent intent = new Intent(Login2Activity.this, WLifingActivity.class);
+                    Intent intent = new Intent(Login2Activity.this, MainActivity.class);
                     startActivity(intent);
 
                 } else {

@@ -8,10 +8,10 @@
         android:id="@+id/registrierung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="119dp"
-        android:text="REGISTRIERUNG" />
+        android:layout_marginTop="64dp"
+        android:text="REGISTRIERUNG"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/login"

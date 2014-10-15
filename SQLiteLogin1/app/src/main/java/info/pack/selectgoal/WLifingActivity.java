@@ -14,15 +14,26 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ExpandableListView;
 
 import com.packone.login.R;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 import info.androidhive.slidingmenu.MainActivity;
 
+
 public class WLifingActivity extends Activity implements ActionBar.TabListener {
 
+    private String mParam1;
+    private String mParam2;
+
+
+    private ExpandableListView expListView;
+    private List<String> listDataHeader;
+    private HashMap<String, List<String>> listDataChild;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -42,6 +53,8 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wlifing);
+
+
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
@@ -76,6 +89,8 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
+
+
     }
 
 
@@ -204,5 +219,6 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
         startActivity(intent);
         finish();
     }
+
 
 }

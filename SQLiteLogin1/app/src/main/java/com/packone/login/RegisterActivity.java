@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import info.pack.selectgoal.WLifingActivity;
+
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
@@ -89,7 +91,7 @@ public class RegisterActivity extends Activity {
                             Log.d("Name: ", log);
                         }
 
-                        Intent intent = new Intent(RegisterActivity.this, StartActivity.class);
+                        Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
                         startActivity(intent);
 
 
