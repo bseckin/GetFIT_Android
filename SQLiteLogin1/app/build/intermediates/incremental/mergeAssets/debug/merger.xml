@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger version="2" >
 
-    <dataSet config="21.0.0-rc1" >
-        <source path="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0-rc1\assets" />
+    <dataSet config="20.0.0" >
+        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\assets" />
     </dataSet>
     <dataSet config="main" >
-        <source path="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\src\main\assets" />
+        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\Muhammed5\AndroidstudioProjects\SQLiteLogin1\app\src\debug\assets" />
+        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\debug\assets" />
     </dataSet>
 
 </merger>
