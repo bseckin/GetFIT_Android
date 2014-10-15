@@ -32,11 +32,16 @@
             android:label="@string/title_activity_home_screen" >
         </activity>
         <activity android:name="info.androidhive.slidingmenu.MainActivity" >
+
         </activity>
         <activity
             android:name=".GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
+
+        <activity android:name="info.pack.selectgoal.WLifingActivity" >
+        </activity>
+
     </application>
 
 </manifest>
