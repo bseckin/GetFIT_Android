@@ -49,8 +49,7 @@
         </activity>
 
 
-        <activity android:name="info.pack.selectgoal.WLifingActivity" >
-        </activity>
+
 
     </application>
 

@@ -30,14 +30,14 @@ public class Login2Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
+        setContentView(R.layout.activity_start);
 
 
         final DatabaseHandler db = new DatabaseHandler(this);
 
 
         //Initialisierung der Buttons und Eingabefelder
-        this.mButton = (Button) findViewById(R.id.blogin2);
+        this.mButton = (Button) findViewById(R.id.blogin);
         this.muname = (EditText) findViewById(R.id.loguname);
         this.mpword = (EditText) findViewById(R.id.logpword);
 
