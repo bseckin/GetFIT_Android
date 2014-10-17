@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
-import info.androidhive.slidingmenu.MainActivity;
+import info.androidhive.slidingmenu.NavigationActivity;
 
 
 public class WLifingActivity extends Activity implements ActionBar.TabListener {
@@ -215,7 +215,7 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
     }
 
     public void onClick(View view) {
-        Intent intent = new Intent(WLifingActivity.this, MainActivity.class);
+        Intent intent = new Intent(WLifingActivity.this, NavigationActivity.class);
         startActivity(intent);
         finish();
     }

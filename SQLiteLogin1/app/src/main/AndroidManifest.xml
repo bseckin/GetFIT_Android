@@ -15,7 +15,7 @@
         android:largeHeap="false"
         android:theme="@android:style/Theme.Holo.Light" >
         <activity
-            android:name=".StartActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_start" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen" >
         </activity>
-        <activity android:name="info.androidhive.slidingmenu.MainActivity" >
+        <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
 
         </activity>
         <activity
