@@ -57,9 +57,8 @@
                 android:layout_alignLeft="@+id/loguname"
                 android:layout_alignStart="@+id/loguname"
                 android:layout_marginBottom="40dp"
-                android:text="Password"
-                android:textColor="#ff000000"
-                android:inputType="textVisiblePassword" />
+                android:text="password"
+                android:textColor="#ff000000" />
 
         </RelativeLayout>
 

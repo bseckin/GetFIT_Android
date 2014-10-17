@@ -25,8 +25,6 @@
         </activity>
         <activity android:name=".RegisterActivity" >
         </activity>
-        <activity android:name=".Login2Activity" >
-        </activity>
         <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_home_screen" >

@@ -25,8 +25,6 @@
         </activity>
         <activity android:name="com.packone.login.RegisterActivity" >
         </activity>
-        <activity android:name="com.packone.login.Login2Activity" >
-        </activity>
         <activity
             android:name="com.packone.login.HomeScreen"
             android:label="@string/title_activity_home_screen" >
