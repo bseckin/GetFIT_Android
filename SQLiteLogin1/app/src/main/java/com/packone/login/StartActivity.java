@@ -24,10 +24,10 @@ public class StartActivity extends Activity {
          breg.setOnClickListener(this);
          */
 
-        Button blogin = (Button) findViewById(R.id.login);
+        Button blogin = (Button) findViewById(R.id.blogin);
         blogin.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(StartActivity.this, Login2Activity.class);
+                Intent intent = new Intent(StartActivity.this, MainActivity.class);
                 startActivity(intent);
 
             }

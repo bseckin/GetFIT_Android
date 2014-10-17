@@ -14,7 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ddbda2102f9909cff120373f9434d9d303c6afd5
 import android.widget.ExpandableListView;
 
 import com.packone.login.R;
@@ -24,6 +27,8 @@ import java.util.List;
 import java.util.Locale;
 
 import info.androidhive.slidingmenu.NavigationActivity;
+
+//import info.androidhive.slidingmenu.MainActivity;
 
 
 public class WLifingActivity extends Activity implements ActionBar.TabListener {
@@ -35,10 +40,6 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
     private ExpandableListView expListView;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
-<<<<<<< HEAD
->>>>>>> entwicklung
-=======
->>>>>>> origin/entwicklung
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -59,16 +60,7 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wlifing);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-
->>>>>>> entwicklung
-=======
-
-
->>>>>>> origin/entwicklung
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -102,16 +94,6 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> entwicklung
-=======
-
-
->>>>>>> origin/entwicklung
     }
 
 
@@ -236,25 +218,8 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
     }
 
     public void onClick(View view) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Intent intent = new Intent(WLifingActivity.this, MainActivity.class);
-=======
         Intent intent = new Intent(WLifingActivity.this, NavigationActivity.class);
->>>>>>> entwicklung
-=======
-        Intent intent = new Intent(WLifingActivity.this, NavigationActivity.class);
->>>>>>> origin/entwicklung
         startActivity(intent);
         finish();
     }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> entwicklung
-=======
-
->>>>>>> origin/entwicklung
 }

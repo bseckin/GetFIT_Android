@@ -98,4 +98,4 @@
                 android:layout_toRightOf="@+id/registrierung"/>
         </RelativeLayout>
     </LinearLayout>
-</RelativeLayout>
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_start.xml -->
