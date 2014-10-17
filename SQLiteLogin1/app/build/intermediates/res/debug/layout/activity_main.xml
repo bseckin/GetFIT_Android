@@ -21,4 +21,8 @@
         android:dividerHeight="1dp"        
         android:listSelector="@drawable/list_selector"
         android:background="@color/list_background"/>
+<<<<<<< HEAD
 </android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_main.xml -->
+=======
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_main.xml -->
+>>>>>>> entwicklung

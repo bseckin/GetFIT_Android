@@ -36,4 +36,8 @@
         android:background="#ff0000"
         android:clickable="true"
         android:onClick="onClick" />
+<<<<<<< HEAD
 </LinearLayout><!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/select_goal.xml -->
+=======
+</LinearLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/select_goal.xml -->
+>>>>>>> entwicklung

@@ -19,6 +19,7 @@
         <item>Cardio</item>
         <item>My Body</item>
         <item>Workout-Plan</item>
+        <item>My Goal</item>
     </string-array>
 
     <!-- Nav Drawer List Item Icons -->
@@ -36,9 +37,16 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_goal">GoalActivity</string>
     <string name="title_activity_wlifing">WLifingActivity</string>
+<<<<<<< HEAD
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+    <string name="title_section1">Lifting</string>
+    <string name="title_section2">Cardio</string>
+    <string name="title_section3">Nutrition</string>
+    <string name="title_activity_progress">ProgressActivity</string>
+>>>>>>> entwicklung
 
 </resources>

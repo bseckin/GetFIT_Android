@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/values-w820dp/dimens.xml -->
+=======
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values-w820dp/dimens.xml -->
+>>>>>>> entwicklung
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">64dp</dimen>

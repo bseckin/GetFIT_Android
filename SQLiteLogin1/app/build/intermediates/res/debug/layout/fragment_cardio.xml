@@ -5,6 +5,7 @@
     tools:context="info.pack.selectgoal.CardioFragment">
 
 
+<<<<<<< HEAD
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="260dp"
@@ -22,3 +23,51 @@
         android:layout_gravity="center_horizontal|bottom" />
 </FrameLayout>
 <!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->
+=======
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/cardio" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select"
+                android:id="@+id/bgoal"
+                android:onClick="onClick"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|bottom" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_height="256dp"
+                android:layout_width="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->
+>>>>>>> entwicklung

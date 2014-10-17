@@ -23,4 +23,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal|bottom" />
 </FrameLayout>
+<<<<<<< HEAD
 <!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_nutrition.xml -->
+=======
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_nutrition.xml -->
+>>>>>>> entwicklung

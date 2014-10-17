@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,3 +32,56 @@
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_wlifing.xml -->
+=======
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.pack.selectgoal.CardioFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/weightlifting"
+             />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="select"
+            android:id="@+id/bgoal"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_wlifing.xml -->
+>>>>>>> entwicklung

@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 
 import com.packone.login.R;
 
@@ -23,6 +24,28 @@ import info.androidhive.slidingmenu.MainActivity;
 
 public class WLifingActivity extends Activity implements ActionBar.TabListener {
 
+=======
+import android.widget.ExpandableListView;
+
+import com.packone.login.R;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+
+import info.androidhive.slidingmenu.NavigationActivity;
+
+
+public class WLifingActivity extends Activity implements ActionBar.TabListener {
+
+    private String mParam1;
+    private String mParam2;
+
+
+    private ExpandableListView expListView;
+    private List<String> listDataHeader;
+    private HashMap<String, List<String>> listDataChild;
+>>>>>>> entwicklung
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -43,6 +66,11 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wlifing);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> entwicklung
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -76,6 +104,11 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> entwicklung
     }
 
 
@@ -200,9 +233,17 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
     }
 
     public void onClick(View view) {
+<<<<<<< HEAD
         Intent intent = new Intent(WLifingActivity.this, MainActivity.class);
+=======
+        Intent intent = new Intent(WLifingActivity.this, NavigationActivity.class);
+>>>>>>> entwicklung
         startActivity(intent);
         finish();
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> entwicklung
 }

@@ -5,7 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+<<<<<<< HEAD
 import info.androidhive.slidingmenu.MainActivity;
+=======
+import info.androidhive.slidingmenu.NavigationActivity;
+>>>>>>> entwicklung
 
 /**
  * @author: Kanyilidz Muhammedmehdi
@@ -23,7 +27,7 @@ public class GoalActivity extends Activity {
     }
 
     public void onClick(View view) {
-        Intent intent = new Intent(GoalActivity.this, MainActivity.class);
+        Intent intent = new Intent(GoalActivity.this, NavigationActivity.class);
         startActivity(intent);
         finish();
     }

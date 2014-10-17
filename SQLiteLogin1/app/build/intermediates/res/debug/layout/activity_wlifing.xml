@@ -4,4 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="info.pack.selectgoal.WLifingActivity" />
+<<<<<<< HEAD
 <!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_wlifing.xml -->
+=======
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_wlifing.xml -->
+>>>>>>> entwicklung

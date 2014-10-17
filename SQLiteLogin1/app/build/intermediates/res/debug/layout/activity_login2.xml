@@ -54,4 +54,8 @@
             android:textColor="#ff000000"/>
     </LinearLayout>
 
+<<<<<<< HEAD
 </RelativeLayout><!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_login2.xml -->
+=======
+</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_login2.xml -->
+>>>>>>> entwicklung

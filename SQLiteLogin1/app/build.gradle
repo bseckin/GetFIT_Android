@@ -19,6 +19,11 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     compile "com.android.support:support-v4:20.0.+"
     compile "com.android.support:support-v13:20.0.+"
+=======
+    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.android.support:support-v13:20.0.0'
+>>>>>>> entwicklung
 }

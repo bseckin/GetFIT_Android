@@ -2,9 +2,15 @@
 <merger version="2" >
 
     <dataSet config="main" >
+<<<<<<< HEAD
         <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\androidTest\res" />
         <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\test\debug" />
         <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\test\debug" />
+=======
+        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\androidTest\res" />
+        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\test\debug" />
+        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\test\debug" />
+>>>>>>> entwicklung
     </dataSet>
 
 </merger>
