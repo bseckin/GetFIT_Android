@@ -6,10 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import info.androidhive.slidingmenu.MainActivity;
 =======
 import info.androidhive.slidingmenu.NavigationActivity;
 >>>>>>> entwicklung
+=======
+import info.androidhive.slidingmenu.NavigationActivity;
+>>>>>>> origin/entwicklung
 
 /**
  * @author: Kanyilidz Muhammedmehdi

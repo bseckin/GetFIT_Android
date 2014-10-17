@@ -17,7 +17,7 @@ import java.util.List;
 import info.pack.selectgoal.WLifingActivity;
 =======
 import info.androidhive.slidingmenu.NavigationActivity;
->>>>>>> entwicklung:SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java
+>>>>>>> origin/entwicklung:SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java
 
 /**
  * @author: Kanyilidz Muhammedmehdi
@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
                     Intent intent = new Intent(Login2Activity.this, WLifingActivity.class);
 =======
                     Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
->>>>>>> entwicklung:SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java
+>>>>>>> origin/entwicklung:SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java
                     startActivity(intent);
 
                 } else {

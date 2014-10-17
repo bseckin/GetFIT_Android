@@ -13,10 +13,15 @@ import android.widget.Toast;
 import java.util.List;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import info.pack.selectgoal.WLifingActivity;
 
 >>>>>>> entwicklung
+=======
+import info.pack.selectgoal.WLifingActivity;
+
+>>>>>>> origin/entwicklung
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1

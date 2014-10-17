@@ -2,6 +2,7 @@ package info.pack.selectgoal;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import android.os.Bundle;
 import android.app.Fragment;
@@ -9,6 +10,10 @@ import android.app.Fragment;
 import android.app.Fragment;
 import android.os.Bundle;
 >>>>>>> entwicklung
+=======
+import android.app.Fragment;
+import android.os.Bundle;
+>>>>>>> origin/entwicklung
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,9 +38,13 @@ public class CardioFragment extends Fragment {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> entwicklung
+=======
+
+>>>>>>> origin/entwicklung
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -52,12 +61,18 @@ public class CardioFragment extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
 <<<<<<< HEAD
+<<<<<<< HEAD
         return fragment;
 =======
 
         return fragment;
 
 >>>>>>> entwicklung
+=======
+
+        return fragment;
+
+>>>>>>> origin/entwicklung
     }
     public CardioFragment() {
         // Required empty public constructor
@@ -67,13 +82,18 @@ public class CardioFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> entwicklung
+=======
+
+>>>>>>> origin/entwicklung
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
     }
 
@@ -81,6 +101,8 @@ public class CardioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 =======
+=======
+>>>>>>> origin/entwicklung
 
     }
 
@@ -89,15 +111,23 @@ public class CardioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+<<<<<<< HEAD
 >>>>>>> entwicklung
+=======
+>>>>>>> origin/entwicklung
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cardio, container, false);
     }
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> entwicklung
+=======
+
+
+>>>>>>> origin/entwicklung
 }

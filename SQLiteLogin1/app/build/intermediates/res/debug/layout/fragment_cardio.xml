@@ -5,7 +5,6 @@
     tools:context="info.pack.selectgoal.CardioFragment">
 
 
-<<<<<<< HEAD
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="260dp"
@@ -21,9 +20,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal|bottom" />
-</FrameLayout>
-<!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->
-=======
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -69,5 +66,4 @@
     </LinearLayout>
 
 </FrameLayout>
-<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->
->>>>>>> entwicklung
+<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->

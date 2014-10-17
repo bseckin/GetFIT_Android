@@ -139,11 +139,6 @@
                 android:textSize="30dp"
                 android:layout_marginLeft="30dp" />
 
-<<<<<<< HEAD
-</RelativeLayout>
-<!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->
-=======
         </RelativeLayout>
     </LinearLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->
->>>>>>> entwicklung
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->

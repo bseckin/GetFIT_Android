@@ -4,26 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-<<<<<<< HEAD
-    <Button
-        android:id="@+id/registrierung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="119dp"
-        android:text="REGISTRIERUNG" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="LOGIN" />
-
-</RelativeLayout><!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_start.xml -->
-=======
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -113,5 +93,4 @@
                 android:layout_marginTop="20dp" />
         </RelativeLayout>
     </LinearLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_start.xml -->
->>>>>>> entwicklung
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_start.xml -->

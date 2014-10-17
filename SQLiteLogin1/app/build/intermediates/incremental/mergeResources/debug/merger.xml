@@ -2,494 +2,285 @@
 <merger version="2" >
 
     <dataSet config="20.0.0" >
-<<<<<<< HEAD
-        <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
+        <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
     </dataSet>
     <dataSet config="20.0.0" >
-        <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\res" />
+        <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\res" />
     </dataSet>
     <dataSet config="main" >
-        <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res" >
+        <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res" >
             <file
                 name="cardio"
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\cardio.jpg"
-=======
-        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
-    </dataSet>
-    <dataSet config="20.0.0" >
-        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\res" />
-    </dataSet>
-    <dataSet config="main" >
-        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res" >
-            <file
-                name="cardio"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\cardio.jpg"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\cardio.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="counter_bg"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\counter_bg.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\counter_bg.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\counter_bg.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="list_item_bg_normal"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_normal.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_normal.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_normal.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="list_item_bg_pressed"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_pressed.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_pressed.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_pressed.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="list_selector"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_selector.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_selector.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_selector.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="menueworkout"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\menueworkout.jpg"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\menueworkout.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="nutrition"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\nutrition.jpg"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\nutrition.jpg"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\nutrition.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="weightlifting"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\weightlifting.jpg"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\weightlifting.jpg"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\weightlifting.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="getfitlogo"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\getfitlogo.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\getfitlogo.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\getfitlogo.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_communities"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_communities.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_communities.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_communities.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_drawer"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_drawer.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_drawer.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_drawer.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_home"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_home.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_home.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_home.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_launcher.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_launcher.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_launcher.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_logout"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_logout.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_logout.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_logout.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_pages"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_pages.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_pages.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_pages.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_people"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_people.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_people.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_people.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_photos"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_photos.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_photos.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_photos.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_whats_hot"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_whats_hot.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_whats_hot.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\ic_whats_hot.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\ic_launcher.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\ic_launcher.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\ic_launcher.png"
                 qualifiers="ldpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\ic_launcher.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\ic_launcher.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\ic_launcher.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="ic_logout"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\ic_logout.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\ic_logout.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\ic_logout.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_launcher.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_launcher.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_launcher.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="ic_logout"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_logout.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_logout.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_logout.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="ic_logout"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_logout.png"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_logout.png"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_logout.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="activity_home_screen"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_home_screen.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_home_screen.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_home_screen.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_login2"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_login2.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_login2.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_login2.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_main"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_main.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_main.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_progress"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_progress.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_progress.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_register"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_register.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_register.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_register.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_start"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_start.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_start.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_start.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_wlifing"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_wlifing.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_wlifing.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_wlifing.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="drawer_list_item"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\drawer_list_item.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\drawer_list_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_cardio"
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_cardio.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_cardio.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_community"
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_community.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\drawer_list_item.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fragment_cardio"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_cardio.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fragment_community"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_community.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fragment_find_people"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_find_people.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_community.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_home"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_home.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_home.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_home.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_nutrition"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_nutrition.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_nutrition.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_nutrition.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_pages"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_pages.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_pages.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_pages.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_photos"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_photos.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_photos.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_photos.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_whats_hot"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_whats_hot.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_whats_hot.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_whats_hot.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_wlifing"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_wlifing.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_wlifing.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_wlifing.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="list_group"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\list_group.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\list_group.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="list_item"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\list_item.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\list_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="menu_detail_fragment"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\menu_detail_fragment.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\menu_detail_fragment.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\menu_detail_fragment.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="select_goal"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\select_goal.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\select_goal.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\select_goal.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_home_screen"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_home_screen.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_home_screen.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_home_screen.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="activity_login"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_login.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_login.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_login.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="activity_login2"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_login2.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_login2.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_login2.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="activity_main"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_main.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_main.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_main.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="activity_start"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_start.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_start.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\activity_start.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="goal"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\goal.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\goal.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\goal.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="main"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\main.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\main.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\main.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="progress"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\progress.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\progress.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="wlifing"
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\wlifing.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\wlifing.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\color.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\color.xml"
                 qualifiers="" >
                 <color name="list_item_title" >#fff
                 </color>
@@ -498,31 +289,14 @@
                 <color name="counter_text_bg" >#FF6600
                 </color>
                 <color name="list_background" >#4099FF
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\wlifing.xml"
-                qualifiers=""
-                type="menu" />
-            <file
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\color.xml"
-                qualifiers="" >
-                <color name="list_background_pressed" >#992416
-                </color>
-                <color name="counter_text_bg" >#FF6600
->>>>>>> entwicklung
                 </color>
                 <color name="counter_text_color" >#008080
-                </color>
-                <color name="list_background" >#4099FF
                 </color>
                 <color name="list_divider" >#c0deed
                 </color>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\dimens.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\dimens.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_vertical_margin" >16dp
                 </dimen>
@@ -530,8 +304,7 @@
                 </dimen>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings.xml"
                 qualifiers="" >
                 <string name="hello_world" >Hello world!
                 </string>
@@ -539,32 +312,15 @@
 settings
                     </item></string>
                 <string name="title_activity_home_screen" >HomeScreen
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings.xml"
-                qualifiers="" >
-                <string name="title_section1" >Lifting
-                </string>
-                <string name="title_activity_wlifing" >WLifingActivity
-                </string>
-                <string name="title_section3" >Nutrition
-                </string>
-                <string name="title_activity_goal" >GoalActivity
->>>>>>> entwicklung
                 </string>
                 <string name="action_settings" ><item>
 Sign Out
                     </item></string>
-<<<<<<< HEAD
-                <string name="app_name" >GetFIT
+                <string name="app_name" >SQLiteLogin
                 </string>
                 <string name="title_activity_start" >StartActivity
                 </string>
                 <string name="desc_list_item_icon" >Item Icon
-=======
-                <string name="title_section2" >Cardio
-                </string>
-                <string name="title_activity_login2" >Login2Activity
->>>>>>> entwicklung
                 </string>
 
                 <string-array name="nav_drawer_items" >
@@ -586,8 +342,13 @@ My Body
                     <item>
 Workout-Plan
                     </item>
+                    <item>
+My Goal
+                    </item>
                 </string-array>
 
+                <string name="title_activity_progress" >ProgressActivity
+                </string>
                 <string name="action_logout" ><item>
 Logout
                     </item></string>
@@ -599,42 +360,6 @@ Logout
                 </string>
                 <string name="title_activity_goal" >GoalActivity
                 </string>
-
-                <style name="DefaultButtonText" >
-                    <item name="android:layout_width">
-fill_parent
-                    </item>
-                    <item name="android:layout_height">
-wrap_content
-                    </item>
-                    <item name="android:textColor">
-#979797
-                    </item>
-                    <item name="android:gravity">
-center
-                    </item>
-                    <item name="android:layout_margin">
-3dp
-                    </item>
-                    <item name="android:textStyle">
-normal
-                    </item>
-                    <item name="android:textSize">
-20sp
-                    </item>
-                    <item name="android:shadowColor">
-#f9f9f9
-                    </item>
-                    <item name="android:shadowDx">
-1
-                    </item>
-                    <item name="android:shadowDy">
-1
-                    </item>
-                    <item name="android:shadowRadius">
-1
-                    </item>
-                </style>
 
                 <array name="nav_drawer_icons" >
                     <item>
@@ -655,67 +380,29 @@ normal
                     <item>
 @drawable/ic_whats_hot
                     </item>
-<<<<<<< HEAD
                 </array>
 
-                <string name="title_section1" >Section 1
+                <string name="title_section1" >Lifting
                 </string>
                 <string name="title_activity_wlifing" >WLifingActivity
-=======
-                    <item>
-My Goal
-                    </item>
-                </string-array>
-
-                <string name="title_activity_start" >StartActivity
                 </string>
-                <string name="app_name" >SQLiteLogin
+                <string name="title_section3" >Nutrition
                 </string>
-                <string name="desc_list_item_icon" >Item Icon
->>>>>>> entwicklung
-                </string>
-                <string name="title_section3" >Section 3
-                </string>
-<<<<<<< HEAD
-                <string name="title_section2" >Section 2
+                <string name="title_section2" >Cardio
                 </string>
             </file>
             <file
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings_activity_login.xml"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings_activity_login.xml"
                 qualifiers="" >
-=======
-                <string name="menu_settings" >Settings
-                </string>
-                <string name="title_activity_progress" >ProgressActivity
-                </string>
-                <string name="title_activity_home_screen" >HomeScreen
-                </string>
-            </file>
-            <file
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings_activity_login.xml"
-                qualifiers="" >
-                <string name="error_field_required" >This field is required
-                </string>
-                <string name="error_invalid_email" >This email address is invalid
-                </string>
-                <string name="menu_forgot_password" >Recover lost password
-                </string>
->>>>>>> entwicklung
                 <string name="prompt_email" >Email
                 </string>
                 <string name="action_sign_in_register" ><b>
 Sign in
                     </b> or register
                 </string>
-<<<<<<< HEAD
                 <string name="action_sign_in_short" >Sign in
-=======
-                <string name="login_progress_signing_in" >Signing in…
->>>>>>> entwicklung
                 </string>
                 <string name="error_field_required" >This field is required
-                </string>
-                <string name="action_sign_in_short" >Sign in
                 </string>
                 <string name="error_incorrect_password" >This password is incorrect
                 </string>
@@ -733,11 +420,7 @@ Sign in
                 </string>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\styles.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\styles.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\styles.xml"
                 qualifiers="" >
 
                 <style
@@ -771,11 +454,7 @@ wrap_content
                 </style>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-large\styles.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-large\styles.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-large\styles.xml"
                 qualifiers="large-v4" >
 
                 <style name="LoginFormContainer" >
@@ -794,11 +473,7 @@ center
                 </style>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-v11\styles.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-v11\styles.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-v11\styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -809,11 +484,7 @@ center
                 </style>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-v14\styles.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-v14\styles.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-v14\styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -824,35 +495,17 @@ center
                 </style>
             </file>
             <file
-<<<<<<< HEAD
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-w820dp\dimens.xml"
-=======
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-w820dp\dimens.xml"
->>>>>>> entwicklung
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values-w820dp\dimens.xml"
                 qualifiers="w820dp-v13" >
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
-<<<<<<< HEAD
-            <file
-                name="fragment_workout"
-                path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_workout.xml"
-                qualifiers=""
-                type="layout" />
         </source>
-        <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\debug" />
-        <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\debug" />
+        <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\debug" />
+        <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\Berkay\Desktop\5BHIT\GetFIT_Android\SQLiteLogin1\app\src\debug\res" />
-=======
-        </source>
-        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\debug" />
-        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\debug" />
-    </dataSet>
-    <dataSet config="debug" >
-        <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\debug\res" />
->>>>>>> entwicklung
+        <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\debug\res" />
     </dataSet>
 
 </merger>

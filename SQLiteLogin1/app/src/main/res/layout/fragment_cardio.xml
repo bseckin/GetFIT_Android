@@ -5,7 +5,6 @@
     tools:context="info.pack.selectgoal.CardioFragment">
 
 
-<<<<<<< HEAD
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="260dp"
@@ -21,7 +20,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal|bottom" />
-=======
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -66,5 +65,4 @@
 
     </LinearLayout>
 
->>>>>>> entwicklung
 </FrameLayout>

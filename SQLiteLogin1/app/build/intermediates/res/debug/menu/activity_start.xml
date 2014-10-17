@@ -4,12 +4,5 @@
         android:id="@+id/menu_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-<<<<<<< HEAD
-        android:title="@string/menu_settings"
-        />
-</menu><!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/activity_start.xml -->
-=======
         android:title="@string/menu_settings"/>
-
-</menu><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/activity_start.xml -->
->>>>>>> entwicklung
+</menu><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/activity_start.xml -->

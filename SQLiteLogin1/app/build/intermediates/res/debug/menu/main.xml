@@ -13,8 +13,4 @@
         android:title="@string/action_settings"/>
 
 </menu>
-<<<<<<< HEAD
-<!-- From: file:/C:/Users/Berkay/Desktop/5BHIT/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/main.xml -->
-=======
-<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/main.xml -->
->>>>>>> entwicklung
+<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/main.xml -->
