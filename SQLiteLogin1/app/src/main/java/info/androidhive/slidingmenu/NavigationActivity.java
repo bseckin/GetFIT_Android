@@ -179,8 +179,8 @@ public class NavigationActivity extends Activity {
                 fragment = new HomeFragment();
                 break;
             case 1:
-                fragment = new FindPeopleFragment();
-                break;
+                //fragment = new FindPeopleFragment();
+                //break;
             case 2:
                 fragment = new PhotosFragment();
                 break;

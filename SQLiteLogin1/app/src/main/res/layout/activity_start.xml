@@ -51,14 +51,18 @@
                 android:layout_height="30dp"
                 android:ems="10"
                 android:id="@+id/logpword"
-                android:background="#fffeffec"
                 android:paddingTop="30dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignLeft="@+id/loguname"
                 android:layout_alignStart="@+id/loguname"
                 android:layout_marginBottom="40dp"
                 android:text="password"
-                android:textColor="#ff000000" />
+                android:textColor="#fff67447"
+                android:editable="true"
+                android:enabled="true"
+                android:background="#fffff2ef"
+                android:inputType="textPassword"
+                />
 
         </RelativeLayout>
 
