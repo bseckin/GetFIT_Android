@@ -14,20 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-import com.packone.login.R;
-
-import java.util.Locale;
-
-import info.androidhive.slidingmenu.MainActivity;
-
-public class WLifingActivity extends Activity implements ActionBar.TabListener {
-
-=======
-=======
->>>>>>> origin/entwicklung
 import android.widget.ExpandableListView;
 
 import com.packone.login.R;
