@@ -253,4 +253,12 @@ public class NavigationActivity extends Activity {
         startActivity(intent);
     }
 
+    /**
+     * Das es nicht zurück zum login screen geht wenn der user
+     * ZURÜCK TASTE auf dem handy drückt
+     */
+    @Override
+    public void onBackPressed() {
+        //do nothing.
+    }
 }

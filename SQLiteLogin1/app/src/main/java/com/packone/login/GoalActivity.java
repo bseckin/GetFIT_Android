@@ -13,6 +13,10 @@ import info.androidhive.slidingmenu.NavigationActivity;
  * @date: 01.10.2014
  * Beschreibung
  */
+
+/**
+ *  NICHT IN VERWENDUNG
+ */
 public class GoalActivity extends Activity {
 
     @Override

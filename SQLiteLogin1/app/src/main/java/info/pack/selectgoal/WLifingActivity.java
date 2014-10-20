@@ -14,10 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 
-=======
->>>>>>> ddbda2102f9909cff120373f9434d9d303c6afd5
 import android.widget.ExpandableListView;
 
 import com.packone.login.R;
@@ -150,10 +147,11 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
                     return PlaceholderFragment.newInstance(position + 1);
 
                 case 1:
-                    return nutritionFragment.newInstance("a","b");
+                    // TODO: die auswahl von ernährung ausdauer etc nur 1x
+                    //return nutritionFragment.newInstance("a","b");
 
                 case 2:
-                    return CardioFragment.newInstance("a","b");
+                    //return CardioFragment.newInstance("a","b");
 
                 default:
                     return PlaceholderFragment.newInstance(position + 1);

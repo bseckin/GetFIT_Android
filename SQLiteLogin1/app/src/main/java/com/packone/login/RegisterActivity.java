@@ -12,8 +12,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
-
-import info.pack.selectgoal.WLifingActivity;
+import info.androidhive.slidingmenu.NavigationActivity;
 
 /**
  * @author: Kanyilidz Muhammedmehdi
@@ -92,8 +91,10 @@ public class RegisterActivity extends Activity {
                             Log.d("Name: ", log);
                         }
 
-                        Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
-                        startActivity(intent);
+                       Intent intent = new Intent(RegisterActivity.this, NavigationActivity.class);
+                       startActivity(intent);
+                        //Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
+                        //startActivity(intent);
 
 
                     } else {

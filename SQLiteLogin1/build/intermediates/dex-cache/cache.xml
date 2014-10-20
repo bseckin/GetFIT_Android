@@ -14,17 +14,17 @@
         revision="20.0.0"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
-        dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e1bf718fbedbd45453661ce19f517a5005f4352e.jar"
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33"/>
-    <item
         dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-9426aef3e2850e9e37e7698602bf85ea302b3860.jar"
         jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e1bf718fbedbd45453661ce19f517a5005f4352e.jar"
+        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33"/>
     <item
         dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-78b6867fcb9908af9e61097f2d5cae4e408840f0.jar"
         jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
