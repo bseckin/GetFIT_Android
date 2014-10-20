@@ -24,6 +24,7 @@
 
                 android:layout_alignParentTop="true"
                 />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -81,10 +82,10 @@
                 android:layout_height="wrap_content"
                 android:text="REGISTRIERUNG"
                 android:layout_alignParentStart="false"
-                android:background="@android:color/darker_gray"
                 android:textSize="12sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
+                style= "@style/btnStyleOrange"
                 />
 
             <Button
@@ -95,13 +96,16 @@
                 android:layout_alignParentTop="false"
                 android:layout_alignParentRight="false"
                 android:layout_alignParentEnd="false"
-                android:background="@android:color/holo_blue_dark"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:layout_alignParentStart="false"
                 android:layout_toRightOf="@+id/registrierung"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                style= "@style/btnStyleTwitterblue"
+                />
+
 
         </RelativeLayout>
     </LinearLayout>
+
 </RelativeLayout>

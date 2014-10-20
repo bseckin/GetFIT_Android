@@ -25,10 +25,6 @@
         </activity>
         <activity android:name=".RegisterActivity" >
         </activity>
-        <activity
-            android:name=".HomeScreen"
-            android:label="@string/title_activity_home_screen" >
-        </activity>
         <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
 
         </activity>

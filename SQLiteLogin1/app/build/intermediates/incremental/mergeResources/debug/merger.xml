@@ -20,6 +20,16 @@
                 qualifiers=""
                 type="drawable" />
             <file
+                name="custom_btn_orange"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\custom_btn_orange.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="custom_btn_twitterblue"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\custom_btn_twitterblue.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="list_item_bg_normal"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_normal.xml"
                 qualifiers=""
@@ -134,11 +144,6 @@
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_logout.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
-            <file
-                name="activity_home_screen"
-                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_home_screen.xml"
-                qualifiers=""
-                type="layout" />
             <file
                 name="activity_main"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_main.xml"
@@ -419,6 +424,41 @@ Sign in
                 qualifiers="" >
 
                 <style
+                    name="btnStyleOrange"
+                    parent="@android:style/Widget.Button" >
+                    <item name="android:textSize">
+15sp
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:textColor">
+#FFFFFF
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                    <item name="android:shadowColor">
+#000000
+                    </item>
+                    <item name="android:shadowDx">
+1
+                    </item>
+                    <item name="android:shadowDy">
+1
+                    </item>
+                    <item name="android:shadowRadius">
+0.6
+                    </item>
+                    <item name="android:background">
+@drawable/custom_btn_orange
+                    </item>
+                    <item name="android:padding">
+10dip
+                    </item>
+                </style>
+
+                <style
                     name="AppTheme"
                     parent="AppBaseTheme" >
 
@@ -446,6 +486,41 @@ wrap_content
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
                     -->
+                </style>
+
+                <style
+                    name="btnStyleTwitterblue"
+                    parent="@android:style/Widget.Button" >
+                    <item name="android:textSize">
+15sp
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:textColor">
+#FFFF
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                    <item name="android:shadowColor">
+#000000
+                    </item>
+                    <item name="android:shadowDx">
+1
+                    </item>
+                    <item name="android:shadowDy">
+1
+                    </item>
+                    <item name="android:shadowRadius">
+0.6
+                    </item>
+                    <item name="android:background">
+@drawable/custom_btn_twitterblue
+                    </item>
+                    <item name="android:padding">
+10dip
+                    </item>
                 </style>
             </file>
             <file
