@@ -102,6 +102,8 @@
                 android:layout_toRightOf="@+id/registrierung"
                 android:textSize="12sp"/>
 
+
+
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_main.xml -->
