@@ -179,6 +179,7 @@ public class NavigationActivity extends Activity {
                 fragment = new HomeFragment();
                 break;
             case 1:
+                //TODO hier gehört was gemacht
                 //fragment = new FindPeopleFragment();
                 //break;
             case 2:

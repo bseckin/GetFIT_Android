@@ -85,7 +85,7 @@
                 android:textSize="12sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:style= "@style/btnStyleOrange"
+                style= "@style/btnStyleOrange"
                 />
 
             <Button
@@ -101,7 +101,7 @@
                 android:layout_alignParentStart="false"
                 android:layout_toRightOf="@+id/registrierung"
                 android:textSize="12sp"
-                android:style= "@style/btnStyleTwitterblue"
+                style= "@style/btnStyleTwitterblue"
                 />
 
 

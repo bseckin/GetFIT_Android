@@ -20,6 +20,16 @@
                 qualifiers=""
                 type="drawable" />
             <file
+                name="custom_btn_orange"
+                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\custom_btn_orange.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="custom_btn_twitterblue"
+                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\custom_btn_twitterblue.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="list_item_bg_normal"
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_normal.xml"
                 qualifiers=""
@@ -560,16 +570,6 @@ center
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
-            <file
-                name="custom_btn_orange"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\custom_btn_orange.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="custom_btn_twitterblue"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\custom_btn_twitterblue.xml"
-                qualifiers=""
-                type="drawable" />
         </source>
         <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\debug" />
         <source path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\debug" />
