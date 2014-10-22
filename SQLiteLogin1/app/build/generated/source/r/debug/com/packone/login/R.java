@@ -64,7 +64,7 @@ public final class R {
         public static final int frame_container=0x7f0a0006;
         public static final int gender=0x7f0a0011;
         public static final int graph=0x7f0a001e;
-        public static final int height=0x7f0a0010;
+        public static final int pword =0x7f0a0010;
         public static final int icon=0x7f0a0017;
         public static final int imageView=0x7f0a0000;
         public static final int lblListHeader=0x7f0a0024;
@@ -77,7 +77,7 @@ public final class R {
         public static final int pager=0x7f0a0015;
         public static final int plan=0x7f0a0021;
         public static final int progress=0x7f0a001d;
-        public static final int pword=0x7f0a000f;
+        public static final int uname =0x7f0a000f;
         public static final int registrierung=0x7f0a0003;
         public static final int relativeLayout=0x7f0a0016;
         public static final int section_label=0x7f0a0023;
