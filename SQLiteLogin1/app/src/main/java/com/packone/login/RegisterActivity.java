@@ -26,6 +26,9 @@ public class RegisterActivity extends Activity {
     private EditText muname;
     private EditText mpword;
     private EditText memail;
+    private EditText mgender;
+    private EditText mheight;
+    private EditText mweight;
 
     //TODO: - Exercise implementieren
     @Override
@@ -41,6 +44,9 @@ public class RegisterActivity extends Activity {
         muname = (EditText) findViewById(R.id.uname);
         mpword = (EditText) findViewById(R.id.pword);
         memail = (EditText) findViewById(R.id.email);
+        mgender = (EditText) findViewById(R.id.gender);
+        mheight = (EditText) findViewById(R.id.height);
+        mweight = (EditText) findViewById(R.id.weight);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //New COMMENT
@@ -78,7 +84,8 @@ public class RegisterActivity extends Activity {
                         //  db.deleteContact();
 
                         db.addContact(new Contact(muname.getText().toString(), mpword
-                                .getText().toString(), memail.getText().toString()));
+                                .getText().toString(), memail.getText().toString(),mgender.getText().toString(), Integer.parseInt(mheight
+                                .getText().toString()), Integer.parseInt(mweight.getText().toString())));
 
                         // Reading all contacts
                         Log.d("Reading: ", "Reading all contacts..");
@@ -86,7 +93,8 @@ public class RegisterActivity extends Activity {
 
                         for (Contact cn : contacts) {
                             String log = "Username: " + cn.getUname() + " ,Name: "
-                                    + cn.getPword() + " ,Phone: " + cn.getEmail();
+                                    + cn.getPword() + " ,Phone: " + cn.getEmail() + ", Gender: " + cn.getGender() + " ,Hieght: "
+                                    + cn.getHeight() + " ,Weight: " + cn.getWeight();
                             // Writing Contacts to log
                             Log.d("Name: ", log);
                         }

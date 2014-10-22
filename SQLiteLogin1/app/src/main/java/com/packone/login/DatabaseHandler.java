@@ -91,6 +91,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_USERNAME, contact.getUname()); // Contact Name
         values.put(KEY_PASSWORD, contact.getPword()); // Contact Name
         values.put(KEY_EMAIL, contact.getEmail()); // Contact Phone
+        values.put(KEY_GENDER, contact.getGender()); // Contact Name
+        values.put(KEY_HEIGHT, contact.getHeight()); // Contact Name
+        values.put(KEY_WEIGHT, contact.getWeight()); // Contact Phone
 
         // Inserting Row
         db.insert(TABLE_CONTACTS, null, values);
@@ -103,7 +106,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_CONTACTS, new String[]{KEY_USERNAME,
-                        KEY_PASSWORD, KEY_EMAIL}, KEY_USERNAME + "=?",
+                        KEY_PASSWORD, KEY_EMAIL, KEY_GENDER, KEY_HEIGHT, KEY_WEIGHT}, KEY_USERNAME + "=?",
                 new String[]{String.valueOf(uname)}, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
@@ -130,6 +133,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contact.setUname(cursor.getString(0));
                 contact.setPword(cursor.getString(1));
                 contact.setEmail(cursor.getString(2));
+                contact.setGender(cursor.getString(3));
+                contact.setHeight(Integer.parseInt(cursor.getString(4)));
+                contact.setWeight(Integer.parseInt(cursor.getString(5)));
 
                 // Adding contact to list
                 contactList.add(contact);
@@ -147,6 +153,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(KEY_PASSWORD, contact.getPword());
         values.put(KEY_EMAIL, contact.getEmail());
+        values.put(KEY_GENDER, contact.getGender());
+        values.put(KEY_HEIGHT, contact.getHeight());
+        values.put(KEY_WEIGHT, contact.getWeight());
 
         // updating row
         return db.update(TABLE_CONTACTS, values, KEY_USERNAME + " = ?",
