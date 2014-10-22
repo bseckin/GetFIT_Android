@@ -27,9 +27,8 @@ public class RegisterActivity extends Activity {
     private EditText mpword;
     private EditText memail;
 
-
+    //TODO: - Exercise implementieren
     @Override
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);

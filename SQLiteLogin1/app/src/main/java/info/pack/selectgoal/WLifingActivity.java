@@ -147,7 +147,7 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
                     return PlaceholderFragment.newInstance(position + 1);
 
                 case 1:
-                    // TODO: die auswahl von ernährung ausdauer etc nur 1x
+                    // TODO: - Die Auswahl von Krafttraining, Ernährung ausdauer nur 1x bei Registrierung fragen
                     //return nutritionFragment.newInstance("a","b");
 
                 case 2:
@@ -155,7 +155,6 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
 
                 default:
                     return PlaceholderFragment.newInstance(position + 1);
-
             }
 
         }

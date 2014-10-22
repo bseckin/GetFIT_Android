@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: Kanyilidz Muhammedmehdi
- * @version: 0.9.2
+ * @author: Kanyilidz Muhammedmehdi, Seckin Berkay
+ * @version: 0.9.3
  * @date: 01.10.2014
  * Beschreibung: This Class contains all Operations for deleting updating and creating an entry in the Database
  * Futhermore there are implemented some Connection Methods
@@ -26,17 +26,17 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Database Name
     private static final String DATABASE_NAME = "GetFit2";
 
-    // Table Names
+    /* ---------- TABLES --------------- */
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
 
-    /*******Table Columns names***********/
+    /* ======== COLUMNS from TABLE  "CONTACTS" ========= */
     //login
     private static final String KEY_USERNAME = "uname";
     private static final String KEY_PASSWORD = "pword";
     private static final String KEY_EMAIL = "emial";
 
-    //exercise
+    /* ======== COLUMNS from TABLE  "EXERCISES" ========= */
     private static final String KEY_EXID = "id";
     private static final String KEY_EXERCISEBEZ = "exercisebez";
 
@@ -71,6 +71,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Create tables again
         onCreate(db);
     }
+
+    //TODO (INFO): Operations for CONTACT/LOGIN TABLE
     /************************ OPERATIONS FOR THE LOGIN TABLE ***************************/
 
     /**
@@ -80,7 +82,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Adding new contact
     void addContact(Contact contact) {
         SQLiteDatabase db = this.getWritableDatabase();
-
 
         ContentValues values = new ContentValues();
         values.put(KEY_USERNAME, contact.getUname()); // Contact Name
@@ -126,14 +127,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contact.setPword(cursor.getString(1));
                 contact.setEmail(cursor.getString(2));
 
-
                 // Adding contact to list
                 contactList.add(contact);
             } while (cursor.moveToNext());
 
-
         }
-
         // return contact list
         return contactList;
     }
@@ -176,6 +174,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return icount;
     }
 
+    // TODO (INFO): Operation for EXERCISE TABLE
     /************************ OPERATIONS FOR THE EXERCISE TABLE ***************************/
     /**
      * All CRUD(Create, Read, Update, Delete) Operations
@@ -185,11 +184,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     void addExercise(Exercise exercise) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-
         ContentValues values = new ContentValues();
         values.put(KEY_EXID, exercise.getExId()); // Contact Name
         values.put(KEY_EXERCISEBEZ, exercise.getExBez()); // Contact Name
-
 
         // Inserting Row
         db.insert(TABLE_EXERCISE, null, values);
@@ -229,26 +226,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 exercise.setExId(Integer.parseInt(cursor.getString(0)));
                 exercise.setExBez(cursor.getString(1));
 
-
-
                 // Adding contact to list
                 exerciseList.add(exercise);
             } while (cursor.moveToNext());
-
-
         }
-
         // return contact list
         return exerciseList;
     }
 
+    //TODO: - Exercise Methoden Kommentare anpassen
     // Updating single contact
     public int updateExercise(Exercise exercise) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(KEY_EXERCISEBEZ, exercise.getExBez());
-
 
         // updating row
         return db.update(TABLE_EXERCISE, values, KEY_EXERCISEBEZ + " = ?",
@@ -279,5 +271,4 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return icount;
     }
-
 }
