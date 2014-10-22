@@ -30,11 +30,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
 
-    /*******Table Columns names***********/
+    /**
+     * ****Table Columns names**********
+     */
     //login
     private static final String KEY_USERNAME = "uname";
     private static final String KEY_PASSWORD = "pword";
     private static final String KEY_EMAIL = "emial";
+    private static final String KEY_GENDER = "gender";
+    private static final String KEY_HEIGHT = "height";
+    private static final String KEY_WEIGHT = "weight";
 
     //exercise
     private static final String KEY_EXID = "id";
@@ -53,16 +58,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.exists = 0;
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_CONTACTS + "("
                 + KEY_USERNAME + " TEXT," + KEY_PASSWORD + " TEXT,"
-                + KEY_EMAIL + " TEXT" + ")";
+                + KEY_EMAIL + " TEXT," + KEY_GENDER + " TEXT," + KEY_HEIGHT + " INTEGER," + KEY_WEIGHT + " FLOAT" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
 
         String CREATE_EXERCISE_TABLE = "CREATE TABLE " + TABLE_EXERCISE + "("
-                + KEY_EXID + " INTEGER PRIMARY KEY,"+ KEY_EXERCISEBEZ + " TEXT" + ")";
+                + KEY_EXID + " INTEGER PRIMARY KEY," + KEY_EXERCISEBEZ + " TEXT" + ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
 
     }
 
-   // Dropping all Tables in a Database
+    // Dropping all Tables in a Database
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older table if existed
@@ -103,8 +108,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         if (cursor != null)
             cursor.moveToFirst();
 
-        Contact contact = new Contact(cursor.getString(0),
-                cursor.getString(1), cursor.getString(2));
+        Contact contact = new Contact(
+                cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), Integer.parseInt(cursor.getString(4)), Integer.parseInt(cursor.getString(5)));
         // return contact
         return contact;
     }
@@ -169,7 +174,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public int getContactsCount(String name) {
         SQLiteDatabase db = this.getWritableDatabase();
         String count = "SELECT count(uname) FROM login where uname = ?";
-        Cursor mcursor = db.rawQuery(count, new String [] {name});
+        Cursor mcursor = db.rawQuery(count, new String[]{name});
         mcursor.moveToFirst();
         int icount = mcursor.getInt(0);
 
@@ -230,7 +235,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 exercise.setExBez(cursor.getString(1));
 
 
-
                 // Adding contact to list
                 exerciseList.add(exercise);
             } while (cursor.moveToNext());
@@ -273,7 +277,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public int getExerciseCount(String exbez) {
         SQLiteDatabase db = this.getWritableDatabase();
         String count = "SELECT count(" + KEY_EXID + ") FROM login where " + KEY_EXERCISEBEZ + "= ?";
-        Cursor mcursor = db.rawQuery(count, new String [] {exbez});
+        Cursor mcursor = db.rawQuery(count, new String[]{exbez});
         mcursor.moveToFirst();
         int icount = mcursor.getInt(0);
 

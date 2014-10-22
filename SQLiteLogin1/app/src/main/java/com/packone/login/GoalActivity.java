@@ -15,7 +15,7 @@ import info.androidhive.slidingmenu.NavigationActivity;
  */
 
 /**
- *  NICHT IN VERWENDUNG
+ * NICHT IN VERWENDUNG
  */
 public class GoalActivity extends Activity {
 

@@ -22,7 +22,6 @@ public class Exercise {
     }
 
 
-
     // getting id
     public int getExId() {
         return this._id;

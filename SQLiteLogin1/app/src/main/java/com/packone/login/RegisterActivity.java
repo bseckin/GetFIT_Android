@@ -35,7 +35,7 @@ public class RegisterActivity extends Activity {
         setContentView(R.layout.activity_register);
 
         final DatabaseHandler db = new DatabaseHandler(this);
-    //    db.deleteContact();
+        //    db.deleteContact();
         Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
         mButton = (Button) findViewById(R.id.breg);
@@ -74,9 +74,9 @@ public class RegisterActivity extends Activity {
 
                     Log.d("!!!!!! ", "WAS EAST " + zahl);
                     Log.d("!!!!!! ", "WAS EAST " + name);
-                   if (db.getContactsCount(muname.getText().toString()) == 0) {
+                    if (db.getContactsCount(muname.getText().toString()) == 0) {
                         Log.d("Insert: ", "Inserting ..");
-                      //  db.deleteContact();
+                        //  db.deleteContact();
 
                         db.addContact(new Contact(muname.getText().toString(), mpword
                                 .getText().toString(), memail.getText().toString()));
@@ -92,8 +92,8 @@ public class RegisterActivity extends Activity {
                             Log.d("Name: ", log);
                         }
 
-                       Intent intent = new Intent(RegisterActivity.this, NavigationActivity.class);
-                       startActivity(intent);
+                        Intent intent = new Intent(RegisterActivity.this, NavigationActivity.class);
+                        startActivity(intent);
                         //Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
                         //startActivity(intent);
 

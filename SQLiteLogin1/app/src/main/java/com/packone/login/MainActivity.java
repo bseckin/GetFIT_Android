@@ -97,7 +97,6 @@ public class MainActivity extends Activity {
         });
 
 
-
         Button breg = (Button) findViewById(R.id.registrierung);
         breg.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
