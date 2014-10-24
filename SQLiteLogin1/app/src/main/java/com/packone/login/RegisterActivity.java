@@ -42,10 +42,10 @@ public class RegisterActivity extends Activity {
 
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
-        mpword = (EditText) findViewById(R.id.uname);
+        mpword = (EditText) findViewById(R.id.pword);
         memail = (EditText) findViewById(R.id.email);
         mgender = (EditText) findViewById(R.id.gender);
-        mheight = (EditText) findViewById(R.id.pword);
+        mheight = (EditText) findViewById(R.id.height);
         mweight = (EditText) findViewById(R.id.weight);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
