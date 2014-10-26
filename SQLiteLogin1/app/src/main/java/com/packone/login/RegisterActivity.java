@@ -31,6 +31,7 @@ public class RegisterActivity extends Activity {
     private EditText mheight;
     private EditText weight;
     private SeekBar weightcontrol = null;
+
     //TODO: - Exercise implementieren
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,15 +43,18 @@ public class RegisterActivity extends Activity {
         weightcontrol.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
 
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser){
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 progressChanged = progress;
+                weight.setText("" + progressChanged);
             }
+
 
             public void onStartTrackingTouch(SeekBar seekBar) {
 
             }
+
             public void onStopTrackingTouch(SeekBar seekBar) {
-                weight.setText(""+progressChanged);
+
             }
         });
         final DatabaseHandler db = new DatabaseHandler(this);
@@ -96,7 +100,7 @@ public class RegisterActivity extends Activity {
                         //  db.deleteContact();
 
                         db.addContact(new Contact(muname.getText().toString(), mpword
-                                .getText().toString(), memail.getText().toString(),mgender.getText().toString(), Integer.parseInt(mheight
+                                .getText().toString(), memail.getText().toString(), mgender.getText().toString(), Integer.parseInt(mheight
                                 .getText().toString()), Integer.parseInt(weight.getText().toString())));
 
                         // Reading all contacts
