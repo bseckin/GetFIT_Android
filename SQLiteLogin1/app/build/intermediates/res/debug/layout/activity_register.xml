@@ -153,23 +153,29 @@
                 android:layout_marginTop="10dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
+<!--
 
-            <EditText
-                android:layout_width="wrap_content"
+-->
+            <SeekBar
+                android:id="@+id/volume_bar_weight"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/weight"
                 android:layout_below="@+id/gender"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar"
+                android:secondaryProgress="0"
+
+                android:layout_marginTop="15dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp" />
+                android:indeterminate="false" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
-                android:layout_below="@+id/weight"
+                android:layout_below="@+id/volume_bar_weight"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
@@ -191,7 +197,16 @@
                 android:layout_marginTop="20dp"
                 android:textSize="20dp" />
 
-
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/weight"
+                android:layout_below="@+id/gender"
+                android:layout_alignRight="@+id/volume_bar_weight"
+                android:layout_alignEnd="@+id/volume_bar_weight"
+                android:layout_marginRight="129dp"
+                android:editable="true" />
 
 
         </RelativeLayout>

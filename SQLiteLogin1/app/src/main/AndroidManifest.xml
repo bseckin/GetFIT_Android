@@ -26,13 +26,11 @@
         <activity android:name=".RegisterActivity" >
         </activity>
         <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
-
         </activity>
         <activity
             android:name=".GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
-
         <activity
             android:name="info.pack.selectgoal.WLifingActivity"
             android:label="@string/title_activity_wlifing" >
@@ -41,10 +39,6 @@
             android:name=".ProgressActivity"
             android:label="@string/title_activity_progress" >
         </activity>
-
-
-
-
     </application>
 
 </manifest>
