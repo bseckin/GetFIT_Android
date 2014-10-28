@@ -39,6 +39,10 @@
             android:name="com.packone.login.ProgressActivity"
             android:label="@string/title_activity_progress" >
         </activity>
+        <activity
+            android:name="com.packone.login.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
     </application>
 
 </manifest>

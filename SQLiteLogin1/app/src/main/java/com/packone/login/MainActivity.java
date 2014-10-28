@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -97,6 +98,7 @@ public class MainActivity extends Activity {
         });
 
 
+
         Button breg = (Button) findViewById(R.id.registrierung);
         breg.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -106,8 +108,19 @@ public class MainActivity extends Activity {
             }
         });
 
+        TextView bhelp = (TextView) findViewById(R.id.btnhelp);
+         bhelp.setOnClickListener(new OnClickListener() {
+             public void onClick(View v) {
+                 Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+                 startActivity(intent);
+
+             }
+         });
+
 
     }
+
+
 
 
 }

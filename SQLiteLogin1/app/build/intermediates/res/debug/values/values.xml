@@ -86,6 +86,7 @@
     <eat-comment />
 
     <string name="title_activity_goal">GoalActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_home_screen">HomeScreen</string>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
@@ -105,13 +106,7 @@
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
 
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->

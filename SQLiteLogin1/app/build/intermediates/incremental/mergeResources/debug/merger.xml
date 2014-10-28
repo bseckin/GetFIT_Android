@@ -355,6 +355,8 @@ Sign Out
                     </item>
                 </array>
 
+                <string name="title_activity_help" >HelpActivity
+                </string>
                 <string name="action_settings_was" ><item>
 settings
                     </item></string>
@@ -471,12 +473,6 @@ center
                 <style
                     name="AppBaseTheme"
                     parent="android:Theme.Light" >
-
-                    <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-                    -->
                 </style>
 
                 <style
@@ -593,6 +589,26 @@ center
             <file
                 name="background_view_rounded_single"
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\background_view_rounded_single.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="help"
+                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu\help.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_help"
+                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_help.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="cool_gradient"
+                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\cool_gradient.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="radial"
+                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\radial.xml"
                 qualifiers=""
                 type="drawable" />
         </source>

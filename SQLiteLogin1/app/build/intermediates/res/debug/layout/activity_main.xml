@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#ff446cff"
+        android:background="@drawable/cool_gradient"
         android:alpha="1">
 
         <RelativeLayout
@@ -76,36 +76,66 @@
             android:layout_weight="1"
             android:gravity="center_horizontal">
 
-            <Button
-                android:id="@+id/registrierung"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REGISTRIERUNG"
-                android:layout_alignParentStart="false"
-                android:textSize="12sp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                style= "@style/btnStyleOrange"
-                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-            <Button
-                android:id="@+id/blogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LOGIN"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentRight="false"
-                android:layout_alignParentEnd="false"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:layout_alignParentStart="false"
-                android:layout_toRightOf="@+id/registrierung"
-                android:textSize="12sp"
-                style= "@style/btnStyleTwitterblue"
-                />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10">
+
+                    <Button
+                        android:id="@+id/registrierung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTRIERUNG"
+                         android:textSize="12sp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        style= "@style/btnStyleOrange"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="8">
+
+                    <Button
+                        android:id="@+id/blogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOGIN"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textSize="12sp"
+                        style= "@style/btnStyleTwitterblue"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\?"
+                        android:id="@+id/btnhelp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="20dp"
+                        android:padding="20dp"
+                        android:textColor="#fffbfff4"
+                        android:textStyle="bold"
+                        android:linksClickable="true"
+                        android:longClickable="true"
+                        android:clickable="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
 
 
         </RelativeLayout>
+
     </LinearLayout>
 
 </RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_main.xml -->

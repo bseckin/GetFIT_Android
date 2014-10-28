@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#ff446cff">
+    android:background="@drawable/bg_image"
+    >
 
     <TextView
         android:layout_width="match_parent"

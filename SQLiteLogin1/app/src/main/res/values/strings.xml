@@ -43,5 +43,6 @@
     <string name="title_section3">Nutrition</string>
     <string name="title_activity_progress">ProgressActivity</string>
     <string name="title_activity_seekbar">SeekbarActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
 
 </resources>

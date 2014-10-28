@@ -39,6 +39,10 @@
             android:name=".ProgressActivity"
             android:label="@string/title_activity_progress" >
         </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
     </application>
 
 </manifest>
