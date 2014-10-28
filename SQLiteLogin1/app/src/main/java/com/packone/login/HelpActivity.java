@@ -8,7 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-
+/**
+ * @author Muhammed Kanyildiz
+ */
 public class HelpActivity extends Activity {
 
     @Override
