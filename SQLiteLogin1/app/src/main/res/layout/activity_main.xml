@@ -17,8 +17,8 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView"
                 android:src="@drawable/weightlifting"
 
@@ -37,7 +37,6 @@
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:id="@+id/loguname"
-                android:background="#fffeffef"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
@@ -46,7 +45,9 @@
                 android:textSize="15sp"
                 android:textColor="#ff84887e"
                 android:textAlignment="center"
-                android:hint="Username"/>
+                android:hint="Username"
+                android:autoText="true"
+                android:background="#ffffffff"/>
 
 
             <EditText
@@ -61,7 +62,7 @@
                 android:textSize="15sp"
                 android:textColor="#ff000000"
                 android:textAlignment="center"
-                android:background="#e0edf6ff"
+                android:background="#ffffffff"
                 android:layout_marginBottom="40dp"
                 android:editable="false"
                 android:hint="Passwort"

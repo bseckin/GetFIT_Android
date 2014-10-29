@@ -13,8 +13,6 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import info.androidhive.slidingmenu.NavigationActivity;
-
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
@@ -59,7 +57,7 @@ public class RegisterActivity extends Activity {
         });
         final DatabaseHandler db = new DatabaseHandler(this);
         //    db.deleteContact();
-        Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
+        Log.d("INSERT: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
@@ -115,11 +113,9 @@ public class RegisterActivity extends Activity {
                             Log.d("Name: ", log);
                         }
 
-                        Intent intent = new Intent(RegisterActivity.this, NavigationActivity.class);
+                        //TODO: Nach Registrierung kommt User nicht zum Menü sondern zum Fragenkatalog
+                        Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
                         startActivity(intent);
-                        //Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
-                        //startActivity(intent);
-
 
                     } else {
                         Context context = getApplicationContext();
@@ -157,6 +153,5 @@ public class RegisterActivity extends Activity {
         Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:::::::::::::::::" + dot + 2);
         return dot + 2 < len;
     }
-
 
 }

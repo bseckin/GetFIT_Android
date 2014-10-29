@@ -9,7 +9,13 @@
     <string name="action_settings_was"><item>settings</item></string>
     <string name="title_activity_start">StartActivity</string>
     <string name="title_activity_login2">Login2Activity</string>
-    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_fragenkatalog">Fragenkatalog</string>
+    <string name="frage_1">1. Wähle bitte deine gewünschtes Ziel</string>
+    <string name="frage_2">2. Was macht es dir schwer aktiver zu sein?</string>
+    <string name="frage_3">3. Wie viel Erfahrung hast du im Krafttraining?</string>
+    <!-- Es ist nicht wichtig welchen Tag er trainieren kann -> nur die Einhaltung der Reihenfolge ist wichtig) -->
+    <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
+    <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
@@ -44,5 +50,6 @@
     <string name="title_activity_progress">ProgressActivity</string>
     <string name="title_activity_seekbar">SeekbarActivity</string>
     <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
 
 </resources>

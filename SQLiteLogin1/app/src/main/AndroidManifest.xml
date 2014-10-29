@@ -23,7 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" >
+        <activity
+            android:name=".RegisterActivity"
+            android:label="GetFIT Registrierung 1/2">
         </activity>
         <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
         </activity>
@@ -42,6 +44,10 @@
         <activity
             android:name=".HelpActivity"
             android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".RegistrierungFragenkatalogActivity"
+            android:label="GetFIT Registrierung 2/2" >
         </activity>
     </application>
 

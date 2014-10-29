@@ -1,10 +1,14 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#ff446cff">
+    android:background="@drawable/bg_image"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -117,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:ems="10"
-                android:inputType="textPassword"
+                android:inputType="text|textPersonName"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
@@ -130,7 +134,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -206,11 +211,14 @@
                 android:layout_alignRight="@+id/volume_bar_weight"
                 android:layout_alignEnd="@+id/volume_bar_weight"
                 android:layout_marginRight="129dp"
-                android:editable="true" />
+                android:editable="true"
+                android:background="@android:color/transparent"
+                />
 
 
         </RelativeLayout>
     </LinearLayout>
 
 
-</LinearLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
+</LinearLayout>
+    </ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
