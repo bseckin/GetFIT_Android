@@ -1,13 +1,10 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg_image"
+    android:background="@drawable/backblue"
     >
 
     <TextView
@@ -34,73 +31,81 @@
             android:paddingLeft="10dp">
 
             <TextView
-                android:id="@+id/view_pword"
+                android:id="@+id/view_uname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username:"
+                android:text="Username: "
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                />
 
             <TextView
-                android:id="@+id/view_uname"
+                android:id="@+id/view_pword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password:"
+                android:text="Password: "
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_gravity="center_vertical"
-                android:layout_marginTop="20dp"
-                android:layout_below="@+id/view_pword"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Größe"
-                android:id="@+id/view_height"
                 android:layout_below="@+id/view_uname"
                 android:layout_alignRight="@+id/view_uname"
                 android:layout_alignEnd="@+id/view_uname"
                 android:layout_marginTop="20dp"
-                android:layout_alignParentLeft="true" />
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Geschlecht"
+                android:text="Größe: "
+                android:id="@+id/view_height"
+                android:layout_below="@+id/view_pword"
+                android:layout_alignRight="@+id/view_pword"
+                android:layout_alignEnd="@+id/view_pword"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Gender: "
                 android:id="@+id/view_gender"
                 android:layout_below="@+id/view_height"
                 android:layout_alignRight="@+id/view_uname"
                 android:layout_alignEnd="@+id/view_uname"
                 android:layout_marginTop="20dp"
-                android:layout_alignParentLeft="true" />
+                android:layout_alignParentLeft="true"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Gewicht"
+                android:text="Gewicht: "
                 android:id="@+id/textView"
                 android:layout_below="@+id/view_gender"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"
-                android:layout_alignParentLeft="true" />
+                android:layout_alignParentLeft="true"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Email"
+                android:text="Email: "
                 android:id="@+id/textView2"
                 android:layout_below="@+id/textView"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"
-                android:layout_alignParentLeft="true" />
+                android:layout_alignParentLeft="true"
+                />
 
         </RelativeLayout>
 
@@ -110,9 +115,6 @@
             android:gravity="left"
             android:layout_weight="2"
             android:paddingRight="10dp">
-
-
-
 
 
             <EditText
@@ -174,7 +176,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:indeterminate="false" />
+                android:indeterminate="false"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -185,7 +188,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -213,7 +217,7 @@
                 android:layout_marginRight="129dp"
                 android:editable="true"
                 android:background="@android:color/transparent"
-                />
+                android:gravity="center_vertical"/>
 
 
         </RelativeLayout>
@@ -221,4 +225,4 @@
 
 
 </LinearLayout>
-    </ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->

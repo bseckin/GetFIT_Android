@@ -1,13 +1,10 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg_image"
+    android:background="@drawable/backblue"
     >
 
     <TextView
@@ -52,8 +49,10 @@
                 android:text="Password: "
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_gravity="center_vertical"
+                android:layout_below="@+id/view_uname"
+                android:layout_alignRight="@+id/view_uname"
+                android:layout_alignEnd="@+id/view_uname"
                 android:layout_marginTop="20dp"
-                android:layout_below="@+id/view_pword"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
                 />
@@ -64,9 +63,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Größe: "
                 android:id="@+id/view_height"
-                android:layout_below="@+id/view_uname"
-                android:layout_alignRight="@+id/view_uname"
-                android:layout_alignEnd="@+id/view_uname"
+                android:layout_below="@+id/view_pword"
+                android:layout_alignRight="@+id/view_pword"
+                android:layout_alignEnd="@+id/view_pword"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
                 />
@@ -75,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Geschlecht: "
+                android:text="Gender: "
                 android:id="@+id/view_gender"
                 android:layout_below="@+id/view_height"
                 android:layout_alignRight="@+id/view_uname"
@@ -226,4 +225,3 @@
 
 
 </LinearLayout>
-    </ScrollView>

@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/bg_image"
+        android:background="@drawable/backblue"
         android:alpha="1">
 
         <RelativeLayout
