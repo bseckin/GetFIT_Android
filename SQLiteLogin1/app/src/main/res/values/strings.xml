@@ -7,7 +7,7 @@
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings_was"><item>settings</item></string>
-    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_start">GetFIT</string>
     <string name="title_activity_login2">Login2Activity</string>
     <string name="title_fragenkatalog">Fragenkatalog</string>
     <string name="frage_1">1. Wähle bitte deine gewünschtes Ziel</string>
