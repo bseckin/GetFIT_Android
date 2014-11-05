@@ -15,12 +15,12 @@
 
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>Workout</item>
-        <item>Nutrition</item>
-        <item>Cardio</item>
-        <item>My Body</item>
-        <item>Workout-Plan</item>
-        <item>My Goal</item>
+        <item>Training</item>
+        <item>Ernährung</item>
+        <item>Kondition</item>
+        <item>Übungen</item>
+        <item>Mein Konto</item>
+        <item>Über GetFIT</item>
     </string-array>
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/color.xml -->
     <eat-comment />

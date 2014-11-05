@@ -132,7 +132,7 @@ public final class R {
         public static final int fragment_home=0x7f03000a;
         public static final int fragment_nutrition=0x7f03000b;
         public static final int fragment_pages=0x7f03000c;
-        public static final int fragment_photos=0x7f03000d;
+        public static final int fragment_TRAINING =0x7f03000d;
         public static final int fragment_whats_hot=0x7f03000e;
         public static final int fragment_wlifing=0x7f03000f;
         public static final int list_group=0x7f030010;
