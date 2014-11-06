@@ -55,6 +55,11 @@
                 qualifiers=""
                 type="drawable" />
             <file
+                name="launcher2"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\launcher2.png"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="list_item_bg_normal"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\list_item_bg_normal.xml"
                 qualifiers=""
@@ -145,6 +150,11 @@
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
+                name="launcher2"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\launcher2.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
                 name="getfit_ic_launcher"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\getfit_ic_launcher.png"
                 qualifiers="ldpi-v4"
@@ -152,6 +162,11 @@
             <file
                 name="ic_launcher_2"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\ic_launcher_2.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="launcher2"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\launcher2.png"
                 qualifiers="ldpi-v4"
                 type="drawable" />
             <file
@@ -170,6 +185,11 @@
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
+                name="launcher2"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\launcher2.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
                 name="getfit_ic_launcher"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\getfit_ic_launcher.png"
                 qualifiers="xhdpi-v4"
@@ -182,6 +202,11 @@
             <file
                 name="ic_logout"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\ic_logout.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="launcher2"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\launcher2.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
@@ -202,6 +227,11 @@
             <file
                 name="ic_logout"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\ic_logout.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="launcher2"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\launcher2.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
@@ -275,8 +305,8 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="fragment_photos"
-                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_photos.xml"
+                name="fragment_training"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_training.xml"
                 qualifiers=""
                 type="layout" />
             <file

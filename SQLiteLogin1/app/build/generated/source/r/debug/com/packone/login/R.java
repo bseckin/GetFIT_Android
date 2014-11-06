@@ -51,14 +51,15 @@ public final class R {
         public static final int ic_people=0x7f020011;
         public static final int ic_photos=0x7f020012;
         public static final int ic_whats_hot=0x7f020013;
-        public static final int list_item_bg_normal=0x7f020014;
-        public static final int list_item_bg_pressed=0x7f020015;
-        public static final int list_selector=0x7f020016;
-        public static final int menueworkout=0x7f020017;
-        public static final int nutrition=0x7f020018;
-        public static final int progressbar=0x7f020019;
-        public static final int radial=0x7f02001a;
-        public static final int weightlifting=0x7f02001b;
+        public static final int launcher2=0x7f020014;
+        public static final int list_item_bg_normal=0x7f020015;
+        public static final int list_item_bg_pressed=0x7f020016;
+        public static final int list_selector=0x7f020017;
+        public static final int menueworkout=0x7f020018;
+        public static final int nutrition=0x7f020019;
+        public static final int progressbar=0x7f02001a;
+        public static final int radial=0x7f02001b;
+        public static final int weightlifting=0x7f02001c;
     }
     public static final class id {
         public static final int action_logout=0x7f0a0037;
@@ -132,7 +133,7 @@ public final class R {
         public static final int fragment_home=0x7f03000a;
         public static final int fragment_nutrition=0x7f03000b;
         public static final int fragment_pages=0x7f03000c;
-        public static final int fragment_TRAINING =0x7f03000d;
+        public static final int fragment_training=0x7f03000d;
         public static final int fragment_whats_hot=0x7f03000e;
         public static final int fragment_wlifing=0x7f03000f;
         public static final int list_group=0x7f030010;
