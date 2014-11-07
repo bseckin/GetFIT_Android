@@ -3,9 +3,30 @@ package com.packone.login;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 
 public class RegistrierungFragenkatalogActivity extends Activity {
+    // ATTRIBUTE ODER GRAFISCHE ELEMENTE
+    // Frage 1
+    private RadioGroup radioGroupFrage1;
+    private RadioButton radioBtn1, radioBtn2;
+
+    // Frage 2
+    private RadioGroup radioGroupFrage2;
+    //private RadioButton radioBtn, radioBtn2, radioBtn2;
+
+    // Frage 3
+    private RadioGroup radioGroupFrage3;
+    //private RadioButton radioBtn1, radioBtn2, radioBtn2;
+
+    // Frage 4
+    private RadioGroup radioGroupFrage4;
+    //private RadioButton radioBtn1, radioBtn2, radioBtn2;
+    private Button btn_fragenkatalog_fertig; //bestaetigen Button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +44,14 @@ public class RegistrierungFragenkatalogActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Wenn der User Fragenkatalog ausgefüllt hat:
+     * @param view
+     */
+    public void fragenkatalog_fertig(View view){
+        //TODO Hauptmenü starten
+        // do something,
     }
 }
