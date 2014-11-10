@@ -77,20 +77,16 @@
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
-<<<<<<< HEAD
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
-=======
     <string name="kondition">Erhöhung der Kondition – Steigerung der Ausdauer</string>
-    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
->>>>>>> origin/entwicklung
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="login_progress_signing_in">Signing in…</string>
-    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="masseaufbau">Masse und Muskelaufbau – für Schlanke Menschen</string>
-    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="menu_forgot_password">Recover lost password</string>
@@ -98,14 +94,10 @@
     <eat-comment />
 
     <string name="menu_settings">Settings</string>
-<<<<<<< HEAD
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
-=======
     <string name="motivation">Mir fehlts an Motivation</string>
     <string name="nichts">Nichts.</string>
     <string name="profi">Viel – Ich habe viel Erfahrung </string>
-    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
->>>>>>> origin/entwicklung
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="prompt_email">Email</string>
@@ -133,12 +125,8 @@
     <string name="title_section1">Lifting</string>
     <string name="title_section2">Cardio</string>
     <string name="title_section3">Nutrition</string>
-<<<<<<< HEAD
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
-=======
     <string name="zeitdruck">Zeitdruck</string>
-    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
->>>>>>> origin/entwicklung
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light"></style>
