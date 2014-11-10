@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/launcher2"
+        android:icon="@drawable/launcher_getfit"
         android:label="GetFIT"
         android:largeHeap="false"
         android:theme="@android:style/Theme.Holo.Light" >

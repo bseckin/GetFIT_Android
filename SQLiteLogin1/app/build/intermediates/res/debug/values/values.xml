@@ -57,6 +57,7 @@
     <string name="allgemein">körperliche Fitness steigern</string>
     <string name="anfaenger">Keine - Ich bin Anfänger</string>
     <string name="app_name">SQLiteLogin</string>
+    <string name="btn_fragen_fertig">Fertig!</string>
     <string name="desc_list_item_icon">Item Icon</string>
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />

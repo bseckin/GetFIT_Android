@@ -37,55 +37,53 @@
             android:background="#ffffffff"
             android:padding="8dp"
             />
-
-        <!-- Frage 2 -->
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/gewichtsverlust"
-            android:id="@+id/radBtn_Gewichtsverlust"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/masseaufbau"
-            android:id="@+id/radBtn_Masseaufbau"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/kondition"
-            android:id="@+id/radBtn_Kondition"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ruecken"
-            android:id="@+id/radBtn_Ruecken_staerken"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/allgemein"
-            android:id="@+id/radBtn_Allgemein"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gewichtsverlust"
+                android:id="@+id/radBtn_Gewichtsverlust"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/masseaufbau"
+                android:id="@+id/radBtn_Masseaufbau"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kondition"
+                android:id="@+id/radBtn_Kondition"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ruecken"
+                android:id="@+id/radBtn_Ruecken_staerken"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/allgemein"
+                android:id="@+id/radBtn_Allgemein"
+                android:textSize="12sp"
+                android:background="#83F52C"/>
         </RadioGroup>
 
+
+        <!-- Frage 2 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,30 +92,35 @@
             android:background="#ffffffff"
             android:padding="8dp"
             android:layout_marginTop="10dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/zeitdruck"
-            android:id="@+id/radBtn_zeitdruck"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/motivation"
-            android:id="@+id/radBtn_fehlendeMotivation"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nichts"
-            android:id="@+id/radBtn_nichts"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zeitdruck"
+                android:id="@+id/radBtn_zeitdruck"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motivation"
+                android:id="@+id/radBtn_fehlendeMotivation"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nichts"
+                android:id="@+id/radBtn_nichts"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+        </RadioGroup>
+
 
         <!-- Frage 3 -->
         <TextView
@@ -128,30 +131,35 @@
             android:background="#FFFFFFFF"
             android:padding="8dp"
             android:layout_marginTop="10dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/anfaenger"
-            android:id="@+id/radBtn_anfaenger"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/halbprofi"
-            android:id="@+id/radBtn_halbprofi"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/profi"
-            android:id="@+id/radBtnprofi"
-            android:textSize="12sp"
-            android:checked="false"
-            android:background="#83F52C"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/anfaenger"
+                android:id="@+id/radBtn_anfaenger"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/halbprofi"
+                android:id="@+id/radBtn_halbprofi"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profi"
+                android:id="@+id/radBtnprofi"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+        </RadioGroup>
+
 
         <!-- Frage 4 -->
         <TextView
@@ -162,7 +170,46 @@
             android:background="#FFFFFFFF"
             android:padding="8dp"
             android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2x in der Woche"
+                android:id="@+id/radBtn_2mal"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3x in der Woche"
+                android:id="@+id/radBtn_3mal"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mehr als 4 mal in der Woche"
+                android:id="@+id/radBtn_4mal"
+                android:textSize="12sp"
+                android:checked="false"
+                android:background="#83F52C"/>
+        </RadioGroup>
+
     </TableLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_fragen_fertig"
+        android:id="@+id/btn_fragen_fertig"
+        android:layout_gravity="center_horizontal"
+        android:onClick="fragenkatalog_fertig"
+        style="@style/btnStyleOrange"
+        />
 
 </LinearLayout>
 </ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
