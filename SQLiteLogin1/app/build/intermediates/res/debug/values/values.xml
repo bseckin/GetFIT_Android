@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <array name="nav_drawer_icons">
@@ -22,7 +22,7 @@
         <item>Mein Konto</item>
         <item>Über GetFIT</item>
     </string-array>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/color.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/color.xml -->
     <eat-comment />
 
     <color name="counter_text_bg">#FF6600</color>
@@ -35,23 +35,23 @@
     <color name="list_item_title">#fff</color>
     <color name="rounded_container_bg">#222222</color>
     <color name="rounded_container_border">#3b3f44</color>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_settings_was"><item>settings</item></string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="action_sign_in_register"><b>Sign in</b> or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="allgemein">körperliche Fitness steigern</string>
@@ -59,14 +59,14 @@
     <string name="app_name">SQLiteLogin</string>
     <string name="btn_fragen_fertig">Fertig!</string>
     <string name="desc_list_item_icon">Item Icon</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="error_field_required">This field is required</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="frage_1">1. Wähle bitte deine gewünschtes Ziel</string>
@@ -78,41 +78,41 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="kondition">Erhöhung der Kondition – Steigerung der Ausdauer</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="login_progress_signing_in">Signing in…</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="masseaufbau">Masse und Muskelaufbau – für Schlanke Menschen</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="menu_forgot_password">Recover lost password</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="menu_settings">Settings</string>
     <string name="motivation">Mir fehlts an Motivation</string>
     <string name="nichts">Nichts.</string>
     <string name="profi">Viel – Ich habe viel Erfahrung </string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="ruecken">Rückenstärkung – Kräftigung des Rückens</string>
     <string name="title_activity_goal">GoalActivity</string>
     <string name="title_activity_help">HelpActivity</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
     <string name="title_activity_login">Sign in</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="title_activity_login2">Login2Activity</string>
@@ -126,7 +126,7 @@
     <string name="title_section2">Cardio</string>
     <string name="title_section3">Nutrition</string>
     <string name="zeitdruck">Zeitdruck</string>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light"></style>
