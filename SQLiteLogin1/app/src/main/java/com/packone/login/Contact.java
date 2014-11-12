@@ -1,7 +1,7 @@
 package com.packone.login;
 
 /**
- * @author: Kanyilidz Muhammedmehdi BERKAY
+ * @author: Kanyilidz Muhammedmehdi, SECKIN Berkay
  * @version: 0.9.1
  * @date: 01.10.2014
  * Beschreibung
