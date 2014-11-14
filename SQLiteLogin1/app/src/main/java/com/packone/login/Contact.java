@@ -1,7 +1,7 @@
 package com.packone.login;
 
 /**
- * @author: Kanyilidz Muhammedmehdi
+ * @author: Kanyilidz Muhammedmehdi, SECKIN Berkay
  * @version: 0.9.1
  * @date: 01.10.2014
  * Beschreibung
@@ -9,9 +9,14 @@ package com.packone.login;
 public class Contact {
 
     // private variables
-    String _uname;
-    String _pword;
-    String _email;
+    private String _uname;
+    private String _pword;
+    private String _email;
+    private String _gender;
+    private int _height;
+    private int _weight;
+
+    //TODO Fragenkatalog Daten von dem User speichern
 
     // Empty constructor
     public Contact() {
@@ -19,45 +24,75 @@ public class Contact {
     }
 
     // constructor
-    public Contact(String upword, String pword, String _email) {
-        this._uname = upword;
+    public Contact(String uname, String pword, String email, String gender, int weight, int height) {
+        this._uname = uname;
         this._pword = pword;
-        this._email = _email;
+        this._email = email;
+        this._gender = gender;
+        this._weight = weight;
+        this._height = height;
     }
 
     // constructor
-    public Contact(String pword, String _email) {
+    public Contact(String pword, String email) {
         this._pword = pword;
-        this._email = _email;
+        this._email = email;
     }
 
-    // getting upword
+
+    // Setter getter for Username
     public String getUname() {
         return this._uname;
     }
 
-    // setting upword
     public void setUname(String uname) {
         this._uname = uname;
     }
 
-    // getting pword
+    //Setter Getter for Password
     public String getPword() {
         return this._pword;
     }
 
-    // setting pword
     public void setPword(String pword) {
         this._pword = pword;
     }
 
-    // getting phone number
+    // Setter Getter for Email
     public String getEmail() {
         return this._email;
     }
 
-    // setting phone number
     public void setEmail(String email) {
         this._email = email;
     }
+
+    // Setter Getter for Gender
+    public String getGender() {
+        return this._gender;
+    }
+
+    public void setGender(String gender) {
+        this._gender = gender;
+    }
+
+    //Setter Getter for Height
+    public int getHeight() {
+        return this._height;
+    }
+
+    public void setHeight(int height) {
+        this._height = height;
+    }
+
+    //Setter Getter for Weight
+    public int getWeight() {
+        return this._weight;
+    }
+
+    public void setWeight(int weight) {
+        this._weight = weight;
+    }
+
+
 }

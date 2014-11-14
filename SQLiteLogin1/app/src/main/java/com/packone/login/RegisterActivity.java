@@ -8,20 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 import java.util.List;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import info.pack.selectgoal.WLifingActivity;
-
->>>>>>> entwicklung
-=======
-import info.pack.selectgoal.WLifingActivity;
-
->>>>>>> origin/entwicklung
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
@@ -34,21 +25,46 @@ public class RegisterActivity extends Activity {
     private EditText muname;
     private EditText mpword;
     private EditText memail;
+    private EditText mgender;
+    private EditText mheight;
+    private EditText weight;
+    private SeekBar weightcontrol = null;
 
-
+    //TODO: - Exercise implementieren
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        weightcontrol = (SeekBar) findViewById(R.id.volume_bar_weight);
+        weight = (EditText) findViewById(R.id.weight);
+        weightcontrol.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int progressChanged = 0;
+
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                progressChanged = progress;
+                weight.setText("" + progressChanged);
+            }
+
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
         final DatabaseHandler db = new DatabaseHandler(this);
-    //    db.deleteContact();
-        Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
+        //    db.deleteContact();
+        Log.d("INSERT: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
         mpword = (EditText) findViewById(R.id.pword);
         memail = (EditText) findViewById(R.id.email);
+        mgender = (EditText) findViewById(R.id.gender);
+        mheight = (EditText) findViewById(R.id.height);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 //New COMMENT
@@ -75,18 +91,15 @@ public class RegisterActivity extends Activity {
                     toast.show();
 
                 } else {
-                    Log.d("!!!!!!!!!!!!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
-                    String name = muname.getText().toString();
-                    int zahl = db.getContactsCount(name);
 
-                    Log.d("!!!!!! ", "WAS EAST " + zahl);
-                    Log.d("!!!!!! ", "WAS EAST " + name);
-                   if (db.getContactsCount(muname.getText().toString()) == 0) {
-                        Log.d("Insert: ", "Inserting ..");
-                      //  db.deleteContact();
+                    //Überprüfen ob der user bereits im datenbank gespeichert ist
+                    if (db.getContactsCount(muname.getText().toString()) == 0) {
+
+                        //  db.deleteContact();
 
                         db.addContact(new Contact(muname.getText().toString(), mpword
-                                .getText().toString(), memail.getText().toString()));
+                                .getText().toString(), memail.getText().toString(), mgender.getText().toString(), Integer.parseInt(mheight
+                                .getText().toString()), Integer.parseInt(weight.getText().toString())));
 
                         // Reading all contacts
                         Log.d("Reading: ", "Reading all contacts..");
@@ -94,14 +107,15 @@ public class RegisterActivity extends Activity {
 
                         for (Contact cn : contacts) {
                             String log = "Username: " + cn.getUname() + " ,Name: "
-                                    + cn.getPword() + " ,Phone: " + cn.getEmail();
+                                    + cn.getPword() + " ,Phone: " + cn.getEmail() + ", Gender: " + cn.getGender() + " ,Hieght: "
+                                    + cn.getHeight() + " ,Weight: " + cn.getWeight();
                             // Writing Contacts to log
                             Log.d("Name: ", log);
                         }
 
-                        Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
+                        //TODO: Nach Registrierung kommt User nicht zum Menü sondern zum Fragenkatalog
+                        Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
                         startActivity(intent);
-
 
                     } else {
                         Context context = getApplicationContext();
@@ -139,6 +153,5 @@ public class RegisterActivity extends Activity {
         Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:::::::::::::::::" + dot + 2);
         return dot + 2 < len;
     }
-
 
 }

@@ -7,19 +7,41 @@
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings_was"><item>settings</item></string>
-    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_start">GetFIT</string>
     <string name="title_activity_login2">Login2Activity</string>
-    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_fragenkatalog">Fragenkatalog</string>
+    <string name="frage_1">1. Wähle bitte deine gewünschtes Ziel</string>
+    <string name="frage_2">2. Was macht es dir schwer aktiver zu sein?</string>
+    <string name="frage_3">3. Wie viel Erfahrung hast du im Krafttraining?</string>
+    <!-- Es ist nicht wichtig welchen Tag er trainieren kann -> nur die Einhaltung der Reihenfolge ist wichtig) -->
+    <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
+    <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
+
+    <!-- RADIO BUTTONS VON FRAGENKATALOG -->
+    <string name="gewichtsverlust">Gewichtsverlust</string>
+    <string name="masseaufbau">Masse und Muskelaufbau – für Schlanke Menschen</string>
+    <string name="kondition">Erhöhung der Kondition – Steigerung der Ausdauer</string>
+    <string name="ruecken">Rückenstärkung – Kräftigung des Rückens</string>
+    <string name="allgemein">körperliche Fitness steigern</string>
+
+    <string name="zeitdruck">Zeitdruck</string>
+    <string name="motivation">Mir fehlts an Motivation</string>
+    <string name="nichts">Nichts.</string>
+
+    <string name="anfaenger">Keine - Ich bin Anfänger</string>
+    <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
+    <string name="profi">Viel – Ich habe viel Erfahrung </string>
+
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>Workout</item>
-        <item>Nutrition</item>
-        <item>Cardio</item>
-        <item>My Body</item>
-        <item>Workout-Plan</item>
-        <item>My Goal</item>
+        <item>Training</item>
+        <item>Ernährung</item>
+        <item>Kondition</item>
+        <item>Übungen</item>
+        <item>Mein Konto</item>
+        <item>Über GetFIT</item>
     </string-array>
 
     <!-- Nav Drawer List Item Icons -->
@@ -37,10 +59,15 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_goal">GoalActivity</string>
     <string name="title_activity_wlifing">WLifingActivity</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_section1">Lifting</string>
     <string name="title_section2">Cardio</string>
     <string name="title_section3">Nutrition</string>
     <string name="title_activity_progress">ProgressActivity</string>
+    <string name="title_activity_seekbar">SeekbarActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
+    <string name="btn_fragen_fertig">Fertig!</string>
+
+
 </resources>

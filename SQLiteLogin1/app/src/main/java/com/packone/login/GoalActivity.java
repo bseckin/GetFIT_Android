@@ -5,21 +5,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-import info.androidhive.slidingmenu.MainActivity;
-=======
 import info.androidhive.slidingmenu.NavigationActivity;
->>>>>>> entwicklung
-=======
-import info.androidhive.slidingmenu.NavigationActivity;
->>>>>>> origin/entwicklung
 
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
  * @date: 01.10.2014
  * Beschreibung
+ */
+
+/**
+ * NICHT IN VERWENDUNG
  */
 public class GoalActivity extends Activity {
 
