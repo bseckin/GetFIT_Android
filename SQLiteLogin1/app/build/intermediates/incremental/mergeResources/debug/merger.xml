@@ -520,6 +520,8 @@ settings
                 </string>
                 <string name="frage_1" >1. Wähle bitte deine gewünschtes Ziel
                 </string>
+                <string name="frage_5" >5. Wie sind Sie auf GetFIT gekommen?
+                </string>
                 <string name="frage_4" >4. Wie oft kannst du in der Woche trainieren?
                 </string>
                 <string name="frage_3" >3. Wie viel Erfahrung hast du im Krafttraining?
@@ -809,6 +811,31 @@ center
                 name="backgrey"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable\backgrey.jpg"
                 qualifiers=""
+                type="drawable" />
+            <file
+                name="backgrey"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\backgrey.jpg"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="backgrey"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\backgrey.jpg"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="backgrey"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\backgrey.jpg"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="backgrey"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi\backgrey.jpg"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="backgrey"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\backgrey.jpg"
+                qualifiers="ldpi-v4"
                 type="drawable" />
         </source>
         <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\debug" />

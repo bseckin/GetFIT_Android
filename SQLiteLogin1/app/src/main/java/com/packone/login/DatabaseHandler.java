@@ -76,7 +76,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    //TODO (INFO): Operations for CONTACT/LOGIN TABLE
+    //Operations for CONTACT/LOGIN TABLE
     /************************ OPERATIONS FOR THE LOGIN TABLE ***************************/
 
     /**
@@ -187,7 +187,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return icount;
     }
 
-    // TODO (INFO): Operation for EXERCISE TABLE
     /************************ OPERATIONS FOR THE EXERCISE TABLE ***************************/
     /**
      * All CRUD(Create, Read, Update, Delete) Operations
@@ -247,7 +246,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return exerciseList;
     }
 
-    //TODO: - Exercise Methoden Kommentare anpassen
+    //TODO: - (später erst) Exercise Methoden Kommentare anpassen
     // Updating single contact
     public int updateExercise(Exercise exercise) {
         SQLiteDatabase db = this.getWritableDatabase();

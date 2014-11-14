@@ -1,12 +1,15 @@
 package com.packone.login;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import info.androidhive.slidingmenu.NavigationActivity;
 
 
 public class RegistrierungFragenkatalogActivity extends Activity {
@@ -47,11 +50,12 @@ public class RegistrierungFragenkatalogActivity extends Activity {
     }
 
     /**
-     * Wenn der User Fragenkatalog ausgefüllt hat:
+     * Wenn der User Fragenkatalog vollständig und korrekt ausgefüllt hat,
+     * kommt er zum Hauptscreen (NavigatiationAcitivty)
      * @param view
      */
     public void fragenkatalog_fertig(View view){
-        //TODO Hauptmenü starten
-        // do something,
+        Intent intent = new Intent(RegistrierungFragenkatalogActivity.this, NavigationActivity.class);
+        startActivity(intent);
     }
 }

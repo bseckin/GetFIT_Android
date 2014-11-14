@@ -16,6 +16,8 @@ public class Contact {
     private int _height;
     private int _weight;
 
+    //TODO Fragenkatalog Daten von dem User speichern
+
     // Empty constructor
     public Contact() {
 

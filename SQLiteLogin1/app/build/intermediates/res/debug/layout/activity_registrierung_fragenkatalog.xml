@@ -39,7 +39,8 @@
             />
         <RadioGroup
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:background="#BEF202">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -48,7 +49,7 @@
                 android:id="@+id/radBtn_Gewichtsverlust"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +57,7 @@
                 android:id="@+id/radBtn_Masseaufbau"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +65,7 @@
                 android:id="@+id/radBtn_Kondition"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,14 +73,14 @@
                 android:id="@+id/radBtn_Ruecken_staerken"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/allgemein"
                 android:id="@+id/radBtn_Allgemein"
                 android:textSize="12sp"
-                android:background="#83F52C"/>
+                />
         </RadioGroup>
 
 
@@ -94,7 +95,8 @@
             android:layout_marginTop="10dp"/>
         <RadioGroup
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:background="#BEF202">
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,7 +104,7 @@
                 android:id="@+id/radBtn_zeitdruck"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +112,7 @@
                 android:id="@+id/radBtn_fehlendeMotivation"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,7 +120,7 @@
                 android:id="@+id/radBtn_nichts"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
         </RadioGroup>
 
 
@@ -133,7 +135,8 @@
             android:layout_marginTop="10dp"/>
         <RadioGroup
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:background="#BEF202">
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,7 +144,7 @@
                 android:id="@+id/radBtn_anfaenger"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -149,7 +152,7 @@
                 android:id="@+id/radBtn_halbprofi"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -157,7 +160,7 @@
                 android:id="@+id/radBtnprofi"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
         </RadioGroup>
 
 
@@ -172,7 +175,8 @@
             android:layout_marginTop="10dp"/>
         <RadioGroup
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:background="#BEF202">
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -180,7 +184,7 @@
                 android:id="@+id/radBtn_2mal"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,7 +192,7 @@
                 android:id="@+id/radBtn_3mal"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -196,7 +200,30 @@
                 android:id="@+id/radBtn_4mal"
                 android:textSize="12sp"
                 android:checked="false"
-                android:background="#83F52C"/>
+                />
+        </RadioGroup>
+
+        <!-- Frage 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frage_5"
+            android:id="@+id/textView5"
+            android:background="#FFFFFFFF"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#BEF202">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Durch meine Kollegen"
+                android:id="@+id/eT_frage5"
+                android:textSize="15sp"
+                android:checked="false"
+                android:padding="10dp"/>
         </RadioGroup>
 
     </TableLayout>
