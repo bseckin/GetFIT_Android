@@ -61,7 +61,8 @@ public final class R {
         public static final int nutrition=0x7f02001b;
         public static final int progressbar=0x7f02001c;
         public static final int radial=0x7f02001d;
-        public static final int weightlifting=0x7f02001e;
+        public static final int starttext=0x7f02001e;
+        public static final int weightlifting=0x7f02001f;
     }
     public static final class id {
         public static final int action_logout=0x7f0a0043;
@@ -71,7 +72,7 @@ public final class R {
         public static final int blifting=0x7f0a003e;
         public static final int blogin=0x7f0a0009;
         public static final int bnutrition=0x7f0a0040;
-        public static final int breg=0x7f0a0018;
+        public static final int breg=0x7f0a0019;
         public static final int btn_fragen_fertig=0x7f0a002b;
         public static final int btnhelp=0x7f0a000a;
         public static final int btnstart=0x7f0a0004;
@@ -131,7 +132,7 @@ public final class R {
         public static final int view_pword=0x7f0a000f;
         public static final int view_uname=0x7f0a000e;
         public static final int volume_bar_weight=0x7f0a0016;
-        public static final int weight=0x7f0a0019;
+        public static final int weight=0x7f0a0018;
     }
     public static final class layout {
         public static final int activity_help=0x7f030000;

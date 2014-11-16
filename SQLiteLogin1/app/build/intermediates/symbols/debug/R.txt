@@ -42,7 +42,8 @@ int drawable menueworkout 0x7f02001a
 int drawable nutrition 0x7f02001b
 int drawable progressbar 0x7f02001c
 int drawable radial 0x7f02001d
-int drawable weightlifting 0x7f02001e
+int drawable starttext 0x7f02001e
+int drawable weightlifting 0x7f02001f
 int id action_logout 0x7f0a0043
 int id action_settings 0x7f0a0042
 int id bcardio 0x7f0a003f
@@ -50,7 +51,7 @@ int id bgoal 0x7f0a0031
 int id blifting 0x7f0a003e
 int id blogin 0x7f0a0009
 int id bnutrition 0x7f0a0040
-int id breg 0x7f0a0018
+int id breg 0x7f0a0019
 int id btn_fragen_fertig 0x7f0a002b
 int id btnhelp 0x7f0a000a
 int id btnstart 0x7f0a0004
@@ -110,7 +111,7 @@ int id view_height 0x7f0a0010
 int id view_pword 0x7f0a000f
 int id view_uname 0x7f0a000e
 int id volume_bar_weight 0x7f0a0016
-int id weight 0x7f0a0019
+int id weight 0x7f0a0018
 int layout activity_help 0x7f030000
 int layout activity_main 0x7f030001
 int layout activity_navmain 0x7f030002

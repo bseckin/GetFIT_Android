@@ -26,10 +26,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Database Name
     private static final String DATABASE_NAME = "GetFit2";
 
-    /* ---------- TABLES --------------- */
+    /* ------------------------- TABLES ------------------------------ */
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
-
+    private static final String TABLE_FRAGENKATALOG = "fragenkatalog";
 
     /* ======== COLUMNS from TABLE  "LOGIN" ========= */
     //login
@@ -44,6 +44,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_EXID = "id";
     private static final String KEY_EXERCISEBEZ = "exercisebez";
 
+    /* ======== COLUMNS from TABLE "FRAGENKATALOG"  ========= */
+    private static final String KEY_FRAGE1 = "frage1";
+    private static final String KEY_FRAGE2 = "frage2";
+    private static final String KEY_FRAGE3 = "frage3";
+    private static final String KEY_FRAGE4 = "frage4";
+    private static final String KEY_FRAGE5 = "frage5";
+
+
     private int exists;
 
     public DatabaseHandler(Context context) {
@@ -53,15 +61,34 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Creating Tables
     @Override
     public void onCreate(SQLiteDatabase db) {
-        Log.d("Insert: ", "Inserting new table!!!!!!!!!!!!!!!!!");
+        Log.d("Insert: ", "---! CREATE TABLES: LOGIN, EXERCISE, FRAGENKATLOG !---");
         this.exists = 0;
-        String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_CONTACTS + "("
-                + KEY_USERNAME + " TEXT," + KEY_PASSWORD + " TEXT,"
-                + KEY_EMAIL + " TEXT," + KEY_GENDER + " TEXT," + KEY_HEIGHT + " INTEGER," + KEY_WEIGHT + " FLOAT" + ")";
+        //========= CREATE TABLE LOGIN ==========
+        String CREATE_CONTACTS_TABLE =
+                "CREATE TABLE " + TABLE_CONTACTS + "("
+                    + KEY_USERNAME + " TEXT,"
+                    + KEY_PASSWORD + " TEXT,"
+                    + KEY_EMAIL + " TEXT,"
+                    + KEY_GENDER + " TEXT,"
+                    + KEY_HEIGHT + " INTEGER,"
+                    + KEY_WEIGHT + " FLOAT"
+                + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
 
+        //========= CREATE TABLE EXERCISE ==========
         String CREATE_EXERCISE_TABLE = "CREATE TABLE " + TABLE_EXERCISE + "("
                 + KEY_EXID + " INTEGER PRIMARY KEY," + KEY_EXERCISEBEZ + " TEXT" + ")";
+        db.execSQL(CREATE_EXERCISE_TABLE);
+
+        //========= CREATE TABLE FRAGENKATALOG ==========
+        String CREATE_FRAGENKATALOG_TABLE =
+                "CREATE TABLE " + TABLE_FRAGENKATALOG + "("
+                    + KEY_FRAGE1 + " TEXT,"
+                    + KEY_FRAGE2 + " TEXT,"
+                    + KEY_FRAGE3 + " TEXT,"
+                    + KEY_FRAGE4 + " TEXT,"
+                    + KEY_FRAGE5 + " TEXT" +
+                ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
 
     }
@@ -76,9 +103,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    //Operations for CONTACT/LOGIN TABLE
-    /************************ OPERATIONS FOR THE LOGIN TABLE ***************************/
-
+    /**************************************************************************************/
+    /************************ OPERATIONS FOR THE LOGIN TABLE ******************************/
+    /**************************************************************************************/
     /**
      * All CRUD(Create, Read, Update, Delete) Operations
      */
@@ -186,8 +213,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return icount;
     }
-
+    /**************************************************************************************/
     /************************ OPERATIONS FOR THE EXERCISE TABLE ***************************/
+    /**************************************************************************************/
     /**
      * All CRUD(Create, Read, Update, Delete) Operations
      */
@@ -283,4 +311,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return icount;
     }
+
+    /**************************************************************************************/
+    /************************ OPERATIONS FOR THE FRAGENKATALOG TABLE **********************/
+    /**************************************************************************************/
+    //TODO OPERATIONEN FÜR FRAGENKATALOG TABELLE
 }

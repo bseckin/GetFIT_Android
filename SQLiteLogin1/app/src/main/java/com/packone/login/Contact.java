@@ -16,12 +16,8 @@ public class Contact {
     private int _height;
     private int _weight;
 
-    //TODO Fragenkatalog Daten von dem User speichern
-
     // Empty constructor
-    public Contact() {
-
-    }
+    public Contact() {}
 
     // constructor
     public Contact(String uname, String pword, String email, String gender, int weight, int height) {
