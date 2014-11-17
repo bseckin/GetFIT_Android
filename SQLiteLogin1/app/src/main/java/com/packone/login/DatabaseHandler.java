@@ -65,7 +65,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.exists = 0;
         //========= CREATE TABLE LOGIN ==========
         String CREATE_CONTACTS_TABLE =
-                "CREATE TABLE " + TABLE_CONTACTS + "("
+                "CREATE TABLE IF NOT EXISTS " + TABLE_CONTACTS + "("
                     + KEY_USERNAME + " TEXT,"
                     + KEY_PASSWORD + " TEXT,"
                     + KEY_EMAIL + " TEXT,"
@@ -76,13 +76,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(CREATE_CONTACTS_TABLE);
 
         //========= CREATE TABLE EXERCISE ==========
-        String CREATE_EXERCISE_TABLE = "CREATE TABLE " + TABLE_EXERCISE + "("
-                + KEY_EXID + " INTEGER PRIMARY KEY," + KEY_EXERCISEBEZ + " TEXT" + ")";
+        String CREATE_EXERCISE_TABLE =
+                "CREATE TABLE IF NOT EXISTS " + TABLE_EXERCISE + "("
+                    + KEY_EXID + " INTEGER PRIMARY KEY,"
+                    + KEY_EXERCISEBEZ + " TEXT"
+                 + ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
 
         //========= CREATE TABLE FRAGENKATALOG ==========
         String CREATE_FRAGENKATALOG_TABLE =
-                "CREATE TABLE " + TABLE_FRAGENKATALOG + "("
+                "CREATE TABLE IF NOT EXISTS " + TABLE_FRAGENKATALOG + "("
                     + KEY_FRAGE1 + " TEXT,"
                     + KEY_FRAGE2 + " TEXT,"
                     + KEY_FRAGE3 + " TEXT,"

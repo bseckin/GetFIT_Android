@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
@@ -25,7 +27,8 @@ public class RegisterActivity extends Activity {
     private EditText muname;
     private EditText mpword;
     private EditText memail;
-    private EditText mgender;
+    private RadioGroup radioSexGroup;
+    private RadioButton radioSexButton;
     private EditText mheight;
     private EditText weight;
     private SeekBar weightcontrol = null;
@@ -63,7 +66,7 @@ public class RegisterActivity extends Activity {
         muname = (EditText) findViewById(R.id.uname);
         mpword = (EditText) findViewById(R.id.pword);
         memail = (EditText) findViewById(R.id.email);
-        mgender = (EditText) findViewById(R.id.gender);
+        radioSexGroup = (RadioGroup) findViewById(R.id.gender);
         mheight = (EditText) findViewById(R.id.height);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -73,7 +76,7 @@ public class RegisterActivity extends Activity {
                  * CRUD Operations
                  * */
                 // Inserting Contacts
-                if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals(""))) {
+                if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals("")) || (radioSexGroup.getCheckedRadioButtonId() == -1)) {
                     Context context = getApplicationContext();
                     CharSequence text = "Geben sie etwas ein";
                     int duration = Toast.LENGTH_LONG;
@@ -95,11 +98,19 @@ public class RegisterActivity extends Activity {
                     //Überprüfen ob der user bereits im datenbank gespeichert ist
                     if (db.getContactsCount(muname.getText().toString()) == 0) {
 
-                        //  db.deleteContact();
+                        // get selected radio button from radioGroup
+                        int selectedId = radioSexGroup.getCheckedRadioButtonId();
 
-                        db.addContact(new Contact(muname.getText().toString(), mpword
-                                .getText().toString(), memail.getText().toString(), mgender.getText().toString(), Integer.parseInt(mheight
-                                .getText().toString()), Integer.parseInt(weight.getText().toString())));
+                        // find the radiobutton by returned id
+                        radioSexButton = (RadioButton) findViewById(selectedId);
+
+                        db.addContact(new Contact(
+                                muname.getText().toString(),
+                                mpword.getText().toString(),
+                                memail.getText().toString(),
+                                radioSexButton.getText().toString(),
+                                Integer.parseInt(mheight.getText().toString()),
+                                Integer.parseInt(weight.getText().toString())));
 
                         // Reading all contacts
                         Log.d("Reading: ", "Reading all contacts..");

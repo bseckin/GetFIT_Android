@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/backgrey"
+    android:background="@drawable/backblue"
     >
 
     <TextView
@@ -21,7 +21,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="298dp">
+        android:layout_height="320dp">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -40,7 +40,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="10dp"
-                />
+                android:textStyle="bold"
+                android:textColor="#fffbfff4" />
 
             <TextView
                 android:id="@+id/view_pword"
@@ -55,7 +56,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
-                />
+                android:textStyle="bold"
+                android:textColor="#fffbfff4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -68,7 +70,8 @@
                 android:layout_alignEnd="@+id/view_pword"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
-                />
+                android:textStyle="bold"
+                android:textColor="#fffbfff4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,7 +84,8 @@
                 android:layout_alignEnd="@+id/view_uname"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
-                />
+                android:textStyle="bold"
+                android:textColor="#fffbfff4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -91,9 +95,10 @@
                 android:id="@+id/textView"
                 android:layout_below="@+id/view_gender"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:layout_alignParentLeft="true"
-                />
+                android:textStyle="bold"
+                android:textColor="#fffbfff4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -105,7 +110,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
-                />
+                android:textStyle="bold"
+                android:textColor="#fffbfff4" />
 
         </RelativeLayout>
 
@@ -150,17 +156,37 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp" />
 
-            <EditText
+            <RadioGroup
+                android:id="@+id/gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/gender"
-                android:layout_below="@+id/height"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-<!--
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/height"
+                android:layout_marginTop="10dp">
+
+
+
+                    <RadioButton
+                        android:id="@+id/radBtn_Woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/W"
+                        android:textSize="15sp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_Man"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/M"
+                        android:textSize="15sp" />
+
+
+            </RadioGroup>
+            <!--
 
 -->
             <SeekBar
@@ -188,7 +214,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:inputType="textEmailAddress"/>
 
             <EditText
@@ -230,4 +256,4 @@
 
 
 </LinearLayout>
-<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->

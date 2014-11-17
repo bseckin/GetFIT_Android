@@ -32,6 +32,9 @@
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
     <string name="profi">Viel – Ich habe viel Erfahrung </string>
 
+    <!--RadioButtons Registrierung -->
+    <string name="W">Maenlich</string>
+    <string name="M">Weiblich</string>
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
