@@ -30,26 +30,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String TABLE_EXERCISE = "exercise";
     private static final String TABLE_FRAGENKATALOG = "fragenkatalog";
 
-    /* ======== COLUMNS from TABLE  "LOGIN" ========= */
-    //login
+    /* ============= COLUMNS from TABLE  "LOGIN" ================ */
     private static final String KEY_USERNAME = "uname";
     private static final String KEY_PASSWORD = "pword";
-    private static final String KEY_EMAIL = "emial";
+    private static final String KEY_EMAIL = "email";
     private static final String KEY_GENDER = "gender";
     private static final String KEY_HEIGHT = "height";
     private static final String KEY_WEIGHT = "weight";
 
-    /* ======== COLUMNS from TABLE  "EXERCISES" ========= */
-    private static final String KEY_EXID = "id";
-    private static final String KEY_EXERCISEBEZ = "exercisebez";
-
     //TODO FRAGENKATLOG WERTE IN LOGIN TABELLE SPEICHERN WEILS BESSER IST
-    /* ======== COLUMNS from TABLE "FRAGENKATALOG"  ========= */
+   /* -====="FRAGENKATALOG"  ========- */
     private static final String KEY_FRAGE1 = "frage1";
     private static final String KEY_FRAGE2 = "frage2";
     private static final String KEY_FRAGE3 = "frage3";
     private static final String KEY_FRAGE4 = "frage4";
     private static final String KEY_FRAGE5 = "frage5";
+
+
+    /* ============ COLUMNS from TABLE  "EXERCISES" ============== */
+    private static final String KEY_EXID = "id";
+    private static final String KEY_EXERCISEBEZ = "exercisebez";
+
 
     private int exists;
 
@@ -67,7 +68,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase db) {
-        Log.d("Insert: ", "---! CREATE TABLES: LOGIN, EXERCISE, FRAGENKATLOG !---");
+        Log.d("Insert: ", "@@@@!!!! CREATE TABLES: LOGIN, EXERCISE !!!@@@@");
         this.exists = 0;
         //========= CREATE TABLE LOGIN ==========
         String CREATE_CONTACTS_TABLE =
@@ -77,7 +78,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                     + KEY_EMAIL + " TEXT,"
                     + KEY_GENDER + " TEXT,"
                     + KEY_HEIGHT + " INTEGER,"
-                    + KEY_WEIGHT + " FLOAT"
+                    + KEY_WEIGHT + " FLOAT,"
+                        // Fragenkatalog Werte
+                        + KEY_FRAGE1 + " TEXT,"
+                        + KEY_FRAGE2 + " TEXT,"
+                        + KEY_FRAGE3 + " TEXT,"
+                        + KEY_FRAGE4 + " TEXT,"
+                        + KEY_FRAGE5 + " TEXT"
                 + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
 
@@ -89,7 +96,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                  + ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
 
-        //========= CREATE TABLE FRAGENKATALOG ==========
+        /*========= CREATE TABLE FRAGENKATALOG ==========
         String CREATE_FRAGENKATALOG_TABLE =
                 "CREATE TABLE IF NOT EXISTS " + TABLE_FRAGENKATALOG + "("
                     + KEY_FRAGE1 + " TEXT,"
@@ -99,6 +106,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                     + KEY_FRAGE5 + " TEXT" +
                 ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
+        */
 
     }
 
@@ -131,6 +139,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        // Kontaktdaten
         values.put(KEY_USERNAME, contact.getUname()); // Contact Name
         values.put(KEY_PASSWORD, contact.getPword()); // Contact Name
         values.put(KEY_EMAIL, contact.getEmail()); // Contact Phone
@@ -138,11 +147,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_HEIGHT, contact.getHeight()); // Contact Name
         values.put(KEY_WEIGHT, contact.getWeight()); // Contact Phone
 
-        // Inserting Row
+        // Fragenkatalog
+        values.put(KEY_FRAGE1, contact.get_antwortF1());
+        values.put(KEY_FRAGE2, contact.get_antwortF2());
+        values.put(KEY_FRAGE3, contact.get_antwortF3());
+        values.put(KEY_FRAGE4, contact.get_antwortF4());
+        //values.put(KEY_FRAGE5, "");
+
+        // INSERT ROWS
         db.insert(TABLE_CONTACTS, null, values);
 
         db.close(); // Closing database connection
     }
+
 
     /**
      * Getting single contact
@@ -159,7 +176,17 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             cursor.moveToFirst();
 
         Contact contact = new Contact(
-                cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), Integer.parseInt(cursor.getString(4)), Integer.parseInt(cursor.getString(5)));
+                cursor.getString(0),
+                cursor.getString(1),
+                cursor.getString(2),
+                cursor.getString(3),
+                Integer.parseInt(cursor.getString(4)),
+                Integer.parseInt(cursor.getString(5)),
+                cursor.getString(6),
+                cursor.getString(7),
+                cursor.getString(8),
+                cursor.getString(9)
+        );
         // return contact
         return contact;
     }
@@ -186,6 +213,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contact.setGender(cursor.getString(3));
                 contact.setHeight(Integer.parseInt(cursor.getString(4)));
                 contact.setWeight(Integer.parseInt(cursor.getString(5)));
+                contact.set_antwortF1(cursor.getString(6));
+                contact.set_antwortF2(cursor.getString(7));
+                contact.set_antwortF3(cursor.getString(8));
+                contact.set_antwortF4(cursor.getString(9));
 
                 // Adding contact to list
                 contactList.add(contact);

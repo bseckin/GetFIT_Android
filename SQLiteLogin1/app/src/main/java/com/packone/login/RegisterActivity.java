@@ -13,8 +13,6 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
-import java.util.List;
-
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
@@ -69,12 +67,11 @@ public class RegisterActivity extends Activity {
         mheight = (EditText) findViewById(R.id.height);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //New COMMENT
-
                 /**
                  * CRUD Operations
                  * */
-                // Inserting Contacts
+                // USER REGISTRATION
+                /* Check ob alle Eingabe ausgefullt wurden */
                 if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals("")) || (radioSexGroup.getCheckedRadioButtonId() == -1)) {
                     Context context = getApplicationContext();
                     CharSequence text = "Geben sie etwas ein";
@@ -83,8 +80,8 @@ public class RegisterActivity extends Activity {
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
+                /* Check ob Email gueltig ist */
                 if (isValidEMail(memail.getText().toString()) == false) {
-
                     Context context = getApplicationContext();
                     CharSequence text = "Die Email Adresse ist nicht korrekt.";
                     int duration = Toast.LENGTH_LONG;
@@ -93,7 +90,6 @@ public class RegisterActivity extends Activity {
                     toast.show();
 
                 } else {
-
                     //Überprüfen ob der user bereits im datenbank gespeichert ist
                     if (db.getContactsCount(muname.getText().toString()) == 0) {
 
@@ -102,16 +98,19 @@ public class RegisterActivity extends Activity {
 
                         // find the radiobutton by returned id
                         radioSexButton = (RadioButton) findViewById(selectedId);
-
-                        db.addContact(new Contact(
-                                muname.getText().toString(),
-                                mpword.getText().toString(),
-                                memail.getText().toString(),
-                                radioSexButton.getText().toString(),
-                                Integer.parseInt(mheight.getText().toString()),
-                                Integer.parseInt(weight.getText().toString())));
-
-                        // Reading all contacts
+                        /*
+                        db.addContact(
+                                new Contact(
+                                    muname.getText().toString(),
+                                    mpword.getText().toString(),
+                                    memail.getText().toString(),
+                                    radioSexButton.getText().toString(),
+                                    Integer.parseInt(mheight.getText().toString()),
+                                    Integer.parseInt(weight.getText().toString())
+                                )
+                        );
+                        */
+                        /* CHECK FOR : Reading all contacts
                         Log.d("Reading: ", "Reading all contacts..");
                         List<Contact> contacts = db.getAllContacts();
 
@@ -122,8 +121,14 @@ public class RegisterActivity extends Activity {
                             // Writing Contacts to log
                             Log.d("Name: ", log);
                         }
-
+                        */
                         Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
+                        intent.putExtra("username", muname.getText().toString());
+                        intent.putExtra("password", mpword.getText().toString());
+                        intent.putExtra("email", memail.getText().toString());
+                        intent.putExtra("gender", radioSexButton.getText().toString());
+                        intent.putExtra("height", mheight.getText().toString());
+                        intent.putExtra("weight", weight.getText().toString());
                         startActivity(intent);
 
                     } else {
