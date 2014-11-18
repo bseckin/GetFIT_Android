@@ -41,7 +41,6 @@ public class MainActivity extends Activity {
          */
         final DatabaseHandler db = new DatabaseHandler(this);
 
-
         //Initialisierung der Buttons und Eingabefelder
         this.mButton = (Button) findViewById(R.id.blogin);
         this.muname = (EditText) findViewById(R.id.loguname);
@@ -57,7 +56,6 @@ public class MainActivity extends Activity {
              * Datenbank zu spechern.
              */
             public void onClick(View view) {
-
 
                 // Reading all contacts
                 Log.d("Reading: ", "Reading all contacts..");
@@ -97,8 +95,6 @@ public class MainActivity extends Activity {
             }
         });
 
-
-
         Button breg = (Button) findViewById(R.id.registrierung);
         breg.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -116,8 +112,6 @@ public class MainActivity extends Activity {
 
              }
          });
-
-
     }
 
 

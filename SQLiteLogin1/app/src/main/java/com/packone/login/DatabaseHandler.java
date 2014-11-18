@@ -18,7 +18,6 @@ import java.util.List;
  * Futhermore there are implemented some Connection Methods
  */
 public class DatabaseHandler extends SQLiteOpenHelper {
-
     // All Static variables
     // Database Version
     private static final int DATABASE_VERSION = 1;
@@ -44,6 +43,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_EXID = "id";
     private static final String KEY_EXERCISEBEZ = "exercisebez";
 
+    //TODO FRAGENKATLOG WERTE IN LOGIN TABELLE SPEICHERN WEILS BESSER IST
     /* ======== COLUMNS from TABLE "FRAGENKATALOG"  ========= */
     private static final String KEY_FRAGE1 = "frage1";
     private static final String KEY_FRAGE2 = "frage2";
@@ -51,14 +51,20 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_FRAGE4 = "frage4";
     private static final String KEY_FRAGE5 = "frage5";
 
-
     private int exists;
 
+    /**
+     * Constructor
+     * @param context
+     */
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-    // Creating Tables
+    /**
+     * Creating Tables
+     * @param
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.d("Insert: ", "---! CREATE TABLES: LOGIN, EXERCISE, FRAGENKATLOG !---");
@@ -96,7 +102,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
-    // Dropping all Tables in a Database
+    /**
+     * Dropping all Tables in a Database
+     * @param db, int, int
+     */
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older table if existed
@@ -113,7 +123,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      * All CRUD(Create, Read, Update, Delete) Operations
      */
 
-    // Adding new contact
+    /**
+     * Adding new contact
+     * @param contact
+     */
     void addContact(Contact contact) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -131,7 +144,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
-    // Getting single contact
+    /**
+     * Getting single contact
+     * @param uname Username als String
+     * @return contact
+     */
     Contact getContact(String uname) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -147,7 +164,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return contact;
     }
 
-    // Getting All Contacts
+    /**
+     * Getting All Contacts
+     * @return List Liefert alle Kontakte
+     */
     public List<Contact> getAllContacts() {
         List<Contact> contactList = new ArrayList<Contact>();
         // Select All Query
@@ -170,13 +190,17 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 // Adding contact to list
                 contactList.add(contact);
             } while (cursor.moveToNext());
-
         }
         // return contact list
         return contactList;
     }
 
-    // Updating single contact
+    /**
+     * Updating single contact
+     * @param contact
+     * @return int
+     */
+
     public int updateContact(Contact contact) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -192,7 +216,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 new String[]{String.valueOf(contact.getUname())});
     }
 
-    // Deleting single contact
+    /**
+     * Deleting single contact
+     */
     public void deleteContact() {
         SQLiteDatabase db = this.getWritableDatabase();
         /**db.delete(TABLE_CONTACTS, KEY_USERNAME + " = ?",
@@ -206,7 +232,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    // Getting contacts Count
+    /**
+     * Getting contacts Count
+     * @param name
+     * @return int Anzahl von allen Kontakten
+     */
     public int getContactsCount(String name) {
         SQLiteDatabase db = this.getWritableDatabase();
         String count = "SELECT count(uname) FROM login where uname = ?";
@@ -223,7 +253,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      * All CRUD(Create, Read, Update, Delete) Operations
      */
 
-    // Adding new contact
+    /**
+     * Adding new contact
+     * @param exercise
+     */
     void addExercise(Exercise exercise) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -237,7 +270,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
-    // Getting single exercise
+    /**
+     * Getting single exercise
+     * @param id Die id von der Uebung
+     * @return Exercise
+     */
     Exercise getExercise(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -253,7 +290,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return exercise;
     }
 
-    // Getting All exercises
+    /**
+     * Getting All exercises
+     * @return List Liste von allen Uebungen
+     */
     public List<Exercise> getAllExercises() {
         List<Exercise> exerciseList = new ArrayList<Exercise>();
         // Select All Query
@@ -278,7 +318,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     //TODO: - (später erst) Exercise Methoden Kommentare anpassen
-    // Updating single contact
+    /**
+     * Updating single contact
+     * @param exercise
+     */
     public int updateExercise(Exercise exercise) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -290,7 +333,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 new String[]{String.valueOf(exercise.getExBez())});
     }
 
-    // Deleting all exercises
+    /**
+     * Deleting all exercises
+     */
     public void deleteExercise() {
         SQLiteDatabase db = this.getWritableDatabase();
         /**db.delete(TABLE_CONTACTS, KEY_USERNAME + " = ?",
@@ -304,7 +349,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    // Getting contacts Count
+    /**
+     * Getting contacts Count
+     * @param exbez
+     * @return int
+     */
     public int getExerciseCount(String exbez) {
         SQLiteDatabase db = this.getWritableDatabase();
         String count = "SELECT count(" + KEY_EXID + ") FROM login where " + KEY_EXERCISEBEZ + "= ?";

@@ -49,7 +49,6 @@ public class RegisterActivity extends Activity {
                 weight.setText("" + progressChanged);
             }
 
-
             public void onStartTrackingTouch(SeekBar seekBar) {
 
             }
@@ -124,7 +123,6 @@ public class RegisterActivity extends Activity {
                             Log.d("Name: ", log);
                         }
 
-                        //TODO: Nach Registrierung kommt User nicht zum Menü sondern zum Fragenkatalog
                         Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
                         startActivity(intent);
 
@@ -135,15 +133,17 @@ public class RegisterActivity extends Activity {
 
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
-
                     }
                 }
             }
         });
-
-
     }
 
+    /**
+     * Check ob Email gueltig ist
+     * @param s
+     * @return
+     */
     private boolean isValidEMail(String s) {
         s = s.trim();
 
@@ -164,5 +164,4 @@ public class RegisterActivity extends Activity {
         Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:::::::::::::::::" + dot + 2);
         return dot + 2 < len;
     }
-
 }
