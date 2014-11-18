@@ -13,6 +13,8 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
@@ -30,6 +32,7 @@ public class RegisterActivity extends Activity {
     private EditText mheight;
     private EditText weight;
     private SeekBar weightcontrol = null;
+    protected ArrayList<String> databaseArray;
 
     //TODO: - Exercise implementieren
     @Override
@@ -59,6 +62,8 @@ public class RegisterActivity extends Activity {
         //    db.deleteContact();
         Log.d("INSERT: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
+        //dekleration des datenbank arrays in dieses array kommen alle eingaben des Bneutzers im Login screen hinein
+        databaseArray = new ArrayList<String>();
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
         mpword = (EditText) findViewById(R.id.pword);
@@ -98,30 +103,8 @@ public class RegisterActivity extends Activity {
 
                         // find the radiobutton by returned id
                         radioSexButton = (RadioButton) findViewById(selectedId);
-                        /*
-                        db.addContact(
-                                new Contact(
-                                    muname.getText().toString(),
-                                    mpword.getText().toString(),
-                                    memail.getText().toString(),
-                                    radioSexButton.getText().toString(),
-                                    Integer.parseInt(mheight.getText().toString()),
-                                    Integer.parseInt(weight.getText().toString())
-                                )
-                        );
-                        */
-                        /* CHECK FOR : Reading all contacts
-                        Log.d("Reading: ", "Reading all contacts..");
-                        List<Contact> contacts = db.getAllContacts();
 
-                        for (Contact cn : contacts) {
-                            String log = "Username: " + cn.getUname() + " ,Name: "
-                                    + cn.getPword() + " ,Phone: " + cn.getEmail() + ", Gender: " + cn.getGender() + " ,Hieght: "
-                                    + cn.getHeight() + " ,Weight: " + cn.getWeight();
-                            // Writing Contacts to log
-                            Log.d("Name: ", log);
-                        }
-                        */
+                        //Die variablen zur registrierungFragenkatalog activity weiter leiten
                         Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
                         intent.putExtra("username", muname.getText().toString());
                         intent.putExtra("password", mpword.getText().toString());

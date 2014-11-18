@@ -28,7 +28,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     /* ------------------------- TABLES ------------------------------ */
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
-    private static final String TABLE_FRAGENKATALOG = "fragenkatalog";
+
 
     /* ============= COLUMNS from TABLE  "LOGIN" ================ */
     private static final String KEY_USERNAME = "uname";
@@ -40,11 +40,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     //TODO FRAGENKATLOG WERTE IN LOGIN TABELLE SPEICHERN WEILS BESSER IST
    /* -====="FRAGENKATALOG"  ========- */
-    private static final String KEY_FRAGE1 = "frage1";
-    private static final String KEY_FRAGE2 = "frage2";
-    private static final String KEY_FRAGE3 = "frage3";
-    private static final String KEY_FRAGE4 = "frage4";
-    private static final String KEY_FRAGE5 = "frage5";
+    private static final String KEY_ZIEL = "ziel";
+    private static final String KEY_AKT = "aktivitaet";
+    private static final String KEY_ERFAHRUNG = "erfahrung";
+    private static final String KEY_QUANTITAET = "haufigkeit";
+   // private static final String KEY_FRAGE5 = "frage5";
 
 
     /* ============ COLUMNS from TABLE  "EXERCISES" ============== */
@@ -56,6 +56,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Constructor
+     *
      * @param context
      */
     public DatabaseHandler(Context context) {
@@ -64,6 +65,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Creating Tables
+     *
      * @param
      */
     @Override
@@ -73,45 +75,35 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         //========= CREATE TABLE LOGIN ==========
         String CREATE_CONTACTS_TABLE =
                 "CREATE TABLE IF NOT EXISTS " + TABLE_CONTACTS + "("
-                    + KEY_USERNAME + " TEXT,"
-                    + KEY_PASSWORD + " TEXT,"
-                    + KEY_EMAIL + " TEXT,"
-                    + KEY_GENDER + " TEXT,"
-                    + KEY_HEIGHT + " INTEGER,"
-                    + KEY_WEIGHT + " FLOAT,"
+                        + KEY_USERNAME + " TEXT,"
+                        + KEY_PASSWORD + " TEXT,"
+                        + KEY_EMAIL + " TEXT,"
+                        + KEY_GENDER + " TEXT,"
+                        + KEY_HEIGHT + " INTEGER,"
+                        + KEY_WEIGHT + " FLOAT,"
+
                         // Fragenkatalog Werte
-                        + KEY_FRAGE1 + " TEXT,"
-                        + KEY_FRAGE2 + " TEXT,"
-                        + KEY_FRAGE3 + " TEXT,"
-                        + KEY_FRAGE4 + " TEXT,"
-                        + KEY_FRAGE5 + " TEXT"
-                + ")";
+                        + KEY_ZIEL + " TEXT,"
+                        + KEY_AKT + " TEXT,"
+                        + KEY_ERFAHRUNG + " TEXT,"
+                        + KEY_QUANTITAET + " TEXT"
+                       // + KEY_FRAGE5 + " TEXT"
+                        + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
 
         //========= CREATE TABLE EXERCISE ==========
         String CREATE_EXERCISE_TABLE =
                 "CREATE TABLE IF NOT EXISTS " + TABLE_EXERCISE + "("
-                    + KEY_EXID + " INTEGER PRIMARY KEY,"
-                    + KEY_EXERCISEBEZ + " TEXT"
-                 + ")";
+                        + KEY_EXID + " INTEGER PRIMARY KEY,"
+                        + KEY_EXERCISEBEZ + " TEXT"
+                        + ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
-
-        /*========= CREATE TABLE FRAGENKATALOG ==========
-        String CREATE_FRAGENKATALOG_TABLE =
-                "CREATE TABLE IF NOT EXISTS " + TABLE_FRAGENKATALOG + "("
-                    + KEY_FRAGE1 + " TEXT,"
-                    + KEY_FRAGE2 + " TEXT,"
-                    + KEY_FRAGE3 + " TEXT,"
-                    + KEY_FRAGE4 + " TEXT,"
-                    + KEY_FRAGE5 + " TEXT" +
-                ")";
-        db.execSQL(CREATE_EXERCISE_TABLE);
-        */
 
     }
 
     /**
      * Dropping all Tables in a Database
+     *
      * @param db, int, int
      */
 
@@ -133,6 +125,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Adding new contact
+     *
      * @param contact
      */
     void addContact(Contact contact) {
@@ -148,10 +141,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_WEIGHT, contact.getWeight()); // Contact Phone
 
         // Fragenkatalog
-        values.put(KEY_FRAGE1, contact.get_antwortF1());
-        values.put(KEY_FRAGE2, contact.get_antwortF2());
-        values.put(KEY_FRAGE3, contact.get_antwortF3());
-        values.put(KEY_FRAGE4, contact.get_antwortF4());
+        values.put(KEY_ZIEL, contact.getZiel());
+        values.put(KEY_AKT, contact.getAkt());
+        values.put(KEY_ERFAHRUNG, contact.getErfahrung());
+        values.put(KEY_QUANTITAET, contact.getQuant());
         //values.put(KEY_FRAGE5, "");
 
         // INSERT ROWS
@@ -163,6 +156,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Getting single contact
+     *
      * @param uname Username als String
      * @return contact
      */
@@ -193,6 +187,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Getting All Contacts
+     *
      * @return List Liefert alle Kontakte
      */
     public List<Contact> getAllContacts() {
@@ -213,10 +208,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contact.setGender(cursor.getString(3));
                 contact.setHeight(Integer.parseInt(cursor.getString(4)));
                 contact.setWeight(Integer.parseInt(cursor.getString(5)));
-                contact.set_antwortF1(cursor.getString(6));
-                contact.set_antwortF2(cursor.getString(7));
-                contact.set_antwortF3(cursor.getString(8));
-                contact.set_antwortF4(cursor.getString(9));
+                contact.setZiel(cursor.getString(6));
+                contact.setAkt(cursor.getString(7));
+                contact.setErfahrung(cursor.getString(8));
+                contact.setQuant(cursor.getString(9));
 
                 // Adding contact to list
                 contactList.add(contact);
@@ -228,6 +223,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Updating single contact
+     *
      * @param contact
      * @return int
      */
@@ -241,6 +237,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_GENDER, contact.getGender());
         values.put(KEY_HEIGHT, contact.getHeight());
         values.put(KEY_WEIGHT, contact.getWeight());
+        values.put(KEY_ZIEL, contact.getZiel());
+        values.put(KEY_AKT, contact.getAkt());
+        values.put(KEY_ERFAHRUNG, contact.getErfahrung());
+        values.put(KEY_QUANTITAET, contact.getQuant());
 
         // updating row
         return db.update(TABLE_CONTACTS, values, KEY_USERNAME + " = ?",
@@ -265,6 +265,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Getting contacts Count
+     *
      * @param name
      * @return int Anzahl von allen Kontakten
      */
@@ -286,6 +287,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Adding new contact
+     *
      * @param exercise
      */
     void addExercise(Exercise exercise) {
@@ -303,6 +305,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Getting single exercise
+     *
      * @param id Die id von der Uebung
      * @return Exercise
      */
@@ -323,6 +326,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Getting All exercises
+     *
      * @return List Liste von allen Uebungen
      */
     public List<Exercise> getAllExercises() {
@@ -349,8 +353,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     //TODO: - (später erst) Exercise Methoden Kommentare anpassen
+
     /**
      * Updating single contact
+     *
      * @param exercise
      */
     public int updateExercise(Exercise exercise) {
@@ -382,6 +388,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     /**
      * Getting contacts Count
+     *
      * @param exbez
      * @return int
      */
