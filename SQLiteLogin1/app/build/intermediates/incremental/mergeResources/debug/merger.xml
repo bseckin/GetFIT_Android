@@ -115,11 +115,6 @@
                 qualifiers=""
                 type="drawable" />
             <file
-                name="backblue"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\backblue.jpg"
-                qualifiers="hdpi-v4"
-                type="drawable" />
-            <file
                 name="backgrey"
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-hdpi\backgrey.jpg"
                 qualifiers="hdpi-v4"
@@ -190,11 +185,6 @@
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
-                name="backblue"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\backblue.jpg"
-                qualifiers="ldpi-v4"
-                type="drawable" />
-            <file
                 name="backgrey"
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\backgrey.jpg"
                 qualifiers="ldpi-v4"
@@ -223,11 +213,6 @@
                 name="launcher_getfit"
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi\launcher_getfit.png"
                 qualifiers="ldpi-v4"
-                type="drawable" />
-            <file
-                name="backblue"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\backblue.jpg"
-                qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="backgrey"
@@ -263,11 +248,6 @@
                 name="launcher_getfit"
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi\launcher_getfit.png"
                 qualifiers="mdpi-v4"
-                type="drawable" />
-            <file
-                name="backblue"
-                path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi\backblue.jpg"
-                qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="backgrey"
@@ -512,21 +492,21 @@
             <file
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\color.xml"
                 qualifiers="" >
-                <color name="counter_text_bg" >#FF6600
-                </color>
                 <color name="list_background_pressed" >#992416
                 </color>
-                <color name="light_gray_header_color" >#646663
-                </color>
-                <color name="list_background" >#8194a7
+                <color name="counter_text_bg" >#FF6600
                 </color>
                 <color name="list_item_title" >#fff
                 </color>
+                <color name="list_background" >#8194a7
+                </color>
+                <color name="light_gray_header_color" >#646663
+                </color>
                 <color name="rounded_container_bg" >#222222
                 </color>
-                <color name="rounded_container_border" >#3b3f44
-                </color>
                 <color name="list_divider" >#c0deed
+                </color>
+                <color name="rounded_container_border" >#3b3f44
                 </color>
                 <color name="counter_text_color" >#008080
                 </color>
@@ -544,26 +524,26 @@
             <file
                 path="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\values\strings.xml"
                 qualifiers="" >
-                <string name="title_section1" >Lifting
-                </string>
                 <string name="zeitdruck" >Zeitdruck
                 </string>
+                <string name="title_section1" >Lifting
+                </string>
                 <string name="masseaufbau" >Masse und Muskelaufbau – für Schlanke Menschen
-                </string>
-                <string name="title_section3" >Nutrition
-                </string>
-                <string name="title_activity_goal" >GoalActivity
                 </string>
                 <string name="action_settings" ><item>
 Sign Out
                     </item></string>
+                <string name="title_activity_goal" >GoalActivity
+                </string>
+                <string name="title_section3" >Nutrition
+                </string>
                 <string name="title_section2" >Cardio
                 </string>
                 <string name="hello_blank_fragment" >Hello blank fragment
                 </string>
-                <string name="title_activity_seekbar" >SeekbarActivity
-                </string>
                 <string name="title_activity_login2" >Login2Activity
+                </string>
+                <string name="title_activity_seekbar" >SeekbarActivity
                 </string>
 
                 <array name="nav_drawer_icons" >
@@ -650,15 +630,15 @@ Mein Konto
                     </item>
                 </string-array>
 
-                <string name="frage_1" >1. Wähle bitte deine gewünschtes Ziel
+                <string name="app_name" >SQLiteLogin
                 </string>
                 <string name="title_activity_start" >GetFIT
                 </string>
-                <string name="app_name" >SQLiteLogin
-                </string>
-                <string name="desc_list_item_icon" >Item Icon
+                <string name="frage_1" >1. Wähle bitte deine gewünschtes Ziel
                 </string>
                 <string name="frage_2" >2. Was macht es dir schwer aktiver zu sein?
+                </string>
+                <string name="desc_list_item_icon" >Item Icon
                 </string>
                 <string name="frage_3" >3. Wie viel Erfahrung hast du im Krafttraining?
                 </string>
@@ -668,9 +648,9 @@ Mein Konto
                 </string>
                 <string name="title_activity_progress" >ProgressActivity
                 </string>
-                <string name="W" >Maenlich
-                </string>
                 <string name="gewichtsverlust" >Gewichtsverlust
+                </string>
+                <string name="W" >Maenlich
                 </string>
             </file>
             <file
@@ -682,17 +662,17 @@ Mein Konto
                 </string>
                 <string name="menu_forgot_password" >Recover lost password
                 </string>
-                <string name="login_progress_signing_in" >Signing in…
+                <string name="prompt_email" >Email
                 </string>
                 <string name="action_sign_in_register" ><b>
 Sign in
                     </b> or register
                 </string>
-                <string name="prompt_email" >Email
-                </string>
-                <string name="action_sign_in_short" >Sign in
+                <string name="login_progress_signing_in" >Signing in…
                 </string>
                 <string name="prompt_password" >Password
+                </string>
+                <string name="action_sign_in_short" >Sign in
                 </string>
                 <string name="error_incorrect_password" >This password is incorrect
                 </string>
