@@ -14,15 +14,19 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:paddingTop="50dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/imageView"
-                android:src="@drawable/starttext"
+                android:src="@drawable/starttext2"
 
-                android:layout_marginLeft="0dp"
+                android:padding="15dp"
+                android:focusable="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
                 />
 
         </RelativeLayout>

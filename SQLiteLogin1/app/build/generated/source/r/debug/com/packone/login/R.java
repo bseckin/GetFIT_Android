@@ -62,7 +62,8 @@ public final class R {
         public static final int progressbar=0x7f02001c;
         public static final int radial=0x7f02001d;
         public static final int starttext=0x7f02001e;
-        public static final int weightlifting=0x7f02001f;
+        public static final int starttext2=0x7f02001f;
+        public static final int weightlifting=0x7f020020;
     }
     public static final class id {
         public static final int action_logout=0x7f0a004a;
