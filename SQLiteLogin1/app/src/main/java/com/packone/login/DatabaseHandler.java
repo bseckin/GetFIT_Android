@@ -28,6 +28,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     /* ------------------------- TABLES ------------------------------ */
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
+    private static final String TABLE_FOOD = "food";
 
 
     /* ============= COLUMNS from TABLE  "LOGIN" ================ */
@@ -51,6 +52,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_EXID = "id";
     private static final String KEY_EXERCISEBEZ = "exercisebez";
 
+    /* ============ COLUMNS from TABLE  "FOOD" ============== */
+    private static final String KEY_FOODID = "id";
+    private static final String KEY_FOODNAME = "foodname";
+    private static final String KEY_PROTEIN = "protein";
+    private static final String KEY_FATS = "fats";
+    private static final String KEY_CARBS = "carbs";
 
     private int exists;
 
@@ -99,6 +106,17 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                         + ")";
         db.execSQL(CREATE_EXERCISE_TABLE);
 
+        //========= CREATE TABLE FOOD ==========
+        String CREATE_FOOD_TABLE =
+                "CREATE TABLE IF NOT EXISTS " + TABLE_FOOD + "("
+                        + KEY_FOODID + " INTEGER PRIMARY KEY,"
+                        + KEY_FOODNAME + " TEXT, "
+                        + KEY_PROTEIN + " TEXT, "
+                        + KEY_FATS + " TEXT, "
+                        + KEY_CARBS + " TEXT"
+                        + ")";
+        db.execSQL(CREATE_FOOD_TABLE);
+
     }
 
     /**
@@ -112,6 +130,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_EXERCISE);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FOOD);
         // Create tables again
         onCreate(db);
     }
@@ -312,7 +331,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     Exercise getExercise(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(TABLE_CONTACTS, new String[]{KEY_EXID,
+        Cursor cursor = db.query(TABLE_EXERCISE, new String[]{KEY_EXID,
                         KEY_EXERCISEBEZ}, KEY_EXID + "=?",
                 new String[]{String.valueOf(id)}, null, null, null, null);
         if (cursor != null)
@@ -402,6 +421,147 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return icount;
     }
 
+    /**************************************************************************************/
+    /************************ OPERATIONS FOR THE FOOD TABLE ***************************/
+    /**************************************************************************************/
+    /**
+     * All CRUD(Create, Read, Update, Delete) Operations
+     */
+
+    /**
+     * Adding new foods
+     *
+     * @param food
+     */
+    void addFood(Food food) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_FOODID, food.getId()); // Contact Name
+        values.put(KEY_FOODNAME, food.getName()); // Contact Name
+        values.put(KEY_PROTEIN, food.getProtein()); // Contact Name
+        values.put(KEY_FATS, food.getFats()); // Contact Name
+        values.put(KEY_CARBS, food.getCarbs()); // Contact Name
+
+        // Inserting Row
+        db.insert(TABLE_EXERCISE, null, values);
+
+        db.close(); // Closing database connection
+    }
+
+    /**
+     * Getting single exercise
+     *
+     * @param id Die id von der Uebung
+     * @return Exercise
+     */
+    Food getFood(int id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(TABLE_FOOD, new String[]{KEY_FOODID,
+                        KEY_FOODNAME,
+                        KEY_PROTEIN,
+                        KEY_FATS,
+                        KEY_CARBS}, KEY_FOODID + "=?",
+                new String[]{String.valueOf(id)}, null, null, null, null);
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        Food food = new Food(Integer.parseInt(
+                cursor.getString(0)),
+                cursor.getString(1) ,
+                cursor.getString(2),
+                cursor.getString(3),
+                cursor.getString(4)
+
+        );
+        // return contact
+        return food;
+    }
+
+    /**
+     * Getting All exercises
+     *
+     * @return List Liste von allen Lebensmitteln
+     */
+    public List<Food> getAllFood() {
+        List<Food> foodList = new ArrayList<Food>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_FOOD;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Food food = new Food();
+                food.setId(Integer.parseInt(cursor.getString(0)));
+                food.setName(cursor.getString(1));
+                food.setProtein(cursor.getString(2));
+                food.setFats(cursor.getString(3));
+                food.setCarbs(cursor.getString(4));
+
+                // Adding contact to list
+                foodList.add(food);
+            } while (cursor.moveToNext());
+        }
+        // return contact list
+        return foodList;
+    }
+
+    //TODO: - (später erst) Exercise Methoden Kommentare anpassen
+
+    /**
+     * Updating single contact
+     *
+     * @param food
+     */
+    public int updateFood(Food food) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_FOODNAME,food.getName());
+        values.put(KEY_PROTEIN,food.getProtein());
+        values.put(KEY_FATS,food.getFats());
+        values.put(KEY_CARBS,food.getCarbs());
+
+        // updating row
+        return db.update(TABLE_FOOD, values, KEY_FOODNAME + " = ?",
+                new String[]{String.valueOf(food.getName())});
+    }
+
+    /**
+     * Deleting all exercises
+     */
+    public void deleteFood() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        /**db.delete(TABLE_CONTACTS, KEY_USERNAME + " = ?",
+         new String[] { String.valueOf(contact.getID()) });
+         */
+
+        Log.d("Insert: ", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        String DEL = "DELETE FROM food";
+        Log.d("Insert: ", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        db.execSQL(DEL);
+        db.close();
+    }
+
+    /**
+     * Getting contacts Count
+     *
+     * @param foodname
+     * @return int
+     */
+    public int getFoodCount(String foodname) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String count = "SELECT count(" + KEY_EXID + ") FROM login where " + KEY_FOODNAME + "= ?";
+        Cursor mcursor = db.rawQuery(count, new String[]{foodname});
+        mcursor.moveToFirst();
+        int icount = mcursor.getInt(0);
+
+        return icount;
+    }
     /**************************************************************************************/
     /************************ OPERATIONS FOR THE FRAGENKATALOG TABLE **********************/
     /**************************************************************************************/
