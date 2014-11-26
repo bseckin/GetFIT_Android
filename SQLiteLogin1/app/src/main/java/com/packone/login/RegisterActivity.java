@@ -8,20 +8,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
-import java.util.List;
+import java.util.ArrayList;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import info.pack.selectgoal.WLifingActivity;
-
->>>>>>> entwicklung
-=======
-import info.pack.selectgoal.WLifingActivity;
-
->>>>>>> origin/entwicklung
 /**
  * @author: Kanyilidz Muhammedmehdi
  * @version: 0.9.1
@@ -34,30 +27,57 @@ public class RegisterActivity extends Activity {
     private EditText muname;
     private EditText mpword;
     private EditText memail;
+    private RadioGroup radioSexGroup;
+    private RadioButton radioSexButton;
+    private EditText mheight;
+    private EditText weight;
+    private SeekBar weightcontrol = null;
+    protected ArrayList<String> databaseArray;
 
-
+    //TODO: - Exercise implementieren
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        final DatabaseHandler db = new DatabaseHandler(this);
-    //    db.deleteContact();
-        Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
+        weightcontrol = (SeekBar) findViewById(R.id.volume_bar_weight);
+        weight = (EditText) findViewById(R.id.weight);
+        weightcontrol.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int progressChanged = 0;
 
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                progressChanged = progress;
+                weight.setText("" + progressChanged);
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        final DatabaseHandler db = new DatabaseHandler(this);
+        //    db.deleteContact();
+        Log.d("INSERT: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
+
+        //dekleration des datenbank arrays in dieses array kommen alle eingaben des Bneutzers im Login screen hinein
+        databaseArray = new ArrayList<String>();
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
         mpword = (EditText) findViewById(R.id.pword);
         memail = (EditText) findViewById(R.id.email);
+        radioSexGroup = (RadioGroup) findViewById(R.id.gender);
+        mheight = (EditText) findViewById(R.id.height);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //New COMMENT
-
                 /**
                  * CRUD Operations
                  * */
-                // Inserting Contacts
-                if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals(""))) {
+                // USER REGISTRATION
+                /* Check ob alle Eingabe ausgefullt wurden */
+                if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals("")) || (radioSexGroup.getCheckedRadioButtonId() == -1)) {
                     Context context = getApplicationContext();
                     CharSequence text = "Geben sie etwas ein";
                     int duration = Toast.LENGTH_LONG;
@@ -65,8 +85,8 @@ public class RegisterActivity extends Activity {
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
+                /* Check ob Email gueltig ist */
                 if (isValidEMail(memail.getText().toString()) == false) {
-
                     Context context = getApplicationContext();
                     CharSequence text = "Die Email Adresse ist nicht korrekt.";
                     int duration = Toast.LENGTH_LONG;
@@ -75,33 +95,24 @@ public class RegisterActivity extends Activity {
                     toast.show();
 
                 } else {
-                    Log.d("!!!!!!!!!!!!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
-                    String name = muname.getText().toString();
-                    int zahl = db.getContactsCount(name);
+                    //Überprüfen ob der user bereits im datenbank gespeichert ist
+                    if (db.getContactsCount(muname.getText().toString()) == 0) {
 
-                    Log.d("!!!!!! ", "WAS EAST " + zahl);
-                    Log.d("!!!!!! ", "WAS EAST " + name);
-                   if (db.getContactsCount(muname.getText().toString()) == 0) {
-                        Log.d("Insert: ", "Inserting ..");
-                      //  db.deleteContact();
+                        // get selected radio button from radioGroup
+                        int selectedId = radioSexGroup.getCheckedRadioButtonId();
 
-                        db.addContact(new Contact(muname.getText().toString(), mpword
-                                .getText().toString(), memail.getText().toString()));
+                        // find the radiobutton by returned id
+                        radioSexButton = (RadioButton) findViewById(selectedId);
 
-                        // Reading all contacts
-                        Log.d("Reading: ", "Reading all contacts..");
-                        List<Contact> contacts = db.getAllContacts();
-
-                        for (Contact cn : contacts) {
-                            String log = "Username: " + cn.getUname() + " ,Name: "
-                                    + cn.getPword() + " ,Phone: " + cn.getEmail();
-                            // Writing Contacts to log
-                            Log.d("Name: ", log);
-                        }
-
-                        Intent intent = new Intent(RegisterActivity.this, WLifingActivity.class);
+                        //Die variablen zur registrierungFragenkatalog activity weiter leiten
+                        Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
+                        intent.putExtra("username", muname.getText().toString());
+                        intent.putExtra("password", mpword.getText().toString());
+                        intent.putExtra("email", memail.getText().toString());
+                        intent.putExtra("gender", radioSexButton.getText().toString());
+                        intent.putExtra("height", mheight.getText().toString());
+                        intent.putExtra("weight", weight.getText().toString());
                         startActivity(intent);
-
 
                     } else {
                         Context context = getApplicationContext();
@@ -110,15 +121,17 @@ public class RegisterActivity extends Activity {
 
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
-
                     }
                 }
             }
         });
-
-
     }
 
+    /**
+     * Check ob Email gueltig ist
+     * @param s
+     * @return
+     */
     private boolean isValidEMail(String s) {
         s = s.trim();
 
@@ -139,6 +152,4 @@ public class RegisterActivity extends Activity {
         Log.d("Insert: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:::::::::::::::::" + dot + 2);
         return dot + 2 < len;
     }
-
-
 }

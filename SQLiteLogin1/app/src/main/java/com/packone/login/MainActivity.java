@@ -9,15 +9,15 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
 
-<<<<<<< HEAD:SQLiteLogin1/app/src/main/java/com/packone/login/Login2Activity.java
-import info.pack.selectgoal.WLifingActivity;
-=======
 import info.androidhive.slidingmenu.NavigationActivity;
->>>>>>> origin/entwicklung:SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java
+
+//<<<<<<< HEAD:SQLiteLogin1/app/src/main/java/com/packone/login/Login2Activity.java
+
 
 /**
  * @author: Kanyilidz Muhammedmehdi
@@ -34,13 +34,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.activity_main);
         /**
          Button breg = (Button) findViewById(R.id.registrierung);
          breg.setOnClickListener(this);
          */
         final DatabaseHandler db = new DatabaseHandler(this);
-
 
         //Initialisierung der Buttons und Eingabefelder
         this.mButton = (Button) findViewById(R.id.blogin);
@@ -57,7 +56,6 @@ public class MainActivity extends Activity {
              * Datenbank zu spechern.
              */
             public void onClick(View view) {
-
 
                 // Reading all contacts
                 Log.d("Reading: ", "Reading all contacts..");
@@ -80,11 +78,7 @@ public class MainActivity extends Activity {
                 // Hier überprüfen wir ob die Eingabedaten nun im Datenbank waren oder nicht
                 if (checkUname == true) {
                     // Mit Intent(actuelle activity, zielactivity) befördern wir den Benutzer zur nächsten seite
-<<<<<<< HEAD:SQLiteLogin1/app/src/main/java/com/packone/login/Login2Activity.java
-                    Intent intent = new Intent(Login2Activity.this, WLifingActivity.class);
-=======
                     Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
->>>>>>> origin/entwicklung:SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java
                     startActivity(intent);
 
                 } else {
@@ -101,8 +95,6 @@ public class MainActivity extends Activity {
             }
         });
 
-
-
         Button breg = (Button) findViewById(R.id.registrierung);
         breg.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -112,14 +104,17 @@ public class MainActivity extends Activity {
             }
         });
 
+        TextView bhelp = (TextView) findViewById(R.id.btnhelp);
+         bhelp.setOnClickListener(new OnClickListener() {
+             public void onClick(View v) {
+                 Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+                 startActivity(intent);
 
+             }
+         });
     }
-/*
 
-	@Override
-	public void onClick(View v) {
-		startActivity(new Intent(this, RegisterActivity.class));
-	}
-	*/
+
+
 
 }

@@ -8,14 +8,22 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="GetFit"
+        android:icon="@drawable/launcher_getfit"
+        android:label="GetFIT"
         android:largeHeap="false"
         android:theme="@android:style/Theme.Holo.Light" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.packone.login.MainActivity"
             android:label="@string/title_activity_start" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,32 +31,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" >
-        </activity>
         <activity
-            android:name=".HomeScreen"
-            android:label="@string/title_activity_home_screen" >
+            android:name="com.packone.login.RegisterActivity"
+            android:label="GetFIT Registrierung 1/2" >
         </activity>
         <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
-
         </activity>
         <activity
-            android:name=".GoalActivity"
+            android:name="com.packone.login.GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
-
         <activity
             android:name="info.pack.selectgoal.WLifingActivity"
             android:label="@string/title_activity_wlifing" >
         </activity>
         <activity
-            android:name=".ProgressActivity"
+            android:name="com.packone.login.ProgressActivity"
             android:label="@string/title_activity_progress" >
         </activity>
-
-
-
-
+        <activity
+            android:name="com.packone.login.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name="com.packone.login.RegistrierungFragenkatalogActivity"
+            android:label="GetFIT Registrierung 2/2" >
+        </activity>
+        <activity
+            android:name="com.packone.login.ErnaehrungActivity"
+            android:label="@string/title_activity_ernaehrung" >
+        </activity>
     </application>
 
 </manifest>

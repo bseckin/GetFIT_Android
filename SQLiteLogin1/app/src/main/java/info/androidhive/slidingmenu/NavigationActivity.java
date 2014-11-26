@@ -51,7 +51,7 @@ public class NavigationActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_navmain);
 
         mTitle = mDrawerTitle = getTitle();
 
@@ -179,8 +179,9 @@ public class NavigationActivity extends Activity {
                 fragment = new HomeFragment();
                 break;
             case 1:
-                fragment = new FindPeopleFragment();
-                break;
+                //TODO ??? hier gehört was gemacht
+                //fragment = new FindPeopleFragment();
+                //break;
             case 2:
                 fragment = new PhotosFragment();
                 break;
@@ -253,4 +254,12 @@ public class NavigationActivity extends Activity {
         startActivity(intent);
     }
 
+    /**
+     * Das es nicht zurück zum login screen geht wenn der user
+     * ZURÜCK TASTE auf dem handy drückt
+     */
+    @Override
+    public void onBackPressed() {
+        //do nothing.
+    }
 }
