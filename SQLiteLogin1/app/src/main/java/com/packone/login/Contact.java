@@ -6,9 +6,8 @@ package com.packone.login;
  * @date: 01.10.2014
  * Beschreibung
  */
-
 public class Contact {
-    private boolean TESTVARIABLE;
+
     // private variables
     private String _uname;
     private String _pword;
