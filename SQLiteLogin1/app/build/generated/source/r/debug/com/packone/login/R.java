@@ -142,26 +142,27 @@ public final class R {
         public static final int weight=0x7f0a001a;
     }
     public static final class layout {
-        public static final int activity_help=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_navmain=0x7f030002;
-        public static final int activity_progress=0x7f030003;
-        public static final int activity_register=0x7f030004;
-        public static final int activity_registrierung_fragenkatalog=0x7f030005;
-        public static final int activity_wlifing=0x7f030006;
-        public static final int drawer_list_item=0x7f030007;
-        public static final int fragment_cardio=0x7f030008;
-        public static final int fragment_community=0x7f030009;
-        public static final int fragment_home=0x7f03000a;
-        public static final int fragment_nutrition=0x7f03000b;
-        public static final int fragment_pages=0x7f03000c;
-        public static final int fragment_training=0x7f03000d;
-        public static final int fragment_whats_hot=0x7f03000e;
-        public static final int fragment_wlifing=0x7f03000f;
-        public static final int list_group=0x7f030010;
-        public static final int list_item=0x7f030011;
-        public static final int menu_detail_fragment=0x7f030012;
-        public static final int select_goal=0x7f030013;
+        public static final int activity_ernaehrung=0x7f030000;
+        public static final int activity_help=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_navmain=0x7f030003;
+        public static final int activity_progress=0x7f030004;
+        public static final int activity_register=0x7f030005;
+        public static final int activity_registrierung_fragenkatalog=0x7f030006;
+        public static final int activity_wlifing=0x7f030007;
+        public static final int drawer_list_item=0x7f030008;
+        public static final int fragment_cardio=0x7f030009;
+        public static final int fragment_kondition =0x7f03000a;
+        public static final int fragment_home=0x7f03000b;
+        public static final int fragment_nutrition=0x7f03000c;
+        public static final int fragment_uebungen =0x7f03000d;
+        public static final int fragment_training=0x7f03000e;
+        public static final int fragment_meinkonto =0x7f03000f;
+        public static final int fragment_wlifing=0x7f030010;
+        public static final int list_group=0x7f030011;
+        public static final int list_item=0x7f030012;
+        public static final int menu_detail_fragment=0x7f030013;
+        public static final int select_goal=0x7f030014;
     }
     public static final class menu {
         public static final int activity_home_screen=0x7f090000;
@@ -172,10 +173,11 @@ public final class R {
         public static final int goal=0x7f090005;
         public static final int help=0x7f090006;
         public static final int main=0x7f090007;
-        public static final int progress=0x7f090008;
-        public static final int registrierung_fragenkatalog=0x7f090009;
-        public static final int seekbar=0x7f09000a;
-        public static final int wlifing=0x7f09000b;
+        public static final int menu_ernaehrung=0x7f090008;
+        public static final int progress=0x7f090009;
+        public static final int registrierung_fragenkatalog=0x7f09000a;
+        public static final int seekbar=0x7f09000b;
+        public static final int wlifing=0x7f09000c;
     }
     public static final class string {
         public static final int M=0x7f070000;
@@ -214,20 +216,21 @@ public final class R {
         public static final int prompt_email=0x7f070021;
         public static final int prompt_password=0x7f070022;
         public static final int ruecken=0x7f070023;
-        public static final int title_activity_goal=0x7f070024;
-        public static final int title_activity_help=0x7f070025;
-        public static final int title_activity_login=0x7f070026;
-        public static final int title_activity_login2=0x7f070027;
-        public static final int title_activity_progress=0x7f070028;
-        public static final int title_activity_registrierung_fragenkatalog=0x7f070029;
-        public static final int title_activity_seekbar=0x7f07002a;
-        public static final int title_activity_start=0x7f07002b;
-        public static final int title_activity_wlifing=0x7f07002c;
-        public static final int title_fragenkatalog=0x7f07002d;
-        public static final int title_section1=0x7f07002e;
-        public static final int title_section2=0x7f07002f;
-        public static final int title_section3=0x7f070030;
-        public static final int zeitdruck=0x7f070031;
+        public static final int title_activity_ernaehrung=0x7f070024;
+        public static final int title_activity_goal=0x7f070025;
+        public static final int title_activity_help=0x7f070026;
+        public static final int title_activity_login=0x7f070027;
+        public static final int title_activity_login2=0x7f070028;
+        public static final int title_activity_progress=0x7f070029;
+        public static final int title_activity_registrierung_fragenkatalog=0x7f07002a;
+        public static final int title_activity_seekbar=0x7f07002b;
+        public static final int title_activity_start=0x7f07002c;
+        public static final int title_activity_wlifing=0x7f07002d;
+        public static final int title_fragenkatalog=0x7f07002e;
+        public static final int title_section1=0x7f07002f;
+        public static final int title_section2=0x7f070030;
+        public static final int title_section3=0x7f070031;
+        public static final int zeitdruck=0x7f070032;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

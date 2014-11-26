@@ -52,7 +52,6 @@ public class NavigationActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navmain);
-
         mTitle = mDrawerTitle = getTitle();
 
         // load slide menu items
@@ -175,26 +174,28 @@ public class NavigationActivity extends Activity {
         // update the main content by replacing fragments
         Fragment fragment = null;
         switch (position) {
-            case 0:
+            case 0: //Home
                 fragment = new HomeFragment();
                 break;
-            case 1:
+            case 1: // Training
                 //TODO ??? hier gehört was gemacht
                 //fragment = new FindPeopleFragment();
                 //break;
-            case 2:
-                fragment = new PhotosFragment();
+                fragment = new TraningsFragment();
                 break;
-            case 3:
-                fragment = new CommunityFragment();
+            case 2: // Ernährung
+                fragment = new TraningsFragment();
                 break;
-            case 4:
-                fragment = new PagesFragment();
+            case 3: // Kondition
+                fragment = new KonditionFragment();
                 break;
-            case 5:
-                fragment = new WhatsHotFragment();
+            case 4: // Übungen
+                fragment = new UebungsFragment();
                 break;
-            case 6:
+            case 5: // Mein Konto
+                fragment = new MeinKontoFragment();
+                break;
+            case 6: // Über GetFIT
                 fragment = new WLifingActivity.PlaceholderFragment();
                 break;
 

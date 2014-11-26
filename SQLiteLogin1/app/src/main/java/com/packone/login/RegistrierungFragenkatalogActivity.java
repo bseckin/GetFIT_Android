@@ -11,6 +11,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import info.androidhive.slidingmenu.NavigationActivity;
+import trainingsplan.AllgemeineFitness;
+import trainingsplan.Ausdauer;
+import trainingsplan.Gewichtsverlust;
+import trainingsplan.MasseMuskelaufbau;
+import trainingsplan.Rueckenstaerkung;
 
 public class RegistrierungFragenkatalogActivity extends Activity {
     // ATTRIBUTE
@@ -70,24 +75,28 @@ public class RegistrierungFragenkatalogActivity extends Activity {
      * @param view
      */
     public void fragenkatalog_fertig(View view){
+        // TRAININGSZIEL
         radioGroupFrage1 = (RadioGroup)findViewById(R.id.rg_frage1);
         int selectedF1 = radioGroupFrage1.getCheckedRadioButtonId();
         RadioButton rf1 = (RadioButton)findViewById(selectedF1);
         String antwortF1 = rf1.getText().toString();
         Log.d("--------------- Frage 1:", antwortF1);
 
+        // WAS MACHT ES DIR SCHWER AKTIVER ZU SEIN?
         radioGroupFrage2 = (RadioGroup)findViewById(R.id.rg_frage2);
         int selectedF2 = radioGroupFrage2.getCheckedRadioButtonId();
         RadioButton rf2 = (RadioButton)findViewById(selectedF2);
         String antwortF2 = rf2.getText().toString();
         Log.d("--------------- Frage 2:", antwortF2);
 
+        // ERFAHRUNGSLEVEL
         radioGroupFrage3 = (RadioGroup)findViewById(R.id.rg_frage3);
         int selectedF3 = radioGroupFrage3.getCheckedRadioButtonId();
         RadioButton rf3 = (RadioButton)findViewById(selectedF3);
         String antwortF3 = rf3.getText().toString();
         Log.d("--------------- Frage 3:", antwortF3);
 
+        // WIE OFT KANNST DU PRO WOCHE TRAINIEREN GEHEN?
         radioGroupFrage4 = (RadioGroup)findViewById(R.id.rg_frage4);
         int selectedF4 = radioGroupFrage4.getCheckedRadioButtonId();
         RadioButton rf4 = (RadioButton)findViewById(selectedF4);
@@ -110,6 +119,21 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                     antwortF4
               )
         );
+
+        // ========= TRAININGSPLAN ERSTELLEN =========
+        Trainingsplan tp = new Trainingsplan();
+        // Masse und Muskelaufbau - Trainingsplan
+        if(antwortF1 == getString(R.string.masseaufbau)) tp.set_ziel(new MasseMuskelaufbau());
+        // Gewichtsverlust - Trainingsplan
+        if(antwortF1 == getString(R.string.gewichtsverlust)) tp.set_ziel(new Gewichtsverlust());
+        // Erhöhung der Ausdauer - Trainingsplan
+        if(antwortF1 == getString(R.string.kondition)) tp.set_ziel(new Ausdauer());
+        // Rückenstärkung - Trainignsplan
+        if(antwortF1 == getString(R.string.ruecken)) tp.set_ziel(new Rueckenstaerkung());
+        // Einfache allgemein Fitness - Trainingsplan
+        if(antwortF1 == getString(R.string.allgemein)) tp.set_ziel(new AllgemeineFitness());
+
+        // ========= ERNÄHRUNGSPLAN ERSTELLEN =========
 
         Intent intent = new Intent(RegistrierungFragenkatalogActivity.this, NavigationActivity.class);
         startActivity(intent);
