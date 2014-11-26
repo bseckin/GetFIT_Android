@@ -8,7 +8,11 @@ package com.packone.login;
  */
 
 public class Contact {
+
     private boolean TESTVARIABLE;
+
+    //Test
+    // >>>>>>> 31602e5138ca25025c75fcb9124c90805469cc37
     // private variables
     private String _uname;
     private String _pword;
