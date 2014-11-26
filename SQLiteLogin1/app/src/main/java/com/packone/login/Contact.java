@@ -16,21 +16,39 @@ public class Contact {
     private int _height;
     private int _weight;
 
-    //TODO Fragenkatalog Daten von dem User speichern
+    // fragenkatalog
+    private String _ziel;
+    private String _akt;
+    private String _erfahrung;
+    private String _quant;
 
     // Empty constructor
     public Contact() {
-
     }
 
+
     // constructor
-    public Contact(String uname, String pword, String email, String gender, int weight, int height) {
+    public Contact(
+            String uname,
+            String pword,
+            String email,
+            String gender,
+            int weight,
+            int height,
+            String ziel,
+            String akt,
+            String erfahrung,
+            String quant) {
         this._uname = uname;
         this._pword = pword;
         this._email = email;
         this._gender = gender;
         this._weight = weight;
         this._height = height;
+        this._ziel = ziel;
+        this._akt = akt;
+        this._erfahrung = erfahrung;
+        this._quant = quant;
     }
 
     // constructor
@@ -38,7 +56,6 @@ public class Contact {
         this._pword = pword;
         this._email = email;
     }
-
 
     // Setter getter for Username
     public String getUname() {
@@ -92,6 +109,38 @@ public class Contact {
 
     public void setWeight(int weight) {
         this._weight = weight;
+    }
+
+    public String getZiel() {
+        return _ziel;
+    }
+
+    // FRAGENKATALOG GETTER SETTER
+    public void setZiel(String ziel) {
+        this._ziel = ziel;
+    }
+
+    public String getAkt() {
+        return _akt;
+    }
+
+    public void setAkt(String akt) {
+        this._akt = _akt;
+    }
+
+    public void setErfahrung(String erfahrung) {
+        this._erfahrung = erfahrung;
+    }
+    public String getErfahrung() {
+        return _erfahrung;
+    }
+
+    public void setQuant(String quant) {
+        this._quant = quant;
+    }
+
+    public String getQuant() {
+        return _quant;
     }
 
 

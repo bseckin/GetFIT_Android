@@ -40,7 +40,8 @@
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#BEF202">
+            android:background="#BEF202"
+            android:id="@+id/rg_frage1">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -96,7 +97,8 @@
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#BEF202">
+            android:background="#BEF202"
+            android:id="@+id/rg_frage2">
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -136,7 +138,8 @@
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#BEF202">
+            android:background="#BEF202"
+            android:id="@+id/rg_frage3">
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -176,7 +179,8 @@
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#BEF202">
+            android:background="#BEF202"
+            android:id="@+id/rg_frage4">
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,7 +219,8 @@
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#BEF202">
+            android:background="#BEF202"
+            android:id="@+id/rg_frage5">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -239,4 +244,4 @@
         />
 
 </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
+</ScrollView><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
