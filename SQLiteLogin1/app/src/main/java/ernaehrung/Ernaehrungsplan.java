@@ -9,6 +9,7 @@ public abstract class Ernaehrungsplan {
         //Delegation der Objekterstellung an Subklasse
         AErnaehrung plan = createAErnaehrung(pZuHolendesPlan);
 
+        //ICH BINS MUHI BRAH
         //weitere verarbeitung
         plan.goal();
 
