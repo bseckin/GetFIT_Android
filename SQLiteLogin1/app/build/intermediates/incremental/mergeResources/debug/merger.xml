@@ -375,11 +375,6 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="fragment_community"
-                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_community.xml"
-                qualifiers=""
-                type="layout" />
-            <file
                 name="fragment_home"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_home.xml"
                 qualifiers=""
@@ -390,18 +385,8 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="fragment_pages"
-                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_pages.xml"
-                qualifiers=""
-                type="layout" />
-            <file
                 name="fragment_training"
                 path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_training.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fragment_whats_hot"
-                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_whats_hot.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -540,6 +525,8 @@ settings
                 </string>
                 <string name="frage_1" >1. Wähle bitte deine gewünschtes Ziel
                 </string>
+                <string name="vier_mal_training" >mehr als 4 mal in der Woche
+                </string>
                 <string name="frage_5" >5. Wie sind Sie auf GetFIT gekommen?
                 </string>
                 <string name="frage_4" >4. Wie oft kannst du in der Woche trainieren?
@@ -611,6 +598,8 @@ Mein Konto
                     </item>
                 </array>
 
+                <string name="drei_mal_training" >3x in der Woche
+                </string>
                 <string name="nichts" >Nichts.
                 </string>
                 <string name="hello_world" >Hello world!
@@ -652,6 +641,8 @@ Logout
                 <string name="motivation" >Mir fehlts an Motivation
                 </string>
                 <string name="title_section1" >Lifting
+                </string>
+                <string name="zwei_mal_training" >2x in der Woche
                 </string>
                 <string name="title_activity_wlifing" >WLifingActivity
                 </string>
@@ -833,6 +824,21 @@ center
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
+            <file
+                name="fragment_uebungen"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_uebungen.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_meinkonto"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_meinkonto.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_kondition"
+                path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\fragment_kondition.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\rs\debug" />
         <source path="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\res\generated\debug" />

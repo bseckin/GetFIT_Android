@@ -11,9 +11,12 @@ public class Trainingsplan {
 
     // Konstruktor
     public Trainingsplan() {
-        _ziel.erstellePlan();
+        //_ziel.erstellePlan(); beim Aufruf von new Trainingsplan muss ein Ziel sein um erstelle plan zu machen
     }
 
+    public  void erstellePlan(){
+        _ziel.erstellePlan();
+    }
     public IZiel get_ziel() {
         return _ziel;
     }

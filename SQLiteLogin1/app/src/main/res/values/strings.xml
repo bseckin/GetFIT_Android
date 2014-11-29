@@ -30,6 +30,10 @@
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
     <string name="profi">Viel – Ich habe viel Erfahrung </string>
 
+    <string name="zwei_mal_training">2x in der Woche</string>
+    <string name="drei_mal_training">3x in der Woche</string>
+    <string name="vier_mal_training">mehr als 4 mal in der Woche</string>
+
     <!-- RadioButtons Registrierung -->
     <string name="W">Maenlich</string>
     <string name="M">Weiblich</string>
@@ -70,5 +74,6 @@
     <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
     <string name="btn_fragen_fertig">Fertig!</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
+
 
 </resources>

@@ -184,7 +184,7 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2x in der Woche"
+                android:text="@string/zwei_mal_training"
                 android:id="@+id/radBtn_2mal"
                 android:textSize="12sp"
                 android:checked="false"
@@ -192,7 +192,7 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3x in der Woche"
+                android:text="@string/drei_mal_training"
                 android:id="@+id/radBtn_3mal"
                 android:textSize="12sp"
                 android:checked="false"
@@ -200,7 +200,7 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="mehr als 4 mal in der Woche"
+                android:text="@string/vier_mal_training"
                 android:id="@+id/radBtn_4mal"
                 android:textSize="12sp"
                 android:checked="false"

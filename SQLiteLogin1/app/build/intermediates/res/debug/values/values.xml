@@ -61,6 +61,7 @@
     <string name="app_name">SQLiteLogin</string>
     <string name="btn_fragen_fertig">Fertig!</string>
     <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drei_mal_training">3x in der Woche</string>
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment />
 
@@ -129,7 +130,9 @@
     <string name="title_section1">Lifting</string>
     <string name="title_section2">Cardio</string>
     <string name="title_section3">Nutrition</string>
+    <string name="vier_mal_training">mehr als 4 mal in der Woche</string>
     <string name="zeitdruck">Zeitdruck</string>
+    <string name="zwei_mal_training">2x in der Woche</string>
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
