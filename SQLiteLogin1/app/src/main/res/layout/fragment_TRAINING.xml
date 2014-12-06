@@ -6,7 +6,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        >
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                      android:layout_width="match_parent"
@@ -16,6 +17,7 @@
                      >
 
         </TableLayout>
+
     </RelativeLayout>
 
     <ImageView android:layout_width="wrap_content"
@@ -26,6 +28,6 @@
         android:layout_marginTop="10dp"
         android:layout_alignParentBottom="true"
         android:contentDescription="ic_photos"/>
-    
+
 
 </RelativeLayout>
