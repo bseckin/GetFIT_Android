@@ -240,7 +240,7 @@
         android:id="@+id/btn_fragen_fertig"
         android:layout_gravity="center_horizontal"
         android:onClick="fragenkatalog_fertig"
-        style="@style/btnStyleOrange"
+        style="@style/btnStyleTwitterblue"
         />
 
 </LinearLayout>

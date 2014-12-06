@@ -15,6 +15,7 @@ public class Ausdauer implements IZiel {
 
     @Override
     public void erstellePlan() {
+
     }
 
     public int getFrequenz() {

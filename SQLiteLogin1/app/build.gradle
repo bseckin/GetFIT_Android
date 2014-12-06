@@ -21,4 +21,14 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile 'com.android.support:support-v13:20.0.0'
+
+    //JARS hinzufuegen
+    compile files ('libs/activation.jar')
+    compile files ('libs/additionnal.jar')
+    compile files ('libs/mail.jar')
+
+    //damit gradle und jars automatisch geupdated werden
+    compile fileTree(dir: 'libs', include: ['activation.jar'])
+    compile fileTree(dir: 'libs', include: ['additionnal.jar'])
+    compile fileTree(dir: 'libs', include: ['mail.jar'])
 }

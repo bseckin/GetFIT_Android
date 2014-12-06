@@ -10,47 +10,11 @@
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                      android:layout_width="match_parent"
-                     android:layout_height="match_parent"
-                     android:stretchColumns="1">
-            <TableRow>
-                <TextView
-                    android:text="open"
-                    android:padding="10dip" />
-                <TextView
-                    android:text="open_shortcut"
-                    android:gravity="right"
-                    android:padding="10dip" />
-            </TableRow>
+                     android:layout_height="wrap_content"
+                     android:stretchColumns="1"
+                     android:id="@+id/tp_tablelayout"
+                     >
 
-            <TableRow>
-                <TextView
-                    android:text="save"
-                    android:padding="10dip" />
-                <TextView
-                    android:text="sav shortcut"
-                    android:gravity="right"
-                    android:padding="10dip" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="open"
-                    android:padding="10dip" />
-                <TextView
-                    android:text="open_shortcut"
-                    android:gravity="right"
-                    android:padding="10dip" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="save"
-                    android:padding="10dip" />
-                <TextView
-                    android:text="sav shortcut"
-                    android:gravity="right"
-                    android:padding="10dip" />
-            </TableRow>
         </TableLayout>
     </RelativeLayout>
 
@@ -60,7 +24,8 @@
         android:src="@drawable/ic_photos"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:contentDescription="ic_photos"/>
     
 
 </RelativeLayout>
