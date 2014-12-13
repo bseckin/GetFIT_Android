@@ -14,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.ExpandableListView;
 
 import com.packone.login.R;
@@ -83,7 +82,7 @@ public class WLifingActivity extends Activity implements ActionBar.TabListener {
         // For each of the sections in the app, add a tab to the action bar.
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
             // Create a tab with text corresponding to the page title defined by
-            // the adapter. Also specify this Activity object, which implements
+            // the adapter. Also pecify this Activity object, which implements
             // the TabListener interface, as the callback (listener) for when
             // this tab is selected.
             actionBar.addTab(

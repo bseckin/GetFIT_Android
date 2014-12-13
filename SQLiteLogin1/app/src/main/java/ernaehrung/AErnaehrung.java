@@ -6,5 +6,5 @@ package ernaehrung;
 public abstract class AErnaehrung {
     public void goal() {}
 
-    public abstract void starten();
+    public abstract String[][][] starten();
 }

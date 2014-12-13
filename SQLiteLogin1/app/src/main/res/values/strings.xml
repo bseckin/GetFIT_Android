@@ -70,5 +70,6 @@
     <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
     <string name="btn_fragen_fertig">Fertig!</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
+    <string name="title_activity_nutrition">NutritionActivity</string>
 
 </resources>

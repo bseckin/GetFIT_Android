@@ -52,7 +52,6 @@ public class NavigationActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navmain);
-
         mTitle = mDrawerTitle = getTitle();
 
         // load slide menu items
@@ -250,6 +249,7 @@ public class NavigationActivity extends Activity {
     }
 
     public void onProcess(View view) {
+
         Intent intent = new Intent(NavigationActivity.this, ProgressActivity.class);
         startActivity(intent);
     }

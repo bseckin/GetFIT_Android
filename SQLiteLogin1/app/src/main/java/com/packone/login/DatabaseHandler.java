@@ -179,7 +179,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      * @param uname Username als String
      * @return contact
      */
-    Contact getContact(String uname) {
+    public Contact getContact(String uname) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_CONTACTS, new String[]{KEY_USERNAME,
