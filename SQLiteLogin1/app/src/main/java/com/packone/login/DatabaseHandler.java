@@ -241,12 +241,37 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     /**
+     * Holt die eingegebenen, konistenten Werte vom Fragenkatalog
+     *
+     * @return
+     */
+    public Contact getFragenkatalog() {
+        //List<Contact> contactFragenList = new ArrayList<Contact>();
+        // Select Fragenkatalog Query
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selectQuery = "SELECT " +  KEY_ZIEL + ", " + KEY_AKT + ", " + KEY_ERFAHRUNG + ", " + KEY_QUANTITAET + " FROM " + TABLE_CONTACTS;
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        Contact fragenkatalog_contact = new Contact(
+                cursor.getString(0),    // Ziel
+                cursor.getString(1),    // Akt
+                cursor.getString(2),    // Erfahrung
+                cursor.getString(3)     // Quantitaet
+        );
+        // return contact
+        return fragenkatalog_contact;
+    }
+
+
+    /**
      * Updating single contact
      *
      * @param contact
      * @return int
      */
-
     public int updateContact(Contact contact) {
         SQLiteDatabase db = this.getWritableDatabase();
 

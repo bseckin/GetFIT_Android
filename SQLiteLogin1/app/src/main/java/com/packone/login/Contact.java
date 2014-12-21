@@ -57,6 +57,20 @@ public class Contact {
         this._email = email;
     }
 
+    /**
+     * Konstrukto für Fragenkatalog query (Db-Handler getFragenkatalog)
+     * @param ziel
+     * @param akt
+     * @param erfahrung
+     * @param quant
+     */
+    public Contact(String ziel, String akt, String erfahrung, String quant) {
+        this._ziel = ziel;
+        this._akt = akt;
+        this._erfahrung = erfahrung;
+        this._quant = quant;
+    }
+
     // Setter getter for Username
     public String getUname() {
         return this._uname;

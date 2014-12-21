@@ -13,11 +13,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import info.androidhive.slidingmenu.NavigationActivity;
-import trainingsplan.AllgemeineFitness;
-import trainingsplan.Ausdauer;
-import trainingsplan.Gewichtsverlust;
-import trainingsplan.MasseMuskelaufbau;
-import trainingsplan.Rueckenstaerkung;
 
 public class RegistrierungFragenkatalogActivity extends Activity {
     // ATTRIBUTE
@@ -52,6 +47,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
     private static String GENDER = "";
     private static String HEIGHT = "";
     private static String WEIGHT = "";
+    public String user_ziel;
+    private String[][] pl;
 
 
     @Override
@@ -132,10 +129,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
             if(antwortF4.equals(getString(R.string.vier_mal_training))) this.frequenz = 4;  // Mehr als 4 mal pro Woche
 
             // ============ TRAININGSPLAN ERSTELLEN ============
-            Trainingsplan fertiger_Trainingsplan = erstelleTP();
+            //Trainingsplan fertiger_Trainingsplan = erstelleTP();
 
-
-            //TODO ========= ERNÄHRUNGSPLAN ERSTELLEN =========
 
             /*
             * =================================================
@@ -143,7 +138,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
             * kann die nächste Acitivty gestartet werden
             * =================================================
             */
-            final DatabaseHandler db = new DatabaseHandler(this);
+            DatabaseHandler db = new DatabaseHandler(this);
             db.addContact(
                     new Contact(
                             UNAME,
@@ -158,9 +153,12 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                             antwortF4
                     )
             );
+            db.close();
 
+            TrainingsplanParameter();
             // Hauptmenü-Activity Starten
-            Intent intent = new Intent(RegistrierungFragenkatalogActivity.this, NavigationActivity.class);
+            Log.d("Activity","Starting NavigationActivity");
+            Intent intent = new Intent(this, NavigationActivity.class);
             startActivity(intent);
         }
     }
@@ -169,44 +167,89 @@ public class RegistrierungFragenkatalogActivity extends Activity {
      * Erstellt Trainingsplan durch den ausgefüllten Fragenkatalog
      *
      * @return Trainingsplan
-     */
+
     public Trainingsplan erstelleTP(){
-        Trainingsplan tp = new Trainingsplan();
+        Trainingsplan tp = Trainingsplan.getTrainingsplan();
+//        Trainingsplan tp = new Trainingsplan();
+
 
         // Masse und Muskelaufbau - Trainingsplan
         if(antwortF1 == getString(R.string.masseaufbau)) {
             tp.set_ziel(new MasseMuskelaufbau(frequenz));
-            tp.erstellePlan();
+            setPlan(tp.getPlan());
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            TraningsFragment traningsFragment = new TraningsFragment();
+
+            fragmentTransaction.add(R.layout.fragment_training, traningsFragment);
+            fragmentTransaction.commit();
+            Log.d("ADSDASDAS", Arrays.deepToString(tp.getPlan()));
+
+            //Bundle bundle = new Bundle();
+            //bundle.putSerializable("TP_ARRAY", tp.getPlan());
+            //TraningsFragment fragment = new TraningsFragment();
+            //fragment.setArguments(bundle);
+
+            //DEM NAVIAGTIONS ACTIVITY DAS ARRAY ÜBERGEBEN
+            //String[][] tp_tabelle = tp.getPlan();
+
+            //tf.BuildTable(tp_tabelle[0].length-1, tp_tabelle[1].length-1, tp_tabelle);
             Log.d("==================== MASSE UND MUSKELAUFBAU", " - TP ");
         } else {
             // Gewichtsverlust - Trainingsplan
             if ( antwortF1 == getString(R.string.gewichtsverlust) ) {
                 tp.set_ziel(new Gewichtsverlust(frequenz));
-                tp.erstellePlan();
+                tp.getPlan();
                 Log.d("==================== GEWICHTSVERLUST", " - TP ");
             } else {
                 // Erhöhung der Ausdauer - Trainingsplan
                 if ( antwortF1.equals(getString(R.string.kondition)) ) {
                     tp.set_ziel(new Ausdauer(frequenz));
-                    tp.erstellePlan();
+                    tp.getPlan();
                     Log.d("==================== KONDITION", " - TP ");
                 } else {
                     // Rückenstärkung - Trainignsplan
                     if ( antwortF1 == getString(R.string.ruecken) ) {
                         tp.set_ziel(new Rueckenstaerkung(frequenz));
-                        tp.erstellePlan();
+                        tp.getPlan();
                         Log.d("==================== RUECKEN STÄRKUNG", " - TP ");
                     } else {
                         // Einfache allgemein Fitness - Trainingsplan
                         if ( antwortF1 == getString(R.string.allgemein) ) {
                             tp.set_ziel(new AllgemeineFitness(frequenz));
-                            tp.erstellePlan();
+                            tp.getPlan();
                             Log.d("==================== ALLGEMEIN FITNESS", " - TP ");
                         }
                     }
                 }
             }
         }
+
+        pl = tp.getPlan();
+
         return tp;
+    }
+
+    private void setPlan(String[][] plan) {
+        this.pl = plan;
+    }
+
+    public String[][] getPlan() {
+        return this.pl;
+    }
+     */
+
+    private void TrainingsplanParameter(){
+        final DatabaseHandler db = new DatabaseHandler(this);
+        // Reading Contact from DB;
+        // Reading all contacts
+        Contact fragenkatalog_contact = db.getFragenkatalog();
+        Log.d("READING: ", "Fragenkatalog Werte: "+
+                fragenkatalog_contact.getZiel() + "\n" +
+                fragenkatalog_contact.getAkt() + "\n" +
+                fragenkatalog_contact.getErfahrung() + "\n" +
+                fragenkatalog_contact.getQuant() + "\n"
+        );
+        db.close();
     }
 }

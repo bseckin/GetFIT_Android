@@ -4,15 +4,18 @@ import android.app.Fragment;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.TableRow.LayoutParams;
 import android.widget.TextView;
+
 import com.packone.login.R;
+
+import java.util.Arrays;
+import java.util.Calendar;
 
 
 public class TraningsFragment extends Fragment {
@@ -25,60 +28,93 @@ public class TraningsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_training, container, false);
+        trainingsTagTitel();
+        TextView ueberschrift = (TextView)rootView.findViewById(R.id.label_zu_trainierende_muskel);
 
+        Bundle arguments = getArguments();
+        if(arguments != null)
+        {
+            String[][] passed_list = (String[][]) arguments.getSerializable("TP_ARRAY");
+            Log.d("LISTE##############", Arrays.deepToString(passed_list));
+        } else {
+            Log.d("FAIL", "GAFASD");
+        }
+
+
+        // " TRAININGSZIEL "
+        //RegistrierungFragenkatalogActivity activity = (RegistrierungFragenkatalogActivity) getActivity();
+        //String[][] s =((RegistrierungFragenkatalogActivity)getActivity()).getPlan();
+        //String[][] s = Trainingsplan.getTrainingsplan().getPlan();
+
+        //Aktuellen Tag als Überschrift setzen
+        ueberschrift.setText(trainingsTagTitel());
+        ueberschrift.setTextSize(23);
+        ueberschrift.setTypeface(null, Typeface.BOLD);
+        ueberschrift.setTextColor(Color.WHITE);
+
+        //Tabelle
         table_layout = (TableLayout) rootView.findViewById(R.id.tp_tablelayout);
         table_layout.removeAllViews();
-        BuildTable(4, 3);
+
+        //String[][] plan = tp.getPlan();
+        //BuildTable(2, 3, tp.getPlan());
+        String[][] plan = {
+                {"Bankdrücken", "Flys", "Dips"},
+                {"3", "3", "2"}
+        };
+
+        BuildTable(plan[0].length-1, plan[1].length-1, plan);
         return rootView;
     }
 
 
+    private String trainingsTagTitel() {
+        //Aktuellen Tag holen
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+        //Date time = calendar.getTime();
+        switch (day) {
+            case Calendar.SUNDAY:
+                return "Heute ist Sonntag, Ihr Plan:";
+            case Calendar.MONDAY:
+                return "Heute ist Montag, Ihr Plan:";
+            case Calendar.TUESDAY:
+                return "Heute ist Dienstag, Ihr Plan:";
+            case Calendar.WEDNESDAY:
+                return "Heute ist Sonntag, Ihr Plan:";
+            case Calendar.THURSDAY:
+                return "Heute ist Sonntag, Ihr Plan:";
+            case Calendar.FRIDAY:
+                // etc ...
+            case Calendar.SATURDAY:
+                // etc ...
+        }
+        return null;
+    }
 
-    public void BuildTable(int rows, int cols) {
+    /**
+     *
+     * @param rows
+     * @param cols
+     */
+    public void BuildTable(int rows, int cols, String[][] plan) {
         // outer for loop
-        for (int i = 1; i <= rows; i++) {
-
-            TableRow row = new TableRow(getActivity().getApplicationContext());
-            row.setLayoutParams(new TableRow.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                    LayoutParams.WRAP_CONTENT));
+        for (int i = 0; i < rows; i++) {
+            TableRow row = new TableRow(getActivity());
+            row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+                    TableRow.LayoutParams.WRAP_CONTENT));
 
             // inner for loop
-            for (int j = 1; j <= cols; j++) {
-                TextView tv = new TextView(getActivity().getApplicationContext());
-                tv.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-                        LayoutParams.WRAP_CONTENT));
-                tv.setBackgroundResource(R.drawable.table_cell_shape);
-                tv.setPadding(5, 5, 5, 5);
-                tv.setTextColor(Color.BLACK);
-                /* ------------------------------
-                 * | SATZZAHL | ÜBUNG  | WDH    |
-                 * ------------------------------ */
-                if(i == 1) {
-                    if(j == 1) {
-                        tv.setTypeface(null, Typeface.BOLD); //FETT machen Überschrft
-                        tv.setText("Satzzahl");
-                    } else {
-                        //tv.setText("R " + i + ", C" + j);
-                        if(j == 2) {
-                            tv.setTypeface(null, Typeface.BOLD);
-                            tv.setText("Übung");
-                        } else {
-                            //tv.setText("R " + i + ", C" + j);
-                            if(j == 3) {
-                                tv.setTypeface(null, Typeface.BOLD);
-                                tv.setText("Wdh.");
-                            }
-                        }
-                    }
-                } else {
-                    tv.setText("R " + i + ", C" + j);
-                }
+            for (int j = 0; j < cols; j++) {
+                TextView tv = new TextView(getActivity());
+                tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
+                        TableRow.LayoutParams.WRAP_CONTENT));
 
+                tv.setPadding(5, 5, 5, 5);
+                tv.setText(plan[j][i]);
                 row.addView(tv);
             }
-
             table_layout.addView(row);
-
         }
     }
 }

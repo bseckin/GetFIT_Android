@@ -14,7 +14,8 @@ public class AllgemeineFitness implements IZiel{
     }
 
     @Override
-    public void erstellePlan() {
+    public String[][] erstellePlan() {
+        return new String[0][];
     }
 
     public int getFrequenz() {

@@ -5,30 +5,32 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:layout_margin="20dp"
         >
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[TP ÜBERSCHRIFT]"
+            android:id="@+id/label_zu_trainierende_muskel"
+            android:background="@drawable/redbutton"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="22sp"/>
+
+
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                      android:layout_width="match_parent"
+                     android:layout_below="@id/label_zu_trainierende_muskel"
                      android:layout_height="wrap_content"
                      android:stretchColumns="1"
                      android:id="@+id/tp_tablelayout"
-                     >
+                     android:layout_marginTop="10dp">
 
         </TableLayout>
 
     </RelativeLayout>
-
-    <ImageView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/ic_photos"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_alignParentBottom="true"
-        android:contentDescription="ic_photos"/>
-
-
-</RelativeLayout>
-<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_training.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_training.xml -->

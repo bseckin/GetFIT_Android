@@ -21,7 +21,7 @@
         android:icon="@drawable/launcher_getfit"
         android:label="GetFIT"
         android:largeHeap="false"
-        android:theme="@android:style/Theme.Holo.Light" >
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
         <activity
             android:name="com.packone.login.MainActivity"
             android:label="@string/title_activity_start" >

@@ -1,14 +1,18 @@
 package info.androidhive.slidingmenu;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,7 +54,16 @@ public class NavigationActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("Activity","Navigation onCreate() start");
         super.onCreate(savedInstanceState);
+
+
+        /*
+         ACTIONBAR Farbe, und Textfarbe:
+          */
+        ActionBar bar = getActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#34585c")));
+        bar.setTitle(Html.fromHtml("<font color='#FFFFFF'>ActionBarTitle </font>"));
         setContentView(R.layout.activity_navmain);
         mTitle = mDrawerTitle = getTitle();
 
@@ -120,6 +133,8 @@ public class NavigationActivity extends Activity {
             // on first time display view for first nav item
             displayView(0);
         }
+        Log.d("Activity","Navigation onCreate() finished");
+
     }
 
     /**
@@ -171,6 +186,8 @@ public class NavigationActivity extends Activity {
      * Diplaying fragment view for selected nav drawer list item
      */
     private void displayView(int position) {
+        Log.d("Activity","Navigation displayView() start");
+
         // update the main content by replacing fragments
         Fragment fragment = null;
         switch (position) {
@@ -204,9 +221,11 @@ public class NavigationActivity extends Activity {
         }
 
         if (fragment != null) {
+            Log.d("Fragment","Loading FragmentManager");
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(R.id.frame_container, fragment).commit();
+            Log.d("Fragment","Transaction finished");
 
             // update selected item and title, then close the drawer
             mDrawerList.setItemChecked(position, true);
@@ -217,6 +236,8 @@ public class NavigationActivity extends Activity {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");
         }
+        Log.d("Activity","Navigation displayView() finished");
+
     }
 
     @Override
