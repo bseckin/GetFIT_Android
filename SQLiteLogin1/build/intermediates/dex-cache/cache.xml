@@ -2,6 +2,20 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-9ba6b889947fa912a9d8c786e3d20e410d133f85.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-0cf1b604965eb4321b279804a1eb5245742dafac.jar" />
+    </item>
+    <item
         jar="C:\Users\Muhammed5\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
@@ -21,20 +35,6 @@
         revision="20.0.0"
         sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33">
         <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-8c5305b46ce5f82c201a7bef38a94aefa77d2c70.jar" />
-    </item>
-    <item
-        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-9ba6b889947fa912a9d8c786e3d20e410d133f85.jar" />
-    </item>
-    <item
-        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
-        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-0cf1b604965eb4321b279804a1eb5245742dafac.jar" />
     </item>
 
 </items>
