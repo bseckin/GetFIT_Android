@@ -5,7 +5,7 @@ import android.util.Log;
 /**
  * Created by Muhammed5 on 17.12.2014.
  */
-public class MasseEndo {
+public class MasseEndo extends AErnaehrung{
 
     private String[][] morgens;
     private String[][] mittags;

@@ -179,29 +179,35 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      * @param uname Username als String
      * @return contact
      */
-    public Contact getContact(String uname) {
-        SQLiteDatabase db = this.getReadableDatabase();
+    public List<Contact> getContact(String uname) {
+        List<Contact> contactList = new ArrayList<Contact>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_CONTACTS+" WHERE uname = '" + uname+"'";
 
-        Cursor cursor = db.query(TABLE_CONTACTS, new String[]{KEY_USERNAME,
-                        KEY_PASSWORD, KEY_EMAIL, KEY_GENDER, KEY_HEIGHT, KEY_WEIGHT}, KEY_USERNAME + "=?",
-                new String[]{String.valueOf(uname)}, null, null, null, null);
-        if (cursor != null)
-            cursor.moveToFirst();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
 
-        Contact contact = new Contact(
-                cursor.getString(0),
-                cursor.getString(1),
-                cursor.getString(2),
-                cursor.getString(3),
-                Integer.parseInt(cursor.getString(4)),
-                Integer.parseInt(cursor.getString(5)),
-                cursor.getString(6),
-                cursor.getString(7),
-                cursor.getString(8),
-                cursor.getString(9)
-        );
-        // return contact
-        return contact;
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Contact contact = new Contact();
+                contact.setUname(cursor.getString(0));
+                contact.setPword(cursor.getString(1));
+                contact.setEmail(cursor.getString(2));
+                contact.setGender(cursor.getString(3));
+                contact.setHeight(Integer.parseInt(cursor.getString(4)));
+                contact.setWeight(Integer.parseInt(cursor.getString(5)));
+                contact.setZiel(cursor.getString(6));
+                contact.setAkt(cursor.getString(7));
+                contact.setErfahrung(cursor.getString(8));
+                contact.setQuant(cursor.getString(9));
+
+                // Adding contact to list
+                contactList.add(contact);
+            } while (cursor.moveToNext());
+        }
+        // return contact list
+        return contactList;
     }
 
     /**

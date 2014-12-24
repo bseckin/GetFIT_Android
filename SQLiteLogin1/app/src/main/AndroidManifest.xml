@@ -17,6 +17,7 @@
         android:maxSdkVersion="18" />
 
     <application
+        android:name="com.packone.login.GlobalClass"
         android:allowBackup="true"
         android:icon="@drawable/launcher_getfit"
         android:label="GetFIT"

@@ -17,6 +17,6 @@ public abstract class Ernaehrungsplan {
     }
 
     //Definition der Factory Method
-    protected abstract AErnaehrung createAErnaehrung(String pZuHolendesPlan);
+    protected abstract AErnaehrung createAErnaehrung(String pZuHolenderPlan);
 
 }

@@ -7,13 +7,13 @@ public class Ectomorph extends Ernaehrungsplan{
 
 
     @Override
-    protected AErnaehrung createAErnaehrung(String pZuHolendesPlan) {
+    protected AErnaehrung createAErnaehrung(String pZuHolenderPlan) {
        AErnaehrung plan = null;
-        if (pZuHolendesPlan.equals("MasseEcto")) {
+        if (pZuHolenderPlan.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
             plan = new MasseEcto();
         }
         else {
-            System.err.println("Ungültig!");
+            System.err.println("Gewichtsverlust");
         }
         return plan;
     }

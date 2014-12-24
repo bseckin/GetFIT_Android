@@ -32,6 +32,8 @@ public class RegisterActivity extends Activity {
     private EditText mheight;
     private EditText weight;
     private SeekBar weightcontrol = null;
+
+    private boolean checkInt;
     protected ArrayList<String> databaseArray;
 
     //TODO: - Exercise implementieren
@@ -70,6 +72,7 @@ public class RegisterActivity extends Activity {
         memail = (EditText) findViewById(R.id.email);
         radioSexGroup = (RadioGroup) findViewById(R.id.gender);
         mheight = (EditText) findViewById(R.id.height);
+        checkInt = true;
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 /**
@@ -77,6 +80,8 @@ public class RegisterActivity extends Activity {
                  * */
                 // USER REGISTRATION
                 /* Check ob alle Eingabe ausgefullt wurden */
+
+
                 if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals("")) || (radioSexGroup.getCheckedRadioButtonId() == -1)) {
                     Context context = getApplicationContext();
                     CharSequence text = "Geben sie etwas ein";

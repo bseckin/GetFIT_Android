@@ -38,7 +38,7 @@
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="M">Weiblich</string>
-    <string name="W">Maenlich</string>
+    <string name="W">Maennlich</string>
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_settings_was"><item>settings</item></string>
