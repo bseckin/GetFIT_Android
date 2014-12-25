@@ -5,24 +5,11 @@ package trainingsplan;
  * Created by Berkay on 26.11.2014.
  */
 public class Rueckenstaerkung implements IZiel {
-    // Wie oft pro Woche Training?
-    private int frequenz;
-
     // Konstruktor
-    public Rueckenstaerkung(int frequenz) {
-        this.frequenz = frequenz;
-    }
+    public Rueckenstaerkung() {}
 
     @Override
-    public String[][] erstellePlan() {
+    public String[][] erstellePlan(int frequenz) {
         return new String[0][];
-    }
-
-    public int getFrequenz() {
-        return frequenz;
-    }
-
-    public void setFrequenz(int frequenz) {
-        this.frequenz = frequenz;
     }
 }

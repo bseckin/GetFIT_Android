@@ -1,9 +1,5 @@
 package com.packone.login;
 
-import android.util.Log;
-
-import java.util.Arrays;
-
 import trainingsplan.IZiel;
 
 /**
@@ -11,14 +7,10 @@ import trainingsplan.IZiel;
  */
 public class Trainingsplan {
     private static Trainingsplan instance = null;
-
     private IZiel _ziel;
-    //Frequenz freq;
 
-    // Konstruktor
-    private Trainingsplan() {
-        //_ziel.getPlan(); //beim Aufruf von new Trainingsplan muss ein Ziel sein um erstelle plan zu machen
-    }
+    // leerer Konstruktor
+    private Trainingsplan() {}
 
     public static Trainingsplan getTrainingsplan() {
         if ( instance == null ) {
@@ -27,18 +19,30 @@ public class Trainingsplan {
         return instance;
     }
 
-    public String[][] getPlan(){
+    /**
+     * Hier wird der eigentliche Plan GEHOLT. (erstellt wirds in der "Ziel" Klasse)
+     * und als 2D-Array zurueckgegeben. ([Übung], [Satzzahl])
+     *
+     * TODO ALLE PLÄNE MACHEN !!
+     * @param frequenz
+     * @return
+     */
+    public String[][] getPlan(int frequenz){
         // Erstellt plan je nach Ziel:
-        String[][] plan =_ziel.erstellePlan();
-        Log.d("String[][] erPlAN:", "" + Arrays.deepToString(plan));
+        String[][] plan =_ziel.erstellePlan(frequenz);
         return plan;
+    }
+
+    /**
+     * Setzt IZiel zum Ausgewaehlten Ziel.
+     * @param _ziel
+     */
+    public void set_ziel(IZiel _ziel) {
+        this._ziel = _ziel;
     }
 
     public IZiel get_ziel() {
         return _ziel;
     }
 
-    public void set_ziel(IZiel _ziel) {
-        this._ziel = _ziel;
-    }
 }

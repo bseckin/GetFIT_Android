@@ -3,6 +3,7 @@ package com.packone.login;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -50,11 +51,22 @@ public class RegistrierungFragenkatalogActivity extends Activity {
     public String user_ziel;
     private String[][] pl;
 
+    public static final String PREFS_NAME = "MyPrefsFile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrierung_fragenkatalog);
+
+        // We need an Editor object to make preference changes.
+        // All objects are from android.context.Context
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = settings.edit();
+
+        editor.putString("uname", UNAME);
+
+        // Commit the edits!
+        editor.commit();
 
         //WERTE VON REGISTER ACTICITY VON USER NEHMEN
         Intent intent = getIntent();
@@ -89,28 +101,28 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         int selectedF1 = radioGroupFrage1.getCheckedRadioButtonId();
         RadioButton rf1 = (RadioButton)findViewById(selectedF1);
         antwortF1 = rf1.getText().toString();
-        Log.d("--------------- Frage 1:", antwortF1);
+        Log.d("RegisteriungsFragenkatalogAcitivity ------- Frage 1:", antwortF1);
 
         // " WAS MACHT ES DIR SCHWER AKTIVER ZU SEIN? "
         radioGroupFrage2 = (RadioGroup)findViewById(R.id.rg_frage2);
         int selectedF2 = radioGroupFrage2.getCheckedRadioButtonId();
         RadioButton rf2 = (RadioButton)findViewById(selectedF2);
         antwortF2 = rf2.getText().toString();
-        Log.d("--------------- Frage 2:", antwortF2);
+        Log.d("RegisteriungsFragenkatalogAcitivity ------- Frage 2:", antwortF2);
 
         // " ERFAHRUNGSLEVEL "
         radioGroupFrage3 = (RadioGroup)findViewById(R.id.rg_frage3);
         int selectedF3 = radioGroupFrage3.getCheckedRadioButtonId();
         RadioButton rf3 = (RadioButton)findViewById(selectedF3);
         antwortF3 = rf3.getText().toString();
-        Log.d("--------------- Frage 3:", antwortF3);
+        Log.d("RegisteriungsFragenkatalogAcitivity ------- Frage 3:", antwortF3);
 
         // " WIE OFT KANNST DU PRO WOCHE TRAINIEREN GEHEN? "
         radioGroupFrage4 = (RadioGroup)findViewById(R.id.rg_frage4);
         int selectedF4 = radioGroupFrage4.getCheckedRadioButtonId();
         RadioButton rf4 = (RadioButton)findViewById(selectedF4);
         antwortF4 = rf4.getText().toString();
-        Log.d("--------------- Frage 4:", antwortF4);
+        Log.d("RegisteriungsFragenkatalogAcitivity ------- Frage 4:", antwortF4);
 
 
         // [DATEN ÜBERPRÜFUNG] - Ob alle Fragen beantwortet wurden.
@@ -138,7 +150,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
             * kann die nächste Acitivty gestartet werden
             * =================================================
             */
-            DatabaseHandler db = new DatabaseHandler(this);
+            final DatabaseHandler db = new DatabaseHandler(this);
             db.addContact(
                     new Contact(
                             UNAME,
@@ -153,103 +165,19 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                             antwortF4
                     )
             );
-            db.close();
+            // Calling Application class (see application tag in AndroidManifest.xml)
+            final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
 
-            TrainingsplanParameter();
+            //Set username in global/application context
+            globalVariable.setName(UNAME);
+
             // Hauptmenü-Activity Starten
             Log.d("Activity","Starting NavigationActivity");
             Intent intent = new Intent(this, NavigationActivity.class);
+            intent.putExtra("uname", UNAME);
             startActivity(intent);
         }
     }
 
-    /**
-     * Erstellt Trainingsplan durch den ausgefüllten Fragenkatalog
-     *
-     * @return Trainingsplan
 
-    public Trainingsplan erstelleTP(){
-        Trainingsplan tp = Trainingsplan.getTrainingsplan();
-//        Trainingsplan tp = new Trainingsplan();
-
-
-        // Masse und Muskelaufbau - Trainingsplan
-        if(antwortF1 == getString(R.string.masseaufbau)) {
-            tp.set_ziel(new MasseMuskelaufbau(frequenz));
-            setPlan(tp.getPlan());
-            FragmentManager fragmentManager = getFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            TraningsFragment traningsFragment = new TraningsFragment();
-
-            fragmentTransaction.add(R.layout.fragment_training, traningsFragment);
-            fragmentTransaction.commit();
-            Log.d("ADSDASDAS", Arrays.deepToString(tp.getPlan()));
-
-            //Bundle bundle = new Bundle();
-            //bundle.putSerializable("TP_ARRAY", tp.getPlan());
-            //TraningsFragment fragment = new TraningsFragment();
-            //fragment.setArguments(bundle);
-
-            //DEM NAVIAGTIONS ACTIVITY DAS ARRAY ÜBERGEBEN
-            //String[][] tp_tabelle = tp.getPlan();
-
-            //tf.BuildTable(tp_tabelle[0].length-1, tp_tabelle[1].length-1, tp_tabelle);
-            Log.d("==================== MASSE UND MUSKELAUFBAU", " - TP ");
-        } else {
-            // Gewichtsverlust - Trainingsplan
-            if ( antwortF1 == getString(R.string.gewichtsverlust) ) {
-                tp.set_ziel(new Gewichtsverlust(frequenz));
-                tp.getPlan();
-                Log.d("==================== GEWICHTSVERLUST", " - TP ");
-            } else {
-                // Erhöhung der Ausdauer - Trainingsplan
-                if ( antwortF1.equals(getString(R.string.kondition)) ) {
-                    tp.set_ziel(new Ausdauer(frequenz));
-                    tp.getPlan();
-                    Log.d("==================== KONDITION", " - TP ");
-                } else {
-                    // Rückenstärkung - Trainignsplan
-                    if ( antwortF1 == getString(R.string.ruecken) ) {
-                        tp.set_ziel(new Rueckenstaerkung(frequenz));
-                        tp.getPlan();
-                        Log.d("==================== RUECKEN STÄRKUNG", " - TP ");
-                    } else {
-                        // Einfache allgemein Fitness - Trainingsplan
-                        if ( antwortF1 == getString(R.string.allgemein) ) {
-                            tp.set_ziel(new AllgemeineFitness(frequenz));
-                            tp.getPlan();
-                            Log.d("==================== ALLGEMEIN FITNESS", " - TP ");
-                        }
-                    }
-                }
-            }
-        }
-
-        pl = tp.getPlan();
-
-        return tp;
-    }
-
-    private void setPlan(String[][] plan) {
-        this.pl = plan;
-    }
-
-    public String[][] getPlan() {
-        return this.pl;
-    }
-     */
-
-    private void TrainingsplanParameter(){
-        final DatabaseHandler db = new DatabaseHandler(this);
-        // Reading Contact from DB;
-        // Reading all contacts
-        Contact fragenkatalog_contact = db.getFragenkatalog();
-        Log.d("READING: ", "Fragenkatalog Werte: "+
-                fragenkatalog_contact.getZiel() + "\n" +
-                fragenkatalog_contact.getAkt() + "\n" +
-                fragenkatalog_contact.getErfahrung() + "\n" +
-                fragenkatalog_contact.getQuant() + "\n"
-        );
-        db.close();
-    }
 }
