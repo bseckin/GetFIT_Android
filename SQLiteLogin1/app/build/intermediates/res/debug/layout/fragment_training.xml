@@ -31,7 +31,8 @@
                      android:layout_marginTop="10dp"
                      android:textAlignment="center"
 
-                     android:background="#ff7a9ea7">
+                     android:background="#ff7a9ea7"
+                     android:gravity="center_horizontal">
 
         </TableLayout>
 

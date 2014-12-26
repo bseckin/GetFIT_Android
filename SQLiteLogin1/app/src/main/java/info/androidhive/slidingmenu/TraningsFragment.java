@@ -90,7 +90,7 @@ public class TraningsFragment extends Fragment {
                 tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
                         TableRow.LayoutParams.WRAP_CONTENT));
 
-                tv.setPadding(5, 5, 5, 5);
+                tv.setPadding(5, 5, 5, 10);
                 tv.setText(plan[j][i]);
                 row.addView(tv);
             }

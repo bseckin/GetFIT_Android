@@ -24,7 +24,7 @@ public class AllgemeineFitness implements IZiel{
                             "Frenchpress",
                             "Bizepsmaschine",
                             "Rückenstrecker",
-                            "Crunches"
+                            "Crunch"
                     },
                     {
                             "3",
@@ -38,13 +38,52 @@ public class AllgemeineFitness implements IZiel{
             };
             return plan;
         } else if ( frequenz == 3 ) { //3x pro Woche
+            /*
+            Dieser Plan ist von LOOX:
+            "FITNESS STEIGERN - GANZKÖRPER BASIC" - Benny Braun
+             */
             String[][] plan = {
-                    {"Laufen", "Flys", "Dips"},
-                    {"3", "3", "2"}
+                    {
+                            "Bankdrücken",
+                            "Butterfly",
+                            "Latzugmaschine",
+                            "Ruderzugmaschine",
+                            "Beinpresse",
+                            "Crunch",
+                            "Rückenstrecker"
+                    },
+                    {
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                    }
             };
             return plan;
         } else if ( frequenz >= 4 ) { //3x pro Woche
-
+            String[][] plan = {
+                    {
+                            "Bankdrücken",
+                            "Butterfly",
+                            "Latzugmaschine",
+                            "Ruderzugmaschine",
+                            "Beinpresse",
+                            "Crunch",
+                            "Rückenstrecker"
+                    },
+                    {
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                    }
+            };
         }
         return new String[0][];
     }
