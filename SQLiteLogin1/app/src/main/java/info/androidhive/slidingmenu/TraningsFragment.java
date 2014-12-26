@@ -61,15 +61,41 @@ public class TraningsFragment extends Fragment {
         table_layout.removeAllViews();
 
         Log.d("TrainingsFragment:Attribut:meinPlan:", Arrays.deepToString(this.meinPlan));
-
+        Log.d("Array:", "rows" + this.meinPlan[0].length + "\n" + "cols:" + this.meinPlan[1].length);
         /**
         String[][] plan = {
                 {"Bankdrücken", "Flys", "Dips"},
                 {"3", "3", "2"}
         };
         */
-        BuildTable(this.meinPlan[0].length-1, this.meinPlan[1].length-1, this.meinPlan);
+        BuildTable(this.meinPlan[0].length-1, 2, this.meinPlan);
         return rootView;
+    }
+
+    /**
+     * Erstellt Tabelle
+     * @param rows
+     * @param cols
+     */
+    public void BuildTable(int rows, int cols, String[][] plan) {
+        // outer for loop
+        for (int i = 0; i < rows; i++) {
+            TableRow row = new TableRow(getActivity());
+            row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+                    TableRow.LayoutParams.WRAP_CONTENT));
+
+            // inner for loop
+            for (int j = 0; j < cols; j++) {
+                TextView tv = new TextView(getActivity());
+                tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
+                        TableRow.LayoutParams.WRAP_CONTENT));
+
+                tv.setPadding(5, 5, 5, 5);
+                tv.setText(plan[j][i]);
+                row.addView(tv);
+            }
+            table_layout.addView(row);
+        }
     }
 
     /**
@@ -105,32 +131,6 @@ public class TraningsFragment extends Fragment {
                 return "Heute ist Samstag, Ihr Plan:";
         }
         return null;
-    }
-
-    /**
-     *
-     * @param rows
-     * @param cols
-     */
-    public void BuildTable(int rows, int cols, String[][] plan) {
-        // outer for loop
-        for (int i = 0; i < rows; i++) {
-            TableRow row = new TableRow(getActivity());
-            row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
-                    TableRow.LayoutParams.WRAP_CONTENT));
-
-            // inner for loop
-            for (int j = 0; j < cols; j++) {
-                TextView tv = new TextView(getActivity());
-                tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
-                        TableRow.LayoutParams.WRAP_CONTENT));
-
-                tv.setPadding(5, 5, 5, 5);
-                tv.setText(plan[j][i]);
-                row.addView(tv);
-            }
-            table_layout.addView(row);
-        }
     }
 
 
@@ -173,11 +173,8 @@ public class TraningsFragment extends Fragment {
      * @param quant
      */
     private void holePassendenPlan(String ziel, String akt, String erfahrung, String quant) {
-        String z = ziel;
-        String a = akt;
-        String e = erfahrung;
-        String q = quant; // Trainingshäufigkeit/Frequenz
-        int frequenz = getFrequenz(q);
+        Log.d("holePassendenPlan(..)", "Übergeben im Param:" +ziel+ " | " +akt+  " | " + " | " +erfahrung+ " | " +quant);
+        int frequenz = getFrequenz(quant);
 
         // Alle möglichen Ziele:
         String allgemeineFitness = getString(R.string.allgemein);
@@ -190,27 +187,27 @@ public class TraningsFragment extends Fragment {
 
         // switch geht nicht wegen konstante oder so
             // ALLGEMEIN KOERPERLICHE FITNESS
-        if(z.equals(allgemeineFitness)){
+        if(ziel.equals(allgemeineFitness)){
             tp.set_ziel(new AllgemeineFitness());
             this.meinPlan = tp.getPlan(frequenz);
             Log.d("TrainingsFragment:- AllgemeineFitness -", Arrays.deepToString(tp.getPlan(frequenz)));
         } // AUSDAUER
-        else if (z.equals(ausdauer)) {
+        else if (ziel.equals(ausdauer)) {
             tp.set_ziel(new Ausdauer());
             this.meinPlan = tp.getPlan(frequenz);
             Log.d("TrainingsFragment:- Ausdauer -", Arrays.deepToString(tp.getPlan(frequenz)));
         } // GEWICHTSVERLUST
-        else if (z.equals(gewichtsverlust)) {
+        else if (ziel.equals(gewichtsverlust)) {
             tp.set_ziel(new Gewichtsverlust());
             this.meinPlan = tp.getPlan(frequenz);
             Log.d("TrainingsFragment:- Gewichtsverlust -", Arrays.deepToString(tp.getPlan(frequenz)));
         } // MASSEAUFBAU
-        else if (z.equals(masseaufbau)) {
+        else if (ziel.equals(masseaufbau)) {
             tp.set_ziel(new MasseMuskelaufbau());
             this.meinPlan = tp.getPlan(frequenz);
             Log.d("TrainingsFragment:- MasseMuskelaufbau -", Arrays.deepToString(tp.getPlan(frequenz)));
         } // RUECKEN STAERKUNG
-        else if (z.equals(rueckenStaerkung)) {
+        else if (ziel.equals(rueckenStaerkung)) {
             tp.set_ziel(new Rueckenstaerkung());
             this.meinPlan = tp.getPlan(frequenz);
             Log.d("TrainingsFragment:- Rueckenstaerkung -", Arrays.deepToString(tp.getPlan(frequenz)));

@@ -26,9 +26,12 @@
                      android:layout_width="match_parent"
                      android:layout_below="@id/label_zu_trainierende_muskel"
                      android:layout_height="wrap_content"
-                     android:stretchColumns="1"
+                     android:stretchColumns="*"
                      android:id="@+id/tp_tablelayout"
-                     android:layout_marginTop="10dp">
+                     android:layout_marginTop="10dp"
+                     android:textAlignment="center"
+
+                     android:background="#ff7a9ea7">
 
         </TableLayout>
 
