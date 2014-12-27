@@ -12,8 +12,8 @@ public class Ectomorph extends Ernaehrungsplan{
         if (pZuHolenderPlan.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
             plan = new MasseEcto();
         }
-        else {
-            System.err.println("Gewichtsverlust");
+        else if (pZuHolenderPlan.equals("Gewichtsverlust")){
+            plan = new DefiEcto();
         }
         return plan;
     }

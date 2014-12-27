@@ -3,6 +3,7 @@ package info.androidhive.slidingmenu;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,8 +24,9 @@ import java.util.List;
 import Nutrition.NutritionIntake;
 import ernaehrung.AErnaehrung;
 import ernaehrung.Ectomorph;
+import ernaehrung.Endomorph;
 import ernaehrung.Ernaehrungsplan;
-import ernaehrung.MasseEcto;
+import ernaehrung.Mesomorph;
 
 public class PagesFragment extends Fragment {
     private NutritionIntake ni;
@@ -41,8 +43,9 @@ public class PagesFragment extends Fragment {
     private TableLayout table_layout;
     private TableLayout table_layout_food;
     private Ernaehrungsplan ectoplan;
+    private Ernaehrungsplan endoplan;
+    private Ernaehrungsplan mesoplan;
     private AErnaehrung EctoErnaehrung;
-    private MasseEcto me;
     private String[][][] lebensmittel;
     private String[][] food;
 
@@ -94,10 +97,13 @@ public class PagesFragment extends Fragment {
 
         this.ni.CalculaeNutritions("Maennlich");
         this.ectoplan = new Ectomorph();
+        this.endoplan = new Endomorph();
+        this.mesoplan = new Mesomorph();
 
 
         //TODO ??? Das Ziel muss aus der Datenbank kommen
         if (this.typ == "Ectomorph") {
+            Log.d("$$$$$$$$$$$$",goal);
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
                 this.carbs = ni.getCarbs() + 100;
                 this.fat = ni.getFett() + 20;
@@ -113,9 +119,76 @@ public class PagesFragment extends Fragment {
                 lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
             } else if (goal.equals("Gewichtsverlust")) {
+                this.carbs = ni.getCarbs() - 100;
+                this.fat = ni.getFett() - 20;
+                this.protein = ni.getProtein() - 10;
+                this.kcal = ni.getGu() - 200;
                 EctoErnaehrung = ectoplan.holePlan(this.goal);
-                EctoErnaehrung.starten();//"Pages startet"
-            } else {
+
+                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+                //So haben wir ein dreidimensionales array
+                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+                //2.Stelle -> Nahrungsbezeichnung
+                //3.Stelle -> Menge in gramm
+                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+            }
+        } else if(this.typ == "Endomorph"){
+            if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
+                this.carbs = ni.getCarbs() + 100;
+                this.fat = ni.getFett() + 20;
+                this.protein = ni.getProtein() + 10;
+                this.kcal = ni.getGu() + 200;
+                EctoErnaehrung = endoplan.holePlan(this.goal);
+
+                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+                //So haben wir ein dreidimensionales array
+                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+                //2.Stelle -> Nahrungsbezeichnung
+                //3.Stelle -> Menge in gramm
+                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+
+            } else if (goal.equals("Gewichtsverlust")) {
+                this.carbs = ni.getCarbs() - 100;
+                this.fat = ni.getFett() - 20;
+                this.protein = ni.getProtein() - 10;
+                this.kcal = ni.getGu() - 200;
+                EctoErnaehrung = endoplan.holePlan(this.goal);
+
+                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+                //So haben wir ein dreidimensionales array
+                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+                //2.Stelle -> Nahrungsbezeichnung
+                //3.Stelle -> Menge in gramm
+                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+            }
+        } else if(this.typ == "Mesomorph"){
+            if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
+                this.carbs = ni.getCarbs() + 100;
+                this.fat = ni.getFett() + 20;
+                this.protein = ni.getProtein() + 10;
+                this.kcal = ni.getGu() + 200;
+                EctoErnaehrung = mesoplan.holePlan(this.goal);
+
+                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+                //So haben wir ein dreidimensionales array
+                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+                //2.Stelle -> Nahrungsbezeichnung
+                //3.Stelle -> Menge in gramm
+                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+
+            } else if (goal.equals("Gewichtsverlust")) {
+                this.carbs = ni.getCarbs() - 100;
+                this.fat = ni.getFett() - 20;
+                this.protein = ni.getProtein() - 10;
+                this.kcal = ni.getGu() - 200;
+                EctoErnaehrung = mesoplan.holePlan(this.goal);
+
+                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+                //So haben wir ein dreidimensionales array
+                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+                //2.Stelle -> Nahrungsbezeichnung
+                //3.Stelle -> Menge in gramm
+                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
             }
         }
 
