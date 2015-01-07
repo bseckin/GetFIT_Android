@@ -9,14 +9,14 @@ public class AllgemeineFitness implements IZiel{
     public AllgemeineFitness() {}
 
     @Override
-    public String[][] erstellePlan(int frequenz) {
+    public String[][][] erstellePlan(int frequenz) {
         //2x pro Woche
         if (frequenz == 2) {
             /*
             Dieser Plan ist von LOOX:
             "FITNESS STEIGERN - GANZKÖRPER FIT" - Sven Seidenstücker
              */
-            String[][] plan = {
+            String[][][] plan = {{
                     {
                             "Kniebeugen",
                             "Brustpresse",
@@ -35,14 +35,14 @@ public class AllgemeineFitness implements IZiel{
                             "3",
                             "3"
                     }
-            };
+            }};
             return plan;
         } else if ( frequenz == 3 ) { //3x pro Woche
             /*
             Dieser Plan ist von LOOX:
             "FITNESS STEIGERN - GANZKÖRPER BASIC" - Benny Braun
              */
-            String[][] plan = {
+            String[][][] plan = {{
                     {
                             "Bankdrücken",
                             "Butterfly",
@@ -61,7 +61,7 @@ public class AllgemeineFitness implements IZiel{
                             "3",
                             "3"
                     }
-            };
+            }};
             return plan;
         } else if ( frequenz >= 4 ) { //3x pro Woche
             String[][] plan = {
@@ -85,6 +85,7 @@ public class AllgemeineFitness implements IZiel{
                     }
             };
         }
-        return new String[0][];
+
+        return new String[0][][];
     }
 }

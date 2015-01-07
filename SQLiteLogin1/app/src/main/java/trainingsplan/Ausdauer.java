@@ -9,8 +9,8 @@ public class Ausdauer implements IZiel {
     public Ausdauer() {}
 
     @Override
-    public String[][] erstellePlan(int frequenz) {
+    public String[][][] erstellePlan(int frequenz) {
 
-        return new String[0][];
+        return new String[0][][];
     }
 }

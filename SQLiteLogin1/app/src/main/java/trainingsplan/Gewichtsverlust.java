@@ -9,8 +9,8 @@ public class Gewichtsverlust implements IZiel {
     public Gewichtsverlust() {}
 
     @Override
-    public String[][] erstellePlan(int frequenz) {
-        return new String[0][];
+    public String[][][] erstellePlan(int frequenz) {
+        return new String[0][][];
     }
 
 }

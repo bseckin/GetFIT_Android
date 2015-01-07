@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -30,8 +31,11 @@ import trainingsplan.Rueckenstaerkung;
 
 public class TraningsFragment extends Fragment {
     // Attribute
-    TableLayout table_layout;
-    private String[][] meinPlan;
+    TableLayout table_layout_plan1;
+    TableLayout table_layout_plan2;
+    private String[][][] meinPlan;
+    private int anzahl;
+    private String[][] planEinheit;
 
 	public TraningsFragment(){}
 	
@@ -43,10 +47,6 @@ public class TraningsFragment extends Fragment {
         final GlobalClass globalVariable = (GlobalClass) getActivity().getApplicationContext();
         // Get username from global/application context
         final String name = globalVariable.getName();
-        Log.d("TrainingsFragment:", "Aktuell eingeloggter USER:" + name);
-
-        readFragenkatalog(name);    // Fragenkatalog von diesem User auslesen.
-
 
         // Überschrift:
         getHeutigesDatum();
@@ -56,20 +56,55 @@ public class TraningsFragment extends Fragment {
         ueberschrift.setTypeface(null, Typeface.BOLD);
         ueberschrift.setTextColor(Color.WHITE);
 
-        //Tabelle
-        table_layout = (TableLayout) rootView.findViewById(R.id.tp_tablelayout);
-        table_layout.removeAllViews();
+        // Fragenkatalog von diesem User auslesen.
+        readFragenkatalog(name);
 
+        //Tabelle
+        table_layout_plan1 = (TableLayout) rootView.findViewById(R.id.tp_tablelayout);
+        table_layout_plan1.removeAllViews();
+
+        planEinheit = new String[][]{this.meinPlan[0][0],this.meinPlan[0][1]};
+        BuildTable(planEinheit[0].length-1, 2, planEinheit);
+
+        Button button = (Button) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
+                switch (anzahl) {
+                    case 0:
+                        planEinheit = new String[][]{meinPlan[1][0],meinPlan[1][1]};
+                        table_layout_plan1.removeAllViews();
+                        BuildTable(planEinheit[0].length-1, 2, planEinheit);
+                        break;
+                    case 1:
+                        planEinheit = new String[][]{meinPlan[2][0],meinPlan[2][1]};
+                        table_layout_plan1.removeAllViews();
+                        BuildTable(planEinheit[0].length-1, 2, planEinheit);
+                        break;
+                    default:
+                        //Von neu beginnen:
+                        anzahl = -1; //weils unten erhöht wird und case nicht bei 0 beginnt sondern bei 1 !
+                        table_layout_plan1.removeAllViews();
+                        planEinheit = new String[][]{meinPlan[0][0], meinPlan[0][1]};
+                        BuildTable(planEinheit[0].length-1, 2, planEinheit);
+                        break;
+                }
+                anzahl++;
+
+            }
+        });
+
+        // LOGS
+        Log.d("TrainingsFragment:", "Aktuell eingeloggter USER:" + name);
         Log.d("TrainingsFragment:Attribut:meinPlan:", Arrays.deepToString(this.meinPlan));
         Log.d("Array:", "rows" + this.meinPlan[0].length + "\n" + "cols:" + this.meinPlan[1].length);
-        /**
-        String[][] plan = {
-                {"Bankdrücken", "Flys", "Dips"},
-                {"3", "3", "2"}
-        };
-        */
-        BuildTable(this.meinPlan[0].length-1, 2, this.meinPlan);
+
         return rootView;
+    }
+
+    private void holeNaechsteTrainingsEinheit() {
+
     }
 
     /**
@@ -94,7 +129,7 @@ public class TraningsFragment extends Fragment {
                 tv.setText(plan[j][i]);
                 row.addView(tv);
             }
-            table_layout.addView(row);
+            table_layout_plan1.addView(row);
         }
     }
 
@@ -200,6 +235,7 @@ public class TraningsFragment extends Fragment {
         else if (ziel.equals(gewichtsverlust)) {
             tp.set_ziel(new Gewichtsverlust());
             this.meinPlan = tp.getPlan(frequenz);
+
             Log.d("TrainingsFragment:- Gewichtsverlust -", Arrays.deepToString(tp.getPlan(frequenz)));
         } // MASSEAUFBAU
         else if (ziel.equals(masseaufbau)) {
@@ -236,4 +272,5 @@ public class TraningsFragment extends Fragment {
         }
         return frequenz;
     }
+
 }

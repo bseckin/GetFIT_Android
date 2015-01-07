@@ -27,9 +27,9 @@ public class Trainingsplan {
      * @param frequenz
      * @return
      */
-    public String[][] getPlan(int frequenz){
+    public String[][][] getPlan(int frequenz){
         // Erstellt plan je nach Ziel:
-        String[][] plan =_ziel.erstellePlan(frequenz);
+        String[][][] plan =_ziel.erstellePlan(frequenz);
         return plan;
     }
 

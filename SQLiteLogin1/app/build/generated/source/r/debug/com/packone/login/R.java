@@ -70,19 +70,20 @@ public final class R {
         public static final int weightlifting=0x7f020024;
     }
     public static final class id {
-        public static final int action_logout=0x7f0a0049;
-        public static final int action_settings=0x7f0a0048;
-        public static final int bcardio=0x7f0a0045;
+        public static final int action_logout=0x7f0a004a;
+        public static final int action_settings=0x7f0a0049;
+        public static final int bcardio=0x7f0a0046;
         public static final int bgoal=0x7f0a0038;
-        public static final int blifting=0x7f0a0044;
+        public static final int blifting=0x7f0a0045;
         public static final int blogin=0x7f0a0009;
-        public static final int bnutrition=0x7f0a0046;
+        public static final int bnutrition=0x7f0a0047;
         public static final int breg=0x7f0a001b;
         public static final int btn_fragen_fertig=0x7f0a0032;
+        public static final int btn_tfragment_teinheit_fertig=0x7f0a0040;
         public static final int btnhelp=0x7f0a000a;
         public static final int btnstart=0x7f0a0004;
         public static final int counter=0x7f0a0037;
-        public static final int detail=0x7f0a0043;
+        public static final int detail=0x7f0a0044;
         public static final int drawer_layout=0x7f0a000b;
         public static final int eT_frage5=0x7f0a0031;
         public static final int email=0x7f0a0019;
@@ -94,13 +95,13 @@ public final class R {
         public static final int imageView=0x7f0a0005;
         public static final int imageView2=0x7f0a003c;
         public static final int label_zu_trainierende_muskel=0x7f0a003e;
-        public static final int lblListHeader=0x7f0a0041;
-        public static final int lblListItem=0x7f0a0042;
+        public static final int lblListHeader=0x7f0a0042;
+        public static final int lblListItem=0x7f0a0043;
         public static final int list_slidermenu=0x7f0a000d;
         public static final int logpword=0x7f0a0007;
         public static final int loguname=0x7f0a0006;
         public static final int lvExp=0x7f0a0039;
-        public static final int menu_settings=0x7f0a0047;
+        public static final int menu_settings=0x7f0a0048;
         public static final int pager=0x7f0a0033;
         public static final int pword=0x7f0a0013;
         public static final int radBtn_2mal=0x7f0a002c;
@@ -126,7 +127,7 @@ public final class R {
         public static final int rg_frage3=0x7f0a0027;
         public static final int rg_frage4=0x7f0a002b;
         public static final int rg_frage5=0x7f0a0030;
-        public static final int section_label=0x7f0a0040;
+        public static final int section_label=0x7f0a0041;
         public static final int textView=0x7f0a0000;
         public static final int textView2=0x7f0a0001;
         public static final int textView3=0x7f0a0002;
