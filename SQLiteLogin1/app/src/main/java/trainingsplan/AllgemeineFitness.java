@@ -9,7 +9,7 @@ public class AllgemeineFitness implements IZiel{
     public AllgemeineFitness() {}
 
     @Override
-    public String[][][] erstellePlan(int frequenz) {
+    public String[][][] erstellePlan_Anfaenger(int frequenz) {
         //2x pro Woche
         if (frequenz == 2) {
             /*
@@ -86,6 +86,11 @@ public class AllgemeineFitness implements IZiel{
             };
         }
 
+        return new String[0][][];
+    }
+
+    @Override
+    public String[][][] erstellePlan_Fortgeschritten(int frequenz) {
         return new String[0][][];
     }
 }

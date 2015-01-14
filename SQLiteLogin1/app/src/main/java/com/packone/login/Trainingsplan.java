@@ -1,5 +1,7 @@
 package com.packone.login;
 
+import android.util.Log;
+
 import trainingsplan.IZiel;
 
 /**
@@ -27,9 +29,21 @@ public class Trainingsplan {
      * @param frequenz
      * @return
      */
-    public String[][][] getPlan(int frequenz){
+    public String[][][] getPlan(int frequenz, String erfahrung){
+        //String anfaenger = Resources.getSystem().getString(R.string.anfaenger);
+        String anfaenger = "Keine - Ich bin Anfänger"; //@TODO SEHR STATISCH UND GESCHUMMELT
+        String halbprofi = "Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio"; //@TODO SEHR STATISCH UND GESCHUMMELT
+        String fortgeschritten = "Viel – Ich habe viel Erfahrung "; //@TODO SEHR STATISCH UND GESCHUMMELT
+            Log.d("Trainginsplan.java: getPlan(): ", anfaenger);
+
+
+        String[][][] plan;
         // Erstellt plan je nach Ziel:
-        String[][][] plan =_ziel.erstellePlan(frequenz);
+        if(erfahrung.equals(R.string.anfaenger)){
+            plan = _ziel.erstellePlan_Anfaenger(frequenz);
+        } else {
+            plan = _ziel.erstellePlan_Fortgeschritten(frequenz);
+        }
         return plan;
     }
 
@@ -44,5 +58,4 @@ public class Trainingsplan {
     public IZiel get_ziel() {
         return _ziel;
     }
-
 }

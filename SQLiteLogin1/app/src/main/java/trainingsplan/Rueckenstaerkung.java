@@ -10,7 +10,7 @@ public class Rueckenstaerkung implements IZiel {
 
 
     @Override
-    public String[][][] erstellePlan(int frequenz) {
+    public String[][][] erstellePlan_Anfaenger(int frequenz) {
         //@TODO TP NICHT 3x/4x das gleiche! --ALLGEMEINE FITNESS--
         //@TODO MANN/FRAU TP?
         //2x pro Woche
@@ -101,6 +101,11 @@ public class Rueckenstaerkung implements IZiel {
             return plan;
         }
 
+        return new String[0][][];
+    }
+
+    @Override
+    public String[][][] erstellePlan_Fortgeschritten(int frequenz) {
         return new String[0][][];
     }
 }

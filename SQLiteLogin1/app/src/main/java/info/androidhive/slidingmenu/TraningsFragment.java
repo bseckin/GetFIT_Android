@@ -103,9 +103,6 @@ public class TraningsFragment extends Fragment {
         return rootView;
     }
 
-    private void holeNaechsteTrainingsEinheit() {
-
-    }
 
     /**
      * Erstellt Tabelle
@@ -209,7 +206,7 @@ public class TraningsFragment extends Fragment {
      */
     private void holePassendenPlan(String ziel, String akt, String erfahrung, String quant) {
         Log.d("holePassendenPlan(..)", "Übergeben im Param:" +ziel+ " | " +akt+  " | " + " | " +erfahrung+ " | " +quant);
-        int frequenz = getFrequenz(quant);
+        final int frequenz = getFrequenz(quant);
 
         // Alle möglichen Ziele:
         String allgemeineFitness = getString(R.string.allgemein);
@@ -224,29 +221,28 @@ public class TraningsFragment extends Fragment {
             // ALLGEMEIN KOERPERLICHE FITNESS
         if(ziel.equals(allgemeineFitness)){
             tp.set_ziel(new AllgemeineFitness());
-            this.meinPlan = tp.getPlan(frequenz);
-            Log.d("TrainingsFragment:- AllgemeineFitness -", Arrays.deepToString(tp.getPlan(frequenz)));
+            tp.getPlan(frequenz, erfahrung);
+            Log.d("TrainingsFragment:- AllgemeineFitness -", Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // AUSDAUER
         else if (ziel.equals(ausdauer)) {
             tp.set_ziel(new Ausdauer());
-            this.meinPlan = tp.getPlan(frequenz);
-            Log.d("TrainingsFragment:- Ausdauer -", Arrays.deepToString(tp.getPlan(frequenz)));
+            this.meinPlan = tp.getPlan(frequenz, erfahrung);
+            Log.d("TrainingsFragment:- Ausdauer -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // GEWICHTSVERLUST
         else if (ziel.equals(gewichtsverlust)) {
             tp.set_ziel(new Gewichtsverlust());
-            this.meinPlan = tp.getPlan(frequenz);
-
-            Log.d("TrainingsFragment:- Gewichtsverlust -", Arrays.deepToString(tp.getPlan(frequenz)));
+            this.meinPlan = tp.getPlan(frequenz, erfahrung);
+            Log.d("TrainingsFragment:- Gewichtsverlust -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // MASSEAUFBAU
         else if (ziel.equals(masseaufbau)) {
             tp.set_ziel(new MasseMuskelaufbau());
-            this.meinPlan = tp.getPlan(frequenz);
-            Log.d("TrainingsFragment:- MasseMuskelaufbau -", Arrays.deepToString(tp.getPlan(frequenz)));
+            this.meinPlan = tp.getPlan(frequenz, erfahrung);
+            Log.d("TrainingsFragment:- MasseMuskelaufbau -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // RUECKEN STAERKUNG
         else if (ziel.equals(rueckenStaerkung)) {
             tp.set_ziel(new Rueckenstaerkung());
-            this.meinPlan = tp.getPlan(frequenz);
-            Log.d("TrainingsFragment:- Rueckenstaerkung -", Arrays.deepToString(tp.getPlan(frequenz)));
+            this.meinPlan = tp.getPlan(frequenz, erfahrung);
+            Log.d("TrainingsFragment:- Rueckenstaerkung -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } else {
             // Kein Plan gefunden ERROR
             Log.d("holePassendenPlan():", "Kein Plan gefunden!");

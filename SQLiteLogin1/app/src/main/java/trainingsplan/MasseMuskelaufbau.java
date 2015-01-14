@@ -1,24 +1,42 @@
 package trainingsplan;
 
 /**
- * Trainingsplan für Masse und Muskelaufbau
+ * Trainingsplan für "Masse und Muskelaufbau"
+ *
+ * Konkrete implementierung der PLÄNE.
+ * Je nach Frequenz(Häufigkeit), und Erfahrungslevel wird der Plan erstellt.
+ *
  * Created by Berkay on 26.11.2014.
  */
 public class MasseMuskelaufbau implements IZiel {
-    // Konstruktor
+    // leerer Konstruktor
     public MasseMuskelaufbau() {}
 
-    //@TODO TP NICHT 3x/4x das gleiche! --MASSE MUSKELAUFBAU-
+
+
+    // ===================================== ANFÄNGER ======================================== //
 
     /**
-     * Konkrete implementierung der PLÄNE.
-     * Je nach Frequenz, alsod die Häufigkeit wie oft der User in der Woche trainieren gehen möchte
-     * - wird der Plan erstellt.
+     * Erstellt einen Plan für einen Anfänger, mit seiner ausgewählten Trainingsfrequenz.
+     *
      * @param frequenz
      * @return
      */
     @Override
-    public String[][][] erstellePlan(int frequenz) {
+    public String[][][] erstellePlan_Anfaenger(int frequenz) {
+        return new String[0][][];
+    }
+
+    // ==================================== FORTGESCHRITTEN ===================================== //
+
+    /**
+     * Erstellt einen Plan für einen Anfänger, mit seiner ausgewählten Trainingsfrequenz.
+     *
+     * @param frequenz
+     * @return
+     */
+    @Override
+    public String[][][] erstellePlan_Fortgeschritten(int frequenz) {
         //2x pro Woche
         if ( frequenz == 2) {
             // GANZKÖRPER
