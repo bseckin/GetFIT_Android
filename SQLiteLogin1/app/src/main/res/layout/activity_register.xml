@@ -252,6 +252,7 @@
             android:layout_alignParentEnd="false"
             android:textSize="20dp"
             android:layout_gravity="center_horizontal"/>
+
     </FrameLayout>
 
 

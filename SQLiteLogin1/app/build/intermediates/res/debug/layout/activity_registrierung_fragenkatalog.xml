@@ -184,7 +184,7 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2x in der Woche"
+                android:text="@string/zwei_mal_training"
                 android:id="@+id/radBtn_2mal"
                 android:textSize="12sp"
                 android:checked="false"
@@ -192,7 +192,7 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3x in der Woche"
+                android:text="@string/drei_mal_training"
                 android:id="@+id/radBtn_3mal"
                 android:textSize="12sp"
                 android:checked="false"
@@ -200,7 +200,7 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="mehr als 4 mal in der Woche"
+                android:text="@string/vier_mal_training"
                 android:id="@+id/radBtn_4mal"
                 android:textSize="12sp"
                 android:checked="false"
@@ -240,8 +240,8 @@
         android:id="@+id/btn_fragen_fertig"
         android:layout_gravity="center_horizontal"
         android:onClick="fragenkatalog_fertig"
-        style="@style/btnStyleOrange"
+        style="@style/btnStyleTwitterblue"
         />
 
 </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
+</ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->

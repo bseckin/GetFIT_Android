@@ -34,7 +34,6 @@ public class RegisterActivity extends Activity {
     private SeekBar weightcontrol = null;
     protected ArrayList<String> databaseArray;
 
-    //TODO: - Exercise implementieren
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,8 @@ public class RegisterActivity extends Activity {
         //    db.deleteContact();
         Log.d("INSERT: ", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
-        //dekleration des datenbank arrays in dieses array kommen alle eingaben des Bneutzers im Login screen hinein
+        // Dekleration des Datenbank arrays
+        // in dieses array kommen alle eingaben des Benutzers im Login screen hinein
         databaseArray = new ArrayList<String>();
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
@@ -76,7 +76,7 @@ public class RegisterActivity extends Activity {
                  * CRUD Operations
                  * */
                 // USER REGISTRATION
-                /* Check ob alle Eingabe ausgefullt wurden */
+                // CHECK ob alle Eingabe ausgefullt wurden */
                 if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals("")) || (radioSexGroup.getCheckedRadioButtonId() == -1)) {
                     Context context = getApplicationContext();
                     CharSequence text = "Geben sie etwas ein";
@@ -85,7 +85,7 @@ public class RegisterActivity extends Activity {
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
-                /* Check ob Email gueltig ist */
+                // CHECK ob Email gueltig ist //
                 if (isValidEMail(memail.getText().toString()) == false) {
                     Context context = getApplicationContext();
                     CharSequence text = "Die Email Adresse ist nicht korrekt.";
@@ -95,7 +95,7 @@ public class RegisterActivity extends Activity {
                     toast.show();
 
                 } else {
-                    //Überprüfen ob der user bereits im datenbank gespeichert ist
+                    // CHECK ob der user bereits im datenbank gespeichert ist
                     if (db.getContactsCount(muname.getText().toString()) == 0) {
 
                         // get selected radio button from radioGroup
@@ -112,6 +112,7 @@ public class RegisterActivity extends Activity {
                         intent.putExtra("gender", radioSexButton.getText().toString());
                         intent.putExtra("height", mheight.getText().toString());
                         intent.putExtra("weight", weight.getText().toString());
+
                         startActivity(intent);
 
                     } else {

@@ -6,13 +6,7 @@ package com.packone.login;
  * @date: 01.10.2014
  * Beschreibung
  */
-
 public class Contact {
-
-    private boolean TESTVARIABLE;
-
-    //Test
-    // >>>>>>> 31602e5138ca25025c75fcb9124c90805469cc37
     // private variables
     private String _uname;
     private String _pword;
@@ -60,6 +54,20 @@ public class Contact {
     public Contact(String pword, String email) {
         this._pword = pword;
         this._email = email;
+    }
+
+    /**
+     * Konstrukto für Fragenkatalog query (Db-Handler getFragenkatalog)
+     * @param ziel
+     * @param akt
+     * @param erfahrung
+     * @param quant
+     */
+    public Contact(String ziel, String akt, String erfahrung, String quant) {
+        this._ziel = ziel;
+        this._akt = akt;
+        this._erfahrung = erfahrung;
+        this._quant = quant;
     }
 
     // Setter getter for Username
