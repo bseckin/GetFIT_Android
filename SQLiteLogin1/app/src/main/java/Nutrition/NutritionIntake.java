@@ -1,8 +1,6 @@
 package Nutrition;
 
 
-import android.util.Log;
-
 /**
  * Created by Muhammed5 on 03.12.2014.
  */
@@ -17,7 +15,7 @@ public class NutritionIntake {
     private float carbs;
     private float protein;
     private float gu;
-    private float pal;
+    private double pal;
     private String _inten;
 
     public NutritionIntake(int weight, int height, int age, String inten){
@@ -29,25 +27,24 @@ public class NutritionIntake {
 
     public void CalculateUmsatz(){
         if (this._inten.equals("gering")){
-
+            this.pal = 1.2;
         } else if(this._inten.equals("mittel")){
-
+            this.pal = 1.7;
         } else if(this._inten.equals("hoch")){
-
-        } else {
-            Log.d("!!!!!!!!!!!!!", "Falsche Parameter Übergeben");
+            this.pal = 2.3;
         }
     }
     public void CalculaeNutritions(String gender){
+        CalculateUmsatz();
         //Grundumsatz berechnen
         if (gender.equals("Maennlich")) {
-            this.gu = (float) (66.47 + (13.7 * this._weight) +
-                    (5 * this._height) -
-                    (6.8 * this._age));
+            this.gu = (float) ((66.47 + (13.7 * this._weight) +
+                                (5 * this._height) -
+                                (6.8 * this._age)) * this.pal);
         } else if (gender.equals("Weiblich")){
-            this.gu = (float) (665.1 + (9.6 * this._weight) +
-                    (1.8 * this._height) -
-                    (4.7 * this._age));
+            this.gu = (float) ((665.1 + (9.6 * this._weight) +
+                                (1.8 * this._height) -
+                                (4.7 * this._age))*this.pal);
         }
 
         //1.2 	    nur sitzend oder liegend 	gebrechliche Menschen

@@ -62,6 +62,10 @@
             android:name="com.packone.login.ErnaehrungActivity"
             android:label="@string/title_activity_ernaehrung" >
         </activity>
+        <activity
+            android:name="com.packone.login.BodytypeActivity"
+            android:label="@string/title_activity_bodytype" >
+        </activity>
     </application>
 
 </manifest>

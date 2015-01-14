@@ -57,23 +57,23 @@ public class MasseEcto extends AErnaehrung {
         Log.d("!!!!!!!!!!!!!!!!!!$$$$$$$$$$$$$$$$$$$", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 
         morgens = new String[][]{{"2 Scheiben Eiweißbrot", "2 Scheiben Haenchenbrust", "Butter", "2 gekochte Eier"},
-                {"2x60g", "2x20g", "10g", "größe M"}};
+                {"120", "40", "10", "70"}};
         mittags = new String[][]{{"Putenbrust", "Reis"},
-                {"250g", "60g"}};
+                {"250", "60"}};
         preWorkout = new String[][]{{"Banane"},
                 {"mittlere Größe"}};
         nachmittag = new String[][]{{"Nüsse"},
-                {"50g"}};
+                {"50"}};
         abends = new String[][]{{"Thunfisch", "Mais", "Magerquark"},
-                {"150g", "150g", "500g"}};
+                {"150", "150", "500"}};
 
         String[][][] ret = new String[][][]{
                 {{"2 Scheiben Eiweißbrot", "2 Scheiben Haenchenbrust", "Butter", "2 gekochte Eier"},
-                        {"2x60g", "2x20g", "10g", "größe M"}},
-                {{"Putenbrust", "Reis"}, {"250g", "60g"}},
-                {{"Banane"}, {"mittlere Größe"}},
-                {{"Nüsse"}, {"50g"}},
-                {{"Thunfisch", "Mais", "Magerquark"}, {"150g", "150g", "500g"}}};
+                        {"120", "40", "10", "70"}},
+                {{"Putenbrust", "Reis"}, {"250", "60"}},
+                {{"Banane"}, {"80"}},
+                {{"Nüsse"}, {"50"}},
+                {{"Thunfisch", "Mais", "Magerquark"}, {"150", "150", "500"}}};
         return (ret);
     }
 }

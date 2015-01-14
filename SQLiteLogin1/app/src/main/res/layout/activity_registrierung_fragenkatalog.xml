@@ -7,7 +7,7 @@
               android:layout_height="match_parent"
               tools:context=".MainActivity"
               android:orientation="vertical"
-              android:background="@drawable/backblue"
+              android:background="@drawable/background1"
     >
 
     <TextView
@@ -207,6 +207,46 @@
                 />
         </RadioGroup>
 
+        <!-- Frage 6 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frage_6"
+            android:id="@+id/textView6"
+            android:background="#FFFFFFFF"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#BEF202"
+            android:id="@+id/rg_frage6">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endomorph"
+                android:id="@+id/radBtn_Endomorph"
+                android:textSize="12sp"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ectomorph"
+                android:id="@+id/radBtn_Ectomorph"
+                android:textSize="12sp"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mesomorph"
+                android:id="@+id/radBtn_Mesomorph"
+                android:textSize="12sp"
+                android:checked="false"
+                />
+        </RadioGroup>
+
         <!-- Frage 5 -->
         <TextView
             android:layout_width="wrap_content"
@@ -230,6 +270,8 @@
                 android:checked="false"
                 android:padding="10dp"/>
         </RadioGroup>
+
+
 
     </TableLayout>
 

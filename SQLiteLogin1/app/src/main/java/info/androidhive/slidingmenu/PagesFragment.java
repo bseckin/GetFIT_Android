@@ -16,9 +16,11 @@ import android.widget.TextView;
 import com.packone.login.Contact;
 import com.packone.login.DatabaseHandler;
 import com.packone.login.ErnaehrungActivity;
+import com.packone.login.Food;
 import com.packone.login.GlobalClass;
 import com.packone.login.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Nutrition.NutritionIntake;
@@ -35,6 +37,11 @@ public class PagesFragment extends Fragment {
     private float fat;
     private float protein;
     private float kcal;
+
+    private int _weight;
+    private int _height;
+    private int _kcal;
+    private float BMI;
 
     private String goal;
     private String typ;
@@ -84,9 +91,9 @@ public class PagesFragment extends Fragment {
             this.weight = cn.getWeight();
             this.height = cn.getHeight();
             this.gender = cn.getGender();
+            this.typ = cn.get_ktyp();
         }
         //Konstruktor
-        this.typ = "Ectomorph";
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
         this.carbs = ni.getCarbs();
         this.fat = ni.getFett();
@@ -102,8 +109,8 @@ public class PagesFragment extends Fragment {
 
 
         //TODO ??? Das Ziel muss aus der Datenbank kommen
-        if (this.typ == "Ectomorph") {
-            Log.d("$$$$$$$$$$$$",goal);
+        if (this.typ.equals("Ectomorph")) {
+            Log.d("$$$$$$$$$$$$", goal);
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
                 this.carbs = ni.getCarbs() + 100;
                 this.fat = ni.getFett() + 20;
@@ -132,7 +139,7 @@ public class PagesFragment extends Fragment {
                 //3.Stelle -> Menge in gramm
                 lebensmittel = EctoErnaehrung.starten();//"Pages startet"
             }
-        } else if(this.typ == "Endomorph"){
+        } else if (this.typ.equals("Endomorph")) {
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
                 this.carbs = ni.getCarbs() + 100;
                 this.fat = ni.getFett() + 20;
@@ -161,7 +168,7 @@ public class PagesFragment extends Fragment {
                 //3.Stelle -> Menge in gramm
                 lebensmittel = EctoErnaehrung.starten();//"Pages startet"
             }
-        } else if(this.typ == "Mesomorph"){
+        } else if (this.typ.equals("Mesomorph")) {
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
                 this.carbs = ni.getCarbs() + 100;
                 this.fat = ni.getFett() + 20;
@@ -222,6 +229,8 @@ public class PagesFragment extends Fragment {
         table_layout_food = (TableLayout) rootView.findViewById(R.id.tableLayout2);
 
         //Am anfang werden wir nur das Frühstück anzeigen später wird dieser Wert
+        String[][] xy = new String[][]{lebensmittel[0][0], lebensmittel[0][1]};
+       // String[][] morgens = optimizeAmount(xy,db);
         String[][] morgens = new String[][]{lebensmittel[0][0], lebensmittel[0][1]};
 
 
@@ -278,7 +287,7 @@ public class PagesFragment extends Fragment {
 
                         //Sind alle Malzeiten gegessen so wird nur ein Text ausgegben
                         TextView valueTV = new TextView(getActivity());
-                        valueTV.setText("Glüchwunsch Sie sinf für heute fertig");
+                        valueTV.setText("Glüchwunsch Sie sind für heute fertig");
                         valueTV.setLayoutParams(new RelativeLayout.LayoutParams(
                                 RelativeLayout.LayoutParams.FILL_PARENT,
                                 RelativeLayout.LayoutParams.WRAP_CONTENT));
@@ -341,5 +350,85 @@ public class PagesFragment extends Fragment {
                 table_layout_food.addView(row);
             }
         }
+    }
+
+    /**
+     * public float calculateBMI() {
+     * this.BMI = (this._weight) / (this._height) ^ 2;
+     * return this.BMI;
+     * }
+     */
+
+    private int calculateKcal(int menge, int kcal_menge) {
+
+        int erg = kcal_menge / menge;
+        return erg;
+    }
+
+    private int calculateSumKcal(List<Integer> a) {
+        int result = 0;
+
+        for (int i = 0; i <= a.size(); i++) {
+            result += a.get(i);
+        }
+        return result;
+    }
+
+    public String[][] optimizeAmount(String[][] a, DatabaseHandler db) {
+        //diese funktion geht die liste mit den mengen und bezeichnungen der
+        //Lebensmittel durch und reduziert die menge jenachdem wieviel der nenutzer an
+        //kcal pro tag benötigt
+        int kcal_db = 0;
+        int zaehler = 0;
+        String[][] food_amount_list = a;
+        List<Integer> durchschnitt = new ArrayList<Integer>();
+
+        // Hier holen wir die kcal aus der datenbank und speichern diese in eine ArrayListe
+        // indem wir die kcalorien mit der menge multiplizieren um den exacten kalorienwert zu ermitteln
+        // z.B. 50g * 1.3 -> schokolade
+        while (this.kcal <= calculateSumKcal(durchschnitt)) {
+
+            if (zaehler == 0) {
+                for (int i = 0; i <= food_amount_list[0].length; i++) {
+
+                    List<Food> x = db.getFood(food_amount_list[0][i]);
+                    for (Food fd : x) {
+                        kcal_db = fd.get_kcal();
+                    }
+                    durchschnitt.add(calculateKcal(kcal_db, Integer.parseInt(a[1][i])) * Integer.parseInt(food_amount_list[2][i]));
+                }
+
+                int max = durchschnitt.get(0);
+
+                for (int i = 1; i < durchschnitt.size(); i++) {
+                    if (durchschnitt.get(i) > max) {
+                        max = durchschnitt.get(i);
+                    }
+                }
+                int index = durchschnitt.indexOf(max);
+                durchschnitt.set(max, Integer.parseInt(food_amount_list[2][index]) / 2);
+                food_amount_list[2][index] = String.valueOf((Integer.parseInt(food_amount_list[2][index]) / 2));
+
+                zaehler++;
+            } else {
+                int max = durchschnitt.get(0);
+
+                for (int i = 1; i < durchschnitt.size(); i++) {
+                    if (durchschnitt.get(i) > max) {
+                        max = durchschnitt.get(i);
+                    }
+                }
+                int index = durchschnitt.indexOf(max);
+                durchschnitt.set(max,Integer.parseInt(food_amount_list[2][index]) / 2);
+                food_amount_list[2][index] = String.valueOf((Integer.parseInt(food_amount_list[2][index]) / 2));
+
+                zaehler++;
+            }
+
+            if (this.kcal >= calculateSumKcal(durchschnitt)) {
+                break;
+            }
+        }
+        return food_amount_list;
     }
 }

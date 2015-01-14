@@ -29,6 +29,10 @@ public class RegistrierungFragenkatalogActivity extends Activity {
     private RadioGroup radioGroupFrage4;
     private RadioButton F4radioBtn1, F4radioBtn2, F4radioBtn3;
 
+    // Frage 6
+    private RadioGroup radioGroupFrage6;
+    private RadioButton F6radioBtn1, F6radioBtn2, F6radioBtn3;
+
     private Button btn_fragenkatalog_fertig; //bestaetigen Button
     private static String UNAME = "";
     private static String PASSWORD = "";
@@ -94,6 +98,12 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         String antwortF4 = rf4.getText().toString();
         Log.d("--------------- Frage 4:", antwortF4);
 
+        radioGroupFrage6 = (RadioGroup)findViewById(R.id.rg_frage6);
+        int selectedF6 = radioGroupFrage6.getCheckedRadioButtonId();
+        RadioButton rf6 = (RadioButton)findViewById(selectedF6);
+        String antwortF6 = rf6.getText().toString();
+        Log.d("--------------- Frage 4:", antwortF4);
+
         // IN DB Speichern
         final DatabaseHandler db = new DatabaseHandler(this);
         db.addContact(
@@ -107,7 +117,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                     antwortF1,
                     antwortF2,
                     antwortF3,
-                    antwortF4
+                    antwortF4,
+                    antwortF6
               )
         );
 

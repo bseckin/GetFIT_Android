@@ -22,6 +22,7 @@ public class Contact {
     private String _akt;
     private String _erfahrung;
     private String _quant;
+    private String _ktyp;
 
     // Empty constructor
     public Contact() {
@@ -39,7 +40,8 @@ public class Contact {
             String ziel,
             String akt,
             String erfahrung,
-            String quant) {
+            String quant,
+            String ktyp) {
         this._uname = uname;
         this._pword = pword;
         this._email = email;
@@ -50,6 +52,7 @@ public class Contact {
         this._akt = akt;
         this._erfahrung = erfahrung;
         this._quant = quant;
+        this._ktyp = ktyp;
     }
 
     // constructor
@@ -144,5 +147,12 @@ public class Contact {
         return _quant;
     }
 
+    public String get_ktyp() {
+        return _ktyp;
+    }
+
+    public void set_ktyp(String _ktyp) {
+        this._ktyp = _ktyp;
+    }
 
 }
