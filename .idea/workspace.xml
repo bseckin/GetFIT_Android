@@ -12,61 +12,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1a3d3bf-25f4-479b-add2-3350134710d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\classes\debug\com\packone\login\HomeScreen.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\classes\debug\info\pack\selectgoal\WLifingActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\classes\debug\info\pack\selectgoal\WLifingActivity$PlaceholderFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\classes\debug\info\pack\selectgoal\WLifingActivity$SectionsPagerAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\classes\debug\info\pack\selectgoal\WLifingActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-78b6867fcb9908af9e61097f2d5cae4e408840f0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-bf3e8e89d2596a304b9745352c8bdebc359f83b3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-9426aef3e2850e9e37e7698602bf85ea302b3860.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e1bf718fbedbd45453661ce19f517a5005f4352e.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-79e42da7c2657068d681cf877be8b4cc06e3cb7a.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\res\debug\layout\activity_home_screen.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\HomeScreen.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\layout\activity_home_screen.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/pack/selectgoal/CardioFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/pack/selectgoal/CardioFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/CommunityFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/CommunityFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/Contact.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/Contact.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/DatabaseHandler.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/DatabaseHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/GoalActivity.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/GoalActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/HomeFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/HomeFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/MainActivity$1.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/MainActivity$2.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/MainActivity.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/model/NavDrawerItem.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/model/NavDrawerItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/adapter/NavDrawerListAdapter.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/adapter/NavDrawerListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/NavigationActivity$1.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/NavigationActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/NavigationActivity$SlideMenuClickListener.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/NavigationActivity$SlideMenuClickListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_20_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v13_20_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\GetFIT_Android.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\SQLiteLogin1.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\app.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\res\debug\drawable\backblue.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/NavigationActivity.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/NavigationActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/PagesFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/PagesFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/PhotosFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/PhotosFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/ProgressActivity.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/ProgressActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/RegisterActivity$1.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/RegisterActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/RegisterActivity.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/WhatsHotFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/androidhive/slidingmenu/WhatsHotFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$drawable.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$id.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$layout.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$menu.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$string.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$style.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/com/packone/login/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/pack/selectgoal/nutritionFragment.class" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/classes/debug/info/pack/selectgoal/nutritionFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/1.12/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/manifests/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/manifests/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GetFIT_Android.iml" afterPath="$PROJECT_DIR$/GetFIT_Android.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/SQLiteLogin1/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/exploded-aar/com.android.support/support-v13/20.0.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/exploded-aar/com.android.support/support-v13/20.0.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/generated/source/buildConfig/debug/com/packone/login/BuildConfig.java" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/generated/source/buildConfig/debug/com/packone/login/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/generated/source/r/debug/com/packone/login/R.java" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/generated/source/r/debug/com/packone/login/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/libs/app-debug.ap_" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/libs/app-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build.gradle" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/outputs/apk/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/outputs/apk/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-large-v4/values.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-large-v4/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-v11/values.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-v11/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-v14/values.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-v14/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-w820dp-v13/values.xml" afterPath="$PROJECT_DIR$/SQLiteLogin1/app/build/intermediates/res/debug/values-w820dp-v13/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GetFIT_Android.iws" />
@@ -90,11 +81,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GoalActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Contact.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2023">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#1428#1429#0" expanded="false" />
+                <element signature="e#1462#1463#0" expanded="false" />
+                <element signature="e#1504#1505#0" expanded="false" />
+                <element signature="e#1539#1540#0" expanded="false" />
+                <element signature="e#1604#1605#0" expanded="false" />
+                <element signature="e#1638#1639#0" expanded="false" />
+                <element signature="e#1680#1681#0" expanded="false" />
+                <element signature="e#1715#1716#0" expanded="false" />
+                <element signature="e#1778#1779#0" expanded="false" />
+                <element signature="e#1812#1813#0" expanded="false" />
+                <element signature="e#1854#1855#0" expanded="false" />
+                <element signature="e#1889#1890#0" expanded="false" />
+                <element signature="e#1954#1955#0" expanded="false" />
+                <element signature="e#1989#1990#0" expanded="false" />
+                <element signature="e#2033#2034#0" expanded="false" />
+                <element signature="e#2070#2071#0" expanded="false" />
+                <element signature="e#2131#2132#0" expanded="false" />
+                <element signature="e#2166#2167#0" expanded="false" />
+                <element signature="e#2207#2208#0" expanded="false" />
+                <element signature="e#2244#2245#0" expanded="false" />
+                <element signature="e#2305#2306#0" expanded="false" />
+                <element signature="e#2340#2341#0" expanded="false" />
+                <element signature="e#2381#2382#0" expanded="false" />
+                <element signature="e#2418#2419#0" expanded="false" />
+                <element signature="e#2449#2450#0" expanded="false" />
+                <element signature="e#2477#2478#0" expanded="false" />
+                <element signature="e#2552#2553#0" expanded="false" />
+                <element signature="e#2585#2586#0" expanded="false" />
+                <element signature="e#2615#2616#0" expanded="false" />
+                <element signature="e#2642#2643#0" expanded="false" />
+                <element signature="e#2680#2681#0" expanded="false" />
+                <element signature="e#2712#2713#0" expanded="false" />
+                <element signature="e#2762#2763#0" expanded="false" />
+                <element signature="e#2805#2806#0" expanded="false" />
+                <element signature="e#2840#2841#0" expanded="false" />
+                <element signature="e#2873#2874#0" expanded="false" />
+                <element signature="e#2915#2916#0" expanded="false" />
+                <element signature="e#2950#2951#0" expanded="false" />
+                <element signature="e#2982#2983#0" expanded="false" />
+                <element signature="e#3011#3012#0" expanded="false" />
+                <element signature="e#3043#3044#0" expanded="false" />
+                <element signature="e#3071#3072#0" expanded="false" />
+                <element signature="e#3113#3114#0" expanded="false" />
+                <element signature="e#3147#3148#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoalActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2713797" vertical-offset="0" max-vertical-offset="877">
+            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="697">
               <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="1768">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1439#4333#0" expanded="false" />
+                <element signature="e#4322#4323#0" expanded="false" />
+                <element signature="e#4434#4650#0" expanded="false" />
+                <element signature="e#4639#4640#0" expanded="false" />
+                <element signature="e#4752#4969#0" expanded="false" />
+                <element signature="e#4957#4958#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.637138" vertical-offset="0" max-vertical-offset="587">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1292">
+              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fragenkatalog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Fragenkatalog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1258">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -114,136 +208,434 @@
     <option name="tasksExpandState">
       <map>
         <entry key="" value="true" />
+        <entry key="SQLiteLogin1/" value="false" />
       </map>
     </option>
-    <option name="availableProjects">
+    <option name="availableTasks">
       <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="GetFIT_Android" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
+        <entry key="$PROJECT_DIR$/SQLiteLogin1/app">
           <value>
             <list>
-              <ExternalProjectPojo>
-                <option name="name" value="GetFIT_Android" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="androidDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all variants of all applications and secondary packages." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="assembleDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="assembleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="checkDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="checkReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileDebugTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="compileReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Build 'debug' on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="connectedAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a report about your library dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="dependencyReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="dexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="dexDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="dexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugTestResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateDebugTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateReleaseResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates an HTML report about your library dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="htmlDependencyReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="installDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="installDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on all variants." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Release build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on just the fatal issues in the Release build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="lintVitalRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="mergeDebugTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="mergeDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="packageDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="packageDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="packageRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preDebugTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preDexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preDexDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preDexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v13:20.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="prepareComAndroidSupportSupportV132000Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:20.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="prepareComAndroidSupportSupportV42000Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="prepareDebugTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processDebugTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processDebugTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a report about your project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="projectReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a report about your properties." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="propertyReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a report about your tasks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="taskReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="uninstallDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="uninstallDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Release build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="uninstallRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1/app" />
+                <option name="name" value="zipalignDebug" />
+              </ExternalTaskPojo>
             </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="projectBuildClasspath">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <ExternalProjectBuildClasspathPojo>
-              <option name="modulesBuildClasspath">
-                <map>
-                  <entry key="$PROJECT_DIR$">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="name" value="GetFIT_Android" />
-              <option name="projectBuildClasspath">
-                <list>
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/announce" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/antlr" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/base-services" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/base-services-groovy" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/build-comparison" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/build-init" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/cli" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/code-quality" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/core" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/core-impl" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/cpp" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/diagnostics" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/ear" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/ide" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/internal-integ-testing" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/internal-testing" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/ivy" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/jacoco" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/javascript" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/jetty" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/language-base" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/language-jvm" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/launcher" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/maven" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/messaging" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/native" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/open-api" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/osgi" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/plugin-use" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/plugins" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/publish" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/reporting" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/resources" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/resources-http" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/scala" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/signing" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/sonar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/tooling-api" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/ui" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/src/wrapper" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/ant-1.9.3.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/ant-launcher-1.9.3.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-base-services-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-base-services-groovy-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-cli-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-core-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-docs-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-launcher-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-messaging-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-native-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-open-api-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-resources-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-tooling-api-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-ui-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/gradle-wrapper-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/groovy-all-2.3.3.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/ant-antlr-1.9.3.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-announce-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-antlr-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-build-comparison-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-build-init-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-code-quality-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-core-impl-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-cpp-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-diagnostics-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-ear-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-ide-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-ivy-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-jacoco-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-javascript-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-jetty-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-language-base-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-language-jvm-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-maven-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-osgi-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-plugin-use-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-plugins-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-publish-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-reporting-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-resources-http-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-scala-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-signing-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/gradle-sonar-2.0.jar" />
-                  <option value="C:/Program Files (x86)/gradle-2.0/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
-                </list>
-              </option>
-            </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
       </map>
@@ -254,12 +646,35 @@
       <list>
         <option value="$PROJECT_DIR$/PROTO/app/src/main/java/com/packone/login/StartActivity.java" />
         <option value="$PROJECT_DIR$/local.properties" />
+        <option value="$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java" />
+        <option value="$PROJECT_DIR$/SQLiteLogin1/app/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1547" />
+    <option name="x" value="471" />
+    <option name="width" value="1449" />
     <option name="height" value="1040" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -287,6 +702,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,150 +711,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLiteLogin1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLiteLogin1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLiteLogin1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLiteLogin1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFIT_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLiteLogin1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -450,14 +725,58 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SQLiteLogin1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SQLiteLogin1/build.gradle" />
+    <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Muhammed5\Documents\testrep\hello-world\GetFIT_Android\GetFIT_Android\PROTO" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.main">
+  <component name="RunManager" selected="Android Application.app">
+    <configuration default="false" name="SQLiteLogin1 [androidDependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="androidDependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SQLiteLogin1 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SQLiteLogin1" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -487,17 +806,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -603,9 +924,38 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="app" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Android Application.main" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.app" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.SQLiteLogin1 [androidDependencies]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.SQLiteLogin1 [build]" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.SQLiteLogin1 [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.SQLiteLogin1 [androidDependencies]" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -635,37 +985,58 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1547" height="1040" extended-state="0" />
-    <editor active="false" />
+    <frame x="471" y="0" width="1449" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.4988067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.6502116" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.199731" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.320442" sideWeight="0.4722475" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.36464968" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5006974" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.137509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.49930266" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21587089" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2087833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.320442" sideWeight="0.5268426" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13340506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13340506" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928178" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -691,17 +1062,512 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GetFIT_Android.iml">
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="425">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2023">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1462#1463#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1889#1890#0" expanded="false" />
+            <element signature="e#1954#1955#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2244#2245#0" expanded="false" />
+            <element signature="e#2305#2306#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2449#2450#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2615#2616#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2680#2681#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2873#2874#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3043#3044#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3113#3114#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2713797" vertical-offset="0" max-vertical-offset="877">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="697">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2227">
+          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1439#4333#0" expanded="false" />
+            <element signature="e#4322#4323#0" expanded="false" />
+            <element signature="e#4434#4650#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4752#4969#0" expanded="false" />
+            <element signature="e#4957#4958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1292">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Fragenkatalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1258">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1462#1463#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1889#1890#0" expanded="false" />
+            <element signature="e#1954#1955#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2244#2245#0" expanded="false" />
+            <element signature="e#2305#2306#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2449#2450#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2615#2616#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2680#2681#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2873#2874#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3043#3044#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3113#3114#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="697">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="1989">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1439#4333#0" expanded="false" />
+            <element signature="e#4322#4323#0" expanded="false" />
+            <element signature="e#4434#4650#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4752#4969#0" expanded="false" />
+            <element signature="e#4957#4958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1462#1463#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1889#1890#0" expanded="false" />
+            <element signature="e#1954#1955#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2244#2245#0" expanded="false" />
+            <element signature="e#2305#2306#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2449#2450#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2615#2616#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2680#2681#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2873#2874#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3043#3044#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3113#3114#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="697">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="1989">
+          <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1439#4333#0" expanded="false" />
+            <element signature="e#4322#4323#0" expanded="false" />
+            <element signature="e#4434#4650#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4752#4969#0" expanded="false" />
+            <element signature="e#4957#4958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1462#1463#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1889#1890#0" expanded="false" />
+            <element signature="e#1954#1955#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2244#2245#0" expanded="false" />
+            <element signature="e#2305#2306#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2449#2450#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2615#2616#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2680#2681#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2873#2874#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3043#3044#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3113#3114#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="697">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1768">
+          <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1439#4333#0" expanded="false" />
+            <element signature="e#4322#4323#0" expanded="false" />
+            <element signature="e#4434#4650#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4752#4969#0" expanded="false" />
+            <element signature="e#4957#4958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1462#1463#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1889#1890#0" expanded="false" />
+            <element signature="e#1954#1955#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2244#2245#0" expanded="false" />
+            <element signature="e#2305#2306#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2449#2450#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2615#2616#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2680#2681#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2873#2874#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3043#3044#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3113#3114#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1202" max-vertical-offset="1768">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1439#4333#0" expanded="false" />
+            <element signature="e#4322#4323#0" expanded="false" />
+            <element signature="e#4434#4650#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4752#4969#0" expanded="false" />
+            <element signature="e#4957#4958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/GoalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1292">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Fragenkatalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2023">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1462#1463#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1889#1890#0" expanded="false" />
+            <element signature="e#1954#1955#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="false" />
+            <element signature="e#2131#2132#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2244#2245#0" expanded="false" />
+            <element signature="e#2305#2306#0" expanded="false" />
+            <element signature="e#2340#2341#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2449#2450#0" expanded="false" />
+            <element signature="e#2477#2478#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2615#2616#0" expanded="false" />
+            <element signature="e#2642#2643#0" expanded="false" />
+            <element signature="e#2680#2681#0" expanded="false" />
+            <element signature="e#2712#2713#0" expanded="false" />
+            <element signature="e#2762#2763#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2873#2874#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2950#2951#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+            <element signature="e#3011#3012#0" expanded="false" />
+            <element signature="e#3043#3044#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3113#3114#0" expanded="false" />
+            <element signature="e#3147#3148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/src/main/java/com/packone/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="1768">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1439#4333#0" expanded="false" />
+            <element signature="e#4322#4323#0" expanded="false" />
+            <element signature="e#4434#4650#0" expanded="false" />
+            <element signature="e#4639#4640#0" expanded="false" />
+            <element signature="e#4752#4969#0" expanded="false" />
+            <element signature="e#4957#4958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLiteLogin1/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.637138" vertical-offset="0" max-vertical-offset="587">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
