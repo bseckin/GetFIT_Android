@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="@drawable/backblue"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical"
+              android:background="@drawable/background1"
     >
 
     <TextView
@@ -167,22 +167,22 @@
 
 
 
-                    <RadioButton
-                        android:id="@+id/radBtn_Woman"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="@string/W"
-                        android:textSize="15sp"
-                        />
+                <RadioButton
+                    android:id="@+id/radBtn_Woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/W"
+                    android:textSize="15sp"
+                    />
 
-                    <RadioButton
-                        android:id="@+id/radBtn_Man"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:checked="false"
-                        android:text="@string/M"
-                        android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/radBtn_Man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/M"
+                    android:textSize="15sp" />
 
 
             </RadioGroup>
@@ -229,8 +229,6 @@
                 android:editable="true"
                 android:background="@android:color/transparent"
                 android:gravity="center_vertical"/>
-
-
         </RelativeLayout>
     </LinearLayout>
 
@@ -254,7 +252,5 @@
             android:layout_gravity="center_horizontal"/>
 
     </FrameLayout>
-
-
 </LinearLayout>
 <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->

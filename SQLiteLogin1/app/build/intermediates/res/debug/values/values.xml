@@ -38,7 +38,7 @@
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="M">Weiblich</string>
-    <string name="W">Maenlich</string>
+    <string name="W">Maennlich</string>
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_settings_was"><item>settings</item></string>
@@ -67,6 +67,7 @@
     <string name="frage_3">3. Wie viel Erfahrung hast du im Krafttraining?</string>
     <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
     <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
+    <string name="frage_6">6. Körpertyp</string>
     <string name="gewichtsverlust">Gewichtsverlust</string>
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -94,6 +95,7 @@
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="ruecken">Rückenstärkung – Kräftigung des Rückens</string>
+    <string name="title_activity_bodytype">BodytypeActivity</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
     <string name="title_activity_goal">GoalActivity</string>
     <string name="title_activity_help">HelpActivity</string>
@@ -103,6 +105,7 @@
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_login2">Login2Activity</string>
+    <string name="title_activity_nutrition">NutritionActivity</string>
     <string name="title_activity_progress">ProgressActivity</string>
     <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
     <string name="title_activity_seekbar">SeekbarActivity</string>

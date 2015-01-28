@@ -201,7 +201,7 @@ public class NavigationActivity extends Activity {
                 fragment = new TraningsFragment();
                 break;
             case 2: // Ernährung
-                fragment = new TraningsFragment();
+                fragment = new ErnaehrungsFragment();
                 break;
             case 3: // Kondition
                 fragment = new KonditionFragment();

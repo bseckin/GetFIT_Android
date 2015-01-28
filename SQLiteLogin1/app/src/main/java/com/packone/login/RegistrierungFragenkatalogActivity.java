@@ -34,6 +34,9 @@ public class RegistrierungFragenkatalogActivity extends Activity {
 
     // Trainingsfrequenz vom Benutzer
     public int frequenz = 0;
+    // Frage 6
+    private RadioGroup radioGroupFrage6;
+    private RadioButton F6radioBtn1, F6radioBtn2, F6radioBtn3;
 
     //Was der User ausgewählt hat vom Fragenkatalog
     public String antwortF1;
@@ -125,6 +128,14 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         Log.d("RegisteriungsFragenkatalogAcitivity ------- Frage 4:", antwortF4);
 
 
+        radioGroupFrage6 = (RadioGroup)findViewById(R.id.rg_frage6);
+        int selectedF6 = radioGroupFrage6.getCheckedRadioButtonId();
+        RadioButton rf6 = (RadioButton)findViewById(selectedF6);
+        String antwortF6 = rf6.getText().toString();
+        Log.d("--------------- Frage 4:", antwortF4);
+
+
+
         // [DATEN ÜBERPRÜFUNG] - Ob alle Fragen beantwortet wurden.
         if( antwortF1.equals("") || antwortF2.equals("") || antwortF3.equals("") || antwortF4.equals("")) {
             Context context = getApplicationContext();
@@ -162,7 +173,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                             antwortF1,
                             antwortF2,
                             antwortF3,
-                            antwortF4
+                            antwortF4,
+                            antwortF6
                     )
             );
             // Calling Application class (see application tag in AndroidManifest.xml)

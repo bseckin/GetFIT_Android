@@ -77,6 +77,11 @@ public class MainActivity extends Activity {
 
                 // Hier überprüfen wir ob die Eingabedaten nun im Datenbank waren oder nicht
                 if (checkUname == true) {
+                    // Calling Application class (see application tag in AndroidManifest.xml)
+                    final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
+
+                    //Set name and email in global/application context
+                    globalVariable.setName(muname.getText().toString());
                     // Mit Intent(actuelle activity, zielactivity) befördern wir den Benutzer zur nächsten seite
                     Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
                     startActivity(intent);
@@ -105,13 +110,13 @@ public class MainActivity extends Activity {
         });
 
         TextView bhelp = (TextView) findViewById(R.id.btnhelp);
-         bhelp.setOnClickListener(new OnClickListener() {
-             public void onClick(View v) {
-                 Intent intent = new Intent(MainActivity.this, HelpActivity.class);
-                 startActivity(intent);
+        bhelp.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+                startActivity(intent);
 
-             }
-         });
+            }
+        });
     }
 
 

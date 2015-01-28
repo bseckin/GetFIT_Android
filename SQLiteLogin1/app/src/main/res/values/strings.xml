@@ -16,6 +16,7 @@
     <!-- Es ist nicht wichtig welchen Tag er trainieren kann -> nur die Einhaltung der Reihenfolge ist wichtig) -->
     <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
     <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
+    <string name="frage_6">6. Körpertyp</string>
 
     <!-- RADIO BUTTONS VON FRAGENKATALOG -->
     <string name="gewichtsverlust">Gewichtsverlust</string>
@@ -35,7 +36,7 @@
     <string name="vier_mal_training">mehr als 4 mal in der Woche</string>
 
     <!-- RadioButtons Registrierung -->
-    <string name="W">Maenlich</string>
+    <string name="W">Maennlich</string>
     <string name="M">Weiblich</string>
 
     <!-- Nav Drawer Menu Items -->
@@ -74,6 +75,8 @@
     <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
     <string name="btn_fragen_fertig">Fertig!</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
+    <string name="title_activity_nutrition">NutritionActivity</string>
+    <string name="title_activity_bodytype">BodytypeActivity</string>
 
 
 </resources>

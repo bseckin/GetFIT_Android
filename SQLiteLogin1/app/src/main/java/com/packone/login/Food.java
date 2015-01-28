@@ -11,9 +11,10 @@ public class Food {
     // private variables
     private int _id;
     private String _name;
-    private String _protein;
-    private String _fats;
-    private String _carbs;
+    private int _protein;
+    private int _fats;
+    private int _carbs;
+    private int _kcal;
 
 
     // Empty constructor
@@ -25,17 +26,19 @@ public class Food {
     public Food(
             int id,
             String name,
-            String protein,
-            String fats,
-            String carbs
-         ) {
+            int protein,
+            int fats,
+            int carbs,
+            int kcal
+    ) {
         this._id = id;
         this._name = name;
         this._protein = protein;
         this._carbs = carbs;
         this._fats = fats;
-    }
+        this._kcal = kcal;
 
+    }
 
 
     // Setter getter for Username
@@ -57,32 +60,40 @@ public class Food {
     }
 
     // Setter Getter for Email
-    public String getProtein() {
+    public int getProtein() {
         return this._protein;
     }
 
-    public void setProtein(String protein) {
+    public void setProtein(int protein) {
         this._protein = protein;
     }
 
     // Setter Getter for Gender
-    public String getFats() {
+    public int getFats() {
         return this._fats;
     }
 
-    public void setFats(String fats) {
+    public void setFats(int fats) {
         this._fats = fats;
     }
 
     //Setter Getter for Height
-    public String getCarbs() {
+    public int getCarbs() {
         return this._carbs;
     }
 
-    public void setCarbs(String carbs) {
+    public void setCarbs(int carbs) {
         this._carbs = carbs;
     }
 
+    //Setter and getter for Kcal
+    public int get_kcal() {
+        return _kcal;
+    }
+
+    public void set_kcal(int _kcal) {
+        this._kcal = _kcal;
+    }
 
 
 }
