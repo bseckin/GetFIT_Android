@@ -35,7 +35,7 @@
                      android:gravity="center_horizontal">
 
         </TableLayout>
-
+        <!--
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
@@ -47,7 +47,29 @@
             android:layout_alignParentEnd="true"
             android:background="#00b2b2b2"
             android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:visibility="invisible"
+            /> -->
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_tfragment_teinheit_fertig"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="12dip"
+                android:onClick="testAusgabe()"
+                android:layout_gravity="center_horizontal|bottom"
+                android:src="@drawable/ic_action_tick"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp"/>
+
+        </FrameLayout>
 
     </RelativeLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_training.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_training.xml -->
