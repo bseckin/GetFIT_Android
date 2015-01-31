@@ -22,6 +22,7 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile 'com.android.support:support-v13:20.0.0'
+    compile 'com.github.markushi:circlebutton:1.1' // Finish button
 
     //JARS hinzufuegen
     compile files ('libs/activation.jar')
@@ -34,4 +35,10 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['additionnal.jar'])
     compile fileTree(dir: 'libs', include: ['mail.jar'])
     compile fileTree(dir: 'libs', include: ['jxl-2.6.jar'])
+}
+
+//Fuer Finish Button
+repositories {
+    mavenCentral()
+    mavenLocal()
 }

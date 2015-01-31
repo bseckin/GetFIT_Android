@@ -13,6 +13,25 @@ public final class R {
         public static final int nav_drawer_items=0x7f040001;
     }
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cb_color=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cb_pressedRingWidth=0x7f010001;
     }
     public static final class color {
         public static final int counter_text_bg=0x7f050000;
@@ -46,32 +65,33 @@ public final class R {
         public static final int custom_btn_twitterblue=0x7f02000c;
         public static final int custom_tp_button=0x7f02000d;
         public static final int getfitlogo=0x7f02000e;
-        public static final int ic_communities=0x7f02000f;
-        public static final int ic_drawer=0x7f020010;
-        public static final int ic_home=0x7f020011;
-        public static final int ic_launcher2=0x7f020012;
-        public static final int ic_launcher_2=0x7f020013;
-        public static final int ic_logout=0x7f020014;
-        public static final int ic_pages=0x7f020015;
-        public static final int ic_people=0x7f020016;
-        public static final int ic_photos=0x7f020017;
-        public static final int ic_whats_hot=0x7f020018;
-        public static final int launcher2=0x7f020019;
-        public static final int launcher_getfit=0x7f02001a;
-        public static final int list_item_bg_normal=0x7f02001b;
-        public static final int list_item_bg_pressed=0x7f02001c;
-        public static final int list_selector=0x7f02001d;
-        public static final int meinbuttontp=0x7f02001e;
-        public static final int meinbuttontp_pressed=0x7f02001f;
-        public static final int menueworkout=0x7f020020;
-        public static final int nutrition=0x7f020021;
-        public static final int progressbar=0x7f020022;
-        public static final int radial=0x7f020023;
-        public static final int redbutton=0x7f020024;
-        public static final int starttext=0x7f020025;
-        public static final int starttext2=0x7f020026;
-        public static final int table_cell_shape=0x7f020027;
-        public static final int weightlifting=0x7f020028;
+        public static final int ic_action_tick=0x7f02000f;
+        public static final int ic_communities=0x7f020010;
+        public static final int ic_drawer=0x7f020011;
+        public static final int ic_home=0x7f020012;
+        public static final int ic_launcher2=0x7f020013;
+        public static final int ic_launcher_2=0x7f020014;
+        public static final int ic_logout=0x7f020015;
+        public static final int ic_pages=0x7f020016;
+        public static final int ic_people=0x7f020017;
+        public static final int ic_photos=0x7f020018;
+        public static final int ic_whats_hot=0x7f020019;
+        public static final int launcher2=0x7f02001a;
+        public static final int launcher_getfit=0x7f02001b;
+        public static final int list_item_bg_normal=0x7f02001c;
+        public static final int list_item_bg_pressed=0x7f02001d;
+        public static final int list_selector=0x7f02001e;
+        public static final int meinbuttontp=0x7f02001f;
+        public static final int meinbuttontp_pressed=0x7f020020;
+        public static final int menueworkout=0x7f020021;
+        public static final int nutrition=0x7f020022;
+        public static final int progressbar=0x7f020023;
+        public static final int radial=0x7f020024;
+        public static final int redbutton=0x7f020025;
+        public static final int starttext=0x7f020026;
+        public static final int starttext2=0x7f020027;
+        public static final int table_cell_shape=0x7f020028;
+        public static final int weightlifting=0x7f020029;
     }
     public static final class id {
         public static final int action_logout=0x7f0a0062;
@@ -284,4 +304,52 @@ public final class R {
         public static final int btnStyleOrange=0x7f080003;
         public static final int btnStyleTwitterblue=0x7f080004;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a CircleButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleButton_cb_color com.packone.login:cb_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleButton_cb_pressedRingWidth com.packone.login:cb_pressedRingWidth}</code></td><td></td></tr>
+           </table>
+           @see #CircleButton_cb_color
+           @see #CircleButton_cb_pressedRingWidth
+         */
+        public static final int[] CircleButton = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.packone.login.R.attr#cb_color}
+          attribute's value can be found in the {@link #CircleButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.packone.login:cb_color
+        */
+        public static final int CircleButton_cb_color = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.packone.login.R.attr#cb_pressedRingWidth}
+          attribute's value can be found in the {@link #CircleButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.packone.login:cb_pressedRingWidth
+        */
+        public static final int CircleButton_cb_pressedRingWidth = 1;
+    };
 }

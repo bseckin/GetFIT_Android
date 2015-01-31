@@ -18,6 +18,7 @@ ADDED from AndroidManifest.xml:7:5
 MERGED from com.android.support:support-v4:20.0.0:16:5
 MERGED from com.android.support:support-v13:20.0.0:16:5
 MERGED from com.android.support:support-v4:20.0.0:16:5
+MERGED from com.github.markushi:circlebutton:1.1:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -53,6 +54,7 @@ ADDED from AndroidManifest.xml:24:5
 MERGED from com.android.support:support-v4:20.0.0:17:5
 MERGED from com.android.support:support-v13:20.0.0:17:5
 MERGED from com.android.support:support-v4:20.0.0:17:5
+MERGED from com.github.markushi:circlebutton:1.1:9:5
 	android:label
 		ADDED from AndroidManifest.xml:28:9
 	android:allowBackup

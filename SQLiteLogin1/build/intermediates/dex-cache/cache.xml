@@ -37,6 +37,13 @@
         <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-8c5305b46ce5f82c201a7bef38a94aefa77d2c70.jar" />
     </item>
     <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.github.markushi\circlebutton\1.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-6063be6ea8cf3a7711743e1b429973ca66604b0e.jar" />
+    </item>
+    <item
         jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\jxl-2.6.jar"
         jumboMode="false"
         revision="20.0.0"

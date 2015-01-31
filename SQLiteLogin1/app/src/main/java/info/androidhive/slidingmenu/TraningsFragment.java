@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -22,6 +21,7 @@ import com.packone.login.Trainingsplan;
 import java.util.Arrays;
 import java.util.Calendar;
 
+import at.markushi.ui.CircleButton;
 import trainingsplan.AllgemeineFitness;
 import trainingsplan.Ausdauer;
 import trainingsplan.Gewichtsverlust;
@@ -66,8 +66,10 @@ public class TraningsFragment extends Fragment {
         planEinheit = new String[][]{this.meinPlan[0][0],this.meinPlan[0][1]};
         BuildTable(planEinheit[0].length-1, 2, planEinheit);
 
-        Button button = (Button) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
-        button.setOnClickListener(new View.OnClickListener() {
+        CircleButton circleButton = (CircleButton) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
+        //Button button = (Button) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
+
+        circleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
