@@ -132,7 +132,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         int selectedF6 = radioGroupFrage6.getCheckedRadioButtonId();
         RadioButton rf6 = (RadioButton)findViewById(selectedF6);
         String antwortF6 = rf6.getText().toString();
-        Log.d("--------------- Frage 4:", antwortF4);
+        Log.d("--------------- Frage 4:", antwortF6);
 
 
 
@@ -177,6 +177,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                             antwortF6
                     )
             );
+
             // Calling Application class (see application tag in AndroidManifest.xml)
             final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
 

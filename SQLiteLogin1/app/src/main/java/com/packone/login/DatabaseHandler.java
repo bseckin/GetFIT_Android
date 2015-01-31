@@ -92,7 +92,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                         + KEY_EMAIL + " TEXT,"
                         + KEY_GENDER + " TEXT,"
                         + KEY_HEIGHT + " INTEGER,"
-                        + KEY_WEIGHT + " FLOAT,"
+                        + KEY_WEIGHT + " INTEGER,"
 
                         // Fragenkatalog Werte
                         + KEY_ZIEL + " TEXT,"
@@ -570,7 +570,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public List<Food> getFood(String name) {
         List<Food> foodList = new ArrayList<Food>();
         // Select All Query
-        String selectQuery = "SELECT  * FROM " + TABLE_FOOD+" WHERE name = '" + name+"'";
+        String selectQuery = "SELECT  * FROM " + TABLE_FOOD+" WHERE foodname = '" + name+"'";
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
