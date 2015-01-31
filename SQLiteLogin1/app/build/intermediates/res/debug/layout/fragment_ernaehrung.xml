@@ -85,13 +85,12 @@
                     android:background="@drawable/circle_shape"
                     android:max="100"
                     android:progress="1"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="10dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -111,11 +110,9 @@
                     android:text="Fat"
                     android:id="@+id/textView6"
                     android:textSize="22dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignRight="@+id/fat_perc"
-                    android:layout_alignEnd="@+id/fat_perc"
-                    android:layout_alignBaseline="@+id/fat_prog"
                     android:textStyle="bold"
+                    android:layout_alignTop="@+id/fat_prog"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp" />
 
                 <TextView

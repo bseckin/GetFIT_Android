@@ -123,9 +123,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                         + ")";
         db.execSQL(CREATE_FOOD_TABLE);
 
-        String insertFood =
-                "INSERT INTO food VALUES(1,'Radischen',255,255,255,255); INSERT INTO food VALUES(1,'Quark',255,255,255,255);" ;
-        db.execSQL(insertFood);
+        String[] insertFood = new String["INSERT INTO food VALUES(1,'Radischen',255,255,255,255);","INSERT INTO food VALUES(1,'Quark',255,255,255,255);"];
+
+        db.execSQL(insertFood[0]);
 
     }
 
