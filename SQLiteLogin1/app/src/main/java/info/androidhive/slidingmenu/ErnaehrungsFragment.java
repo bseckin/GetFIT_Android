@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -33,10 +34,20 @@ import ernaehrung.Mesomorph;
 public class ErnaehrungsFragment extends Fragment {
     private NutritionIntake ni;
 
-    private float carbs;
-    private float fat;
-    private float protein;
-    private float kcal;
+    private int carbs;
+    private int fat;
+    private int protein;
+    private int kcal;
+
+    private TextView fatview;
+    private TextView protview;
+    private TextView carbview;
+    private TextView calview;
+
+    private ProgressBar pfat;
+    private ProgressBar pprot;
+    private ProgressBar pcarb;
+    private ProgressBar pcal;
 
     private int _weight;
     private int _height;
@@ -95,10 +106,10 @@ public class ErnaehrungsFragment extends Fragment {
         }
         //Konstruktor
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
-        this.carbs = ni.getCarbs();
-        this.fat = ni.getFett();
-        this.protein = ni.getProtein();
-        this.kcal = ni.getGu();
+        this.carbs = Math.round(ni.getCarbs());
+        this.fat = Math.round(ni.getFett());
+        this.protein = Math.round(ni.getProtein());
+        this.kcal = Math.round(ni.getGu());
 
         // Formel für
 
@@ -112,10 +123,10 @@ public class ErnaehrungsFragment extends Fragment {
             if (this.typ.equals("Ectomorph")) {
             Log.d("$$$$$$$$$$$$", goal);
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs = ni.getCarbs() + 100;
-                this.fat = ni.getFett() + 20;
-                this.protein = ni.getProtein() + 10;
-                this.kcal = ni.getGu() + 200;
+                this.carbs =  Math.round(ni.getCarbs())+100;
+                this.fat =  Math.round(ni.getFett())+20;
+                this.protein = Math.round(ni.getProtein())+ 10;
+                this.kcal = Math.round(ni.getGu())+200;
                 EctoErnaehrung = ectoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -126,10 +137,10 @@ public class ErnaehrungsFragment extends Fragment {
                 lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
             } else if (goal.equals("Gewichtsverlust")) {
-                this.carbs = ni.getCarbs() - 100;
-                this.fat = ni.getFett() - 20;
-                this.protein = ni.getProtein() - 10;
-                this.kcal = ni.getGu() - 200;
+                this.carbs -= 100;
+                this.fat -=  20;
+                this.protein -= 10;
+                this.kcal -= 200;
                 EctoErnaehrung = ectoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -141,10 +152,10 @@ public class ErnaehrungsFragment extends Fragment {
             }
         } else if (this.typ.equals("Endomorph")) {
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs = ni.getCarbs() + 100;
-                this.fat = ni.getFett() + 20;
-                this.protein = ni.getProtein() + 10;
-                this.kcal = ni.getGu() + 200;
+                this.carbs += 100;
+                this.fat += 20;
+                this.protein += 10;
+                this.kcal += 200;
                 EctoErnaehrung = endoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -155,10 +166,10 @@ public class ErnaehrungsFragment extends Fragment {
                 lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
             } else if (goal.equals("Gewichtsverlust")) {
-                this.carbs = ni.getCarbs() - 100;
-                this.fat = ni.getFett() - 20;
-                this.protein = ni.getProtein() - 10;
-                this.kcal = ni.getGu() - 200;
+                this.carbs -= 100;
+                this.fat -= 20;
+                this.protein -= 10;
+                this.kcal -= 200;
                 EctoErnaehrung = endoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -170,10 +181,10 @@ public class ErnaehrungsFragment extends Fragment {
             }
         } else if (this.typ.equals("Mesomorph")) {
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs = ni.getCarbs() + 100;
-                this.fat = ni.getFett() + 20;
-                this.protein = ni.getProtein() + 10;
-                this.kcal = ni.getGu() + 200;
+                this.carbs += 100;
+                this.fat += 20;
+                this.protein += 10;
+                this.kcal += 200;
                 EctoErnaehrung = mesoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -184,10 +195,10 @@ public class ErnaehrungsFragment extends Fragment {
                 lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
             } else if (goal.equals("Gewichtsverlust")) {
-                this.carbs = ni.getCarbs() - 100;
-                this.fat = ni.getFett() - 20;
-                this.protein = ni.getProtein() - 10;
-                this.kcal = ni.getGu() - 200;
+                this.carbs -= 100;
+                this.fat -= 20;
+                this.protein -= 10;
+                this.kcal -=  200;
                 EctoErnaehrung = mesoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -206,11 +217,39 @@ public class ErnaehrungsFragment extends Fragment {
         //auf der rechten seite befinden sich die werte und auf der linken seite die
         //jeweilige bezeichnung
         marks = new String[][]{{"Carbs", "Fat", "Proteine", "Kcal"}, {
-                Float.toString(this.carbs),
-                Float.toString(this.fat),
-                Float.toString(this.protein),
-                Float.toString(this.kcal)}};
-        table_layout = (TableLayout) rootView.findViewById(R.id.tableLayout1);
+                Float.toString(Math.round(this.carbs)),
+                Float.toString(Math.round(this.fat)),
+                Float.toString(Math.round(this.protein)),
+                Float.toString(Math.round(this.kcal))}};
+
+        //die progressbars werden beschriftet
+        this.fatview = (TextView) rootView.findViewById(R.id.fat_anz);
+        fatview.setText("0/" + Float.toString(this.fat));
+
+        this.protview = (TextView) rootView.findViewById(R.id.prot_anz);
+        protview.setText("0/" + Float.toString(this.protein));
+
+        this.carbview = (TextView) rootView.findViewById(R.id.carb_anz);
+        carbview.setText("0/"+Float.toString(this.carbs));
+
+        this.calview = (TextView) rootView.findViewById(R.id.cal_anz);
+        calview.setText("0/"+Float.toString(this.kcal));
+
+        //Progressbar wird resettet
+        this.pfat = (ProgressBar) rootView.findViewById(R.id.fat_prog);
+        pfat.setProgress(1);
+
+        this.pprot = (ProgressBar) rootView.findViewById(R.id.prot_prog);
+        pprot.setProgress(1);
+
+        this.pcarb = (ProgressBar) rootView.findViewById(R.id.carb_prog);
+        pcarb.setProgress(1);
+
+        this.pcal = (ProgressBar) rootView.findViewById(R.id.cal_prog);
+        pcal.setProgress(1);
+
+        //TODO Tablelayout weg und alles mit progressbars weils schöner aussieht
+   /**     table_layout = (TableLayout) rootView.findViewById(R.id.tableLayout1);
 
         //Wir bereiten die variablen nun für eine asugabe vor indem wir die größe
         //der tabelle festlegen. Diese "größe" besteht aus der spalten und der zeilen
@@ -223,7 +262,7 @@ public class ErnaehrungsFragment extends Fragment {
         table_layout.removeAllViews();
         //Die Methode BuildTable wird aufgerufen
         BuildTableNutrition(rows, cols, "1", marks);
-
+*/
         //Anzeige der Malzeiten
 
         table_layout_food = (TableLayout) rootView.findViewById(R.id.tableLayout2);

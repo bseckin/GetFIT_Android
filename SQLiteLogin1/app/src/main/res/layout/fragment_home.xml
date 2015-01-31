@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Willkommen zurück!"
-                android:id="@+id/textView6"
+                android:id="@+id/carb_perc"
                 android:layout_marginTop="30dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
@@ -53,7 +53,7 @@
                 android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"
                 android:id="@+id/textView7"
                 android:layout_gravity="center_horizontal|top"
-                android:layout_below="@+id/textView6"
+                android:layout_below="@+id/carb_perc"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_margin="20dp"/>

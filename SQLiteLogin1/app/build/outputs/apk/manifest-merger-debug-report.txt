@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 		INJECTED from AndroidManifest.xml:0:0
@@ -11,8 +13,6 @@ ADDED from AndroidManifest.xml:2:1
 		ADDED from AndroidManifest.xml:4:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
 MERGED from com.android.support:support-v4:20.0.0:16:5
@@ -59,10 +59,10 @@ MERGED from com.android.support:support-v4:20.0.0:17:5
 		ADDED from AndroidManifest.xml:25:9
 	android:icon
 		ADDED from AndroidManifest.xml:27:9
-	android:largeHeap
-		ADDED from AndroidManifest.xml:29:9
 	android:theme
 		ADDED from AndroidManifest.xml:30:9
+	android:largeHeap
+		ADDED from AndroidManifest.xml:29:9
 	android:name
 		ADDED from AndroidManifest.xml:26:9
 activity#com.packone.login.MainActivity

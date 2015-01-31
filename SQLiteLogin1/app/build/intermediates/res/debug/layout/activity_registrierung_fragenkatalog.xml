@@ -212,7 +212,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/frage_6"
-                android:id="@+id/textView6"
+                android:id="@+id/carb_perc"
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"/>
@@ -285,4 +285,4 @@
             />
 
     </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
+</ScrollView><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
