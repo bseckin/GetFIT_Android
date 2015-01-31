@@ -108,6 +108,8 @@ public class ErnaehrungsFragment extends Fragment {
             this.typ = cn.get_ktyp();
         }
         Log.d(this.height+"!!!!!!!!!!","!!!!!!!!!!!!!!!!!!!!!!");
+        Log.d(this.weight+"!!!!!!!!!!","!!!!!!!!!!!!!!!!!!!!!!");
+        Log.d(this.typ+"!!!!!!!!!!","!!!!!!!!!!!!!!!!!!!!!!");
         //Konstruktor
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
         this.carbs = Math.round(ni.getCarbs());

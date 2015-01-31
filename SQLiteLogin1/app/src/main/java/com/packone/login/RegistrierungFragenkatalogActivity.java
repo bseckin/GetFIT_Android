@@ -43,6 +43,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
     public String antwortF2;
     public String antwortF3;
     public String antwortF4;
+    public String antwortF6;
 
     // Für DB
     private static String UNAME = "";
@@ -131,7 +132,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         radioGroupFrage6 = (RadioGroup)findViewById(R.id.rg_frage6);
         int selectedF6 = radioGroupFrage6.getCheckedRadioButtonId();
         RadioButton rf6 = (RadioButton)findViewById(selectedF6);
-        String antwortF6 = rf6.getText().toString();
+        antwortF6 = rf6.getText().toString();
         Log.d("--------------- Frage 4:", antwortF6);
 
 
@@ -168,8 +169,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
                             PASSWORD,
                             EMAIL,
                             GENDER,
-                            Integer.parseInt(HEIGHT),
                             Integer.parseInt(WEIGHT),
+                            Integer.parseInt(HEIGHT),
                             antwortF1,
                             antwortF2,
                             antwortF3,

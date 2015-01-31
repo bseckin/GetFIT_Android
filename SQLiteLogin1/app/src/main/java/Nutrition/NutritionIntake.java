@@ -48,7 +48,7 @@ public class NutritionIntake {
         if (gender.equals("Maennlich")) {
             this.gu = (float) ((66.47 + (13.7 * this._weight) +
                                 (5 * this._height) -
-                                (6.8 * this._age))*this.pal);
+                                (6.8 * this._age)));
         } else if (gender.equals("Weiblich")){
             this.gu = (float) ((665.1 + (9.6 * this._weight) +
                                 (1.8 * this._height) -
