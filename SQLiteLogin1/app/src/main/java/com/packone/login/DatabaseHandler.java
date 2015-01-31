@@ -123,8 +123,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                         + ")";
         db.execSQL(CREATE_FOOD_TABLE);
 
-        String[] insertFood = {"INSERT INTO food VALUES(1,'Radischen',255,255,255,255);","INSERT INTO food VALUES(1,'Quark',255,255,255,255);"};
-        for(int i = 0; i <= insertFood.length; i++) {
+        String[] insertFood = {
+                                "INSERT INTO food VALUES(1,'radischen',1,0.1,1.9,14);",
+                                "INSERT INTO food VALUES(2,'quark',14,0.2,4,75);",
+                                "INSERT INTO food VALUES(3,'kräuter',3,0.8,5.1,41);",
+                                "INSERT INTO food VALUES(4,'vollkornbrot',7,1.36,42.8,215);",
+                                "INSERT INTO food VALUES(5,'apfel',0,0.4,11.4,52);",
+                                "INSERT INTO food VALUES(6,'vollkornnudeln',5,5,18.9,143);",
+                                "INSERT INTO food VALUES(7,'zucchini',2,0.4,2,19);",
+                                "INSERT INTO food VALUES(8,'broccholi',3,0.2,2.5,26);",
+                                "INSERT INTO food VALUES(9,'schlagsahne',3,10,4.1,118);",
+                                "INSERT INTO food VALUES(10,'milch',3,3.5,4.8,64);",
+                                "INSERT INTO food VALUES(11,'gemüse',3,0.3,0.8,17);",
+                                "INSERT INTO food VALUES(12,'speisequark',14,0.2,4,75);",
+                                "INSERT INTO food VALUES(13,'möhre',2,2.65,13.7,88);",
+                                "INSERT INTO food VALUES(14,'seelachsfilet',10,7.84,1.1,115);",
+                                "INSERT INTO food VALUES(15,'Kochschinken',19,3,1,107);",
+                                "INSERT INTO food VALUES(16,'kartoffel',2,2.65,13.7,88);"
+
+        };
+
+        for(int i = 0; i <= insertFood.length-1; i++) {
             db.execSQL(insertFood[i]);
         }
 

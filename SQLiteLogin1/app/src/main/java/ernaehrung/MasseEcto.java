@@ -40,8 +40,6 @@ package ernaehrung;
  *
  */
 
-import android.util.Log;
-
 /**
  * Created by Muhammed5 on 26.11.2014.
  */
@@ -54,26 +52,13 @@ public class MasseEcto extends AErnaehrung {
     private String[][] abends;
 
     public String[][][] starten() {
-        Log.d("!!!!!!!!!!!!!!!!!!$$$$$$$$$$$$$$$$$$$", "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
-
-        morgens = new String[][]{{"2 Scheiben Eiweißbrot", "2 Scheiben Haenchenbrust", "Butter", "2 gekochte Eier"},
-                {"120", "40", "10", "70"}};
-        mittags = new String[][]{{"Putenbrust", "Reis"},
-                {"250", "60"}};
-        preWorkout = new String[][]{{"Banane"},
-                {"mittlere Größe"}};
-        nachmittag = new String[][]{{"Nüsse"},
-                {"50"}};
-        abends = new String[][]{{"Thunfisch", "Mais", "Magerquark"},
-                {"150", "150", "500"}};
-
         String[][][] ret = new String[][][]{
-                {{"2 Scheiben Eiweißbrot", "2 Scheiben Haenchenbrust", "Butter", "2 gekochte Eier"},
-                        {"120", "40", "10", "70"}},
-                {{"Putenbrust", "Reis"}, {"250", "60"}},
-                {{"Banane"}, {"80"}},
-                {{"Nüsse"}, {"50"}},
-                {{"Thunfisch", "Mais", "Magerquark"}, {"150", "150", "500"}}};
+                {{"Radischen", "Quark", "Kräuter", "Vollkornbrot"},
+                        {"45", "500", "50", "40"}},
+                {{"Apfel"},{"200"}},
+                {{"Vollkornnudeln", "Möhre","Zucchini","Broccoli", "Kochschinken","Schlagsahne","Milch"}, {"50","30","50","50","50","40","50"}},
+                {{"Möhre","Gemüse","Speisequark","Kräuter"}, {"50","100","125","25"}},
+                {{"Kartoffel", "Möhre", "Broccholi","Seelachsfilet",}, {"100", "50", "50","150"}}};
         return (ret);
     }
 }

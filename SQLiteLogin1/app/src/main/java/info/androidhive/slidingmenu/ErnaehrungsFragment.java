@@ -237,7 +237,7 @@ public class ErnaehrungsFragment extends Fragment {
 
         //Progressbar wird resettet
         this.pfat = (ProgressBar) rootView.findViewById(R.id.fat_prog);
-        pfat.setProgress(1);
+        pfat.setProgress(90);
 
         this.pprot = (ProgressBar) rootView.findViewById(R.id.prot_prog);
         pprot.setProgress(1);

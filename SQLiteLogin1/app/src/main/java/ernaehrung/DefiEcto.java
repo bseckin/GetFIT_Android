@@ -15,8 +15,8 @@ public class DefiEcto extends AErnaehrung{
                 {{"Radischen", "Quark", "Kräuter", "Vollkornbrot"},
                         {"45", "500", "50", "40"}},
                 {{"Apfel"},{"200"}},
-                {{"Vollkornnudeln", "Möhre","Zucchini","Broccoli", "Kochscinken","Schlagsahne","Milch"}, {"50","30","50","50","50","40","50"}},
-                {{"Möhre","Gemüse","Speisequark mager","Kräuter"}, {"50","100","125","25"}},
+                {{"Vollkornnudeln", "Möhre","Zucchini","Broccoli", "Kochschinken","Schlagsahne","Milch"}, {"50","30","50","50","50","40","50"}},
+                {{"Möhre","Gemüse","Speisequark","Kräuter"}, {"50","100","125","25"}},
                 {{"Kartoffel", "Möhre", "Broccholi","Seelachsfilet",}, {"100", "50", "50","150"}}};
         return (ret);
     }
