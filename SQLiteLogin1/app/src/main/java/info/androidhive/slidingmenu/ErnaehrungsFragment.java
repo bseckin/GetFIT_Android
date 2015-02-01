@@ -40,11 +40,26 @@ public class ErnaehrungsFragment extends Fragment {
     private int protein;
     private int kcal;
 
+    private int protref;
+    private int fatref;
+    private int carbref;
+    private int kcalref;
+
+    private int prottotal;
+    private int fattotal;
+    private int carbtotal;
+    private int kcaltotal;
+
     private String[][] morgens;
     private TextView fatview;
     private TextView protview;
     private TextView carbview;
     private TextView calview;
+
+    private TextView fatpercview;
+    private TextView protpercview;
+    private TextView carbpercview;
+    private TextView kcalpercview;
 
     private ProgressBar pfat;
     private ProgressBar pprot;
@@ -107,9 +122,14 @@ public class ErnaehrungsFragment extends Fragment {
             this.gender = cn.getGender();
             this.typ = cn.get_ktyp();
         }
-        Log.d(this.height+"!!!!!!!!!!","!!!!!!!!!!!!!!!!!!!!!!");
-        Log.d(this.weight+"!!!!!!!!!!","!!!!!!!!!!!!!!!!!!!!!!");
-        Log.d(this.typ+"!!!!!!!!!!","!!!!!!!!!!!!!!!!!!!!!!");
+        Log.d(this.height + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
+        Log.d(this.weight + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
+        Log.d(this.typ + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
+
+        this.fatpercview = (TextView) rootView.findViewById(R.id.fat_perc);
+        this.protpercview = (TextView) rootView.findViewById(R.id.prot_perc);
+        this.kcalpercview = (TextView) rootView.findViewById(R.id.cal_perc);
+        this.carbpercview = (TextView) rootView.findViewById(R.id.carb_perc);
         //Konstruktor
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
         this.carbs = Math.round(ni.getCarbs());
@@ -126,13 +146,13 @@ public class ErnaehrungsFragment extends Fragment {
 
 
         //TODO ??? Das Ziel muss aus der Datenbank kommen
-            if (this.typ.equals("Ectomorph")) {
+        if (this.typ.equals("Ectomorph")) {
             Log.d("$$$$$$$$$$$$", goal);
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs =  Math.round(ni.getCarbs())+100;
-                this.fat =  Math.round(ni.getFett())+20;
-                this.protein = Math.round(ni.getProtein())+ 10;
-                this.kcal = Math.round(ni.getGu())+200;
+                this.carbs = Math.round(ni.getCarbs()) + 100;
+                this.fat = Math.round(ni.getFett()) + 20;
+                this.protein = Math.round(ni.getProtein()) + 10;
+                this.kcal = Math.round(ni.getGu()) + 200;
                 EctoErnaehrung = ectoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -144,7 +164,7 @@ public class ErnaehrungsFragment extends Fragment {
 
             } else if (goal.equals("Gewichtsverlust")) {
                 this.carbs -= 100;
-                this.fat -=  20;
+                this.fat -= 20;
                 this.protein -= 10;
                 this.kcal -= 200;
                 EctoErnaehrung = ectoplan.holePlan(this.goal);
@@ -204,7 +224,7 @@ public class ErnaehrungsFragment extends Fragment {
                 this.carbs -= 100;
                 this.fat -= 20;
                 this.protein -= 10;
-                this.kcal -=  200;
+                this.kcal -= 200;
                 EctoErnaehrung = mesoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -236,39 +256,40 @@ public class ErnaehrungsFragment extends Fragment {
         this.protview.setText("0/" + Float.toString(this.protein));
 
         this.carbview = (TextView) rootView.findViewById(R.id.carb_anz);
-        this.carbview.setText("0/"+Float.toString(this.carbs));
+        this.carbview.setText("0/" + Float.toString(this.carbs));
 
         this.calview = (TextView) rootView.findViewById(R.id.cal_anz);
-        this.calview.setText("0/"+Float.toString(this.kcal));
+        this.calview.setText("0/" + Float.toString(this.kcal));
 
         //Progressbar wird resettet
         this.pfat = (ProgressBar) rootView.findViewById(R.id.fat_prog);
-        this.pfat.setProgress(90);
+        this.pfat.setProgress(0);
 
         this.pprot = (ProgressBar) rootView.findViewById(R.id.prot_prog);
-        this.pprot.setProgress(1);
+        this.pprot.setProgress(0);
 
         this.pcarb = (ProgressBar) rootView.findViewById(R.id.carb_prog);
-        this.pcarb.setProgress(1);
+        this.pcarb.setProgress(0);
 
         this.pcal = (ProgressBar) rootView.findViewById(R.id.cal_prog);
-        this.pcal.setProgress(1);
+        this.pcal.setProgress(0);
+
 
         //TODO Tablelayout weg und alles mit progressbars weils schöner aussieht
-   /**     table_layout = (TableLayout) rootView.findViewById(R.id.tableLayout1);
+        /**     table_layout = (TableLayout) rootView.findViewById(R.id.tableLayout1);
 
-        //Wir bereiten die variablen nun für eine asugabe vor indem wir die größe
-        //der tabelle festlegen. Diese "größe" besteht aus der spalten und der zeilen
-        //anzahl des arrays
-        this.cols = marks.length - 1;
-        this.rows = marks[1].length - 1;
-        //entfernen alle zuvor generierten tabellen inhalte im View
-        //entfernen nicht die ganze tabelle da wir die grundstruktur brauchen um
-        //die tabelle zeichenn zu könenn
-        table_layout.removeAllViews();
-        //Die Methode BuildTable wird aufgerufen
-        BuildTableNutrition(rows, cols, "1", marks);
-*/
+         //Wir bereiten die variablen nun für eine asugabe vor indem wir die größe
+         //der tabelle festlegen. Diese "größe" besteht aus der spalten und der zeilen
+         //anzahl des arrays
+         this.cols = marks.length - 1;
+         this.rows = marks[1].length - 1;
+         //entfernen alle zuvor generierten tabellen inhalte im View
+         //entfernen nicht die ganze tabelle da wir die grundstruktur brauchen um
+         //die tabelle zeichenn zu könenn
+         table_layout.removeAllViews();
+         //Die Methode BuildTable wird aufgerufen
+         BuildTableNutrition(rows, cols, "1", marks);
+         */
         //Anzeige der Malzeiten
 
         table_layout_food = (TableLayout) rootView.findViewById(R.id.tableLayout2);
@@ -284,16 +305,26 @@ public class ErnaehrungsFragment extends Fragment {
         table_layout_food.removeAllViews();
         BuildTableNutrition(rows, cols, "2", morgens);
 
+        for (int i = 0; i<lebensmittel.length-1;i++) {
+            String[][] food2 = new String[][]{lebensmittel[i][0], lebensmittel[i][1]};
+
+            db = new DatabaseHandler(getActivity());
+            for (int j = 0; j <= food2[0].length - 1; j++) {
+                List<Food> ab = db.getFood(food2[0][j].toLowerCase());
+
+                for (Food cn : ab) {
+                    prottotal = prottotal + cn.getProtein();
+                    fattotal = fattotal + cn.getFats();
+                    kcaltotal = kcaltotal + cn.get_kcal();
+                    carbtotal = carbtotal + cn.getCarbs();
+                }
+            }
+        }
+
         //Wenn der Benutzer den Butten mit de Aufschrifft "egschafft" betätigt
         //so wird die nächste malzeit angezeigt
         mButton = (Button) rootView.findViewById(R.id.bgeschafft);
         mButton.setOnClickListener(new View.OnClickListener() {
-
-            private int protref;
-            private int fatref;
-            private int carbref;
-            private int kcalref;
-
             @Override
             public void onClick(View v) {
                 //Hier zächlen wir sozusagen anch wie oft der benutzer den Button geschafft drückt
@@ -305,25 +336,28 @@ public class ErnaehrungsFragment extends Fragment {
                     case 0:
 
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
-                        String[][] food2 = new String[][]{lebensmittel[anzahl ][0], lebensmittel[anzahl][1]};
+                        String[][] food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
                         DatabaseHandler db = new DatabaseHandler(getActivity());
-                        for (int i = 0; i <= food2[0].length-1; i++) {
+                        for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                this.protref = protref+ cn.getProtein();
-                                this.fatref = fatref + cn.getFats();
-                                this.kcalref = kcalref + cn.get_kcal();
-                                this.carbref = carbref + cn.getCarbs();
+                                protref = protref + cn.getProtein();
+                                fatref = fatref + cn.getFats();
+                                kcalref = kcalref + cn.get_kcal();
+                                carbref = carbref + cn.getCarbs();
                             }
                         }
+                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
+                        new Thread(new Task("protein",getPerc(protref,protein))).start();
+                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
+                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
 
-
-                        fatview.setText(this.fatref + "/" + Float.toString(fat));
-                        protview.setText(this.protref +"/" + Float.toString(protein));
-                        carbview.setText(this.carbref +"/"+Float.toString(carbs));
-                        calview.setText(this.kcalref +"/"+Float.toString(kcal));
+                        fatview.setText(fatref + "/" + Float.toString(fat));
+                        protview.setText(protref + "/" + Float.toString(protein));
+                        carbview.setText(carbref + "/" + Float.toString(carbs));
+                        calview.setText(kcalref + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -336,22 +370,25 @@ public class ErnaehrungsFragment extends Fragment {
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
                         db = new DatabaseHandler(getActivity());
-                        for (int i = 0; i <= food2[0].length-1; i++) {
+                        for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                this.protref = protref+ cn.getProtein();
-                                this.fatref = fatref + cn.getFats();
-                                this.kcalref = kcalref + cn.get_kcal();
-                                this.carbref = carbref + cn.getCarbs();
+                                protref = protref + cn.getProtein();
+                                fatref = fatref + cn.getFats();
+                                kcalref = kcalref + cn.get_kcal();
+                                carbref = carbref + cn.getCarbs();
                             }
                         }
 
-
-                        fatview.setText(this.fatref + "/" + Float.toString(fat));
-                        protview.setText(this.protref +"/" + Float.toString(protein));
-                        carbview.setText(this.carbref +"/"+Float.toString(carbs));
-                        calview.setText(this.kcalref +"/"+Float.toString(kcal));
+                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
+                        new Thread(new Task("protein",getPerc(protref,protein))).start();
+                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
+                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
+                        fatview.setText(fatref + "/" + Float.toString(fat));
+                        protview.setText(protref + "/" + Float.toString(protein));
+                        carbview.setText(carbref + "/" + Float.toString(carbs));
+                        calview.setText(kcalref + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -361,25 +398,28 @@ public class ErnaehrungsFragment extends Fragment {
                         break;
                     case 2:
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
-                        food2 = new String[][]{lebensmittel[anzahl ][0], lebensmittel[anzahl][1]};
+                        food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
                         db = new DatabaseHandler(getActivity());
-                        for (int i = 0; i <= food2[0].length-1; i++) {
+                        for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                this.protref = protref+ cn.getProtein();
-                                this.fatref = fatref + cn.getFats();
-                                this.kcalref = kcalref + cn.get_kcal();
-                                this.carbref = carbref + cn.getCarbs();
+                                protref = protref + cn.getProtein();
+                                fatref = fatref + cn.getFats();
+                                kcalref = kcalref + cn.get_kcal();
+                                carbref = carbref + cn.getCarbs();
                             }
                         }
 
-
-                        fatview.setText(this.fatref + "/" + Float.toString(fat));
-                        protview.setText(this.protref +"/" + Float.toString(protein));
-                        carbview.setText(this.carbref +"/"+Float.toString(carbs));
-                        calview.setText(this.kcalref +"/"+Float.toString(kcal));
+                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
+                        new Thread(new Task("protein",getPerc(protref,protein))).start();
+                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
+                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
+                        fatview.setText(fatref + "/" + Float.toString(fat));
+                        protview.setText(protref + "/" + Float.toString(protein));
+                        carbview.setText(carbref + "/" + Float.toString(carbs));
+                        calview.setText(kcalref + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -389,25 +429,28 @@ public class ErnaehrungsFragment extends Fragment {
                         break;
                     case 3:
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
-                        food2 = new String[][]{lebensmittel[anzahl ][0], lebensmittel[anzahl][1]};
+                        food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
                         db = new DatabaseHandler(getActivity());
-                        for (int i = 0; i <= food2[0].length-1; i++) {
+                        for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                this.protref = protref+ cn.getProtein();
-                                this.fatref = fatref + cn.getFats();
-                                this.kcalref = kcalref + cn.get_kcal();
-                                this.carbref = carbref + cn.getCarbs();
+                                protref = protref + cn.getProtein();
+                                fatref = fatref + cn.getFats();
+                                kcalref = kcalref + cn.get_kcal();
+                                carbref = carbref + cn.getCarbs();
                             }
                         }
 
-
-                        fatview.setText(this.fatref + "/" + Float.toString(fat));
-                        protview.setText(this.protref +"/" + Float.toString(protein));
-                        carbview.setText(this.carbref +"/"+Float.toString(carbs));
-                        calview.setText(this.kcalref +"/"+Float.toString(kcal));
+                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
+                        new Thread(new Task("protein",getPerc(protref,protein))).start();
+                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
+                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
+                        fatview.setText(fatref + "/" + Float.toString(fat));
+                        protview.setText(protref + "/" + Float.toString(protein));
+                        carbview.setText(carbref + "/" + Float.toString(carbs));
+                        calview.setText(kcalref + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -417,25 +460,28 @@ public class ErnaehrungsFragment extends Fragment {
                         break;
                     case 4:
 
-                        food2 = new String[][]{lebensmittel[anzahl ][0], lebensmittel[anzahl][1]};
+                        food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
                         db = new DatabaseHandler(getActivity());
-                        for (int i = 0; i <= food2[0].length-1; i++) {
+                        for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                this.protref = protref+ cn.getProtein();
-                                this.fatref = fatref + cn.getFats();
-                                this.kcalref = kcalref + cn.get_kcal();
-                                this.carbref = carbref + cn.getCarbs();
+                                protref = protref + cn.getProtein();
+                                fatref = fatref + cn.getFats();
+                                kcalref = kcalref + cn.get_kcal();
+                                carbref = carbref + cn.getCarbs();
                             }
                         }
 
-
-                        fatview.setText(this.fatref + "/" + Float.toString(fat));
-                        protview.setText(this.protref +"/" + Float.toString(protein));
-                        carbview.setText(this.carbref +"/"+Float.toString(carbs));
-                        calview.setText(this.kcalref +"/"+Float.toString(kcal));
+                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
+                        new Thread(new Task("protein",getPerc(protref,protein))).start();
+                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
+                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
+                        fatview.setText(fatref + "/" + Float.toString(fat));
+                        protview.setText(protref + "/" + Float.toString(protein));
+                        carbview.setText(carbref + "/" + Float.toString(carbs));
+                        calview.setText(kcalref + "/" + Float.toString(kcal));
 
 
                         table_layout_food.removeAllViews();
@@ -575,7 +621,7 @@ public class ErnaehrungsFragment extends Fragment {
                     }
                 }
                 int index = durchschnitt.indexOf(max);
-                durchschnitt.set(max,Integer.parseInt(food_amount_list[2][index]) / 2);
+                durchschnitt.set(max, Integer.parseInt(food_amount_list[2][index]) / 2);
                 food_amount_list[2][index] = String.valueOf((Integer.parseInt(food_amount_list[2][index]) / 2));
 
                 zaehler++;
@@ -587,4 +633,44 @@ public class ErnaehrungsFragment extends Fragment {
         }
         return food_amount_list;
     }
+
+
+
+    public int getPerc(int anz, int total){
+        return ((anz*100)/total);
+    }
+
+
+    class Task implements Runnable {
+        String _viewart;
+        int _perc;
+        public Task(String viewart, int perc) {
+            this._viewart = viewart;
+            this._perc = perc;
+        }
+
+        @Override
+        public void run() {
+            for (int i = pfat.getProgress(); i <= _perc; i++) {
+                final int value = i;
+                try {
+                    Thread.sleep(50);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                if (this._viewart.equals("fat")) {
+                    pfat.setProgress(value);
+                } else if(this._viewart.equals("protein")){
+                    pprot.setProgress(value);
+                }else if(this._viewart.equals("kcal")){
+                    pcal.setProgress(value);
+                }else if(this._viewart.equals("carb")){
+                    pcarb.setProgress(value);
+                }
+            }
+        }
+
+    }
 }
+
+
