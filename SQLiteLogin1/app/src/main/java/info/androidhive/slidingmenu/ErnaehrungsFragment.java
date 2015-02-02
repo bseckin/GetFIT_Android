@@ -45,10 +45,10 @@ public class ErnaehrungsFragment extends Fragment {
     private int carbref;
     private int kcalref;
 
-    private int prottotal;
-    private int fattotal;
-    private int carbtotal;
-    private int kcaltotal;
+    private float prottotal;
+    private float fattotal;
+    private float carbtotal;
+    private float kcaltotal;
 
     private String[][] morgens;
     private TextView fatview;
@@ -117,14 +117,12 @@ public class ErnaehrungsFragment extends Fragment {
             this.gender = cn.getGender();
             this.typ = cn.get_ktyp();
         }
-        Log.d(this.height + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
-        Log.d(this.weight + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
-        Log.d(this.typ + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
+
 /**
-        this.fatpercview = (TextView) rootView.findViewById(R.id.fat_perc);
-        this.protpercview = (TextView) rootView.findViewById(R.id.prot_perc);
-        this.kcalpercview = (TextView) rootView.findViewById(R.id.cal_perc);
-        this.carbpercview = (TextView) rootView.findViewById(R.id.carb_perc);
+ this.fatpercview = (TextView) rootView.findViewById(R.id.fat_perc);
+ this.protpercview = (TextView) rootView.findViewById(R.id.prot_perc);
+ this.kcalpercview = (TextView) rootView.findViewById(R.id.cal_perc);
+ this.carbpercview = (TextView) rootView.findViewById(R.id.carb_perc);
  */
         //Konstruktor
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
@@ -143,12 +141,12 @@ public class ErnaehrungsFragment extends Fragment {
 
         //TODO ??? Das Ziel muss aus der Datenbank kommen
         if (this.typ.equals("Ectomorph")) {
-            Log.d("$$$$$$$$$$$$", goal);
+
             if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs = Math.round(ni.getCarbs()) + 100;
-                this.fat = Math.round(ni.getFett()) + 20;
-                this.protein = Math.round(ni.getProtein()) + 10;
-                this.kcal = Math.round(ni.getGu()) + 200;
+                this.carbs = Math.round(ni.getCarbs()) + 500;
+                this.fat = Math.round(ni.getFett()) + 30;
+                this.protein = Math.round(ni.getProtein()) + 50;
+                this.kcal = Math.round(ni.getGu()) + 500;
                 EctoErnaehrung = ectoplan.holePlan(this.goal);
 
                 //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -300,8 +298,8 @@ public class ErnaehrungsFragment extends Fragment {
         rows = morgens[1].length - 1;
         table_layout_food.removeAllViews();
         BuildTableNutrition(rows, cols, "2", morgens);
-
-        for (int i = 0; i<lebensmittel.length-1;i++) {
+/**
+        for (int i = 0; i < lebensmittel.length - 1; i++) {
             String[][] food2 = new String[][]{lebensmittel[i][0], lebensmittel[i][1]};
 
             db = new DatabaseHandler(getActivity());
@@ -315,7 +313,7 @@ public class ErnaehrungsFragment extends Fragment {
                     carbtotal = carbtotal + cn.getCarbs();
                 }
             }
-        }
+        }*/
 
         //Wenn der Benutzer den Butten mit de Aufschrifft "egschafft" betätigt
         //so wird die nächste malzeit angezeigt
@@ -328,7 +326,6 @@ public class ErnaehrungsFragment extends Fragment {
                 //arrays springen
 
                 switch (anzahl) {
-
                     case 0:
 
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
@@ -339,21 +336,24 @@ public class ErnaehrungsFragment extends Fragment {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                protref = protref + cn.getProtein();
-                                fatref = fatref + cn.getFats();
-                                kcalref = kcalref + cn.get_kcal();
-                                carbref = carbref + cn.getCarbs();
+                                protref += ((cn.getProtein() / 100.0) * Integer.parseInt(food2[1][i]));
+                                fatref += ((cn.getFats() / 100.0) * Integer.parseInt(food2[1][i]));
+                                kcalref += ((cn.get_kcal() / 100.0) * Integer.parseInt(food2[1][i]));
+                                carbref += ((cn.getCarbs() / 100.0) * Integer.parseInt(food2[1][i]));
                             }
-                        }
-                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
-                        new Thread(new Task("protein",getPerc(protref,protein))).start();
-                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
-                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
 
-                        fatview.setText(fatref + "/" + Float.toString(fat));
-                        protview.setText(protref + "/" + Float.toString(protein));
-                        carbview.setText(carbref + "/" + Float.toString(carbs));
-                        calview.setText(kcalref + "/" + Float.toString(kcal));
+                        }
+
+
+                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
+                        new Thread(new Task("protein", getPerc(protref, protein))).start();
+                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
+                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
+
+                        fatview.setText(Math.round(100.0 * fatref)/100.0 + "/" + Float.toString(fat));
+                        protview.setText(Math.round(100.0 * protref)/100.0 + "/" + Float.toString(protein));
+                        carbview.setText(Math.round(100.0 * carbref)/100.0 + "/" + Float.toString(carbs));
+                        calview.setText(Math.round(100.0 * kcalref)/100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -370,21 +370,23 @@ public class ErnaehrungsFragment extends Fragment {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                protref = protref + cn.getProtein();
-                                fatref = fatref + cn.getFats();
-                                kcalref = kcalref + cn.get_kcal();
-                                carbref = carbref + cn.getCarbs();
+                                protref += ((cn.getProtein() / 100.0) * Integer.parseInt(food2[1][i]));
+                                fatref += ((cn.getFats() / 100.0) * Integer.parseInt(food2[1][i]));
+                                kcalref += ((cn.get_kcal() / 100.0) * Integer.parseInt(food2[1][i]));
+                                carbref += ((cn.getCarbs() / 100.0) * Integer.parseInt(food2[1][i]));
                             }
+                            Log.d(fatref+"","!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
-                        new Thread(new Task("protein",getPerc(protref,protein))).start();
-                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
-                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
-                        fatview.setText(fatref + "/" + Float.toString(fat));
-                        protview.setText(protref + "/" + Float.toString(protein));
-                        carbview.setText(carbref + "/" + Float.toString(carbs));
-                        calview.setText(kcalref + "/" + Float.toString(kcal));
+                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
+                        new Thread(new Task("protein", getPerc(protref, protein))).start();
+                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
+                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
+
+                        fatview.setText(Math.round(100.0 * fatref)/100.0 + "/" + Float.toString(fat));
+                        protview.setText(Math.round(100.0 * protref)/100.0 + "/" + Float.toString(protein));
+                        carbview.setText(Math.round(100.0 * carbref)/100.0 + "/" + Float.toString(carbs));
+                        calview.setText(Math.round(100.0 * kcalref)/100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -401,21 +403,23 @@ public class ErnaehrungsFragment extends Fragment {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                protref = protref + cn.getProtein();
-                                fatref = fatref + cn.getFats();
-                                kcalref = kcalref + cn.get_kcal();
-                                carbref = carbref + cn.getCarbs();
+                                protref += ((cn.getProtein() / 100.0) * Integer.parseInt(food2[1][i]));
+                                fatref += ((cn.getFats() / 100.0) * Integer.parseInt(food2[1][i]));
+                                kcalref += ((cn.get_kcal() / 100.0) * Integer.parseInt(food2[1][i]));
+                                carbref += ((cn.getCarbs() / 100.0) * Integer.parseInt(food2[1][i]));
                             }
+                            Log.d(fatref+"","!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
-                        new Thread(new Task("protein",getPerc(protref,protein))).start();
-                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
-                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
-                        fatview.setText(fatref + "/" + Float.toString(fat));
-                        protview.setText(protref + "/" + Float.toString(protein));
-                        carbview.setText(carbref + "/" + Float.toString(carbs));
-                        calview.setText(kcalref + "/" + Float.toString(kcal));
+                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
+                        new Thread(new Task("protein", getPerc(protref, protein))).start();
+                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
+                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
+
+                        fatview.setText(Math.round(100.0 * fatref)/100.0 + "/" + Float.toString(fat));
+                        protview.setText(Math.round(100.0 * protref)/100.0 + "/" + Float.toString(protein));
+                        carbview.setText(Math.round(100.0 * carbref)/100.0 + "/" + Float.toString(carbs));
+                        calview.setText(Math.round(100.0 * kcalref)/100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -432,21 +436,23 @@ public class ErnaehrungsFragment extends Fragment {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                protref = protref + cn.getProtein();
-                                fatref = fatref + cn.getFats();
-                                kcalref = kcalref + cn.get_kcal();
-                                carbref = carbref + cn.getCarbs();
+                                protref += ((cn.getProtein() / 100.0) * Integer.parseInt(food2[1][i]));
+                                fatref += ((cn.getFats() / 100.0) * Integer.parseInt(food2[1][i]));
+                                kcalref += ((cn.get_kcal() / 100.0) * Integer.parseInt(food2[1][i]));
+                                carbref += ((cn.getCarbs() / 100.0) * Integer.parseInt(food2[1][i]));
                             }
+                            Log.d(fatref+"","!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
-                        new Thread(new Task("protein",getPerc(protref,protein))).start();
-                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
-                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
-                        fatview.setText(fatref + "/" + Float.toString(fat));
-                        protview.setText(protref + "/" + Float.toString(protein));
-                        carbview.setText(carbref + "/" + Float.toString(carbs));
-                        calview.setText(kcalref + "/" + Float.toString(kcal));
+                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
+                        new Thread(new Task("protein", getPerc(protref, protein))).start();
+                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
+                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
+
+                        fatview.setText(Math.round(100.0 * fatref)/100.0 + "/" + Float.toString(fat));
+                        protview.setText(Math.round(100.0 * protref)/100.0 + "/" + Float.toString(protein));
+                        carbview.setText(Math.round(100.0 * carbref)/100.0 + "/" + Float.toString(carbs));
+                        calview.setText(Math.round(100.0 * kcalref)/100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -463,21 +469,23 @@ public class ErnaehrungsFragment extends Fragment {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
                             for (Food cn : a) {
-                                protref = protref + cn.getProtein();
-                                fatref = fatref + cn.getFats();
-                                kcalref = kcalref + cn.get_kcal();
-                                carbref = carbref + cn.getCarbs();
+                                protref += ((cn.getProtein() / 100.0) * Integer.parseInt(food2[1][i]));
+                                fatref += ((cn.getFats() / 100.0) * Integer.parseInt(food2[1][i]));
+                                kcalref += ((cn.get_kcal() / 100.0) * Integer.parseInt(food2[1][i]));
+                                carbref += ((cn.getCarbs() / 100.0) * Integer.parseInt(food2[1][i]));
                             }
+                            Log.d(fatref+"","!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat",getPerc(fatref,fat))).start();
-                        new Thread(new Task("protein",getPerc(protref,protein))).start();
-                        new Thread(new Task("carb",getPerc(carbref,carbs))).start();
-                        new Thread(new Task("kcal",getPerc(kcalref,kcal))).start();
-                        fatview.setText(fatref + "/" + Float.toString(fat));
-                        protview.setText(protref + "/" + Float.toString(protein));
-                        carbview.setText(carbref + "/" + Float.toString(carbs));
-                        calview.setText(kcalref + "/" + Float.toString(kcal));
+                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
+                        new Thread(new Task("protein", getPerc(protref, protein))).start();
+                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
+                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
+
+                        fatview.setText(Math.round(100.0 * fatref)/100.0 + "/" + Float.toString(fat));
+                        protview.setText(Math.round(100.0 * protref)/100.0 + "/" + Float.toString(protein));
+                        carbview.setText(Math.round(100.0 * carbref)/100.0 + "/" + Float.toString(carbs));
+                        calview.setText(Math.round(100.0 * kcalref)/100.0 + "/" + Float.toString(kcal));
 
 
                         table_layout_food.removeAllViews();
@@ -631,38 +639,63 @@ public class ErnaehrungsFragment extends Fragment {
     }
 
 
-
-    public int getPerc(int anz, int total){
-        return ((anz*100)/total);
+    public float getPerc(float anz, float total) {
+        return ((anz * 100) / total);
     }
 
 
     class Task implements Runnable {
         String _viewart;
-        int _perc;
-        public Task(String viewart, int perc) {
+        float _perc;
+
+        public Task(String viewart, float perc) {
             this._viewart = viewart;
             this._perc = perc;
         }
 
         @Override
         public void run() {
-            for (int i = pfat.getProgress(); i <= _perc; i++) {
-                final int value = i;
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                if (this._viewart.equals("fat")) {
+            if (this._viewart.equals("fat")) {
+                for (int i = pfat.getProgress(); i <= _perc; i++) {
+                    final int value = i;
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     pfat.setProgress(value);
-                } else if(this._viewart.equals("protein")){
+                }
+            } else if (this._viewart.equals("protein")) {
+                for (int i = pprot.getProgress(); i <= _perc; i++) {
+                    final int value = i;
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     pprot.setProgress(value);
-                }else if(this._viewart.equals("kcal")){
+                }
+            } else if (this._viewart.equals("kcal")) {
+                for (int i = pcal.getProgress(); i <= _perc; i++) {
+                    final int value = i;
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     pcal.setProgress(value);
-                }else if(this._viewart.equals("carb")){
+                }
+            } else if (this._viewart.equals("carb")) {
+                for (int i = pcarb.getProgress(); i <= _perc; i++) {
+                    final int value = i;
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     pcarb.setProgress(value);
                 }
+
             }
         }
 
