@@ -43,17 +43,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100"
-                    android:id="@+id/fat_perc"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="Fat"
                     android:id="@+id/textView6"
@@ -67,9 +56,10 @@
                     android:layout_height="wrap_content"
                     android:text="0/360"
                     android:id="@+id/fat_anz"
-                    android:layout_alignParentBottom="true"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    android:textSize="16dp" />
+                    android:textColor="#ff0fff03" />
 
             </RelativeLayout>
 
@@ -109,22 +99,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100"
-                    android:id="@+id/prot_perc"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="0/360"
                     android:id="@+id/prot_anz"
-                    android:layout_alignParentBottom="true"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    android:textSize="16dp" />
+                    android:textColor="#ff00fffa" />
 
             </RelativeLayout>
 
@@ -134,25 +114,14 @@
                 android:layout_gravity="center"
                 android:layout_weight="1">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Carbs"
-                    android:id="@+id/textView9"
-                    android:textSize="22dp"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"
-                    android:layout_alignParentTop="true" />
-
                 <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
                     android:id="@+id/carb_prog"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:indeterminate="false"
                     android:progressDrawable="@drawable/circular_progress_bar_violet"
                     android:background="@drawable/circle_shape"
-                    style="?android:attr/progressBarStyleHorizontal"
                     android:max="100"
                     android:progress="1"
                     android:layout_alignParentTop="true"
@@ -166,22 +135,23 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100"
-                    android:id="@+id/carb_perc"
-                    android:textSize="25dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Carbs"
+                    android:id="@+id/textView9"
+                    android:textSize="22dp"
+                    android:layout_centerHorizontal="true"
                     android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_alignParentTop="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0/360"
                     android:id="@+id/carb_anz"
-                    android:layout_alignParentBottom="true"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
-                    android:textSize="16dp" />
+                    android:textColor="#ffdd01ff" />
 
             </RelativeLayout>
 
@@ -201,7 +171,8 @@
                 <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
 
                     <TableLayout
                         android:id="@+id/tableLayout2"
@@ -217,46 +188,29 @@
                     android:layout_height="fill_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:paddingRight="5dp"
-                    android:paddingLeft="5dp">
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:padding="0dp">
 
                     <ProgressBar
-                        style="?android:attr/progressBarStyleHorizontal"
                         android:id="@+id/cal_prog"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:indeterminate="false"
                         android:progressDrawable="@drawable/circular_progress_bar_red"
                         android:background="@drawable/circle_shape"
+                        style="?android:attr/progressBarStyleHorizontal"
                         android:max="100"
                         android:progress="1"
                         android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentBottom="true" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Cal"
-                        android:id="@+id/textView10"
-                        android:textSize="40dp"
-                        android:textStyle="bold"
-                        android:textIsSelectable="false"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="100"
-                        android:id="@+id/cal_perc"
-                        android:textSize="40dp"
-                        android:textStyle="bold"
-                        android:textColor="#fff"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_alignParentStart="true" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -265,8 +219,22 @@
                         android:id="@+id/cal_anz"
                         android:textSize="20dp"
                         android:textAlignment="center"
-                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffff9600" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Cal"
+                        android:id="@+id/text10"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        android:textIsSelectable="false"
+                        android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true" />
+
                 </RelativeLayout>
             </LinearLayout>
 

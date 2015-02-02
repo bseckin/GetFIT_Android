@@ -56,11 +56,6 @@ public class ErnaehrungsFragment extends Fragment {
     private TextView carbview;
     private TextView calview;
 
-    private TextView fatpercview;
-    private TextView protpercview;
-    private TextView carbpercview;
-    private TextView kcalpercview;
-
     private ProgressBar pfat;
     private ProgressBar pprot;
     private ProgressBar pcarb;
@@ -125,11 +120,12 @@ public class ErnaehrungsFragment extends Fragment {
         Log.d(this.height + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
         Log.d(this.weight + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
         Log.d(this.typ + "!!!!!!!!!!", "!!!!!!!!!!!!!!!!!!!!!!");
-
+/**
         this.fatpercview = (TextView) rootView.findViewById(R.id.fat_perc);
         this.protpercview = (TextView) rootView.findViewById(R.id.prot_perc);
         this.kcalpercview = (TextView) rootView.findViewById(R.id.cal_perc);
         this.carbpercview = (TextView) rootView.findViewById(R.id.carb_perc);
+ */
         //Konstruktor
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
         this.carbs = Math.round(ni.getCarbs());
