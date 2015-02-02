@@ -19,69 +19,17 @@
                 android:layout_width="0dp"
                 android:layout_height="164dp"
                 android:layout_gravity="center"
-                android:layout_weight="1">
-
-                <ProgressBar
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:id="@+id/cal_prog"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar"
-                    android:background="@drawable/circle_shape"
-                    android:max="100"
-                    android:progress="1"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Cal"
-                    android:id="@+id/textView10"
-                    android:textSize="22dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="100"
-                    android:id="@+id/cal_perc"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0/360"
-                    android:id="@+id/cal_anz"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:textSize="16dp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="164dp"
-                android:layout_gravity="center"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
 
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:id="@+id/fat_prog"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:progressDrawable="@drawable/circular_progress_bar_green"
                     android:background="@drawable/circle_shape"
                     android:max="100"
                     android:progress="1"
@@ -111,9 +59,8 @@
                     android:id="@+id/textView6"
                     android:textSize="22dp"
                     android:textStyle="bold"
-                    android:layout_alignTop="@+id/fat_prog"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp" />
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -139,24 +86,25 @@
                     android:text="Protein"
                     android:id="@+id/textView8"
                     android:textSize="22dp"
-                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:textStyle="bold"
-                    android:layout_marginTop="10dp" />
+                    android:layout_alignParentTop="true" />
 
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:id="@+id/prot_prog"
-                    android:layout_width="200dp"
-                    android:layout_height="160dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:progressDrawable="@drawable/circular_progress_bar_blue"
                     android:background="@drawable/circle_shape"
                     android:max="100"
                     android:progress="1"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true" />
+                    android:layout_alignParentBottom="true"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -193,17 +141,16 @@
                     android:text="Carbs"
                     android:id="@+id/textView9"
                     android:textSize="22dp"
-                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:textStyle="bold"
-                    android:layout_marginTop="10dp" />
+                    android:layout_alignParentTop="true" />
 
                 <ProgressBar
                     android:id="@+id/carb_prog"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:progressDrawable="@drawable/circular_progress_bar_violet"
                     android:background="@drawable/circle_shape"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:max="100"
@@ -211,7 +158,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -240,16 +190,86 @@
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:id="@+id/rlt">
 
-            <TableLayout
-                android:id="@+id/tableLayout2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:shrinkColumns="*"
-                android:stretchColumns="*" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TableLayout
+                        android:id="@+id/tableLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:id="@+id/cal_prog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular_progress_bar_red"
+                        android:background="@drawable/circle_shape"
+                        android:max="100"
+                        android:progress="1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Cal"
+                        android:id="@+id/textView10"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        android:textIsSelectable="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:id="@+id/cal_perc"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/360"
+                        android:id="@+id/cal_anz"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
         </RelativeLayout>
 
         <RelativeLayout
