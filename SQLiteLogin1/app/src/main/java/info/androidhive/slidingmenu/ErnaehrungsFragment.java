@@ -537,7 +537,7 @@ public class ErnaehrungsFragment extends Fragment {
                     TableRow.LayoutParams.WRAP_CONTENT));
 
             // inner for loop
-            for (int j = 0; j <= cols; j++) {
+            for (int j = 0; j <= cols-1; j++) {
 
                 TextView tv = new TextView(getActivity());
                 tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
