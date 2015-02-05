@@ -11,133 +11,101 @@
         android:background="@drawable/backblue"
         android:alpha="1">
 
-        <RelativeLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingTop="50dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/starttext2"
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/imageView"
-                android:src="@drawable/starttext2"
+            android:focusable="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
 
-                android:padding="15dp"
-                android:focusable="false"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentStart="false"
-                />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/loguname"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="#ff84887e"
+            android:textAlignment="center"
+            android:hint="   Username"
+            android:autoText="true"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:background="#ffffffff"/>
 
-        </RelativeLayout>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/logpword"
+            android:layout_alignParentBottom="false"
+            android:layout_alignStart="@+id/loguname"
+
+            android:textSize="15sp"
+            android:textColor="#ff000000"
+            android:textAlignment="center"
+            android:background="#ffffffff"
+            android:editable="false"
+            android:hint=" *****"
+            android:layout_below="@+id/loguname"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/blogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Anmelden ->"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="14sp"
+            style= "@style/btnStyleTwitterblue"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/registrierung"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Noch kein Mitglied?"
+             android:textSize="14sp"
+             style= "@style/btnStyleOrange"
+            android:layout_alignParentRight="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="false"
+            />
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:clickable="false">
+            android:layout_height="fill_parent">
 
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:id="@+id/loguname"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:singleLine="true"
-                android:textStyle="italic"
-                android:textSize="15sp"
-                android:textColor="#ff84887e"
-                android:textAlignment="center"
-                android:hint="Username"
-                android:autoText="true"
-                android:background="#ffffffff"/>
-
-
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/logpword"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hilfe gefällig?"
+                android:id="@+id/btnhelp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/loguname"
-
-                android:textSize="15sp"
-                android:textColor="#ff000000"
-                android:textAlignment="center"
-                android:background="#ffffffff"
-                android:layout_marginBottom="40dp"
-                android:editable="false"
-                android:hint="Passwort"
-                android:textStyle="italic"/>
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center_horizontal">
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="10">
-
-                    <Button
-                        android:id="@+id/registrierung"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="REGISTRIERUNG"
-                         android:textSize="12sp"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        style= "@style/btnStyleOrange"
-                        android:layout_alignParentRight="true" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="8">
-
-                    <Button
-                        android:id="@+id/blogin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="LOGIN"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:textSize="12sp"
-                        style= "@style/btnStyleTwitterblue"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="\?"
-                        android:id="@+id/btnhelp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:textSize="20dp"
-                        android:padding="20dp"
-                        android:textColor="#fffbfff4"
-                        android:textStyle="bold"
-                        android:linksClickable="true"
-                        android:longClickable="true"
-                        android:clickable="true" />
-
-                </RelativeLayout>
-            </LinearLayout>
-
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="16dp"
+                android:padding="20dp"
+                android:textColor="#fffbfff4"
+                android:linksClickable="true"
+                android:longClickable="true"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:layout_above="@+id/registrierung"/>
 
         </RelativeLayout>
 

@@ -65,7 +65,7 @@ int id bcardio 0x7f0a005c
 int id bgeschafft 0x7f0a0050
 int id bgoal 0x7f0a003e
 int id blifting 0x7f0a005b
-int id blogin 0x7f0a000a
+int id blogin 0x7f0a0009
 int id bnutrition 0x7f0a004f
 int id breg 0x7f0a001c
 int id btn_fragen_fertig 0x7f0a0038
@@ -123,7 +123,7 @@ int id radBtn_halbprofi 0x7f0a002a
 int id radBtn_nichts 0x7f0a0027
 int id radBtn_zeitdruck 0x7f0a0025
 int id radBtnprofi 0x7f0a002b
-int id registrierung 0x7f0a0009
+int id registrierung 0x7f0a000a
 int id relativeLayout 0x7f0a003a
 int id rg_frage1 0x7f0a001e
 int id rg_frage2 0x7f0a0024

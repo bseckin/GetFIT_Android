@@ -37,9 +37,15 @@ containing a value of this type.
         public static final int counter_text_bg=0x7f050000;
         public static final int counter_text_color=0x7f050001;
         public static final int default_screen_bg=0x7f050002;
+        /** #646663 
+         */
         public static final int light_gray_header_color=0x7f050003;
         public static final int list_background=0x7f050004;
+        /**  #992416 
+         */
         public static final int list_background_pressed=0x7f050005;
+        /**  #c0deed 
+         */
         public static final int list_divider=0x7f050006;
         public static final int list_item_title=0x7f050007;
         public static final int rounded_container_bg=0x7f050008;
@@ -103,7 +109,7 @@ containing a value of this type.
         public static final int bgeschafft=0x7f0a0050;
         public static final int bgoal=0x7f0a003e;
         public static final int blifting=0x7f0a005b;
-        public static final int blogin=0x7f0a000a;
+        public static final int blogin=0x7f0a0009;
         public static final int bnutrition=0x7f0a004f;
         public static final int breg=0x7f0a001c;
         public static final int btn_fragen_fertig=0x7f0a0038;
@@ -161,7 +167,7 @@ containing a value of this type.
         public static final int radBtn_nichts=0x7f0a0027;
         public static final int radBtn_zeitdruck=0x7f0a0025;
         public static final int radBtnprofi=0x7f0a002b;
-        public static final int registrierung=0x7f0a0009;
+        public static final int registrierung=0x7f0a000a;
         public static final int relativeLayout=0x7f0a003a;
         public static final int rg_frage1=0x7f0a001e;
         public static final int rg_frage2=0x7f0a0024;
