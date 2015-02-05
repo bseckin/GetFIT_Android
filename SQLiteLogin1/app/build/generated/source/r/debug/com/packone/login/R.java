@@ -90,17 +90,21 @@ containing a value of this type.
         public static final int list_item_bg_normal=0x7f02001f;
         public static final int list_item_bg_pressed=0x7f020020;
         public static final int list_selector=0x7f020021;
-        public static final int meinbuttontp=0x7f020022;
-        public static final int meinbuttontp_pressed=0x7f020023;
-        public static final int menueworkout=0x7f020024;
-        public static final int nutrition=0x7f020025;
-        public static final int progressbar=0x7f020026;
-        public static final int radial=0x7f020027;
-        public static final int redbutton=0x7f020028;
-        public static final int starttext=0x7f020029;
-        public static final int starttext2=0x7f02002a;
-        public static final int table_cell_shape=0x7f02002b;
-        public static final int weightlifting=0x7f02002c;
+        public static final int matte_hdpi=0x7f020022;
+        public static final int matte_mdpi=0x7f020023;
+        public static final int matte_xhdpi=0x7f020024;
+        public static final int matte_xxhdpi=0x7f020025;
+        public static final int meinbuttontp=0x7f020026;
+        public static final int meinbuttontp_pressed=0x7f020027;
+        public static final int menueworkout=0x7f020028;
+        public static final int nutrition=0x7f020029;
+        public static final int progressbar=0x7f02002a;
+        public static final int radial=0x7f02002b;
+        public static final int redbutton=0x7f02002c;
+        public static final int starttext=0x7f02002d;
+        public static final int starttext2=0x7f02002e;
+        public static final int table_cell_shape=0x7f02002f;
+        public static final int weightlifting=0x7f020030;
     }
     public static final class id {
         public static final int action_logout=0x7f0a005f;

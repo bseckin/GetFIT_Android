@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/backblue"
+        android:background="@drawable/matte_hdpi"
         android:alpha="1">
 
         <ImageView
@@ -105,7 +105,7 @@
                 android:clickable="true"
                 android:layout_gravity="right"
                 android:textStyle="bold"
-                android:layout_above="@+id/registrierung"/>
+                />
 
         </RelativeLayout>
 
