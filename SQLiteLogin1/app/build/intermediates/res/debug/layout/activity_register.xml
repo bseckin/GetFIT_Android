@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               tools:context=".MainActivity"
               android:orientation="vertical"
-              android:background="@drawable/background1"
+              android:background="@drawable/bg3"
     >
 
     <TextView
@@ -253,4 +253,4 @@
 
     </FrameLayout>
 </LinearLayout>
-<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->

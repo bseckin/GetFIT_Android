@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    android:background="#f08d8d8d">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3">
         />
     <!--
     <TextView
@@ -78,4 +78,4 @@
 
         </RelativeLayout>
     </LinearLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->
