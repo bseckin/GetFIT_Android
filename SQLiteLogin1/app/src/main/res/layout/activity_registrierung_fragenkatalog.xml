@@ -22,7 +22,7 @@
             android:textStyle="bold"
             android:enabled="false"
             android:textColor="#ffffffff"
-            />
+            android:paddingTop="15dp"/>
 
         <TableLayout
             android:layout_width="fill_parent"
@@ -34,13 +34,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/frage_1"
                 android:id="@+id/textView"
-                android:background="#ffffffff"
+                android:background="#ffffff"
                 android:padding="8dp"
-                />
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#BEF202"
+                android:background="#508F99"
                 android:id="@+id/rg_frage1">
 
                 <RadioButton
@@ -93,11 +93,12 @@
                 android:id="@+id/textView2"
                 android:background="#ffffffff"
                 android:padding="8dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#BEF202"
+                android:background="#508F99"
                 android:id="@+id/rg_frage2">
                 <RadioButton
                     android:layout_width="match_parent"
@@ -134,11 +135,12 @@
                 android:id="@+id/textView3"
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#BEF202"
+                android:background="#508F99"
                 android:id="@+id/rg_frage3">
                 <RadioButton
                     android:layout_width="match_parent"
@@ -175,11 +177,12 @@
                 android:id="@+id/textView4"
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#BEF202"
+                android:background="#508F99"
                 android:id="@+id/rg_frage4">
                 <RadioButton
                     android:layout_width="match_parent"
@@ -215,11 +218,12 @@
                 android:id="@+id/carb_perc"
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#BEF202"
+                android:background="#508F99"
                 android:id="@+id/rg_frage6">
                 <RadioButton
                     android:layout_width="match_parent"
@@ -255,11 +259,12 @@
                 android:id="@+id/textView5"
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#BEF202"
+                android:background="#508F99"
                 android:id="@+id/rg_frage5">
                 <EditText
                     android:layout_width="match_parent"

@@ -9,8 +9,8 @@
     <string name="action_settings_was"><item>settings</item></string>
     <string name="title_activity_start">GetFIT</string>
     <string name="title_activity_login2">Login2Activity</string>
-    <string name="title_fragenkatalog">Fragenkatalog</string>
-    <string name="frage_1">1. Wähle bitte deine gewünschtes Ziel</string>
+    <string name="title_fragenkatalog">.. Dein angepasster Plan!</string>
+    <string name="frage_1">1. Wähle dein gewünschtes Ziel</string>
     <string name="frage_2">2. Was macht es dir schwer aktiver zu sein?</string>
     <string name="frage_3">3. Wie viel Erfahrung hast du im Krafttraining?</string>
     <!-- Es ist nicht wichtig welchen Tag er trainieren kann -> nur die Einhaltung der Reihenfolge ist wichtig) -->

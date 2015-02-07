@@ -34,12 +34,12 @@ public class Trainingsplan {
         String anfaenger = "Keine - Ich bin Anfänger"; //@TODO SEHR STATISCH UND GESCHUMMELT
         String halbprofi = "Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio"; //@TODO SEHR STATISCH UND GESCHUMMELT
         String fortgeschritten = "Viel – Ich habe viel Erfahrung "; //@TODO SEHR STATISCH UND GESCHUMMELT
-            Log.d("Trainginsplan.java: getPlan(): ", anfaenger);
+        Log.d("Trainginsplan.java: getPlan(): ", anfaenger);
 
 
         String[][][] plan;
         // Erstellt plan je nach Ziel:
-        if(erfahrung.equals(R.string.anfaenger)){
+        if(erfahrung.equals(anfaenger)){
             plan = _ziel.erstellePlan_Anfaenger(frequenz);
         } else {
             plan = _ziel.erstellePlan_Fortgeschritten(frequenz);

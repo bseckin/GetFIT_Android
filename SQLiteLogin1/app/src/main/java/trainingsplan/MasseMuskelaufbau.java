@@ -12,11 +12,10 @@ public class MasseMuskelaufbau implements IZiel {
     // leerer Konstruktor
     public MasseMuskelaufbau() {}
 
-
-
-    // ===================================== ANFÄNGER ======================================== //
-
     /**
+     * =============================================================================================
+     *                                      ANFÄNGER -  Plan
+     * =============================================================================================
      * Erstellt einen Plan für einen Anfänger, mit seiner ausgewählten Trainingsfrequenz.
      *
      * @param frequenz
@@ -24,13 +23,56 @@ public class MasseMuskelaufbau implements IZiel {
      */
     @Override
     public String[][][] erstellePlan_Anfaenger(int frequenz) {
+        //2x pro Woche
+        if ( frequenz >= 2 ) {
+            // GANZKÖRPER
+            String[][][] plan = {
+                    {
+                            {
+                                    "Bankdrücken",
+                                    "Butterfly-Maschine",
+                                    "Rudern am Kabelzug",
+                                    "Latzug zur Brust - weiter Griff",
+                                    "Beinheben im Liegen"
+                            },
+                            {
+                                    "3",
+                                    "2",
+                                    "3",
+                                    "2",
+                                    "2"
+                            }
+                    },
+                    {
+                            {
+                                    "Kniebeugen",
+                                    "Beinpresse",
+                                    "Brustpresse",
+                                    "Rudermaschine",
+                                    "Rückenstrecken (Hyperextensions)",
+                                    "Crunches"
+                            },
+                            {
+                                    "3",
+                                    "2",
+                                    "2",
+                                    "2",
+                                    "2",
+                                    "2"
+                            }
+                    }
+            };
+            return plan;
+        }
         return new String[0][][];
     }
 
-    // ==================================== FORTGESCHRITTEN ===================================== //
-
     /**
-     * Erstellt einen Plan für einen Anfänger, mit seiner ausgewählten Trainingsfrequenz.
+     * =============================================================================================
+     *                               FORTGESCHRITTEN/ERFAHREN - Plan
+     * =============================================================================================
+     *
+     * Erstellt einen Plan für einen ERFAHRENEN, mit seiner ausgewählten Trainingsfrequenz.
      *
      * @param frequenz
      * @return
@@ -41,92 +83,102 @@ public class MasseMuskelaufbau implements IZiel {
         if ( frequenz == 2) {
             // GANZKÖRPER
             String[][][] plan = {
-                    {
+                    {   // --- 1te TRAININGSEINHEIT
                         {
-                        "Grundübung: Bankdrücken",
-                        "Butterfly/Flys",
-                        "Kurzhantel-Rudern",
-                        "Ruderzugmaschine",
-                        "Beinpresse",
-                        "Crunch",
-                        "Rückenstrecker"
+                            "Langhantel Bankdrücken",
+                            "Fliegende (Kurzhantel)",
+                            "Kurzhantel-Rudern",
+                            "Latzug zur Brust - enger Griff",
+                            "Schulterdrücken (Kurzhantel)",
+                            "Beinheben hängend",
                         },
                         {
-                        "3",
-                        "2",
-                        "3",
-                        "3",
-                        "3",
-                        "2"
+                            "4",
+                            "3",
+                            "4",
+                            "3",
+                            "3",
+                            "3"
                         }
+                    },
+                    {   // --- 2te TRAININGSEINHEIT
+                        {
+                            "Kniebeugen",
+                            "Beinpresse",
+                            "Beinstrecker",
+                            "Wadenheben stehend/sitzend",
+                            "Crunches",
+                        },
+                        {
+                            "4",
+                            "3",
+                            "2",
+                            "3",
+                            "3",
+                        }
+
                     }
             };
             return plan;
 
         } else if ( frequenz == 3 ) { //3x pro Woche
-            //@TODO SPLITTRAINING ALSO nicht immer das gleiche trainieren -> hole nächste Einheit wenn diese Fertig
             // PUSH | PULL | BEINE
             String[][][] plan = {
-                    // --- ERSTES ELEMENT
+                    // --- PUSH - 1te TRAININGSEINHEIT
                     {
                         {
-                                "TAG 1 1 1 1 Grundübung: Bankdrücken",
-                                "Butterfly/Flys",
-                                "Kurzhantel-Rudern",
-                                "Ruderzugmaschine",
-                                "Beinpresse",
-                                "Crunch",
-                                "Rückenstrecker"
+                            "Bankdrücken Langhantel",
+                            "Fliegende (Kurzhanteln)",
+                            "Dips",
+                            "Enges Bankdrücken",
+                            "Schulterdrücken",
+                            "Bauch - Beinheben hängend",
                         },
                         {
-                                "3",
-                                "2",
-                                "3",
-                                "3",
-                                "3",
-                                "2"
+                            "4",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
                         }
                     },
-                    // --- ZWEITES ELEMENT
+                    // --- PULL - 2te  TRAININGSEINHEIT
                     {
-                            {
-                                    "TAG 2 2 2 2 Grundübung: Bankdrücken",
-                                    "Butterfly/Flys",
-                                    "Kurzhantel-Rudern",
-                                    "Ruderzugmaschine",
-                                    "Beinpresse",
-                                    "Crunch",
-                                    "Rückenstrecker"
-                            },
-                            {
-                                    "3",
-                                    "2",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "2"
-                            }
+                        {
+                            "Kreuzheben",
+                            "Kurzhantel-Rudern",
+                            "Latzug zur Brust - enger Griff",
+                            "Reverse Flys",
+                            "Hammercurls",
+                            "Crunches",
+                        },
+                        {
+                            "4",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                        }
                     },
 
-                    // --- DRITTES ELEMENT
+                    // --- BEINE 3te  TRAININGSEINHEIT
                     {
-                            {
-                                    "TAG 3 3 3 3 3 Grundübung: Bankdrücken",
-                                    "Butterfly/Flys",
-                                    "Kurzhantel-Rudern",
-                                    "Ruderzugmaschine",
-                                    "Beinpresse",
-                                    "Crunch",
-                                    "Rückenstrecker"
-                            },
-                            {
-                                    "3",
-                                    "2",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "2"
-                            }
+                        {
+                            "Kniebeugen",
+                            "Beinpresse",
+                            "Beinstrecker",
+                            "Wadenheben stehend/sitzend",
+                            "Crunches",
+                        },
+                        {
+                            "4",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                        }
                     }
             };
             return plan;
@@ -134,80 +186,80 @@ public class MasseMuskelaufbau implements IZiel {
         } else if ( frequenz >= 4 ) { //3x pro Woche
             // PUSH | PULL |  BEINE | SCHULTERN
             String[][][] plan = {
-                    // PUSH --- ERSTES ELEMENT
+                    // PUSH --- 1te  TRAININGSEINHEIT
                     {
-                            {
-                                    "Bankdrücken Langhantel",
-                                    "Schrägbankdrücken KH",
-                                    "Fliegende",
-                                    "Dips",
-                                    "Beinheben",
-                                    "Crunches",
-                            },
-                            {
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3"
-                            }
+                        {
+                            "Bankdrücken Langhantel",
+                            "Schrägbankdrücken KH",
+                            "Fliegende (Kurzhantel)",
+                            "Dips",
+                            "Beinheben hängend",
+                            "Bauch - Situps auf der negativ Bank",
+                        },
+                        {
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                        }
                     },
-                    // PULL --- ZWEITES ELEMENT
+                    // PULL --- 2te  TRAININGSEINHEIT
                     {
-                            {
-                                    "Kreuzheben",
-                                    "Ruderzugmaschine",
-                                    "Latzug zur Brust - weiter Griff",
-                                    "Latzug zur Brust - enger Griff",
-                                    "Beinpresse",
-                                    "Bauch - Situps auf der negativ Bank",
-                                    "Bauch - Bauchmaschine"
-                            },
-                            {
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3"
-                            }
+                        {
+                            "Kreuzheben",
+                            "Ruderzugmaschine",
+                            "Latzug zur Brust - weiter Griff",
+                            "Latzug zur Brust - enger Griff",
+                            "Beinpresse",
+                            "Bauch - Situps auf der negativ Bank",
+                            "Bauch - Bauchmaschine"
+                        },
+                        {
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                        }
                     },
 
-                    // BEINE--- DRITTES ELEMENT
+                    // BEINE--- 3te  TRAININGSEINHEIT
                     {
-                            {
-                                    "Grundübung: Kniebeugen",
-                                    "Beinpresse",
-                                    "Leg extensions",
-                                    "Leg curls",
-                                    "Wadenheben"
-                            },
-                            {
-                                    "4",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3"
-                            }
+                        {
+                            "Kniebeugen",
+                            "Beinpresse",
+                            "Beinstrecker",
+                            "Beinbeuger",
+                            "Wadenheben stehend/sitzend"
+                        },
+                        {
+                            "4",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                        }
                     },
-                    // SCHULTER/ARME--- VIERTES ELEMENT
+                    // SCHULTER/ARME--- 4te  TRAININGSEINHEIT
                     {
-                            {
-                                    "Schultedrücken",
-                                    "Butterfly umgekehrt(reverse)",
-                                    "Trizepsdrücken am Kabelzug",
-                                    "Kurzhantel Stirndrücken",
-                                    "Bizeps Hammercurls",
-                            },
-                            {
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3",
-                                    "3"
-                            }
+                        {
+                            "Schulterdrücken",
+                            "Reverse Butterfly",
+                            "Trizepsdrücken am Kabelzug",
+                            "Stirndrücken (Kurzhantel)",
+                            "Bizeps Hammercurls",
+                        },
+                        {
+                            "3",
+                            "3",
+                            "3",
+                            "3",
+                            "3"
+                        }
                     }
 
             };

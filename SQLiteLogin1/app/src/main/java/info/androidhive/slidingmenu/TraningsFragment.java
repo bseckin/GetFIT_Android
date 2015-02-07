@@ -80,6 +80,7 @@ public class TraningsFragment extends Fragment {
                         BuildTable(planEinheit[0].length-1, 2, planEinheit);
                         break;
                     case 1:
+                        //@TODO Check ob es 2te Einheit gibt Flexibel machen
                         planEinheit = new String[][]{meinPlan[2][0],meinPlan[2][1]};
                         table_layout_plan1.removeAllViews();
                         BuildTable(planEinheit[0].length-1, 2, planEinheit);
