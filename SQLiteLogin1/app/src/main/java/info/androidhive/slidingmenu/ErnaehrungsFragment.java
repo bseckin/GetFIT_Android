@@ -549,10 +549,10 @@ public class ErnaehrungsFragment extends Fragment {
                 row.addView(tv);
 
             }
-            if (vtable == "1") {
+            if (vtable.equals("1")) {
                 table_layout.addView(row);
             }
-            if (vtable == "2") {
+            if (vtable.equals("2")) {
                 table_layout_food.addView(row);
             }
         }

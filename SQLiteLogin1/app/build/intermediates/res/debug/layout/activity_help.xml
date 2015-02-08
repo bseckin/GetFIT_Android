@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="GetFIT ist ein Personal Trainer für Android, die den Benutzern einen roten Faden vorgibt, an dem sie sich orientieren können. Es wird größerer Fokus auf Anfänger gesetzt, dennoch können sich auch Fortgeschrittene neues Wissen aneignen. Besonders an GetFIT ist einerseits, dass die drei wichtigsten Bereiche, nämlich Ausdauer, Krafttraining und Ernährung in einer App vereint sind. Andererseits besitzt GetFIT eine spezielle Anpassungsfähigkeit, die auf den Benutzer eingeht (selbst entwickelte Algorithmen)."
             android:id="@+id/textView2"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="Um GetFit zu benutzen brauchen Sie nur ihre daten bei der Registrierung einzugeben und alles andere wird speziell an Ihren Körper angepasst. Sie müssen jedoch beachten, dass Sie strickt nach den Plänen vorgehen müssen, die wir ihnen zur Verfügung stellen."
             android:id="@+id/textView4"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <Button
             android:layout_width="wrap_content"

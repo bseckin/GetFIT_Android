@@ -32,8 +32,6 @@ public class Trainingsplan {
     public String[][][] getPlan(int frequenz, String erfahrung){
         //String anfaenger = Resources.getSystem().getString(R.string.anfaenger);
         String anfaenger = "Keine - Ich bin Anfänger"; //@TODO SEHR STATISCH UND GESCHUMMELT
-        String halbprofi = "Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio"; //@TODO SEHR STATISCH UND GESCHUMMELT
-        String fortgeschritten = "Viel – Ich habe viel Erfahrung "; //@TODO SEHR STATISCH UND GESCHUMMELT
         Log.d("Trainginsplan.java: getPlan(): ", anfaenger);
 
 

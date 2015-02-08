@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.packone.login"
         minSdkVersion 14
-        targetSdkVersion 20
+        targetSdkVersion 21
     }
 
     buildTypes {
@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.android.support:support-v4:21.0.3'
     compile 'com.android.support:support-v13:20.0.0'
     compile 'com.github.markushi:circlebutton:1.1' // Finish button
 

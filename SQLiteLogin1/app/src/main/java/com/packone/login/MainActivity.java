@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
                 }
 
                 // Hier überprüfen wir ob die Eingabedaten nun im Datenbank waren oder nicht
-                if (checkUname == true) {
+                if (checkUname) {
                     // Calling Application class (see application tag in AndroidManifest.xml)
                     final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
 

@@ -232,7 +232,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 cursor.getString(9),
                 cursor.getString(10)
         );
-        // return contact
+
         return contact;
     }
 
