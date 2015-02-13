@@ -33,6 +33,7 @@ public class Trainingsplan {
         //String anfaenger = Resources.getSystem().getString(R.string.anfaenger);
         String anfaenger = "Keine - Ich bin Anfänger"; //@TODO SEHR STATISCH UND GESCHUMMELT
         Log.d("Trainginsplan.java: getPlan(): ", anfaenger);
+        Log.d("Trainginsplan: getPlan(): ERFAHRUNG VON USER: ", erfahrung);
 
 
         String[][][] plan;

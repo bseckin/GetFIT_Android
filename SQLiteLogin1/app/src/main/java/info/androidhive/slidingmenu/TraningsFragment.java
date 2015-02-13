@@ -59,42 +59,58 @@ public class TraningsFragment extends Fragment {
         // Fragenkatalog von diesem User auslesen.
         readFragenkatalog(name);
 
-        //Tabelle
+        // Tabelle aufsetzen
         table_layout_plan1 = (TableLayout) rootView.findViewById(R.id.tp_tablelayout);
         table_layout_plan1.removeAllViews();
 
-        planEinheit = new String[][]{this.meinPlan[0][0],this.meinPlan[0][1]};
-        BuildTable(planEinheit[0].length-1, 2, planEinheit);
+        // [0][0] => erste Stelle ist der Plan zweite ist, Uebung bzw Satzzahl
+        // z.B.: => [0ter Plan][Uebungen], [0terPlan][Satzahl]
+        planEinheit = new String[][]{ this.meinPlan[0][0], this.meinPlan[0][1] };
+        final int arraySize = meinPlan.length;
+        Log.d("TRAININGSEINHEITEN", "==>" + arraySize);
+
+        // Tabelle erstellen
+        BuildTable(planEinheit[0].length - 1, 2, planEinheit);
 
         CircleButton circleButton = (CircleButton) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
-        //Button button = (Button) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
-
         circleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
+                for(int i=anzahl; i < arraySize; i+=1){
+                    planEinheit = new String[][]{meinPlan[i][0],meinPlan[i][1]};
+
+                    table_layout_plan1.removeAllViews();
+                    BuildTable(planEinheit[i].length-1, 2, planEinheit);
+
+                    anzahl += 1;
+                    if ( anzahl == arraySize ) anzahl = 0;
+                    break;
+                }
+                /*
                 switch (anzahl) {
                     case 0:
                         planEinheit = new String[][]{meinPlan[1][0],meinPlan[1][1]};
+
                         table_layout_plan1.removeAllViews();
                         BuildTable(planEinheit[0].length-1, 2, planEinheit);
                         break;
                     case 1:
-                        //@TODO Check ob es 2te Einheit gibt Flexibel machen
                         planEinheit = new String[][]{meinPlan[2][0],meinPlan[2][1]};
+
                         table_layout_plan1.removeAllViews();
                         BuildTable(planEinheit[0].length-1, 2, planEinheit);
                         break;
                     default:
                         //Von neu beginnen:
                         anzahl = -1; //weils unten erhöht wird und case nicht bei 0 beginnt sondern bei 1 !
-                        table_layout_plan1.removeAllViews();
                         planEinheit = new String[][]{meinPlan[0][0], meinPlan[0][1]};
+
+                        table_layout_plan1.removeAllViews();
                         BuildTable(planEinheit[0].length-1, 2, planEinheit);
                         break;
-                }
-                anzahl++;
-
+                }*/
+                //anzahl++;
             }
         });
 

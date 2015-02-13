@@ -28,38 +28,38 @@ public class MasseMuskelaufbau implements IZiel {
             // GANZKÖRPER
             String[][][] plan = {
                     {
-                            {
-                                    "Bankdrücken",
-                                    "Butterfly-Maschine",
-                                    "Rudern am Kabelzug",
-                                    "Latzug zur Brust - weiter Griff",
-                                    "Beinheben im Liegen"
-                            },
-                            {
-                                    "3",
-                                    "2",
-                                    "3",
-                                    "2",
-                                    "2"
-                            }
+                        {
+                            "Bankdrücken",
+                            "Butterfly-Maschine",
+                            "Rudern am Kabelzug",
+                            "Latzug zur Brust - weiter Griff",
+                            "Beinheben im Liegen"
+                        },
+                        {
+                            "3",
+                            "2",
+                            "3",
+                            "2",
+                            "2"
+                        }
                     },
                     {
-                            {
-                                    "Kniebeugen",
-                                    "Beinpresse",
-                                    "Brustpresse",
-                                    "Rudermaschine",
-                                    "Rückenstrecken (Hyperextensions)",
-                                    "Crunches"
-                            },
-                            {
-                                    "3",
-                                    "2",
-                                    "2",
-                                    "2",
-                                    "2",
-                                    "2"
-                            }
+                        {
+                            "Kniebeugen",
+                            "Beinpresse",
+                            "Brustpresse",
+                            "Rudermaschine",
+                            "Rückenstrecken (Hyperextensions)",
+                            "Crunches"
+                        },
+                        {
+                            "3",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2"
+                        }
                     }
             };
             return plan;
