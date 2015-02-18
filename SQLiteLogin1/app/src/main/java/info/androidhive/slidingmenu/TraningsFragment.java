@@ -1,6 +1,7 @@
 package info.androidhive.slidingmenu;
 
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -37,16 +38,25 @@ public class TraningsFragment extends Fragment {
     private int anzahl;
     private String[][] planEinheit;
 
-	public TraningsFragment(){}
+    private SharedPreferences mPrefs;
+    private static int KEY_AKTUELLER_PLAN;
+
+    // METHODEN
+    public TraningsFragment(){}
 	
 	@Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_training, container, false);
         // Calling Application class (see application tag in AndroidManifest.xml)
         final GlobalClass globalVariable = (GlobalClass) getActivity().getApplicationContext();
         // Get username from global/application context
         final String name = globalVariable.getName();
+
+
+        SharedPreferences pref = getActivity().getPreferences(0);
+        int pe = pref.getInt("PLAN_EINHEIT", 0);
+        Log.e("ONCREATE VIEW:", "" + pe);
 
         // Überschrift:
         getHeutigesDatum();
@@ -68,6 +78,7 @@ public class TraningsFragment extends Fragment {
         planEinheit = new String[][]{ this.meinPlan[0][0], this.meinPlan[0][1] };
         final int arraySize = meinPlan.length;
         Log.d("TRAININGSEINHEITEN", "==>" + arraySize);
+        Log.d(" ALL", ""+ Arrays.deepToString(meinPlan));
 
         // Tabelle erstellen
         BuildTable(planEinheit[0].length - 1, 2, planEinheit);
@@ -79,14 +90,16 @@ public class TraningsFragment extends Fragment {
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
                 for(int i=anzahl; i < arraySize; i+=1){
                     planEinheit = new String[][]{meinPlan[i][0],meinPlan[i][1]};
-
                     table_layout_plan1.removeAllViews();
-                    BuildTable(planEinheit[i].length-1, 2, planEinheit);
+
+                    //BuildTable: (ZEILEN, SPALTEN, DATEN)
+                    BuildTable(planEinheit[1].length-1, 2, planEinheit);
 
                     anzahl += 1;
-                    if ( anzahl == arraySize ) anzahl = 0;
+                    if ( anzahl == arraySize ) anzahl = 0; //Wenn alle Trainingseinheiten gemacht wurden => von neu beginnen
                     break;
                 }
+
                 /*
                 switch (anzahl) {
                     case 0:
@@ -148,6 +161,31 @@ public class TraningsFragment extends Fragment {
             table_layout_plan1.addView(row);
         }
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.e("DEBUG", "OnPause of TrainingsFragment");
+        Log.e("DEBUG", "Aktueller plan anzahl:" + anzahl);
+
+        KEY_AKTUELLER_PLAN = anzahl;
+        SharedPreferences pref = getActivity().getPreferences(0);
+        SharedPreferences.Editor ed = pref.edit();
+        ed.putInt("PLAN_EINHEIT", KEY_AKTUELLER_PLAN);
+        ed.commit();
+    }
+
+    /*
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        // Save UI state changes to the savedInstanceState.
+        // This bundle will be passed to onCreate if the process is
+        // killed and restarted.
+        savedInstanceState.putInt("KEY_PLANEINHEIT", anzahl);
+        // etc.
+    } */
+
 
     /**
      * Holt aktuelles Datum

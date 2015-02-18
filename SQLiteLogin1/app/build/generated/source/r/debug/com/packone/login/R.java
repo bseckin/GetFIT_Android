@@ -107,12 +107,12 @@ containing a value of this type.
         public static final int weightlifting=0x7f020030;
     }
     public static final class id {
-        public static final int action_logout=0x7f0a005f;
-        public static final int action_settings=0x7f0a005e;
-        public static final int bcardio=0x7f0a005c;
+        public static final int action_logout=0x7f0a0061;
+        public static final int action_settings=0x7f0a0060;
+        public static final int bcardio=0x7f0a005e;
         public static final int bgeschafft=0x7f0a0050;
         public static final int bgoal=0x7f0a003e;
-        public static final int blifting=0x7f0a005b;
+        public static final int blifting=0x7f0a005d;
         public static final int blogin=0x7f0a0009;
         public static final int bnutrition=0x7f0a004f;
         public static final int breg=0x7f0a001c;
@@ -126,10 +126,11 @@ containing a value of this type.
         public static final int carb_perc=0x7f0a0030;
         public static final int carb_prog=0x7f0a0047;
         public static final int counter=0x7f0a003d;
-        public static final int detail=0x7f0a005a;
+        public static final int detail=0x7f0a005c;
         public static final int drawer_layout=0x7f0a000c;
         public static final int eT_frage5=0x7f0a0037;
         public static final int email=0x7f0a001a;
+        public static final int expandableListView=0x7f0a0057;
         public static final int fat_anz=0x7f0a0043;
         public static final int fat_prog=0x7f0a0041;
         public static final int fragenkatalog_tv=0x7f0a001d;
@@ -139,15 +140,16 @@ containing a value of this type.
         public static final int icon=0x7f0a003b;
         public static final int imageView=0x7f0a0006;
         public static final int imageView2=0x7f0a0052;
+        public static final int imageView3=0x7f0a0058;
         public static final int label_zu_trainierende_muskel=0x7f0a0054;
-        public static final int lblListHeader=0x7f0a0058;
-        public static final int lblListItem=0x7f0a0059;
+        public static final int lblListHeader=0x7f0a005a;
+        public static final int lblListItem=0x7f0a005b;
         public static final int linearLayout=0x7f0a0040;
         public static final int list_slidermenu=0x7f0a000e;
         public static final int logpword=0x7f0a0008;
         public static final int loguname=0x7f0a0007;
         public static final int lvExp=0x7f0a003f;
-        public static final int menu_settings=0x7f0a005d;
+        public static final int menu_settings=0x7f0a005f;
         public static final int pager=0x7f0a0039;
         public static final int prot_anz=0x7f0a0046;
         public static final int prot_prog=0x7f0a0045;
@@ -180,7 +182,7 @@ containing a value of this type.
         public static final int rg_frage5=0x7f0a0036;
         public static final int rg_frage6=0x7f0a0031;
         public static final int rlt=0x7f0a004a;
-        public static final int section_label=0x7f0a0057;
+        public static final int section_label=0x7f0a0059;
         public static final int tableLayout1=0x7f0a0000;
         public static final int tableLayout2=0x7f0a004b;
         public static final int text10=0x7f0a004e;
