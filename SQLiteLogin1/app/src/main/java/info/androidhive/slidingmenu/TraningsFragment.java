@@ -39,7 +39,8 @@ public class TraningsFragment extends Fragment {
     private String[][] planEinheit;
 
     private SharedPreferences mPrefs;
-    private static int KEY_AKTUELLER_PLAN;
+    private static int pe;
+    private int KEY_AKTUELLER_PLAN;
 
     // METHODEN
     public TraningsFragment(){}
@@ -53,10 +54,11 @@ public class TraningsFragment extends Fragment {
         // Get username from global/application context
         final String name = globalVariable.getName();
 
-
-        SharedPreferences pref = getActivity().getPreferences(0);
-        int pe = pref.getInt("PLAN_EINHEIT", 0);
-        Log.e("ONCREATE VIEW:", "" + pe);
+        if (savedInstanceState != null) {
+            // Restore last state for checked position.
+            anzahl = savedInstanceState.getInt("aktuell_plan", 0);
+            Log.d("SavedInstance:", ""+anzahl);
+        }
 
         // Überschrift:
         getHeutigesDatum();
@@ -73,12 +75,12 @@ public class TraningsFragment extends Fragment {
         table_layout_plan1 = (TableLayout) rootView.findViewById(R.id.tp_tablelayout);
         table_layout_plan1.removeAllViews();
 
-        // [0][0] => erste Stelle ist der Plan zweite ist, Uebung bzw Satzzahl
+        // [0][0] => Erste Stelle ist der Plan; Zweite ist, Uebung bzw. Satzzahl
         // z.B.: => [0ter Plan][Uebungen], [0terPlan][Satzahl]
         planEinheit = new String[][]{ this.meinPlan[0][0], this.meinPlan[0][1] };
         final int arraySize = meinPlan.length;
         Log.d("TRAININGSEINHEITEN", "==>" + arraySize);
-        Log.d(" ALL", ""+ Arrays.deepToString(meinPlan));
+        Log.d("KOMPLETTER PLAN", ""+ Arrays.deepToString(meinPlan));
 
         // Tabelle erstellen
         BuildTable(planEinheit[0].length - 1, 2, planEinheit);
@@ -89,14 +91,16 @@ public class TraningsFragment extends Fragment {
             public void onClick(View v) {
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
                 for(int i=anzahl; i < arraySize; i+=1){
-                    planEinheit = new String[][]{meinPlan[i][0],meinPlan[i][1]};
-                    table_layout_plan1.removeAllViews();
+                    planEinheit = new String[][]{
+                            meinPlan[i][0], // Uebungsname
+                            meinPlan[i][1]  // Satzzahl dazu
+                    };
+                    table_layout_plan1.removeAllViews(); //clear View
 
-                    //BuildTable: (ZEILEN, SPALTEN, DATEN)
-                    BuildTable(planEinheit[1].length-1, 2, planEinheit);
-
+                    BuildTable(planEinheit[1].length - 1, 2, planEinheit); // ... ZEILEN, SPALTEN, DATA
                     anzahl += 1;
-                    if ( anzahl == arraySize ) anzahl = 0; //Wenn alle Trainingseinheiten gemacht wurden => von neu beginnen
+                    //Wenn alle Trainingseinheiten gemacht wurden => von neu beginnen
+                    if ( anzahl == arraySize ) anzahl = 0;
                     break;
                 }
 
@@ -135,6 +139,31 @@ public class TraningsFragment extends Fragment {
         return rootView;
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("aktuell_plan", anzahl);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        final DatabaseHandler db = new DatabaseHandler(getActivity());
+        db.addLastPlan(anzahl);
+        Log.e("onPause", "called--------");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.e("onStop", "called--------");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.e("OnDestroy", "called--------");
+    }
 
     /**
      * Erstellt Tabelle
@@ -161,31 +190,6 @@ public class TraningsFragment extends Fragment {
             table_layout_plan1.addView(row);
         }
     }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.e("DEBUG", "OnPause of TrainingsFragment");
-        Log.e("DEBUG", "Aktueller plan anzahl:" + anzahl);
-
-        KEY_AKTUELLER_PLAN = anzahl;
-        SharedPreferences pref = getActivity().getPreferences(0);
-        SharedPreferences.Editor ed = pref.edit();
-        ed.putInt("PLAN_EINHEIT", KEY_AKTUELLER_PLAN);
-        ed.commit();
-    }
-
-    /*
-    @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(savedInstanceState);
-        // Save UI state changes to the savedInstanceState.
-        // This bundle will be passed to onCreate if the process is
-        // killed and restarted.
-        savedInstanceState.putInt("KEY_PLANEINHEIT", anzahl);
-        // etc.
-    } */
-
 
     /**
      * Holt aktuelles Datum
@@ -222,7 +226,6 @@ public class TraningsFragment extends Fragment {
         return null;
     }
 
-
     /**
      * Reading DB from Table "CONTACT"
      * Fragenkatalog-Antworten vom aktuell eingeloggten User aus DB auslesen.
@@ -248,7 +251,6 @@ public class TraningsFragment extends Fragment {
 
         holePassendenPlan(ziel, akt, erfahrung, quant);
     }
-
 
     /**
      * Nimmt die Antworten vom User aus dem Fragenkatalog,
@@ -325,5 +327,4 @@ public class TraningsFragment extends Fragment {
         }
         return frequenz;
     }
-
 }
