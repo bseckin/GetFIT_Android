@@ -29,6 +29,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
     private static final String TABLE_FOOD = "food";
+    private static final String TABLE_DEVELOPER_DATA = "data";
 
 
     /* ============= COLUMNS from TABLE  "LOGIN" ================ */
@@ -60,6 +61,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_FATS = "fats";
     private static final String KEY_CARBS = "carbs";
     private static final String KEY_KCAL = "kcal";
+
+    /* ============ COLUMNS from TABLE  "DATA" ============== */
+    private static final String KEY_LAST_PLAN = "myplan";
 
     private int exists;
 
@@ -123,6 +127,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                         + ")";
         db.execSQL(CREATE_FOOD_TABLE);
 
+        //========= CREATE TABLE TABLE_DEVELOPER_DATA ==========
+        String CREATE_TABLE_DEVELOPER_DATA =
+                "CREATE TABLE IF NOT EXISTS " + TABLE_DEVELOPER_DATA + "("
+                        + KEY_LAST_PLAN + " INTEGER PRIMARY KEY,"
+                        + ")";
+        db.execSQL(CREATE_TABLE_DEVELOPER_DATA);
+
+
         String[] insertFood = {
                                 "INSERT INTO food VALUES(1,'radischen',1,0.1,1.9,14);",
                                 "INSERT INTO food VALUES(2,'quark',14,0.2,4,75);",
@@ -161,6 +173,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_EXERCISE);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_FOOD);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DEVELOPER_DATA);
         // Create tables again
         onCreate(db);
     }
@@ -628,7 +641,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
     /**************************************************************************************/
-    /************************ OPERATIONS FOR THE FRAGENKATALOG TABLE **********************/
+    /************************ OPERATIONS FOR THE TABLE_DEVELOPER_DATA **********************/
     /**************************************************************************************/
-    //TODO OPERATIONEN FÜR FRAGENKATALOG TABELLE
+    public void addLastPlan(int plan_index) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_LAST_PLAN, plan_index);
+
+        // Inserting Row
+        db.insert(TABLE_DEVELOPER_DATA, null, values);
+
+        db.close(); // Closing database connection
+    }
+
+    public int getLastPlan(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String count = "SELECT myplan FROM data";
+        Cursor mcursor = db.rawQuery(count, null);
+        mcursor.moveToFirst();
+        int plan_index = mcursor.getInt(0);
+
+        return plan_index;
+    }
 }

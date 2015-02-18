@@ -6,34 +6,55 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_height="fill_parent">
 
-        <ExpandableListView
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/ic_pages"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/ic_home"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ListView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/expandableListView"
-            android:layout_weight="1"/>
-
+            android:id="@+id/listViewMain"
+            android:layout_weight="5"
+            android:layout_marginTop="5dp"
+            android:divider="#ffb21200"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtLabel"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="Pages View"
-        android:layout_above="@+id/imageView3"
-        android:layout_centerHorizontal="true"/>
-    
     <ImageView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_pages"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="99dp"
-        android:id="@+id/imageView3"/>
+        android:id="@+id/imageView3"
+        android:visibility="invisible"/>
 
 
 </RelativeLayout>
