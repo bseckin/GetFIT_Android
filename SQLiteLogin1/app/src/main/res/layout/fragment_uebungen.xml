@@ -15,28 +15,33 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="25dp"
                 android:gravity="center_horizontal"
-                >
+                android:paddingLeft="10dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView4"
-                    android:src="@drawable/ic_pages"
+                    android:id="@+id/brustImageView"
+                    android:src="@drawable/brusticonp"
                     android:paddingBottom="10dp"
                     android:visibility="visible"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView5"
+                    android:id="@+id/rueckenImageView"
                     android:src="@drawable/ic_home"
                     android:visibility="visible"/>
             </LinearLayout>
         </FrameLayout>
+
+        <View
+            android:layout_height="fill_parent"
+            android:background="#669999"
+            android:layout_width="10dp"/>
 
         <ListView
             android:layout_width="0dp"

@@ -6,12 +6,14 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.packone.login.Contact;
 import com.packone.login.DatabaseHandler;
@@ -48,7 +50,7 @@ public class TraningsFragment extends Fragment {
 	@Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_training, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_training, container, false);
         // Calling Application class (see application tag in AndroidManifest.xml)
         final GlobalClass globalVariable = (GlobalClass) getActivity().getApplicationContext();
         // Get username from global/application context
@@ -89,6 +91,14 @@ public class TraningsFragment extends Fragment {
         circleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                LayoutInflater inflater = LayoutInflater.from(getActivity());
+                View layout = inflater.inflate(R.layout.custom_toast_layout,
+                        (ViewGroup) rootView.findViewById(R.id.toast_layout_root));
+                Toast toast = new Toast(getActivity());
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
                 for(int i=anzahl; i < arraySize; i+=1){
                     planEinheit = new String[][]{
