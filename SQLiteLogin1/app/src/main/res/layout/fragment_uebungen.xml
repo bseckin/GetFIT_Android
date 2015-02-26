@@ -19,13 +19,14 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="25dp"
                 android:gravity="center_horizontal"
-                android:paddingLeft="10dp">
+                android:paddingLeft="10dp"
+                >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/brustImageView"
-                    android:src="@drawable/brusticonp"
+                    android:src="@drawable/brusticon"
                     android:paddingBottom="10dp"
                     android:visibility="visible"/>
 
@@ -33,15 +34,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/rueckenImageView"
-                    android:src="@drawable/ic_home"
+                    android:src="@drawable/untererrueckenicon"
+                    android:visibility="visible"
+                    android:paddingBottom="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/obererueckenImageView"
+                    android:src="@drawable/obererrueckenicon"
+                    android:paddingBottom="10dp"
                     android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/beineimageView"
+                    android:src="@drawable/beineicon"
+                    android:visibility="visible"
+                    android:paddingBottom="10dp"/>
             </LinearLayout>
         </FrameLayout>
 
         <View
             android:layout_height="fill_parent"
             android:background="#669999"
-            android:layout_width="10dp"/>
+            android:layout_width="5dp"/>
 
         <ListView
             android:layout_width="0dp"
@@ -60,6 +78,11 @@
         android:layout_marginBottom="99dp"
         android:id="@+id/imageView3"
         android:visibility="invisible"/>
+
+    <MediaController
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaController"/>
 
 
 </RelativeLayout>
