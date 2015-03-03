@@ -233,6 +233,7 @@ public class NavigationActivity extends Activity {
             setTitle(navMenuTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
         } else {
+            //@TODO SPäter wenn wir LISTFRAGMENT adden wollen: http://stackoverflow.com/questions/20429815/fragment-and-listfragment-incompatibility
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");
         }
