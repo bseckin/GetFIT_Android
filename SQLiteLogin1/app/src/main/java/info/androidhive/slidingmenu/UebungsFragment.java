@@ -1,38 +1,86 @@
 package info.androidhive.slidingmenu;
 
-import android.app.Fragment;
+import android.app.ListFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import com.packone.login.R;
 
-public class UebungsFragment extends Fragment {
-	
-	public UebungsFragment(){}
-	
-	@Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
- 
-        View rootView = inflater.inflate(R.layout.fragment_uebungen, container, false);
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
-        // Liste arrangieren
-        String[] myItems = {"Brust", "Rücken", "Beine", "Schulter", "Bizpes", "Trizeps"};
+public class UebungsFragment extends ListFragment {
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.da_item, myItems);
+    // Array of strings storing country names
+    String[] uebungesname = new String[] {
+            "Brust",
+            "Oberer Rücken",
+            "Unterer Rücken",
+            "Beine",
+            "Vordere/Seitliche Schultern",
+            "Hintere Schultern",
+            "Bizeps",
+            "Trizeps",
+            "Bauch",
+            "Seitlicher Bauch"
+    };
 
-        // Configure ListView:
-        ListView listView = (ListView)rootView.findViewById(R.id.listViewMain);
-        listView.setAdapter(adapter);
+    // Array of integers points to images stored in /res/drawable/
+    int[] flags = new int[]{
+            R.drawable.brusticon,
+            R.drawable.obererrueckenicon,
+            R.drawable.untererrueckenicon,
+            R.drawable.beineicon,
+            R.drawable.schultervorneicon,
+            R.drawable.schulterhintenicon,
+            R.drawable.bizepsicon,
+            R.drawable.trizepsiicon,
+            R.drawable.bauchicon,
+            R.drawable.seitlicherbauchicon
+    };
 
-        return rootView;
-    }
+    // Array of strings to store currencies
+    String[] currency = new String[]{
+            "Beschreibung..",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+    };
 
-    private void populateListView() {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 
+        // Each row in the list stores country name, currency and flag
+        List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
+
+        for(int i=0;i< uebungesname.length;i++){
+            HashMap<String, String> hm = new HashMap<String,String>();
+            hm.put("txt", uebungesname[i]);
+            //hm.put("cur","Beschreibung : " + currency[i]);
+            hm.put("flag", Integer.toString(flags[i]) );
+            aList.add(hm);
+        }
+
+        // Keys used in Hashmap
+        String[] from = { "flag","txt","cur" };
+
+        // Ids of views in listview_layout
+        int[] to = { R.id.flag,R.id.txt, R.id.cur};
+
+        // Instantiating an adapter to store each items
+        // R.layout.listview_layout defines the layout of each item
+        SimpleAdapter adapter = new SimpleAdapter(getActivity().getBaseContext(), aList, R.layout.listview_layout, from, to);
+
+        setListAdapter(adapter);
+
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
 }

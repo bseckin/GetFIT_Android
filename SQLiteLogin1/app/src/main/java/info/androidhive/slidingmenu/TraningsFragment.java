@@ -95,8 +95,8 @@ public class TraningsFragment extends Fragment {
                 View layout = inflater.inflate(R.layout.custom_toast_layout,
                         (ViewGroup) rootView.findViewById(R.id.toast_layout_root));
                 Toast toast = new Toast(getActivity());
-                toast.setGravity(Gravity.CENTER, 0, 0);
-                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.BOTTOM, 0, 0);
+                toast.setDuration(Toast.LENGTH_SHORT);
                 toast.setView(layout);
                 toast.show();
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:

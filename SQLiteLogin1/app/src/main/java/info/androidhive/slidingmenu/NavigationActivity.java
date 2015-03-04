@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.app.ListFragment;
 import android.support.v4.widget.DrawerLayout;
 import android.text.Html;
 import android.util.Log;
@@ -190,6 +191,7 @@ public class NavigationActivity extends Activity {
 
         // update the main content by replacing fragments
         Fragment fragment = null;
+        ListFragment listFragment = null;
         switch (position) {
             case 0: //Home
                 fragment = new HomeFragment();
@@ -207,7 +209,7 @@ public class NavigationActivity extends Activity {
                 fragment = new KonditionFragment();
                 break;
             case 4: // Übungen
-                fragment = new UebungsFragment();
+                listFragment = new UebungsFragment();
                 break;
             case 5: // Mein Konto
                 fragment = new MeinKontoFragment();
@@ -232,11 +234,17 @@ public class NavigationActivity extends Activity {
             mDrawerList.setSelection(position);
             setTitle(navMenuTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
-        } else {
+        } else if (listFragment != null) {
             //@TODO SPäter wenn wir LISTFRAGMENT adden wollen: http://stackoverflow.com/questions/20429815/fragment-and-listfragment-incompatibility
+            // do stuff if its a listfragment
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.frame_container, listFragment).commit();
+        } else {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");
         }
+
         Log.d("Activity","Navigation displayView() finished");
 
     }
