@@ -9,16 +9,18 @@
         android:targetSdkVersion="21" />
 
     <!-- PERMISSIONS -->
-    <android:uses-permission
+    <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-    <android:uses-permission
+    <uses-permission
         android:name="android.permission.AUTHENTICATE_ACCOUNTS"
         android:maxSdkVersion="18" />
+    <!-- Include following permission if you load images from Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- ACTIVITYS -->
     <application
@@ -67,5 +69,6 @@
             android:name="com.packone.login.ErnaehrungActivity"
             android:label="@string/title_activity_ernaehrung" >
         </activity>
+        <activity android:name="uebungsliste.BauchUebungen_Activity"></activity>
     </application>
 </manifest>

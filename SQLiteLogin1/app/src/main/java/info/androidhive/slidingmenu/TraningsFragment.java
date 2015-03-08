@@ -158,8 +158,6 @@ public class TraningsFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        final DatabaseHandler db = new DatabaseHandler(getActivity());
-        db.addLastPlan(anzahl);
         Log.e("onPause", "called--------");
     }
 

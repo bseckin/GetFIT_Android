@@ -29,7 +29,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String TABLE_CONTACTS = "login";
     private static final String TABLE_EXERCISE = "exercise";
     private static final String TABLE_FOOD = "food";
-    private static final String TABLE_DEVELOPER_DATA = "data";
+    //private static final String TABLE_DEVELOPER_DATA = "data";
 
 
     /* ============= COLUMNS from TABLE  "LOGIN" ================ */
@@ -128,11 +128,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(CREATE_FOOD_TABLE);
 
         //========= CREATE TABLE TABLE_DEVELOPER_DATA ==========
-        String CREATE_TABLE_DEVELOPER_DATA =
+        /*String CREATE_TABLE_DEVELOPER_DATA =
                 "CREATE TABLE IF NOT EXISTS " + TABLE_DEVELOPER_DATA + "("
                         + KEY_LAST_PLAN + " INTEGER PRIMARY KEY,"
                         + ")";
-        db.execSQL(CREATE_TABLE_DEVELOPER_DATA);
+        db.execSQL(CREATE_TABLE_DEVELOPER_DATA);*/
 
 
         String[] insertFood = {
@@ -173,7 +173,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_EXERCISE);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_FOOD);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DEVELOPER_DATA);
+        //db.execSQL("DROP TABLE IF EXISTS " + TABLE_DEVELOPER_DATA);
         // Create tables again
         onCreate(db);
     }
@@ -495,8 +495,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return exerciseList;
     }
 
-    //TODO: - (später erst) Exercise Methoden Kommentare anpassen
-
     /**
      * Updating single contact
      *
@@ -643,7 +641,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     /**************************************************************************************/
     /************************ OPERATIONS FOR THE TABLE_DEVELOPER_DATA **********************/
     /**************************************************************************************/
-    public void addLastPlan(int plan_index) {
+    /*public void addLastPlan(int plan_index) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -653,9 +651,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.insert(TABLE_DEVELOPER_DATA, null, values);
 
         db.close(); // Closing database connection
-    }
+    } */
 
-    public int getLastPlan(){
+    /*public int getLastPlan(){
         SQLiteDatabase db = this.getWritableDatabase();
         String count = "SELECT myplan FROM data";
         Cursor mcursor = db.rawQuery(count, null);
@@ -663,5 +661,5 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         int plan_index = mcursor.getInt(0);
 
         return plan_index;
-    }
+    }*/
 }

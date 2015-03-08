@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/panel_content"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:descendantFocusability="blocksDescendants"
+             android:orientation="horizontal" >
+
+<com.etsy.android.grid.util.DynamicHeightImageView
+    android:id="@+id/stg_imgView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop" />
+<com.etsy.android.grid.util.DynamicHeightTextView
+    android:id = "@+id/stg_textView"
+    android:layout_width = "match_parent"
+    android:layout_height="match_parent" />
+</FrameLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/staggered_gridview_custom_row_layout.xml -->
