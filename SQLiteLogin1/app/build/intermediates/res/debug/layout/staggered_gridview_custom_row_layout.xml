@@ -4,7 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:descendantFocusability="blocksDescendants"
-             android:orientation="horizontal" >
+             android:orientation="horizontal">
 
 <com.etsy.android.grid.util.DynamicHeightImageView
     android:id="@+id/stg_imgView"
@@ -14,5 +14,10 @@
 <com.etsy.android.grid.util.DynamicHeightTextView
     android:id = "@+id/stg_textView"
     android:layout_width = "match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    />
+    <View android:layout_width="fill_parent"
+          android:layout_height="40dip"
+          android:layout_gravity="bottom"
+          android:background="#34585c" />
 </FrameLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/staggered_gridview_custom_row_layout.xml -->

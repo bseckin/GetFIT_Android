@@ -28,14 +28,13 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.gridview);
 
         setTitle("TechnoTalkative - SGV Demo");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
         mAdapter = new BauchUebungenAdapter(this, android.R.layout.simple_list_item_1, generateData());
         // do we have saved data?
-        if (savedInstanceState != null) {
+        /*if (savedInstanceState != null) {
             mData = savedInstanceState.getStringArrayList(SAVED_DATA_KEY);
         }
 
@@ -45,7 +44,7 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
 
         for (String data : mData) {
             mAdapter.add(data);
-        }
+        }*/
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -69,14 +68,14 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
         // our handling
-        if (!mHasRequestedMore) {
+        /* (!mHasRequestedMore) {
             int lastInScreen = firstVisibleItem + visibleItemCount;
             if (lastInScreen >= totalItemCount) {
                 Log.d(TAG, "onScroll lastInScreen - so load more");
-                mHasRequestedMore = true;
-                onLoadMoreItems();
+                //mHasRequestedMore = true;
+                //onLoadMoreItems();
             }
-        }
+        }*/
     }
 
     private void onLoadMoreItems() {
@@ -93,14 +92,14 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
 
     private ArrayList<String> generateData() {
         ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://i62.tinypic.com/2iitkhx.jpg");
-        listData.add("http://i61.tinypic.com/w0omeb.jpg");
-        listData.add("http://i60.tinypic.com/w9iu1d.jpg");
-        listData.add("http://i60.tinypic.com/iw6kh2.jpg");
-        listData.add("http://i57.tinypic.com/ru08c8.jpg");
-        listData.add("http://i60.tinypic.com/k12r10.jpg");
-        listData.add("http://i58.tinypic.com/2e3daug.jpg");
-        listData.add("http://i59.tinypic.com/2igznfr.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Crunches.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Sit-Ups-auf-der-Schr%C3%A4gbank.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/H%C3%BCftheben.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Crunches-mit-ausgestreckten-Armen.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Klappmesser.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Beinheben.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Abwechselndes-%C3%9Cberkreuzen-der-Beine.jpg");
+        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Korkenzieher.jpg");
 
         return listData;
     }

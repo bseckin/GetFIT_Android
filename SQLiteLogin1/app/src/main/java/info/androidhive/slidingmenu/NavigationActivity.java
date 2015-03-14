@@ -240,6 +240,7 @@ public class NavigationActivity extends Activity {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(R.id.frame_container, listFragment).commit();
+            mDrawerLayout.closeDrawer(mDrawerList);
         } else {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");

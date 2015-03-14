@@ -325,12 +325,13 @@ containing a value of this type.
         public static final int fragment_uebungen=0x7f030013;
         public static final int fragment_wlifing=0x7f030014;
         public static final int gridview=0x7f030015;
-        public static final int list_group=0x7f030016;
-        public static final int list_item=0x7f030017;
-        public static final int listview_layout=0x7f030018;
-        public static final int menu_detail_fragment=0x7f030019;
-        public static final int select_goal=0x7f03001a;
-        public static final int staggered_gridview_custom_row_layout=0x7f03001b;
+        public static final int line=0x7f030016;
+        public static final int list_group=0x7f030017;
+        public static final int list_item=0x7f030018;
+        public static final int listview_layout=0x7f030019;
+        public static final int menu_detail_fragment=0x7f03001a;
+        public static final int select_goal=0x7f03001b;
+        public static final int staggered_gridview_custom_row_layout=0x7f03001c;
     }
     public static final class menu {
         public static final int activity_home_screen=0x7f0a0000;
