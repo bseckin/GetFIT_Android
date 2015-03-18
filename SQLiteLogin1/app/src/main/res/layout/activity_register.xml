@@ -229,7 +229,8 @@
                 android:layout_alignEnd="@+id/volume_bar_weight"
                 android:layout_marginRight="129dp"
                 android:background="@android:color/transparent"
-                android:gravity="center_vertical"/>
+                android:gravity="center_vertical"
+                />
         </RelativeLayout>
     </LinearLayout>
 

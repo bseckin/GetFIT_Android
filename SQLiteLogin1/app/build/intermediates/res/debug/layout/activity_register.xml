@@ -229,7 +229,8 @@
                 android:layout_alignEnd="@+id/volume_bar_weight"
                 android:layout_marginRight="129dp"
                 android:background="@android:color/transparent"
-                android:gravity="center_vertical"/>
+                android:gravity="center_vertical"
+                />
         </RelativeLayout>
     </LinearLayout>
 
@@ -254,4 +255,4 @@
 
     </FrameLayout>
 </LinearLayout>
-<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->

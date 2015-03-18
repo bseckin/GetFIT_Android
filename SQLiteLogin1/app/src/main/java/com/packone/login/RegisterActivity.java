@@ -66,6 +66,7 @@ public class RegisterActivity extends Activity {
 
         // Dekleration des Datenbank arrays
         // in dieses array kommen alle eingaben des Benutzers im Login screen hinein
+        weight.setEnabled(false);
         databaseArray = new ArrayList<String>();
         mButton = (Button) findViewById(R.id.breg);
         muname = (EditText) findViewById(R.id.uname);
