@@ -126,6 +126,7 @@
 
             <EditText
                 android:id="@+id/uname"
+                android:textColor="#fff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -137,6 +138,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
                 android:id="@+id/pword"
                 android:layout_below="@+id/uname"
                 android:layout_alignParentLeft="true"
@@ -149,6 +151,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
                 android:id="@+id/height"
                 android:inputType="number"
                 android:layout_below="@+id/pword"
@@ -193,7 +196,7 @@
 -->
             <SeekBar
                 android:id="@+id/volume_bar_weight"
-                android:layout_width="fill_parent"
+                android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/gender"
                 android:max="100"
@@ -201,7 +204,7 @@
                 android:progressDrawable="@drawable/progressbar"
                 android:secondaryProgress="0"
 
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:indeterminate="false"
@@ -210,6 +213,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
                 android:id="@+id/email"
                 android:layout_below="@+id/volume_bar_weight"
                 android:layout_alignParentLeft="true"
@@ -220,16 +224,17 @@
                 android:inputType="textEmailAddress"/>
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
+                android:textColor="#fff"
                 android:text="0"
                 android:id="@+id/weight"
-                android:layout_below="@+id/gender"
-                android:layout_alignRight="@+id/volume_bar_weight"
-                android:layout_alignEnd="@+id/volume_bar_weight"
-                android:layout_marginRight="129dp"
                 android:background="@android:color/transparent"
-                android:gravity="center_vertical"
+                android:editable="false"
+                android:layout_above="@+id/email"
+                android:paddingBottom="5dp"
+                android:layout_alignRight="@+id/email"
+                android:layout_alignEnd="@+id/email"
                 />
         </RelativeLayout>
     </LinearLayout>

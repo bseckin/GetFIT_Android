@@ -69,6 +69,7 @@
             android:label="@string/title_activity_ernaehrung" >
         </activity>
         <activity android:name="uebungsliste.BauchUebungen_Activity" />
+        <activity android:name="uebungsliste.BrustUebungen_Activity" />
     </application>
 
 </manifest>
