@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="9"
         android:targetSdkVersion="21" />
 
     <!-- PERMISSIONS -->
@@ -20,7 +20,7 @@
         android:name="android.permission.AUTHENTICATE_ACCOUNTS"
         android:maxSdkVersion="18" />
     <!-- Include following permission if you load images from Internet -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:minSdkVersion="8" android:name="android.permission.INTERNET" />
 
     <!-- ACTIVITYS -->
     <application
@@ -69,8 +69,24 @@
             android:name="com.packone.login.ErnaehrungActivity"
             android:label="@string/title_activity_ernaehrung" >
         </activity>
+
+
+        <activity
+            android:label="AXMLP"
+            android:name="com.packone.login.AndroidXMLParsingActivity" >
+        </activity>
+
+        <!-- Single List Item View -->
+        <activity
+            android:label="Single Menu Item"
+            android:name="com.packone.login.SingleMenuItemActivity" >
+        </activity>
+
+
         <activity android:name="uebungsliste.BauchUebungen_Activity"></activity>
         <activity android:name="uebungsliste.BrustUebungen_Activity"></activity>
+
+
 
     </application>
 </manifest>
