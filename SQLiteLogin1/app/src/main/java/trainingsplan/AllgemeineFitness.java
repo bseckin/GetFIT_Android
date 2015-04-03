@@ -8,6 +8,11 @@ public class AllgemeineFitness implements IZiel{
     // Konstruktor
     public AllgemeineFitness() {}
 
+    /**
+     *
+     * @param frequenz
+     * @return
+     */
     @Override
     public String[][][] erstellePlan_Anfaenger(int frequenz) {
         //2x pro Woche
@@ -39,7 +44,7 @@ public class AllgemeineFitness implements IZiel{
             return plan;
         } else if ( frequenz == 3 ) { //3x pro Woche
             /*
-            Dieser Plan ist von LOOX:
+            Dieser Plan ist von:
             "FITNESS STEIGERN - GANZKÖRPER BASIC" - Benny Braun
              */
             String[][][] plan = {{
@@ -84,6 +89,7 @@ public class AllgemeineFitness implements IZiel{
                             "3"
                     }
             };
+
         }
 
         return new String[0][][];

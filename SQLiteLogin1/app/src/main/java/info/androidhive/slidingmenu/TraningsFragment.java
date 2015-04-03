@@ -77,15 +77,20 @@ public class TraningsFragment extends Fragment {
         table_layout_plan1 = (TableLayout) rootView.findViewById(R.id.tp_tablelayout);
         table_layout_plan1.removeAllViews();
 
-        // [0][0] => Erste Stelle ist der Plan; Zweite ist, Uebung bzw. Satzzahl
-        // z.B.: => [0ter Plan][Uebungen], [0terPlan][Satzahl]
-        planEinheit = new String[][]{ this.meinPlan[0][0], this.meinPlan[0][1] };
+        /*
+         [0][0] => Erste Stelle ist der Plan; Zweite ist, Uebung bzw. Satzzahl
+         z.B.: => [0ter Plan][Uebungen], [0terPlan][Satzahl]
+         */
+
+        //planEinheit = new String[][]{ this.meinPlan[0][0], this.meinPlan[0][1] };
+        planEinheit = new String[][]{ this.meinPlan[1][0], this.meinPlan[1][1] };
         final int arraySize = meinPlan.length;
         Log.d("TRAININGSEINHEITEN", "==>" + arraySize);
         Log.d("KOMPLETTER PLAN", ""+ Arrays.deepToString(meinPlan));
 
         // Tabelle erstellen
-        BuildTable(planEinheit[0].length - 1, 2, planEinheit);
+        //BuildTable(planEinheit[0].length - 1, 2, planEinheit);
+        BuildTable(planEinheit[0].length, 2, planEinheit);
 
         CircleButton circleButton = (CircleButton) rootView.findViewById(R.id.btn_tfragment_teinheit_fertig);
         circleButton.setOnClickListener(new View.OnClickListener() {
@@ -94,56 +99,40 @@ public class TraningsFragment extends Fragment {
                 LayoutInflater inflater = LayoutInflater.from(getActivity());
                 View layout = inflater.inflate(R.layout.custom_toast_layout,
                         (ViewGroup) rootView.findViewById(R.id.toast_layout_root));
+                // TOAST: GRATULATION TRAINING FÜR HEUTE BEENDET!
                 Toast toast = new Toast(getActivity());
-                toast.setGravity(Gravity.BOTTOM, 0, 0);
+                toast.setGravity(Gravity.BOTTOM, 0, 110);
                 toast.setDuration(Toast.LENGTH_SHORT);
                 toast.setView(layout);
                 toast.show();
+
+
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
                 for(int i=anzahl; i < arraySize; i+=1){
                     planEinheit = new String[][]{
                             meinPlan[i][0], // Uebungsname
                             meinPlan[i][1]  // Satzzahl dazu
                     };
-                    table_layout_plan1.removeAllViews(); //clear View
-
-                    BuildTable(planEinheit[1].length - 1, 2, planEinheit); // ... ZEILEN, SPALTEN, DATA
+                    // clear View
+                    table_layout_plan1.removeAllViews();
+                    //BuildTable(planEinheit[1].length - 1, 2, planEinheit);    // ... ZEILEN, SPALTEN, DATA
+                    BuildTable(planEinheit[1].length, 2, planEinheit);          // ... ZEILEN, SPALTEN, DATA
+                    // nächster Trainings Einheit / Trainings-Tag
                     anzahl += 1;
+
                     //Wenn alle Trainingseinheiten gemacht wurden => von neu beginnen
                     if ( anzahl == arraySize ) anzahl = 0;
                     break;
                 }
-
-                /*
-                switch (anzahl) {
-                    case 0:
-                        planEinheit = new String[][]{meinPlan[1][0],meinPlan[1][1]};
-
-                        table_layout_plan1.removeAllViews();
-                        BuildTable(planEinheit[0].length-1, 2, planEinheit);
-                        break;
-                    case 1:
-                        planEinheit = new String[][]{meinPlan[2][0],meinPlan[2][1]};
-
-                        table_layout_plan1.removeAllViews();
-                        BuildTable(planEinheit[0].length-1, 2, planEinheit);
-                        break;
-                    default:
-                        //Von neu beginnen:
-                        anzahl = -1; //weils unten erhöht wird und case nicht bei 0 beginnt sondern bei 1 !
-                        planEinheit = new String[][]{meinPlan[0][0], meinPlan[0][1]};
-
-                        table_layout_plan1.removeAllViews();
-                        BuildTable(planEinheit[0].length-1, 2, planEinheit);
-                        break;
-                }*/
-                //anzahl++;
             }
+
+
         });
+
 
         // LOGS
         Log.d("TrainingsFragment:", "Aktuell eingeloggter USER:" + name);
-        Log.d("TrainingsFragment:Attribut:meinPlan:", Arrays.deepToString(this.meinPlan));
+        Log.d("TF:Attribut:meinPlan:", Arrays.deepToString(this.meinPlan));
         Log.d("Array:", "rows" + this.meinPlan[0].length + "\n" + "cols:" + this.meinPlan[1].length);
 
         return rootView;
@@ -289,27 +278,27 @@ public class TraningsFragment extends Fragment {
         if(ziel.equals(allgemeineFitness)){
             tp.set_ziel(new AllgemeineFitness());
             tp.getPlan(frequenz, erfahrung);
-            Log.d("TrainingsFragment:- AllgemeineFitness -", Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
+            Log.d("TF:- AllgemeineFitness-", Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // AUSDAUER
         else if (ziel.equals(ausdauer)) {
             tp.set_ziel(new Ausdauer());
             this.meinPlan = tp.getPlan(frequenz, erfahrung);
-            Log.d("TrainingsFragment:- Ausdauer -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
+            Log.d("TF:- Ausdauer -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // GEWICHTSVERLUST
         else if (ziel.equals(gewichtsverlust)) {
             tp.set_ziel(new Gewichtsverlust());
             this.meinPlan = tp.getPlan(frequenz, erfahrung);
-            Log.d("TrainingsFragment:- Gewichtsverlust -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
+            Log.d("TF:- Gewichtsverlust -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // MASSEAUFBAU
         else if (ziel.equals(masseaufbau)) {
             tp.set_ziel(new MasseMuskelaufbau());
             this.meinPlan = tp.getPlan(frequenz, erfahrung);
-            Log.d("TrainingsFragment:- MasseMuskelaufbau -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
+            Log.d("TF:- MasseMuskelaufbau-",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // RUECKEN STAERKUNG
         else if (ziel.equals(rueckenStaerkung)) {
             tp.set_ziel(new Rueckenstaerkung());
             this.meinPlan = tp.getPlan(frequenz, erfahrung);
-            Log.d("TrainingsFragment:- Rueckenstaerkung -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
+            Log.d("TF:- Rueckenstaerkung -",  Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } else {
             // Kein Plan gefunden ERROR
             Log.d("holePassendenPlan():", "Kein Plan gefunden!");
