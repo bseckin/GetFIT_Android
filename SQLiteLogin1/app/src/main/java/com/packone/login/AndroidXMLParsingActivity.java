@@ -25,14 +25,13 @@ public class AndroidXMLParsingActivity extends ListActivity {
 	static final String URL = "http://fddb.info/api/v12/search/item_short.xml?lang=de";
 	// XML node keys
     static final String SEARCHED_ITEM = "&q=egg";
-	static final String KEY_RESULT = "result"; // parent node
-    static final String KEY_ITEM = "items";
     static final String KEY_SHORTITEM = "shortitem";
-	//static final String KEY_AMOUNT = "amount";
-    static final String KEY_DESCRIPTION = "description";
 	static final String KEY_NAME = "name";
     static final String KEY_KJ = "kj";
     static final String KEY_KCAL = "kcal";
+    static final String KEY_FAT = "fat_gram";
+    static final String KEY_PROT = "protein_gram";
+    static final String KEY_KH = "kh_gram";
     static final String API_KEY = "&apikey=5U92BAMH4Z3QK6TXVBU3EQ0N";
 
 	@Override
@@ -51,7 +50,6 @@ public class AndroidXMLParsingActivity extends ListActivity {
 		Document doc = parser.getDomElement(xml); // getting DOM element
 
 		NodeList nl = doc.getElementsByTagName(KEY_SHORTITEM);
-        NodeList nlName = doc.getElementsByTagName(KEY_DESCRIPTION);
 
         if(nl != null && nl.getLength() > 0) {
             // looping through all item nodes <item>
@@ -63,6 +61,9 @@ public class AndroidXMLParsingActivity extends ListActivity {
                 map.put(KEY_NAME, parser.getCharacterDataFromElement(e, KEY_NAME));
                 map.put(KEY_KJ, parser.getValue(e, KEY_KJ));
                 map.put(KEY_KCAL, parser.getValue(e, KEY_KCAL));
+                map.put(KEY_FAT, parser.getValue(e, KEY_FAT));
+                map.put(KEY_PROT, parser.getValue(e, KEY_PROT));
+                map.put(KEY_KH, parser.getValue(e, KEY_KH));
 
 
                 // adding HashList to ArrayList
@@ -73,8 +74,8 @@ public class AndroidXMLParsingActivity extends ListActivity {
 		// Adding menuItems to ListView
 		ListAdapter adapter = new SimpleAdapter(this, menuItems,
 				R.layout.listen_item,
-				new String[] { KEY_NAME, KEY_KJ, KEY_KCAL }, new int[] {
-						R.id.name, R.id.kj, R.id.kcal });
+				new String[] { KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH }, new int[] {
+						R.id.name, R.id.kj, R.id.kcal, R.id.fat_gram, R.id.protein_gram, R.id.kh_gram });
 
 		setListAdapter(adapter);
 
@@ -90,12 +91,18 @@ public class AndroidXMLParsingActivity extends ListActivity {
 				String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
 				String kj = ((TextView) view.findViewById(R.id.kj)).getText().toString();
 				String kcal = ((TextView) view.findViewById(R.id.kcal)).getText().toString();
+                String fat_gram = ((TextView) view.findViewById(R.id.fat_gram)).getText().toString();
+                String protein_gram = ((TextView) view.findViewById(R.id.protein_gram)).getText().toString();
+                String kh_gram = ((TextView) view.findViewById(R.id.kh_gram)).getText().toString();
 				
 				// Starting new intent
 				Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
 				in.putExtra(KEY_NAME, name);
 				in.putExtra(KEY_KJ, kj);
 				in.putExtra(KEY_KCAL, kcal);
+                in.putExtra(KEY_FAT, fat_gram);
+                in.putExtra(KEY_PROT, protein_gram);
+                in.putExtra(KEY_KH, kh_gram);
 				startActivity(in);
 
 			}

@@ -24,21 +24,24 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <TextView
+            <!-- Cost Label -->
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#5d5d5d"
                 android:gravity="left"
                 android:textStyle="bold"
                 android:text="KJ: " >
-        </TextView>
-        <TextView
-            android:id="@+id/kj"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#acacac"
-            android:paddingBottom="2dip">
-        </TextView>
+            </TextView>
+            <!-- Price Label -->
+            <TextView
+                android:id="@+id/kj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:textStyle="bold"
+                android:gravity="left">
+            </TextView>
         </LinearLayout>
         <!-- Linear layout for cost and price Cost: Rs.100 -->
         <LinearLayout
@@ -65,6 +68,81 @@
             android:gravity="left">
         </TextView>
         </LinearLayout>
+        <!-- -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Cost Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Fett: " >
+            </TextView>
+            <!-- Price Label -->
+            <TextView
+                android:id="@+id/fat_gram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:textStyle="bold"
+                android:gravity="left">
+            </TextView>
+        </LinearLayout>
+        <!-- -->
+    <!-- -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Cost Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Protein: " >
+        </TextView>
+        <!-- Price Label -->
+        <TextView
+            android:id="@+id/protein_gram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#acacac"
+            android:textStyle="bold"
+            android:gravity="left">
+        </TextView>
     </LinearLayout>
-
+    <!-- -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Cost Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Kohlenhydrate: " >
+            </TextView>
+            <!-- Price Label -->
+            <TextView
+                android:id="@+id/kh_gram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:textStyle="bold"
+                android:gravity="left">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

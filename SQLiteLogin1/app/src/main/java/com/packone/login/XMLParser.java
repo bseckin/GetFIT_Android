@@ -114,6 +114,12 @@ public class XMLParser {
 			return this.getElementValue(n.item(0));
 		}
 
+    /**
+     * Getting C-DATA
+     * @param e
+     * @param str
+     * @return
+     */
     public String getCharacterDataFromElement(Element e, String str) {
         NodeList n = e.getElementsByTagName(str);
         Element e1=(Element) n.item(0);
