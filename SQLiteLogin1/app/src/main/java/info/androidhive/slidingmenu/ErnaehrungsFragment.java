@@ -573,7 +573,6 @@ public class ErnaehrungsFragment extends Fragment {
 
     private int calculateSumKcal(List<Integer> a) {
         int result = 0;
-
         for (int i = 0; i <= a.size(); i++) {
             result += a.get(i);
         }
@@ -589,20 +588,21 @@ public class ErnaehrungsFragment extends Fragment {
         String[][] food_amount_list = a;
         List<Integer> durchschnitt = new ArrayList<Integer>();
 
+        for (int i = 0; i <= food_amount_list[0].length; i++) {
+            List<Food> x = db.getFood(food_amount_list[0][i]);
+            for (Food fd : x) {
+                kcal_db = fd.get_kcal();
+            }
+            durchschnitt.add(calculateKcal(kcal_db, Integer.parseInt(a[1][i])) * Integer.parseInt(food_amount_list[2][i]));
+        }
+
         // Hier holen wir die kcal aus der datenbank und speichern diese in eine ArrayListe
         // indem wir die kcalorien mit der menge multiplizieren um den exacten kalorienwert zu ermitteln
         // z.B. 50g * 1.3 -> schokolade
         while (this.kcal <= calculateSumKcal(durchschnitt)) {
 
             if (zaehler == 0) {
-                for (int i = 0; i <= food_amount_list[0].length; i++) {
 
-                    List<Food> x = db.getFood(food_amount_list[0][i]);
-                    for (Food fd : x) {
-                        kcal_db = fd.get_kcal();
-                    }
-                    durchschnitt.add(calculateKcal(kcal_db, Integer.parseInt(a[1][i])) * Integer.parseInt(food_amount_list[2][i]));
-                }
 
                 int max = durchschnitt.get(0);
 

@@ -2,88 +2,88 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e1bf718fbedbd45453661ce19f517a5005f4352e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-08867f014a4389c69f87de678b3687abb3c20a41.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-94e8a2575e8eebe12fe57587ff4585db1e68a0d5.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-3b32f94d20abbf5045f09c4ecad0bbf9e8298fc2.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\mail.jar"
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\mail.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="428e267abff0d10802ccde86b915da2c20471160">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\mail-91dc80de44299d7a98a70a4e7b88f39c2a463d84.jar" />
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\mail-9ffadac427ade8f21c93c1cda7c19adabf46f526.jar" />
     </item>
     <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.github.markushi\circlebutton\1.1\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-0b671130475dae77f7dd66215ad4d4af56ac5406.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\jxl-2.6.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="74e55eae5ef7d003167a459965b99239ac6e6b02">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\jxl-2.6-a8328ed792ff78d5e00b19a626c34bc4e8e2523c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Desktop\5BHIT\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ab6130921f9a2dc395d87868f679c2f4efa6ec97.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-130497dac7a128a693c10b83db83a213fe0e6cc0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-bf3e8e89d2596a304b9745352c8bdebc359f83b3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\additionnal.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\additionnal-5929cf5cc6af08147ef2093d425e4b5defa85362.jar" />
-    </item>
-    <item
-        jar="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\activation.jar"
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\activation.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
-        <dex dex="C:\Users\Berkay\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\activation-e6c9ec526e443ae0d5200085fb81f2c70519f362.jar" />
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\activation-16774873928f65f3e530100c6b9e4e479c06719a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-805a684244987d6218ebcfb3054905e0cb0735c7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-8c5305b46ce5f82c201a7bef38a94aefa77d2c70.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.github.markushi\circlebutton\1.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-6063be6ea8cf3a7711743e1b429973ca66604b0e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\jxl-2.6.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="74e55eae5ef7d003167a459965b99239ac6e6b02">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\jxl-2.6-961d89ff5d2e4c06ae44dac57d89173af47aec86.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-bed37eb9ca26310f1f61b9eef91531ff411c066b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\additionnal.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\additionnal-7c646687f482e535f94e796c658e0681d4e64cb8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-0cf1b604965eb4321b279804a1eb5245742dafac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-add07993d13a0a417da3395d438c32f678c8e1ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-8281301af62c596ea47c70b74a5840cdc2efabfb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-e77d88c5dc46bafc5fba5e27283c9bafc2e78547.jar" />
     </item>
 
 </items>
