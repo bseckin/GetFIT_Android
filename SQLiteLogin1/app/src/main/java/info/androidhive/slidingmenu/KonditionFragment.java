@@ -19,7 +19,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
     private boolean timerHasStarted = false;
     private Button startB;
     public TextView text;
-    private final long startTime = 60*2 * 1000;
+    private final long startTime = 60*1* 1000;
     private long hours = 0;
     private long sek = 0;
     private final long interval = 1 * 1000;
@@ -53,8 +53,10 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
     public class MyCountDownTimer extends CountDownTimer {
         private ProgressBar progress;
-        private long totaltime = 60*2 * 1000;
-        private int proz = 0;
+        private long totaltime = 60*1;
+        private double proz = 0;
+        private String sekstr = "";
+        private String hourstr = "";
         public MyCountDownTimer(long startTime, long interval) {
             super(startTime, interval);
         }
@@ -66,16 +68,34 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
         @Override
         public void onTick(long millisUntilFinished) {
-            if((millisUntilFinished/1000)/60 >= 1){
+            if((millisUntilFinished/1000)/60 > 1){
                 hours = (long)(millisUntilFinished/1000)/60;
-                sek = (millisUntilFinished%60);
+                sek = ((millisUntilFinished/1000)%60);
+            }else if((millisUntilFinished/1000)/60 <= 1){
+                hours = (long)(millisUntilFinished/1000)/60;
+                sek = ((millisUntilFinished/1000)%60);
             }
-            this.proz = (int) ((100/this.totaltime)*(millisUntilFinished));
-            text.setText("" + hours+":"+millisUntilFinished);
+            double zaehler = (millisUntilFinished/1000);
+            double x = 100.0/60.0;
+            this.proz = (x * zaehler);
+            /**hourstr = String.valueOf(hours);
+
+            this.proz = (x * zaehler);
+            if (sek < 10){
+                sekstr = "0"+sek;
+                text.setText("" + hourstr+":"+sekstr);
+            } else if(hours < 10){
+                hourstr = "0"+hours;
+                text.setText("" + hourstr+":"+sekstr);
+            } else if(hours >=10){*/
+                text.setText("" + hours+":"+sek);
+            //}
+
             //Progressbar wird resettet
 
             this.progress = (ProgressBar) rootView.findViewById(R.id.fat_prog);
-            this.progress.setProgress(proz);
+
+            this.progress.setProgress((int) this.proz);
         }
     }
 

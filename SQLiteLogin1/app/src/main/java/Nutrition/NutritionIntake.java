@@ -11,8 +11,6 @@ public class NutritionIntake {
     private int _height;
     private int _age;
 
-
-
     private float fett;
     private float carbs;
     private float protein;
