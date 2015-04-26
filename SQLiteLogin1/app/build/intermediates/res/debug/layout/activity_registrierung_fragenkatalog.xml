@@ -220,36 +220,72 @@
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"/>
-            <RadioGroup
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#508F99"
-                android:id="@+id/rg_frage6">
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Endomorph"
-                    android:id="@+id/radBtn_Endomorph"
-                    android:textSize="12sp"
-                    android:checked="false"
-                    />
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ectomorph"
-                    android:id="@+id/radBtn_Ectomorph"
-                    android:textSize="12sp"
-                    android:checked="false"
-                    />
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Mesomorph"
-                    android:id="@+id/radBtn_Mesomorph"
-                    android:textSize="12sp"
-                    android:checked="false"
-                    />
-            </RadioGroup>
+                android:layout_height="fill_parent">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="#508F99"
+                    android:id="@+id/rg_frage6"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:text="Endomorph"
+                        android:id="@+id/radBtn_Endomorph"
+                        android:textSize="12sp"
+                        android:checked="false"
+                        />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ectomorph"
+                        android:id="@+id/radBtn_Ectomorph"
+                        android:textSize="12sp"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mesomorph"
+                        android:id="@+id/radBtn_Mesomorph"
+                        android:textSize="12sp"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/endomorph" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/ectomorph" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/mesomorph" />
+                </LinearLayout>
+
+            </LinearLayout>
 
             <!-- Frage 5 -->
             <TextView
@@ -290,4 +326,4 @@
             />
 
     </LinearLayout>
-</ScrollView><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
+</ScrollView><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml -->
