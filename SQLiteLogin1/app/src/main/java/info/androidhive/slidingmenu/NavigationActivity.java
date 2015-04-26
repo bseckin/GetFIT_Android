@@ -150,7 +150,7 @@ public class NavigationActivity extends Activity {
             displayView(position);
         }
     }
-    /**
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
@@ -171,9 +171,6 @@ public class NavigationActivity extends Activity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    */
-    /* *
-     * Called when invalidateOptionsMenu() is triggered
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
@@ -182,7 +179,7 @@ public class NavigationActivity extends Activity {
         menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
-    */
+
     /**
      * Diplaying fragment view for selected nav drawer list item
      */

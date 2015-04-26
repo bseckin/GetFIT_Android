@@ -2,7 +2,8 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".MainActivity" >
+                tools:context=".MainActivity"
+    android:background="@drawable/matte_hdpi">
 
     <fragment
         android:id="@+id/country_fragment"
@@ -10,4 +11,4 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
-</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_uebungen.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_uebungen.xml -->

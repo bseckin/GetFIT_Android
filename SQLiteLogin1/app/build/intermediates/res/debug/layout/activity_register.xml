@@ -35,7 +35,7 @@
                 android:id="@+id/view_uname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username: "
+                android:text="@string/register_username"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
@@ -48,7 +48,6 @@
                 android:id="@+id/view_pword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password: "
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_gravity="center_vertical"
                 android:layout_below="@+id/view_uname"
@@ -58,13 +57,13 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
-                android:textColor="#fffbfff4" />
+                android:textColor="#fffbfff4"
+                android:text="@string/register_password" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Größe: "
                 android:id="@+id/view_height"
                 android:layout_below="@+id/view_pword"
                 android:layout_alignRight="@+id/view_pword"
@@ -72,13 +71,13 @@
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
-                android:textColor="#fffbfff4" />
+                android:textColor="#fffbfff4"
+                android:text="@string/register_groeße" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Gender: "
                 android:id="@+id/view_gender"
                 android:layout_below="@+id/view_height"
                 android:layout_alignRight="@+id/view_uname"
@@ -86,7 +85,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
-                android:textColor="#fffbfff4" />
+                android:textColor="#fffbfff4"
+                android:text="@string/register_gender" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -131,6 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:ems="10"
+                android:maxLength="15"
                 android:inputType="text|textPersonName"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -141,6 +142,7 @@
                 android:textColor="#fff"
                 android:id="@+id/pword"
                 android:layout_below="@+id/uname"
+                android:maxLength="15"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
@@ -154,6 +156,7 @@
                 android:textColor="#fff"
                 android:id="@+id/height"
                 android:inputType="number"
+                android:maxLength="3"
                 android:layout_below="@+id/pword"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -169,8 +172,6 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/height"
                 android:layout_marginTop="10dp">
-
-
 
                 <RadioButton
                     android:id="@+id/radBtn_Woman"
@@ -199,7 +200,7 @@
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/gender"
-                android:max="100"
+                android:max="150"
                 android:progress="0"
                 android:progressDrawable="@drawable/progressbar"
                 android:secondaryProgress="0"
@@ -208,7 +209,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:indeterminate="false"
-                />
+                android:layout_toLeftOf="@+id/weight"
+                android:layout_toStartOf="@+id/weight" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -221,10 +223,12 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="5dp"
-                android:inputType="textEmailAddress"/>
+                android:text="MaxMustermann@hotmail.com"
+                android:inputType="textEmailAddress"
+                android:enabled="false" />
 
             <EditText
-                android:layout_width="30dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:text="0"
@@ -235,7 +239,7 @@
                 android:paddingBottom="5dp"
                 android:layout_alignRight="@+id/email"
                 android:layout_alignEnd="@+id/email"
-                />
+                android:layout_marginRight="20dp" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -244,7 +248,7 @@
         android:layout_height="fill_parent">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrieren"
             android:id="@+id/breg"
@@ -256,8 +260,10 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="false"
             android:textSize="20sp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_gravity="center" />
 
     </FrameLayout>
 </LinearLayout>
-<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->
+<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_register.xml -->

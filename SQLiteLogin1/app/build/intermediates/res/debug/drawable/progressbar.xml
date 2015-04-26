@@ -3,7 +3,7 @@
 
     <item android:id="@android:id/background">
         <shape android:shape="rectangle" >
-            <corners android:radius="5dp" />
+            <corners android:radius="20dp" />
 
             <gradient
                 android:angle="270"
@@ -36,4 +36,4 @@
         </clip>
     </item>
 
-</layer-list><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/drawable/progressbar.xml -->
+</layer-list><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/drawable/progressbar.xml -->
