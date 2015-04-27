@@ -3,7 +3,7 @@
 
     <item android:id="@android:id/background">
         <shape android:shape="rectangle" >
-            <corners android:radius="5dp" />
+            <corners android:radius="20dp" />
 
             <gradient
                 android:angle="270"

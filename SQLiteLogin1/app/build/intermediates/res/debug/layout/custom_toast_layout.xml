@@ -11,13 +11,19 @@
         android1:id="@+id/imageView1"
         android1:layout_width="wrap_content"
         android1:layout_height="match_parent"
-        android1:src="@drawable/ic_whats_hot" />
+        android1:src="@drawable/ic_whats_hot"
+        android:layout_weight="1" />
 
     <TextView
         android1:id="@+id/textView1"
         android1:layout_width="wrap_content"
         android1:layout_height="match_parent"
         android1:text="Gratulation - Weiter so!"
-        android1:textAppearance="?android:attr/textAppearanceMedium" />
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffffff"
+        android:layout_weight="2"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
 </LinearLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/custom_toast_layout.xml -->

@@ -53,8 +53,10 @@ ADDED from AndroidManifest.xml:19:5
 		ADDED from AndroidManifest.xml:20:9
 uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:23:5
-	android:name
+	android:minSdkVersion
 		ADDED from AndroidManifest.xml:23:22
+	android:name
+		ADDED from AndroidManifest.xml:23:48
 application
 ADDED from AndroidManifest.xml:26:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
@@ -137,11 +139,23 @@ ADDED from AndroidManifest.xml:68:9
 		ADDED from AndroidManifest.xml:70:13
 	android:name
 		ADDED from AndroidManifest.xml:69:13
+activity#com.packone.login.AndroidXMLParsingActivity
+ADDED from AndroidManifest.xml:74:9
+	android:label
+		ADDED from AndroidManifest.xml:75:13
+	android:name
+		ADDED from AndroidManifest.xml:76:13
+activity#com.packone.login.SingleMenuItemActivity
+ADDED from AndroidManifest.xml:80:9
+	android:label
+		ADDED from AndroidManifest.xml:81:13
+	android:name
+		ADDED from AndroidManifest.xml:82:13
 activity#uebungsliste.BauchUebungen_Activity
-ADDED from AndroidManifest.xml:72:9
+ADDED from AndroidManifest.xml:86:9
 	android:name
-		ADDED from AndroidManifest.xml:72:19
+		ADDED from AndroidManifest.xml:86:19
 activity#uebungsliste.BrustUebungen_Activity
-ADDED from AndroidManifest.xml:73:9
+ADDED from AndroidManifest.xml:87:9
 	android:name
-		ADDED from AndroidManifest.xml:73:19
+		ADDED from AndroidManifest.xml:87:19

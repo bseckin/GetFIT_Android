@@ -99,6 +99,12 @@
     <string name="prompt_password">Password</string>
     <!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="register_email">Email:</string>
+    <string name="register_gender">Gender:</string>
+    <string name="register_gewicht">Gewicht:</string>
+    <string name="register_groeße">Größe:</string>
+    <string name="register_password">Password:</string>
+    <string name="register_username">Username:</string>
     <string name="ruecken">Rückenstärkung – Kräftigung des Rückens</string>
     <string name="title_activity_bodytype">BodytypeActivity</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>

@@ -19,8 +19,9 @@ public class Rueckenstaerkung implements IZiel {
             Dieser Plan ist von LOOX:
             "RÜCKENKRÄFTIGUNG - RÜCKEN FIT" - Johannes Luckas
              */
-            String[][][] plan = {{
+            String[][][] plan = {
                     {
+                        {
                             "Kreuzheben",
                             "Ruderzugmaschine",
                             "Butterfly Reverse",
@@ -28,8 +29,8 @@ public class Rueckenstaerkung implements IZiel {
                             "Latzugmaschine",
                             "Beinpresse",
                             "Beinheben/Crunches",
-                    },
-                    {
+                        },
+                        {
                             "3",
                             "2",
                             "2",
@@ -37,8 +38,29 @@ public class Rueckenstaerkung implements IZiel {
                             "2",
                             "2",
                             "2",
+                        }
+                    },
+                    {
+                        {
+                                    "Kreuzheben",
+                                    "Ruderzugmaschine",
+                                    "Butterfly Reverse",
+                                    "Brustpresse",
+                                    "Latzugmaschine",
+                                    "Beinpresse",
+                                    "Beinheben/Crunches",
+                        },
+                        {
+                                    "3",
+                                    "2",
+                                    "2",
+                                    "2",
+                                    "2",
+                                    "2",
+                                    "2",
+                        }
                     }
-            }};
+            };
             return plan;
         } else if ( frequenz == 3 ) { //3x pro Woche
             /*
@@ -46,8 +68,10 @@ public class Rueckenstaerkung implements IZiel {
             "RÜCKENKRÄFTIGUNG - RÜCKEN FIT" - Johannes Luckas
              */
 
-            String[][][] plan = {{
+            String[][][] plan = {
+                    // 1te Einheit
                     {
+                        {
                             "Ruderzugmaschine",
                             "Butterfly Reverse",
                             "Brustpresse",
@@ -56,8 +80,8 @@ public class Rueckenstaerkung implements IZiel {
                             "Reverse Crunch",
                             "Bauchmaschine",
                             "Rückenstrecker"
-                    },
-                    {
+                        },
+                        {
                             "2",
                             "2",
                             "2",
@@ -66,8 +90,53 @@ public class Rueckenstaerkung implements IZiel {
                             "2",
                             "2",
                             "2"
+                        }
+                    },
+                    // 2te Einheit
+                    {
+                        {
+                            "Kreuzheben",
+                            "Ruderzugmaschine",
+                            "Butterfly Reverse",
+                            "Brustpresse",
+                            "Latzugmaschine",
+                            "Beinpresse",
+                            "Beinheben/Crunches",
+                        },
+                        {
+                            "3",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                        }
+                    },
+                    // 3te Einheit
+                    {
+                        {
+                            "Ruderzugmaschine",
+                            "Butterfly Reverse",
+                            "Brustpresse",
+                            "Latzugmaschine eng/weiter Griff",
+                            "Beinpresse",
+                            "Reverse Crunch",
+                            "Bauchmaschine",
+                            "Rückenstrecker"
+                        },
+                        {
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2"
+                        }
                     }
-            }};
+            };
             // Plan zurückgeben
             return plan;
         } else if ( frequenz >= 4 ) { //3x pro Woche

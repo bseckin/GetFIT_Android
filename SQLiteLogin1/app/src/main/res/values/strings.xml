@@ -77,6 +77,12 @@
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
     <string name="title_activity_nutrition">NutritionActivity</string>
     <string name="title_activity_bodytype">BodytypeActivity</string>
+    <string name="register_username">Username:</string>
+    <string name="register_password">Password:</string>
+    <string name="register_groeße">Größe:</string>
+    <string name="register_gender">Gender:</string>
+    <string name="register_gewicht">Gewicht:</string>
+    <string name="register_email">Email:</string>
 
 
 </resources>
