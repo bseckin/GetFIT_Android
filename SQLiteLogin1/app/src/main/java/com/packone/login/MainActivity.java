@@ -123,7 +123,7 @@ public class MainActivity extends Activity {
         TextView bhelp = (TextView) findViewById(R.id.btnhelp);
         bhelp.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MenuWithFABActivity.class);
+                Intent intent = new Intent(MainActivity.this, HelpActivity.class);
                 startActivity(intent);
 
             }
