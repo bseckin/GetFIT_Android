@@ -46,7 +46,7 @@
         <item>Ernährung</item>
         <item>Kondition</item>
         <item>Übungen</item>
-        <item>Mein Konto</item>
+        <item>Lebensmittel</item>
         <item>Über GetFIT</item>
     </string-array>
 
@@ -58,7 +58,7 @@
         <item>@drawable/ic_photos</item>
         <item>@drawable/ic_communities</item>
         <item>@drawable/ic_pages</item>
-        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/nutrition_icon</item>
     </array>
 
     <!-- Content Description -->
