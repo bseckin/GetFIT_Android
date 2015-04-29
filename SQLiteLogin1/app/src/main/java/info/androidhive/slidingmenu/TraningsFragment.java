@@ -15,21 +15,21 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.packone.login.Contact;
-import com.packone.login.DatabaseHandler;
+import com.packone.login.database.Contact;
+import com.packone.login.database.DatabaseHandler;
 import com.packone.login.GlobalClass;
 import com.packone.login.R;
-import com.packone.login.Trainingsplan;
+import trainingsplan.Trainingsplan;
 
 import java.util.Arrays;
 import java.util.Calendar;
 
 import at.markushi.ui.CircleButton;
-import trainingsplan.AllgemeineFitness;
-import trainingsplan.Ausdauer;
-import trainingsplan.Gewichtsverlust;
-import trainingsplan.MasseMuskelaufbau;
-import trainingsplan.Rueckenstaerkung;
+import trainingsplan.strategy.AllgemeineFitness;
+import trainingsplan.strategy.Ausdauer;
+import trainingsplan.strategy.Gewichtsverlust;
+import trainingsplan.strategy.MasseMuskelaufbau;
+import trainingsplan.strategy.Rueckenstaerkung;
 
 
 public class TraningsFragment extends Fragment {

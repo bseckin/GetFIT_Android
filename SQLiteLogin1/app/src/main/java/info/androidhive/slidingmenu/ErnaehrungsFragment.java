@@ -14,10 +14,10 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.packone.login.Contact;
-import com.packone.login.DatabaseHandler;
-import com.packone.login.ErnaehrungActivity;
-import com.packone.login.Food;
+import com.packone.login.database.Contact;
+import com.packone.login.database.DatabaseHandler;
+import ernaehrung.ErnaehrungActivity;
+import com.packone.login.database.Food;
 import com.packone.login.GlobalClass;
 import com.packone.login.R;
 
@@ -25,11 +25,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Nutrition.NutritionIntake;
-import ernaehrung.AErnaehrung;
-import ernaehrung.Ectomorph;
-import ernaehrung.Endomorph;
-import ernaehrung.Ernaehrungsplan;
-import ernaehrung.Mesomorph;
+import ernaehrung.factory.AErnaehrung;
+import ernaehrung.factory.Ectomorph;
+import ernaehrung.factory.Endomorph;
+import ernaehrung.factory.Ernaehrungsplan;
+import ernaehrung.factory.Mesomorph;
 
 public class ErnaehrungsFragment extends Fragment {
 
