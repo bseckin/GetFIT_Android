@@ -37,7 +37,8 @@
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="14dp"
-            android:background="#ffffffff"/>
+            android:background="@drawable/rounded_edit"
+            />
 
         <EditText
             android:layout_width="200dp"
@@ -51,11 +52,11 @@
             android:textSize="15sp"
             android:textColor="#ff000000"
             android:textAlignment="center"
-            android:background="#ffffffff"
             android:hint=" *****"
             android:layout_below="@+id/loguname"
             android:layout_marginTop="14dp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_edit"/>
 
         <Button
             android:layout_width="wrap_content"
