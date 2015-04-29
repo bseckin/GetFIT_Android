@@ -29,47 +29,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.packone.login" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java" line="104" />
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java" line="120" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff2cb38e-13c9-42ed-9ab6-e2e0de00560c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\Contact.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\DatabaseHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\ErnaehrungActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\Exercise.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\Food.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\Fragenkatalog.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\HelpActivity.java" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\MenuWithFABActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\RegisterActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\RegistrierungFragenkatalogActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\Trainingsplan.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\AErnaehrung.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\DefiEcto.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\DefiEndo.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\DefiMeso.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\Ectomorph.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\Endomorph.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\Ernaehrungsplan.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\MasseEcto.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\MasseEndo.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\MasseMeso.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\ernaehrung\Mesomorph.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\trainingsplan\AllgemeineFitness.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\trainingsplan\Ausdauer.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\trainingsplan\Gewichtsverlust.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\trainingsplan\IZiel.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\trainingsplan\MasseMuskelaufbau.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\trainingsplan\Rueckenstaerkung.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/ErnaehrungsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/ErnaehrungsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/NavigationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/NavigationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/TraningsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/TraningsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/help.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/help.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_ernaehrung.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_ernaehrung.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/registrierung_fragenkatalog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/registrierung_fragenkatalog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/packone/login/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/packone/login/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SQLiteLogin1.iws" />
@@ -124,133 +93,141 @@
     <favorites_list name="SQLiteLogin1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ErnaehrungActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23216996" vertical-offset="1683" max-vertical-offset="2771">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding>
-                <element signature="e#3739#3807#0" expanded="true" />
-                <element signature="e#3845#3913#0" expanded="true" />
-                <element signature="e#3956#4032#0" expanded="true" />
-                <element signature="e#4077#4155#0" expanded="true" />
-                <element signature="e#4191#4259#0" expanded="true" />
-                <element signature="e#4299#4372#0" expanded="true" />
-                <element signature="e#4421#4504#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_home.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.185185" vertical-offset="748" max-vertical-offset="1479">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_ernaehrung.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ernaehrung.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.074074" vertical-offset="0" max-vertical-offset="408">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-              <folding>
-                <element signature="e#271#306#0" expanded="true" />
-                <element signature="e#332#367#0" expanded="true" />
-                <element signature="e#391#424#0" expanded="true" />
-                <element signature="e#451#484#0" expanded="true" />
-                <element signature="e#648#669#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_ernaehrung.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ernaehrung.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.851852" vertical-offset="0" max-vertical-offset="4896">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/HomeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProgressActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/ProgressActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleMenuItemActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/SingleMenuItemActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1020">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoalActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/GoalActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalClass.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/GlobalClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragenkatalog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/database/Fragenkatalog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ErnaehrungActivity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="2771">
+                  <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#3739#3807#0" expanded="true" />
+                    <element signature="e#3845#3913#0" expanded="true" />
+                    <element signature="e#3956#4032#0" expanded="true" />
+                    <element signature="e#4077#4155#0" expanded="true" />
+                    <element signature="e#4191#4259#0" expanded="true" />
+                    <element signature="e#4299#4372#0" expanded="true" />
+                    <element signature="e#4421#4504#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fragment_cardio.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cardio.xml">
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fragment_kondition.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml">
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1292">
+                  <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="2142">
+                  <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomeFragment.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/HomeFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NavigationActivity.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/NavigationActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.43005952" vertical-offset="2635" max-vertical-offset="4607">
+                  <caret line="201" column="32" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GoalActivity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/GoalActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+                  <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GlobalClass.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/GlobalClass.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="KonditionFragment.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.34077382" vertical-offset="1402" max-vertical-offset="2074">
+                  <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1758#1759#0" expanded="true" />
+                    <element signature="e#1785#1786#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1981,7 +1958,6 @@
         <option value="$PROJECT_DIR$/library/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/MenuWithFABActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/ErnaehrungsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_ernaehrungs_plan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/ErnaehrungsPlanFragment.java" />
@@ -1993,6 +1969,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/HomeFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/database/Fragenkatalog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/NavigationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java" />
       </list>
     </option>
   </component>
@@ -2004,8 +1985,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -2149,6 +2132,28 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slidingmenu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ernaehrung" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2248,7 +2253,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values" />
     <property name="SearchEverywhereHistoryKey" value="3&#9;ACTION&#9;ExpandAllToLevel3" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="134" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="203" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="444" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/packone/login" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -2466,12 +2471,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327787" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31813246" sideWeight="0.68152034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31161782" sideWeight="0.6795544" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2479,16 +2484,16 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33224756" sideWeight="0.68152034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33224756" sideWeight="0.68136555" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651933" sideWeight="0.6818182" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651933" sideWeight="0.3181818" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22584148" sideWeight="0.68136555" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22584148" sideWeight="0.3179232" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21108742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08222222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.039445627" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5407654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2621,32 +2626,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_uebungen.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37037036" vertical-offset="0" max-vertical-offset="0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -2714,17 +2693,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="816">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -2801,17 +2769,6 @@
       </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -2945,14 +2902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/NavigationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12839879" vertical-offset="2890" max-vertical-offset="4607">
-          <caret line="194" column="22" selection-start-line="194" selection-start-column="22" selection-end-line="194" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3851964" vertical-offset="0" max-vertical-offset="662">
@@ -2965,14 +2914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0015106" vertical-offset="0" max-vertical-offset="1921">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -3026,21 +2967,11 @@
         <state vertical-scroll-proportion="-10.074074" vertical-offset="0" max-vertical-offset="408">
           <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
-            <element signature="e#271#306#0" expanded="true" />
-            <element signature="e#332#367#0" expanded="true" />
-            <element signature="e#391#424#0" expanded="true" />
-            <element signature="e#451#484#0" expanded="true" />
-            <element signature="e#648#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#271#306#0" expanded="false" />
+            <element signature="e#332#367#0" expanded="false" />
+            <element signature="e#391#424#0" expanded="false" />
+            <element signature="e#451#484#0" expanded="false" />
+            <element signature="e#648#669#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3085,9 +3016,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cardio.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="816">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23216996" vertical-offset="1683" max-vertical-offset="2771">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="2771">
           <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
             <element signature="e#3739#3807#0" expanded="true" />
@@ -3097,6 +3071,36 @@
             <element signature="e#4191#4259#0" expanded="true" />
             <element signature="e#4299#4372#0" expanded="true" />
             <element signature="e#4421#4504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="2142">
+          <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/NavigationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43005952" vertical-offset="2635" max-vertical-offset="4607">
+          <caret line="201" column="32" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/androidhive/slidingmenu/KonditionFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.34077382" vertical-offset="1402" max-vertical-offset="2074">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
           </folding>
         </state>
       </provider>

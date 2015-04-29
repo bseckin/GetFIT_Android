@@ -39,5 +39,33 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:text="Start" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTimer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="60"
+        android:layout_alignLeft="@+id/timer"
+        android:layout_alignStart="@+id/timer"
+        android:textSize="28dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zeit:"
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28dp"
+        android:layout_toLeftOf="@+id/editTimer"
+        android:layout_toStartOf="@+id/editTimer"
+        android:textColor="#ffffffff"
+        android:layout_alignBottom="@+id/editTimer"
+        android:gravity="center" />
 </RelativeLayout>
 <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_kondition.xml -->

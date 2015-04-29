@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -14,30 +15,45 @@ import com.packone.login.R;
 
 public class KonditionFragment extends Fragment implements View.OnClickListener {
 
-
     private CountDownTimer countDownTimer;
     private boolean timerHasStarted = false;
     private Button startB;
     public TextView text;
-    private final long startTime = 60*1* 1000;
+    private EditText timerEditText;
+
+
+
+    private int time;
+    private long startTime;
     private long hours = 0;
     private long sek = 0;
     private final long interval = 1 * 1000;
     private View rootView;
 
+    public KonditionFragment() {
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         this.rootView = inflater.inflate(R.layout.fragment_kondition, container, false);
+
         super.onCreate(savedInstanceState);
         startB = (Button) this.rootView.findViewById(R.id.button);
+        this.timerEditText = (EditText) this.rootView.findViewById(R.id.editTimer);
+        this.time = Integer.parseInt(timerEditText.getText().toString());
+        final long startTime2 = this.time*1* 1000;
+        this.startTime = startTime2;
         startB.setOnClickListener(this);
         text = (TextView) this.rootView.findViewById(R.id.timer);
         countDownTimer = new MyCountDownTimer(startTime, interval);
         text.setText(text.getText() + String.valueOf(startTime / 1000));
         return rootView;
     }
-
+    public int getTime() {
+        return time;
+    }
     @Override
     public void onClick(View v) {
         if (!timerHasStarted) {
@@ -53,7 +69,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
     public class MyCountDownTimer extends CountDownTimer {
         private ProgressBar progress;
-        private long totaltime = 60*1;
+        private long totaltime = getTime()*1;
         private double proz = 0;
         private String sekstr = "";
         private String hourstr = "";
