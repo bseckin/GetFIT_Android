@@ -81,7 +81,7 @@
                 android:textColor="#5d5d5d"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="Fett: " >
+                android:text="Fett(g): ">
             </TextView>
             <!-- Price Label -->
             <TextView
@@ -107,7 +107,7 @@
             android:textColor="#5d5d5d"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Protein: " >
+            android:text="Protein(g): " >
         </TextView>
         <!-- Price Label -->
         <TextView
@@ -132,11 +132,61 @@
                 android:textColor="#5d5d5d"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="Kohlenhydrate: " >
+                android:text="Kohlenhydrate(g): " >
             </TextView>
             <!-- Price Label -->
             <TextView
                 android:id="@+id/kh_gram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:textStyle="bold"
+                android:gravity="left">
+            </TextView>
+        </LinearLayout>
+        <!-- -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Cost Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Zucker(g): " >
+            </TextView>
+            <!-- Price Label -->
+            <TextView
+                android:id="@+id/sugar_gram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:textStyle="bold"
+                android:gravity="left">
+            </TextView>
+        </LinearLayout>
+        <!-- -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Cost Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Menge(g): " >
+            </TextView>
+            <!-- Price Label -->
+            <TextView
+                android:id="@+id/amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#acacac"

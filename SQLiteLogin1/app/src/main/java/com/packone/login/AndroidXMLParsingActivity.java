@@ -38,7 +38,9 @@ public class AndroidXMLParsingActivity extends ListActivity {
     String KEY_FAT = "fat_gram";
     String KEY_PROT = "protein_gram";
     String KEY_KH = "kh_gram";
+    String KEY_SUGAR = "sugar_gram";
     String API_KEY = "&apikey=5U92BAMH4Z3QK6TXVBU3EQ0N";
+    String KEY_AMOUNT = "amount";
     EditText inputSearch;
 
 	@Override
@@ -83,6 +85,8 @@ public class AndroidXMLParsingActivity extends ListActivity {
                         map.put(KEY_FAT, parser.getValue(e, KEY_FAT));
                         map.put(KEY_PROT, parser.getValue(e, KEY_PROT));
                         map.put(KEY_KH, parser.getValue(e, KEY_KH));
+                        map.put(KEY_SUGAR, parser.getValue(e, KEY_SUGAR));
+                        map.put(KEY_AMOUNT, parser.getValue(e, KEY_AMOUNT));
 
 
                         // adding HashList to ArrayList
@@ -93,8 +97,8 @@ public class AndroidXMLParsingActivity extends ListActivity {
                 // Adding menuItems to ListView
                 ListAdapter adapter = new SimpleAdapter(getApplicationContext(), menuItems,
                         R.layout.listen_item,
-                        new String[]{KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH}, new int[]{
-                        R.id.name, R.id.kj, R.id.kcal, R.id.fat_gram, R.id.protein_gram, R.id.kh_gram});
+                        new String[]{KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH, KEY_SUGAR, KEY_AMOUNT}, new int[]{
+                        R.id.name, R.id.kj, R.id.kcal, R.id.fat_gram, R.id.protein_gram, R.id.kh_gram, R.id.sugar_gram, R.id.amount});
 
                 setListAdapter(adapter);
 
@@ -113,6 +117,8 @@ public class AndroidXMLParsingActivity extends ListActivity {
                         String fat_gram = ((TextView) view.findViewById(R.id.fat_gram)).getText().toString();
                         String protein_gram = ((TextView) view.findViewById(R.id.protein_gram)).getText().toString();
                         String kh_gram = ((TextView) view.findViewById(R.id.kh_gram)).getText().toString();
+                        String sugar_gram = ((TextView) view.findViewById(R.id.sugar_gram)).getText().toString();
+                        String amount = ((TextView) view.findViewById(R.id.amount)).getText().toString();
 
                         // Starting new intent
                         Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
@@ -122,6 +128,8 @@ public class AndroidXMLParsingActivity extends ListActivity {
                         in.putExtra(KEY_FAT, fat_gram);
                         in.putExtra(KEY_PROT, protein_gram);
                         in.putExtra(KEY_KH, kh_gram);
+                        in.putExtra(KEY_SUGAR, sugar_gram);
+                        in.putExtra(KEY_AMOUNT, amount);
                         startActivity(in);
 
                     }

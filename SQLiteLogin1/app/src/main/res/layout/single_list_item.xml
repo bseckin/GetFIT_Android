@@ -65,7 +65,7 @@
             android:textColor="#5d5d5d"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Fett: " >
+            android:text="Fett(g): " >
         </TextView>
         <TextView android:id="@+id/fat_label"
             android:layout_width="fill_parent"
@@ -84,7 +84,7 @@
             android:textColor="#5d5d5d"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Protein: " >
+            android:text="Protein(g): " >
         </TextView>
         <TextView android:id="@+id/prot_label"
             android:layout_width="fill_parent"
@@ -103,9 +103,49 @@
             android:textColor="#5d5d5d"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Kohlenhydrate: " >
+            android:text="Kohlenhydrate(g): " >
         </TextView>
         <TextView android:id="@+id/kh_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Cost Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Zucker(g): " >
+        </TextView>
+        <TextView android:id="@+id/sugar_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Cost Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Menge(g): " >
+        </TextView>
+        <TextView android:id="@+id/amount_label"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"/>
