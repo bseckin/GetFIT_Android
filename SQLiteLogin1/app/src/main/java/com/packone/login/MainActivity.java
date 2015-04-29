@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
         //Initialisierung der Buttons und Eingabefelder
         this.mButton = (Button) findViewById(R.id.blogin);
         //TETS
-        this.testdbButton = (Button) findViewById(R.id.testdbButton);
 
         this.muname = (EditText) findViewById(R.id.loguname);
         this.mpword = (EditText) findViewById(R.id.logpword);
@@ -112,13 +111,6 @@ public class MainActivity extends Activity {
             }
         });
 
-        //TEST
-        testdbButton.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AndroidXMLParsingActivity.class);
-                startActivity(intent);
-            }
-        });
 
         TextView bhelp = (TextView) findViewById(R.id.btnhelp);
         bhelp.setOnClickListener(new OnClickListener() {
