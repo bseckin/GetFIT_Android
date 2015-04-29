@@ -72,13 +72,13 @@
 
 
         <activity
-            android:label="AXMLP"
+            android:label="Ernährungsdatenbank"
             android:name="com.packone.login.AndroidXMLParsingActivity" >
         </activity>
 
         <!-- Single List Item View -->
         <activity
-            android:label="Single Menu Item"
+            android:label="Ernährungsdatenbank"
             android:name="com.packone.login.SingleMenuItemActivity" >
         </activity>
 

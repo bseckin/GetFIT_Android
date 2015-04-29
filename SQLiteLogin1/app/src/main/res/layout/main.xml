@@ -8,7 +8,7 @@
     <EditText android:id="@+id/inputSearch"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Search products.."
+        android:hint="Produktnamen oder EAN-Code"
         android:inputType="textVisiblePassword"/>
     <Button
         android:id="@+id/button1"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="Click me" />
+        android:text="Suchen" />
 	<!-- Main ListView
 		 Always give id value as list(@android:id/list)
 	-->
