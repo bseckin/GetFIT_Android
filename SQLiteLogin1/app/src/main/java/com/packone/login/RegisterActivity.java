@@ -89,44 +89,45 @@ public class RegisterActivity extends Activity {
 
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
-                }
-                // CHECK ob Email gueltig ist //
-                if (isValidEMail(memail.getText().toString()) == false) {
-                    Context context = getApplicationContext();
-                    CharSequence text = "Die Email Adresse ist nicht korrekt.";
-                    int duration = Toast.LENGTH_LONG;
-
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
-
                 } else {
-                    // CHECK ob der user bereits im datenbank gespeichert ist
-                    if (db.getContactsCount(muname.getText().toString()) == 0) {
-
-                        // get selected radio button from radioGroup
-                        int selectedId = radioSexGroup.getCheckedRadioButtonId();
-
-                        // find the radiobutton by returned id
-                        radioSexButton = (RadioButton) findViewById(selectedId);
-
-                        //Die variablen zur registrierungFragenkatalog activity weiter leiten
-                        Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
-                        intent.putExtra("username", muname.getText().toString());
-                        intent.putExtra("password", mpword.getText().toString());
-                        intent.putExtra("email", memail.getText().toString());
-                        intent.putExtra("gender", radioSexButton.getText().toString());
-                        intent.putExtra("height", mheight.getText().toString());
-                        intent.putExtra("weight", weight.getText().toString());
-
-                        startActivity(intent);
-
-                    } else {
+                    // CHECK ob Email gueltig ist //
+                    if (isValidEMail(memail.getText().toString()) == false) {
                         Context context = getApplicationContext();
-                        CharSequence text = "Der User existiert bereits. Bitte geben Sie einen neuen Namen ein.";
+                        CharSequence text = "Die Email Adresse ist nicht korrekt.";
                         int duration = Toast.LENGTH_LONG;
 
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
+
+                    } else {
+                        // CHECK ob der user bereits im datenbank gespeichert ist
+                        if (db.getContactsCount(muname.getText().toString()) == 0) {
+
+                            // get selected radio button from radioGroup
+                            int selectedId = radioSexGroup.getCheckedRadioButtonId();
+
+                            // find the radiobutton by returned id
+                            radioSexButton = (RadioButton) findViewById(selectedId);
+
+                            //Die variablen zur registrierungFragenkatalog activity weiter leiten
+                            Intent intent = new Intent(RegisterActivity.this, RegistrierungFragenkatalogActivity.class);
+                            intent.putExtra("username", muname.getText().toString());
+                            intent.putExtra("password", mpword.getText().toString());
+                            intent.putExtra("email", memail.getText().toString());
+                            intent.putExtra("gender", radioSexButton.getText().toString());
+                            intent.putExtra("height", mheight.getText().toString());
+                            intent.putExtra("weight", weight.getText().toString());
+
+                            startActivity(intent);
+
+                        } else {
+                            Context context = getApplicationContext();
+                            CharSequence text = "Der User existiert bereits. Bitte geben Sie einen neuen Namen ein.";
+                            int duration = Toast.LENGTH_LONG;
+
+                            Toast toast = Toast.makeText(context, text, duration);
+                            toast.show();
+                        }
                     }
                 }
             }
