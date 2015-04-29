@@ -3,12 +3,27 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
-	<!-- Main ListView 
+
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search products.."
+        android:inputType="textVisiblePassword"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Click me" />
+	<!-- Main ListView
 		 Always give id value as list(@android:id/list)
 	-->
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
 
 </LinearLayout>
