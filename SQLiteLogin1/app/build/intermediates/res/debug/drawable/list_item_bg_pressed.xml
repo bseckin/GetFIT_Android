@@ -4,4 +4,4 @@
       android:startColor="@color/list_background_pressed"
       android:endColor="@color/list_background_pressed"
       android:angle="90" />
-</shape><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/drawable/list_item_bg_pressed.xml -->
+</shape><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/drawable/list_item_bg_pressed.xml -->

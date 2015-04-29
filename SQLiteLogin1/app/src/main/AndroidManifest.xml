@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="15"
         android:targetSdkVersion="21" />
 
     <!-- PERMISSIONS -->
@@ -20,18 +20,20 @@
         android:name="android.permission.AUTHENTICATE_ACCOUNTS"
         android:maxSdkVersion="18" />
     <!-- Include following permission if you load images from Internet -->
-    <uses-permission android:minSdkVersion="8" android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:minSdkVersion="18" />
 
     <!-- ACTIVITYS -->
     <application
+        android:name=".GlobalClass"
         android:allowBackup="true"
-        android:name="com.packone.login.GlobalClass"
         android:icon="@drawable/launcher_getfit"
         android:label="GetFIT"
         android:largeHeap="false"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
         <activity
-            android:name="com.packone.login.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_start" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,13 +42,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.packone.login.RegisterActivity"
+            android:name=".RegisterActivity"
             android:label="GetFIT Registrierung 1/2" >
         </activity>
         <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
         </activity>
         <activity
-            android:name="com.packone.login.GoalActivity"
+            android:name=".GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
         <activity
@@ -54,39 +56,36 @@
             android:label="@string/title_activity_wlifing" >
         </activity>
         <activity
-            android:name="com.packone.login.ProgressActivity"
+            android:name=".ProgressActivity"
             android:label="@string/title_activity_progress" >
         </activity>
         <activity
-            android:name="com.packone.login.HelpActivity"
+            android:name=".HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
         <activity
-            android:name="com.packone.login.RegistrierungFragenkatalogActivity"
+            android:name=".RegistrierungFragenkatalogActivity"
             android:label="GetFIT Registrierung 2/2" >
         </activity>
         <activity
-            android:name="com.packone.login.ErnaehrungActivity"
+            android:name=".ErnaehrungActivity"
             android:label="@string/title_activity_ernaehrung" >
         </activity>
-
-
         <activity
-            android:label="Ernährungsdatenbank"
-            android:name="com.packone.login.AndroidXMLParsingActivity" >
+            android:name=".AndroidXMLParsingActivity"
+            android:label="Ernährungsdatenbank" >
         </activity>
-
+        <activity
+            android:name=".MenuWithFABActivity"
+            android:label="@string/title_activity_menu_with_fab" >
+        </activity>
         <!-- Single List Item View -->
         <activity
-            android:label="Ernährungsdatenbank"
-            android:name="com.packone.login.SingleMenuItemActivity" >
+            android:name=".SingleMenuItemActivity"
+            android:label="Ernährungsdatenbank" >
         </activity>
-
-
-        <activity android:name="uebungsliste.BauchUebungen_Activity"></activity>
-        <activity android:name="uebungsliste.BrustUebungen_Activity"></activity>
-
-
-
+        <activity android:name="uebungsliste.BauchUebungen_Activity" />
+        <activity android:name="uebungsliste.BrustUebungen_Activity" />
     </application>
+
 </manifest>

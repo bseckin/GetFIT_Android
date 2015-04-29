@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="15"
         android:targetSdkVersion="21" />
 
     <!-- PERMISSIONS -->
@@ -22,7 +22,8 @@
     <!-- Include following permission if you load images from Internet -->
     <uses-permission
         android:name="android.permission.INTERNET"
-        android:minSdkVersion="8" />
+        android:minSdkVersion="18" />
+
     <!-- ACTIVITYS -->
     <application
         android:name="com.packone.login.GlobalClass"
@@ -72,13 +73,16 @@
         </activity>
         <activity
             android:name="com.packone.login.AndroidXMLParsingActivity"
-            android:label="AXMLP" >
+            android:label="Ernährungsdatenbank" >
         </activity>
-
+        <activity
+            android:name="com.packone.login.MenuWithFABActivity"
+            android:label="@string/title_activity_menu_with_fab" >
+        </activity>
         <!-- Single List Item View -->
         <activity
             android:name="com.packone.login.SingleMenuItemActivity"
-            android:label="Single Menu Item" >
+            android:label="Ernährungsdatenbank" >
         </activity>
         <activity android:name="uebungsliste.BauchUebungen_Activity" />
         <activity android:name="uebungsliste.BrustUebungen_Activity" />

@@ -53,7 +53,7 @@ public class XMLFragment extends ListFragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        this.rootView = inflater.inflate(R.layout.fragment_xml, container, false);
+        this.rootView = inflater.inflate(R.layout.fragment_ernaehrungstagebuch, container, false);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);

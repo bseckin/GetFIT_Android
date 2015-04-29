@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 		INJECTED from AndroidManifest.xml:0:0
@@ -11,16 +13,15 @@ ADDED from AndroidManifest.xml:2:1
 		ADDED from AndroidManifest.xml:4:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
 MERGED from com.android.support:support-v4:21.0.3:15:5
-MERGED from com.android.support:support-v13:20.0.0:16:5
+MERGED from com.android.support:support-v13:21.0.3:15:5
 MERGED from com.android.support:support-v4:21.0.3:15:5
 MERGED from com.github.markushi:circlebutton:1.1:7:5
 MERGED from com.etsy.android.grid:library:1.0.5:4:5
 MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.oguzdev:CircularFloatingActionMenu:1.0.2:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -54,108 +55,114 @@ ADDED from AndroidManifest.xml:19:5
 uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:23:5
 	android:minSdkVersion
-		ADDED from AndroidManifest.xml:23:22
+		ADDED from AndroidManifest.xml:25:9
 	android:name
-		ADDED from AndroidManifest.xml:23:48
+		ADDED from AndroidManifest.xml:24:9
 application
-ADDED from AndroidManifest.xml:26:5
+ADDED from AndroidManifest.xml:28:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
-MERGED from com.android.support:support-v13:20.0.0:17:5
+MERGED from com.android.support:support-v13:21.0.3:16:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 MERGED from com.github.markushi:circlebutton:1.1:9:5
 MERGED from com.etsy.android.grid:library:1.0.5:6:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
-		ADDED from AndroidManifest.xml:30:9
+		ADDED from AndroidManifest.xml:32:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:27:9
+		ADDED from AndroidManifest.xml:30:9
 	android:icon
-		ADDED from AndroidManifest.xml:29:9
-	android:largeHeap
 		ADDED from AndroidManifest.xml:31:9
 	android:theme
-		ADDED from AndroidManifest.xml:32:9
+		ADDED from AndroidManifest.xml:34:9
+	android:largeHeap
+		ADDED from AndroidManifest.xml:33:9
 	android:name
-		ADDED from AndroidManifest.xml:28:9
+		ADDED from AndroidManifest.xml:29:9
 activity#com.packone.login.MainActivity
-ADDED from AndroidManifest.xml:33:9
+ADDED from AndroidManifest.xml:35:9
 	android:label
-		ADDED from AndroidManifest.xml:35:13
+		ADDED from AndroidManifest.xml:37:13
 	android:name
-		ADDED from AndroidManifest.xml:34:13
+		ADDED from AndroidManifest.xml:36:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:36:13
+ADDED from AndroidManifest.xml:38:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:37:17
-	android:name
-		ADDED from AndroidManifest.xml:37:25
-category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:39:17
 	android:name
-		ADDED from AndroidManifest.xml:39:27
+		ADDED from AndroidManifest.xml:39:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:41:17
+	android:name
+		ADDED from AndroidManifest.xml:41:27
 activity#com.packone.login.RegisterActivity
-ADDED from AndroidManifest.xml:42:9
+ADDED from AndroidManifest.xml:44:9
 	android:label
-		ADDED from AndroidManifest.xml:44:13
+		ADDED from AndroidManifest.xml:46:13
 	android:name
-		ADDED from AndroidManifest.xml:43:13
+		ADDED from AndroidManifest.xml:45:13
 activity#info.androidhive.slidingmenu.NavigationActivity
-ADDED from AndroidManifest.xml:46:9
-	android:name
-		ADDED from AndroidManifest.xml:46:19
-activity#com.packone.login.GoalActivity
 ADDED from AndroidManifest.xml:48:9
-	android:label
-		ADDED from AndroidManifest.xml:50:13
 	android:name
-		ADDED from AndroidManifest.xml:49:13
+		ADDED from AndroidManifest.xml:48:19
+activity#com.packone.login.GoalActivity
+ADDED from AndroidManifest.xml:50:9
+	android:label
+		ADDED from AndroidManifest.xml:52:13
+	android:name
+		ADDED from AndroidManifest.xml:51:13
 activity#info.pack.selectgoal.WLifingActivity
-ADDED from AndroidManifest.xml:52:9
+ADDED from AndroidManifest.xml:54:9
 	android:label
-		ADDED from AndroidManifest.xml:54:13
+		ADDED from AndroidManifest.xml:56:13
 	android:name
-		ADDED from AndroidManifest.xml:53:13
+		ADDED from AndroidManifest.xml:55:13
 activity#com.packone.login.ProgressActivity
-ADDED from AndroidManifest.xml:56:9
+ADDED from AndroidManifest.xml:58:9
 	android:label
-		ADDED from AndroidManifest.xml:58:13
+		ADDED from AndroidManifest.xml:60:13
 	android:name
-		ADDED from AndroidManifest.xml:57:13
+		ADDED from AndroidManifest.xml:59:13
 activity#com.packone.login.HelpActivity
-ADDED from AndroidManifest.xml:60:9
+ADDED from AndroidManifest.xml:62:9
 	android:label
-		ADDED from AndroidManifest.xml:62:13
+		ADDED from AndroidManifest.xml:64:13
 	android:name
-		ADDED from AndroidManifest.xml:61:13
+		ADDED from AndroidManifest.xml:63:13
 activity#com.packone.login.RegistrierungFragenkatalogActivity
-ADDED from AndroidManifest.xml:64:9
+ADDED from AndroidManifest.xml:66:9
 	android:label
-		ADDED from AndroidManifest.xml:66:13
+		ADDED from AndroidManifest.xml:68:13
 	android:name
-		ADDED from AndroidManifest.xml:65:13
+		ADDED from AndroidManifest.xml:67:13
 activity#com.packone.login.ErnaehrungActivity
-ADDED from AndroidManifest.xml:68:9
+ADDED from AndroidManifest.xml:70:9
 	android:label
-		ADDED from AndroidManifest.xml:70:13
+		ADDED from AndroidManifest.xml:72:13
 	android:name
-		ADDED from AndroidManifest.xml:69:13
+		ADDED from AndroidManifest.xml:71:13
 activity#com.packone.login.AndroidXMLParsingActivity
 ADDED from AndroidManifest.xml:74:9
 	android:label
-		ADDED from AndroidManifest.xml:75:13
-	android:name
 		ADDED from AndroidManifest.xml:76:13
-activity#com.packone.login.SingleMenuItemActivity
-ADDED from AndroidManifest.xml:80:9
+	android:name
+		ADDED from AndroidManifest.xml:75:13
+activity#com.packone.login.MenuWithFABActivity
+ADDED from AndroidManifest.xml:78:9
 	android:label
-		ADDED from AndroidManifest.xml:81:13
+		ADDED from AndroidManifest.xml:80:13
 	android:name
-		ADDED from AndroidManifest.xml:82:13
+		ADDED from AndroidManifest.xml:79:13
+activity#com.packone.login.SingleMenuItemActivity
+ADDED from AndroidManifest.xml:83:9
+	android:label
+		ADDED from AndroidManifest.xml:85:13
+	android:name
+		ADDED from AndroidManifest.xml:84:13
 activity#uebungsliste.BauchUebungen_Activity
-ADDED from AndroidManifest.xml:86:9
-	android:name
-		ADDED from AndroidManifest.xml:86:19
-activity#uebungsliste.BrustUebungen_Activity
 ADDED from AndroidManifest.xml:87:9
 	android:name
 		ADDED from AndroidManifest.xml:87:19
+activity#uebungsliste.BrustUebungen_Activity
+ADDED from AndroidManifest.xml:88:9
+	android:name
+		ADDED from AndroidManifest.xml:88:19
