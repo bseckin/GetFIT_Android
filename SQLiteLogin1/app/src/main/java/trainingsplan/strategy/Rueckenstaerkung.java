@@ -42,22 +42,22 @@ public class Rueckenstaerkung implements IZiel {
                     },
                     {
                         {
-                                    "Kreuzheben",
-                                    "Ruderzugmaschine",
-                                    "Butterfly Reverse",
-                                    "Brustpresse",
-                                    "Latzugmaschine",
-                                    "Beinpresse",
-                                    "Beinheben/Crunches",
+                            "Kreuzheben",
+                            "Ruderzugmaschine",
+                            "Butterfly Reverse",
+                            "Brustpresse",
+                            "Latzugmaschine",
+                            "Beinpresse",
+                            "Beinheben/Crunches",
                         },
                         {
-                                    "3",
-                                    "2",
-                                    "2",
-                                    "2",
-                                    "2",
-                                    "2",
-                                    "2",
+                            "3",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
+                            "2",
                         }
                     }
             };

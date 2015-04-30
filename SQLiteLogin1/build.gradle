@@ -13,3 +13,9 @@ allprojects {
         jcenter()
     }
 }
+// Zeigt an wenn man veraltete(deprecated) Code hat -> nicht gut sollte nicht sein
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+}
