@@ -47,11 +47,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:text="60"
+        android:text="120"
         android:layout_alignLeft="@+id/timer"
         android:layout_alignStart="@+id/timer"
         android:textSize="28dp"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="wrap_content"

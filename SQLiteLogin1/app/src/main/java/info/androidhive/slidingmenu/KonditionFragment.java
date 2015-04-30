@@ -27,7 +27,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
     private long startTime;
     private long hours = 0;
     private long sek = 0;
-    private final long interval = 1 * 1000;
+    private long interval = 1 * 1000;
     private View rootView;
 
     public KonditionFragment() {
@@ -41,14 +41,8 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
         super.onCreate(savedInstanceState);
         startB = (Button) this.rootView.findViewById(R.id.button);
-        this.timerEditText = (EditText) this.rootView.findViewById(R.id.editTimer);
-        this.time = Integer.parseInt(timerEditText.getText().toString());
-        final long startTime2 = this.time*1* 1000;
-        this.startTime = startTime2;
         startB.setOnClickListener(this);
-        text = (TextView) this.rootView.findViewById(R.id.timer);
-        countDownTimer = new MyCountDownTimer(startTime, interval);
-        text.setText(text.getText() + String.valueOf(startTime / 1000));
+
         return rootView;
     }
     public int getTime() {
@@ -57,6 +51,14 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         if (!timerHasStarted) {
+            this.timerEditText = (EditText) this.rootView.findViewById(R.id.editTimer);
+            this.time = Integer.parseInt(timerEditText.getText().toString());
+
+            this.startTime = this.time*1* 1000;
+
+            text = (TextView) this.rootView.findViewById(R.id.timer);
+            countDownTimer = new MyCountDownTimer(startTime, interval);
+            text.setText(text.getText() + String.valueOf(startTime / 1000));
             countDownTimer.start();
             timerHasStarted = true;
             startB.setText("STOP");
@@ -92,7 +94,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
                 sek = ((millisUntilFinished/1000)%60);
             }
             double zaehler = (millisUntilFinished/1000);
-            double x = 100.0/60.0;
+            double x = 100.0/getTime();
             this.proz = (x * zaehler);
             /**hourstr = String.valueOf(hours);
 
