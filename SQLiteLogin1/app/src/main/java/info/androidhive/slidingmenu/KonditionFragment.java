@@ -1,6 +1,7 @@
 package info.androidhive.slidingmenu;
 
 import android.app.Fragment;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
@@ -11,7 +12,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.packone.login.Effects;
 import com.packone.login.R;
 
 public class KonditionFragment extends Fragment implements View.OnClickListener {
@@ -30,6 +30,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
     private long sek = 0;
     private long interval = 1 * 1000;
     private View rootView;
+    protected MediaPlayer mp;
 
     public KonditionFragment() {
 
@@ -43,7 +44,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         startB = (Button) this.rootView.findViewById(R.id.button);
         startB.setOnClickListener(this);
-
+        this.mp = MediaPlayer.create(this.getActivity(), R.raw.sound_1);
         return rootView;
     }
     public int getTime() {
@@ -82,7 +83,6 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
         @Override
         public void onFinish() {
-            Effects.getInstance().playSound(Effects.SOUND_1);
             text.setText("Time's up!");
         }
 
@@ -112,10 +112,14 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
             //}
 
             //Progressbar wird resettet
-
+            if (this.proz == x){
+                this.proz -=x;
+                mp.start();
+            }
             this.progress = (ProgressBar) rootView.findViewById(R.id.fat_prog);
-
             this.progress.setProgress((int) this.proz);
+
+
         }
     }
 
