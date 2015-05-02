@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.packone.login.GlobalClass;
@@ -77,6 +78,14 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         // Commit the edits!
         editor.commit();
 
+        TextView bhelp = (TextView) findViewById(R.id.helpText);
+        bhelp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(RegistrierungFragenkatalogActivity.this, BodyInfoActivity.class);
+                startActivity(intent);
+                Log.d("!!!!!!!!!!!!!","!!!!!!!!!!!");
+            }
+        });
         //WERTE VON REGISTER ACTICITY VON USER NEHMEN
         Intent intent = getIntent();
         UNAME = intent.getStringExtra("username");
@@ -85,6 +94,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         GENDER = intent.getStringExtra("gender");
         HEIGHT = intent.getStringExtra("height");
         WEIGHT = intent.getStringExtra("weight");
+
+
     }
 
     @Override
@@ -96,6 +107,8 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         if (id == R.id.action_settings) {
             return true;
         }
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -105,6 +118,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
      * @param view
      */
     public void fragenkatalog_fertig(View view){
+
         // " TRAININGSZIEL "
         radioGroupFrage1 = (RadioGroup)findViewById(R.id.rg_frage1);
         int selectedF1 = radioGroupFrage1.getCheckedRadioButtonId();

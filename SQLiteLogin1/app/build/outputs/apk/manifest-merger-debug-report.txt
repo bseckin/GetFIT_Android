@@ -15,12 +15,12 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
-MERGED from com.android.support:support-v4:21.0.3:15:5
-MERGED from com.android.support:support-v13:21.0.3:15:5
-MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:22.1.1:20:5
+MERGED from com.android.support:support-v13:22.1.1:20:5
+MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.github.markushi:circlebutton:1.1:7:5
 MERGED from com.etsy.android.grid:library:1.0.5:4:5
-MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.oguzdev:CircularFloatingActionMenu:1.0.2:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
@@ -60,12 +60,12 @@ ADDED from AndroidManifest.xml:23:5
 		ADDED from AndroidManifest.xml:24:9
 application
 ADDED from AndroidManifest.xml:28:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
-MERGED from com.android.support:support-v13:21.0.3:16:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.1.1:22:5
+MERGED from com.android.support:support-v13:22.1.1:22:5
+MERGED from com.android.support:support-v4:22.1.1:22:5
 MERGED from com.github.markushi:circlebutton:1.1:9:5
 MERGED from com.etsy.android.grid:library:1.0.5:6:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.1.1:22:5
 	android:label
 		ADDED from AndroidManifest.xml:32:9
 	android:allowBackup
@@ -146,23 +146,23 @@ ADDED from AndroidManifest.xml:74:9
 		ADDED from AndroidManifest.xml:76:13
 	android:name
 		ADDED from AndroidManifest.xml:75:13
-activity#com.packone.login.MenuWithFABActivity
-ADDED from AndroidManifest.xml:78:9
-	android:label
-		ADDED from AndroidManifest.xml:80:13
-	android:name
-		ADDED from AndroidManifest.xml:79:13
 activity#com.packone.login.SingleMenuItemActivity
-ADDED from AndroidManifest.xml:83:9
+ADDED from AndroidManifest.xml:80:9
 	android:label
-		ADDED from AndroidManifest.xml:85:13
+		ADDED from AndroidManifest.xml:82:13
 	android:name
-		ADDED from AndroidManifest.xml:84:13
+		ADDED from AndroidManifest.xml:81:13
 activity#uebungsliste.BauchUebungen_Activity
-ADDED from AndroidManifest.xml:87:9
+ADDED from AndroidManifest.xml:84:9
 	android:name
-		ADDED from AndroidManifest.xml:87:19
+		ADDED from AndroidManifest.xml:84:19
 activity#uebungsliste.BrustUebungen_Activity
-ADDED from AndroidManifest.xml:88:9
+ADDED from AndroidManifest.xml:85:9
 	android:name
-		ADDED from AndroidManifest.xml:88:19
+		ADDED from AndroidManifest.xml:85:19
+activity#com.packone.login.reg.login.BodyInfoActivity
+ADDED from AndroidManifest.xml:86:9
+	android:label
+		ADDED from AndroidManifest.xml:88:13
+	android:name
+		ADDED from AndroidManifest.xml:87:13

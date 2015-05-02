@@ -75,10 +75,7 @@
             android:name=".AndroidXMLParsingActivity"
             android:label="Ernährungsdatenbank" >
         </activity>
-        <activity
-            android:name=".MenuWithFABActivity"
-            android:label="@string/title_activity_menu_with_fab" >
-        </activity>
+
         <!-- Single List Item View -->
         <activity
             android:name=".SingleMenuItemActivity"
@@ -86,6 +83,10 @@
         </activity>
         <activity android:name="uebungsliste.BauchUebungen_Activity" />
         <activity android:name="uebungsliste.BrustUebungen_Activity" />
+        <activity
+            android:name=".reg.login.BodyInfoActivity"
+            android:label="@string/title_activity_body_info" >
+        </activity>
     </application>
 
 </manifest>

@@ -126,7 +126,9 @@
     <string name="register_password">Password:</string>
     <string name="register_username">Username:</string>
     <string name="ruecken">Rückenstärkung – Kräftigung des Rückens</string>
-    <string name="title_activity_bodytype">BodytypeActivity</string>
+    <string name="title_activity_body">BodyActivity</string>
+    <string name="title_activity_body_info">BodyInfoActivity</string>
+    <string name="title_activity_bodytypeinfo">BodytypeinfoActivity</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
     <string name="title_activity_goal">GoalActivity</string>
     <string name="title_activity_help">HelpActivity</string>

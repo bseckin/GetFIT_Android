@@ -35,8 +35,8 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['jxl-2.6.jar'])
 
     //Navigation für
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.android.support:support-v13:21.0.3'
+    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:support-v13:22.1.1'
     compile 'com.github.markushi:circlebutton:1.1'
     compile 'com.etsy.android.grid:library:1.0.5'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'

@@ -227,11 +227,11 @@
                 android:layout_height="fill_parent">
 
                 <RadioGroup
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:background="#508F99"
                     android:id="@+id/rg_frage6"
-                    android:layout_weight="1">
+                    android:layout_weight="10">
 
                     <RadioButton
                         android:layout_width="123dp"
@@ -263,26 +263,44 @@
 
                 <LinearLayout
                     android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#508F99"
+                    android:layout_weight="1"
+                    android:id="@+id/linear">
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:id="@+id/imageView3"
-                        android:src="@drawable/endomorph" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView13"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp" />
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:id="@+id/imageView4"
-                        android:src="@drawable/ectomorph" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView14"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp" />
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:id="@+id/imageView5"
-                        android:src="@drawable/mesomorph" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="H"
+                        android:id="@+id/helpText"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="15dp"
+                        android:textIsSelectable="false"
+                        android:linksClickable="true"
+                        android:longClickable="true"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:textColor="#ffffffff" />
                 </LinearLayout>
 
             </LinearLayout>
