@@ -2,70 +2,100 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="@drawable/matte_hdpi" >
+    android:background="@drawable/matte_hdpi"
+    android:orientation="vertical">
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:id="@+id/fat_prog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:indeterminate="false"
-        android:progressDrawable="@drawable/circular_progress_bar_violet"
-        android:background="@drawable/circle_shape"
-        android:max="100"
-        android:progress="1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
-
-    <TextView
-        android:id="@+id/timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:paddingRight="10dip"
-        android:textColor="#fff"
-        android:textSize="50dp" />
-
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:text="Start" />
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTimer"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:text="120"
-        android:layout_alignLeft="@+id/timer"
-        android:layout_alignStart="@+id/timer"
-        android:textSize="28dp"
-        android:textColor="#ffffffff"
-        android:inputType="number" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kondition"
+            android:textColor="#ffffffff"
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Zeit:"
-        android:id="@+id/textView12"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="28dp"
-        android:layout_toLeftOf="@+id/editTimer"
-        android:layout_toStartOf="@+id/editTimer"
-        android:textColor="#ffffffff"
-        android:layout_alignBottom="@+id/editTimer"
-        android:gravity="center" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="421dp"
+            android:layout_weight="1.06">
+
+            <ProgressBar
+                android:id="@+id/fat_prog"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="1"
+                android:progressDrawable="@drawable/circular_progress_bar_blue" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dip"
+                android:textColor="#fff"
+                android:textSize="50dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fat_prog"
+                android:layout_toLeftOf="@+id/editTimer"
+                android:layout_toStartOf="@+id/editTimer"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Zeit:"
+                android:textColor="#ffffffff"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/editTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button"
+                android:layout_alignLeft="@+id/timer"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/timer"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="120"
+                android:textColor="#ffffffff"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Start" />
+    </LinearLayout>
 </RelativeLayout>
