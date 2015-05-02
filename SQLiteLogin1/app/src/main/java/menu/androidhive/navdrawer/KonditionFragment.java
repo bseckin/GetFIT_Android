@@ -44,7 +44,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         startB = (Button) this.rootView.findViewById(R.id.button);
         startB.setOnClickListener(this);
-        this.mp = MediaPlayer.create(this.getActivity(), R.raw.stones);
+        this.mp = MediaPlayer.create(this.getActivity(), R.raw.done);
         return rootView;
     }
     public int getTime() {
@@ -113,7 +113,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
             //Progressbar wird resettet
             if (this.proz == x){
-               // this.proz -=x;
+                this.proz -=x;
                 mp.start();
             }
             this.progress = (ProgressBar) rootView.findViewById(R.id.fat_prog);
