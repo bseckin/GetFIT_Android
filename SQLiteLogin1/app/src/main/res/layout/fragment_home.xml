@@ -76,7 +76,6 @@
                     android:layout_gravity="bottom"/>
 
             </FrameLayout>
-
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

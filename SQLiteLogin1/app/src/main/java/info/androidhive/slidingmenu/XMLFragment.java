@@ -60,22 +60,7 @@ public class XMLFragment extends ListFragment {
 
         inputSearch = (EditText)rootView.findViewById(R.id.inputSearch);
         Button button1 = (Button)rootView.findViewById(R.id.button1);
-/*
-        return rootView;
-    }
 
-        @Override
-    public void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-        inputSearch = (EditText) findViewById(R.id.inputSearch);
-
-        Button button1 = (Button) findViewById(R.id.button1);
-*/
         button1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -125,6 +110,7 @@ public class XMLFragment extends ListFragment {
 
                 // selecting single ListView item
                 ListView lv = getListView();
+
 
                 lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
