@@ -1,9 +1,11 @@
 package menu.androidhive.navdrawer;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +44,17 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
         this.rootView = inflater.inflate(R.layout.fragment_kondition, container, false);
 
         super.onCreate(savedInstanceState);
+
+        TextView bhelp = (TextView) this.rootView.findViewById(R.id.btnHilfe);
+        bhelp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), KonditionhelpActivity.class);
+                startActivity(intent);
+                Log.d("!!!!!!!!!!!!!", "!!!!!!!!!!!");
+            }
+        });
+
+
         startB = (Button) this.rootView.findViewById(R.id.button);
         startB.setOnClickListener(this);
         this.mp = MediaPlayer.create(this.getActivity(), R.raw.done);

@@ -87,6 +87,10 @@
             android:name=".reg.login.BodyInfoActivity"
             android:label="@string/title_activity_body_info" >
         </activity>
+        <activity
+            android:name="menu.androidhive.navdrawer.KonditionhelpActivity"
+            android:label="@string/title_activity_konditionhelp" >
+        </activity>
     </application>
 
 </manifest>
