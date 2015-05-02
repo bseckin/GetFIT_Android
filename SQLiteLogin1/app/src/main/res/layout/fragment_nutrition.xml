@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.pack.selectgoal.nutritionFragment"
+    tools:context="menu.pack.selectgoal.nutritionFragment"
     android:background="#fffbfff4">
 
 

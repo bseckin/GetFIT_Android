@@ -19,7 +19,7 @@ import com.packone.login.database.DatabaseHandler;
 
 import java.util.List;
 
-import info.androidhive.slidingmenu.NavigationActivity;
+import menu.androidhive.navdrawer.NavigationActivity;
 
 
 /**

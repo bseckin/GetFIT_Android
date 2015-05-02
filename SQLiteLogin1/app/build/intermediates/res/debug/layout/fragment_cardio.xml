@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.pack.selectgoal.CardioFragment">
+    tools:context="menu.pack.selectgoal.CardioFragment">
 
 
     <ImageView
@@ -66,4 +66,4 @@
     </LinearLayout>
 
 </FrameLayout>
-<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->
+<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_cardio.xml -->

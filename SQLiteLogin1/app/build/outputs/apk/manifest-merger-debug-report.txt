@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 		INJECTED from AndroidManifest.xml:0:0
@@ -13,6 +11,8 @@ ADDED from AndroidManifest.xml:2:1
 		ADDED from AndroidManifest.xml:4:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
@@ -72,10 +72,10 @@ MERGED from com.android.support:support-v4:22.1.1:22:5
 		ADDED from AndroidManifest.xml:30:9
 	android:icon
 		ADDED from AndroidManifest.xml:31:9
-	android:theme
-		ADDED from AndroidManifest.xml:34:9
 	android:largeHeap
 		ADDED from AndroidManifest.xml:33:9
+	android:theme
+		ADDED from AndroidManifest.xml:34:9
 	android:name
 		ADDED from AndroidManifest.xml:29:9
 activity#com.packone.login.reg.login.MainActivity
@@ -100,7 +100,7 @@ ADDED from AndroidManifest.xml:44:9
 		ADDED from AndroidManifest.xml:46:13
 	android:name
 		ADDED from AndroidManifest.xml:45:13
-activity#info.androidhive.slidingmenu.NavigationActivity
+activity#menu.androidhive.navdrawer.NavigationActivity
 ADDED from AndroidManifest.xml:48:9
 	android:name
 		ADDED from AndroidManifest.xml:48:19
@@ -110,7 +110,7 @@ ADDED from AndroidManifest.xml:50:9
 		ADDED from AndroidManifest.xml:52:13
 	android:name
 		ADDED from AndroidManifest.xml:51:13
-activity#info.pack.selectgoal.WLifingActivity
+activity#menu.pack.selectgoal.WLifingActivity
 ADDED from AndroidManifest.xml:54:9
 	android:label
 		ADDED from AndroidManifest.xml:56:13

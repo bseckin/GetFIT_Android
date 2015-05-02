@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import info.androidhive.slidingmenu.NavigationActivity;
+import menu.androidhive.navdrawer.NavigationActivity;
 
 /**
  * @author: Kanyilidz Muhammedmehdi

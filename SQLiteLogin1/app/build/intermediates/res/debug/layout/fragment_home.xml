@@ -76,7 +76,6 @@
                     android:layout_gravity="bottom"/>
 
             </FrameLayout>
-
         </RelativeLayout>
     </LinearLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_home.xml -->

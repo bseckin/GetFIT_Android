@@ -45,14 +45,14 @@
             android:name=".reg.login.RegisterActivity"
             android:label="GetFIT Registrierung 1/2" >
         </activity>
-        <activity android:name="info.androidhive.slidingmenu.NavigationActivity" >
+        <activity android:name="menu.androidhive.navdrawer.NavigationActivity" >
         </activity>
         <activity
             android:name=".GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
         <activity
-            android:name="info.pack.selectgoal.WLifingActivity"
+            android:name="menu.pack.selectgoal.WLifingActivity"
             android:label="@string/title_activity_wlifing" >
         </activity>
         <activity

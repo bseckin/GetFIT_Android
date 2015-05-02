@@ -85,9 +85,14 @@ public class RegisterActivity extends Activity {
                  * */
                 // USER REGISTRATION
                 // CHECK ob alle Eingabe ausgefullt wurden */
-                if ((memail.getText().toString().equals("")) || (mpword.getText().toString().equals("")) || (muname.getText().toString().equals("")) || (radioSexGroup.getCheckedRadioButtonId() == -1)) {
+                if ((memail.getText().toString().equals(""))
+                        || (mpword.getText().toString().equals(""))
+                        || (muname.getText().toString().equals(""))
+                        || (radioSexGroup.getCheckedRadioButtonId() == -1)
+                        || (mheight.getText().toString().equals(""))
+                        ) {
                     Context context = getApplicationContext();
-                    CharSequence text = "Geben sie etwas ein";
+                    CharSequence text = "Bitte alle Felder ausfüllen!";
                     int duration = Toast.LENGTH_LONG;
 
                     Toast toast = Toast.makeText(context, text, duration);
@@ -122,10 +127,9 @@ public class RegisterActivity extends Activity {
                             intent.putExtra("weight", weight.getText().toString());
 
                             startActivity(intent);
-
                         } else {
                             Context context = getApplicationContext();
-                            CharSequence text = "Der User existiert bereits. Bitte geben Sie einen neuen Namen ein.";
+                            CharSequence text = "Der Username wird bereits verwendet. Versuchen Sie einen anderen Namen!";
                             int duration = Toast.LENGTH_LONG;
 
                             Toast toast = Toast.makeText(context, text, duration);

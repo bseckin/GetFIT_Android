@@ -41,19 +41,16 @@
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item>Home</item>
         <item>Training</item>
         <item>Ernährung</item>
         <item>Kondition</item>
         <item>Übungen</item>
         <item>Lebensmittel</item>
-        <item>Über GetFIT</item>
     </string-array>
 
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
         <item>@drawable/ic_hantel</item>
         <item>@drawable/ic_ernaehrung</item>
         <item>@drawable/ic_run</item>

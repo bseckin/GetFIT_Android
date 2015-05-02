@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/country_fragment"
-        android:name="info.androidhive.slidingmenu.UebungsFragment"
+        android:name="menu.androidhive.navdrawer.UebungsFragment"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
