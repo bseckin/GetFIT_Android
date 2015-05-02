@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.packone.login.Effects;
 import com.packone.login.R;
 
 public class KonditionFragment extends Fragment implements View.OnClickListener {
@@ -81,6 +82,7 @@ public class KonditionFragment extends Fragment implements View.OnClickListener 
 
         @Override
         public void onFinish() {
+            Effects.getInstance().playSound(Effects.SOUND_1);
             text.setText("Time's up!");
         }
 
