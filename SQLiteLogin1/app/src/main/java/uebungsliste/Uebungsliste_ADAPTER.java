@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import com.etsy.android.grid.util.DynamicHeightImageView;
+import com.etsy.android.grid.util.DynamicHeightTextView;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -64,7 +65,8 @@ public class Uebungsliste_ADAPTER extends ArrayAdapter<String> {
             vh = new ViewHolder();
             vh.imgView = (DynamicHeightImageView) convertView
                     .findViewById(R.id.stg_imgView);
-
+            vh.textView = (DynamicHeightTextView) convertView.findViewById(R.id.stg_textView);
+            vh.textView.setText("haha");
             convertView.setTag(vh);
         } else {
             vh = (ViewHolder) convertView.getTag();
@@ -80,6 +82,7 @@ public class Uebungsliste_ADAPTER extends ArrayAdapter<String> {
 
     static class ViewHolder {
         DynamicHeightImageView imgView;
+        DynamicHeightTextView textView;
     }
 
     private double getPositionRatio(final int position) {

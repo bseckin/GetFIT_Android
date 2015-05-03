@@ -13,6 +13,9 @@ import com.packone.login.R;
 
 import java.util.ArrayList;
 
+/*
+ * Listet alle Uebungen fuer den Bauch auf mit dynamischen Image Loader
+ */
 public class BauchUebungen_Activity extends Activity implements AbsListView.OnScrollListener, AbsListView.OnItemClickListener {
 
     private static final String TAG = "StaggeredGridActivity";
@@ -20,31 +23,18 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
 
     private StaggeredGridView mGridView;
     private boolean mHasRequestedMore;
-    private BauchUebungenAdapter mAdapter;
+    private Uebungsliste_ADAPTER mAdapter;
 
     private ArrayList<String> mData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.gridview);
 
-        setTitle("TechnoTalkative - SGV Demo");
+        setTitle("Bauchübungen/Rumpf");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new BauchUebungenAdapter(this, android.R.layout.simple_list_item_1, generateData());
-        // do we have saved data?
-        /*if (savedInstanceState != null) {
-            mData = savedInstanceState.getStringArrayList(SAVED_DATA_KEY);
-        }
-
-        if (mData == null) {
-            mData = generateData();
-        }
-
-        for (String data : mData) {
-            mAdapter.add(data);
-        }*/
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, generateData());
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -67,27 +57,6 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
         Log.d(TAG, "onScroll firstVisibleItem:" + firstVisibleItem +
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
-        // our handling
-        /* (!mHasRequestedMore) {
-            int lastInScreen = firstVisibleItem + visibleItemCount;
-            if (lastInScreen >= totalItemCount) {
-                Log.d(TAG, "onScroll lastInScreen - so load more");
-                //mHasRequestedMore = true;
-                //onLoadMoreItems();
-            }
-        }*/
-    }
-
-    private void onLoadMoreItems() {
-        final ArrayList<String> sampleData = generateData();
-        for (String data : sampleData) {
-            mAdapter.add(data);
-        }
-        // stash all the data in our backing store
-        mData.addAll(sampleData);
-        // notify the adapter that we can update now
-        mAdapter.notifyDataSetChanged();
-        mHasRequestedMore = false;
     }
 
     private ArrayList<String> generateData() {

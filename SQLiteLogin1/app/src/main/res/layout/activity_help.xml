@@ -6,7 +6,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@drawable/backblue"
+    android:background="@drawable/matte_xxhdpi"
     tools:context="com.packone.login.reg.login.HelpActivity">
 
     <LinearLayout
@@ -15,35 +15,51 @@
         android:layout_height="fill_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Was ist GetFit?"
             android:id="@+id/textView"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GetFIT ist ein Personal Trainer für Android, die den Benutzern einen roten Faden vorgibt, an dem sie sich orientieren können. Es wird größerer Fokus auf Anfänger gesetzt, dennoch können sich auch Fortgeschrittene neues Wissen aneignen. Besonders an GetFIT ist einerseits, dass die drei wichtigsten Bereiche, nämlich Ausdauer, Krafttraining und Ernährung in einer App vereint sind. Andererseits besitzt GetFIT eine spezielle Anpassungsfähigkeit, die auf den Benutzer eingeht (selbst entwickelte Algorithmen)."
             android:id="@+id/textView2"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:background="#a43b3b3b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Wie benutze ich GetFit?"
             android:id="@+id/textView3"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="10dp" />
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:background="#ffffff"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Um GetFit zu benutzen brauchen Sie nur ihre daten bei der Registrierung einzugeben und alles andere wird speziell an Ihren Körper angepasst. Sie müssen jedoch beachten, dass Sie strickt nach den Plänen vorgehen müssen, die wir ihnen zur Verfügung stellen."
+            android:text="Um GetFit zu benutzen brauchen Sie nur ihre daten bei der Registrierung einzugeben und alles andere wird speziell an Ihren Körper angepasst. Bitte beachten Sie dabei sich bei jeder Übung auf eine korrekte Ausführung um Verletzungen vorzubeuegen. "
             android:id="@+id/textView4"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:background="#a43b3b3b"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp" />
 
         <Button
             android:layout_width="wrap_content"
