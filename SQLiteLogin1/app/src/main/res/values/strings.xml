@@ -75,7 +75,7 @@
     <string name="register_username">Username:</string>
     <string name="register_password">Password:</string>
     <string name="register_groeße">Größe:</string>
-    <string name="register_gender">Gender:</string>
+    <string name="register_gender">Geschlecht:</string>
     <string name="register_gewicht">Gewicht:</string>
     <string name="register_email">Email:</string>
     <string name="title_activity_menu_with_fab">MenuWithFABActivity</string>
