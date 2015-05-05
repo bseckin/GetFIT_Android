@@ -1,8 +1,13 @@
 package info.androidhive.slidingmenu;
-
+/**
+ *  @author Kilinc Osman
+ *  @since 5.2.2015
+ */
 import android.app.ListFragment;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.LayoutInflater;
@@ -29,9 +34,11 @@ import java.util.HashMap;
 
 public class XMLFragment extends ListFragment {
 
-    // All static variables
+    // Alle statische Variablen
+
+    //URL Adresse
     String URL = "http://fddb.info/api/v12/search/item_short.xml?lang=de";
-    // XML node keys
+    //Gesuchte Produkt
     String SEARCHED_ITEM;
     String KEY_SHORTITEM = "shortitem";
     String KEY_NAME = "name";
@@ -46,6 +53,9 @@ public class XMLFragment extends ListFragment {
     EditText inputSearch;
 
     private View rootView;
+    private ConnectivityManager cm;
+    private NetworkInfo wlan;
+    private NetworkInfo mobil;
 
     private Context getApplicationContext() {
         return getActivity().getApplicationContext();
@@ -74,17 +84,18 @@ public class XMLFragment extends ListFragment {
 
                 XMLParser parser = new XMLParser();
                 String xml = parser.getXmlFromUrl(URL + "&q=" + SEARCHED_ITEM + API_KEY); // getting XML
-                Document doc = parser.getDomElement(xml); // getting DOM element
+                Document doc = parser.getDomElement(xml); // Dom Element wird geholt
 
                 NodeList nl = doc.getElementsByTagName(KEY_SHORTITEM);
 
                 if (nl != null && nl.getLength() > 0) {
-                    // looping through all item nodes <item>
+                    // durch alle Nodes loopen
                     for (int i = 0; i < nl.getLength(); i++) {
-                        // creating new HashMap
+                        // Erstelle neue HashMap
                         HashMap<String, String> map = new HashMap<String, String>();
                         Element e = (Element) nl.item(i);
-                        // adding each child node to HashMap key => value
+
+                        // neue Eintraege in die HashMap
                         map.put(KEY_NAME, parser.getCharacterDataFromElement(e, KEY_NAME));
                         map.put(KEY_KJ, parser.getValue(e, KEY_KJ));
                         map.put(KEY_KCAL, parser.getValue(e, KEY_KCAL));
@@ -94,13 +105,12 @@ public class XMLFragment extends ListFragment {
                         map.put(KEY_SUGAR, parser.getValue(e, KEY_SUGAR));
                         map.put(KEY_AMOUNT, parser.getValue(e, KEY_AMOUNT));
 
-
-                        // adding HashList to ArrayList
+                        // HashList zur ArrayList adden
                         menuItems.add(map);
                     }
                 }
 
-                // Adding menuItems to ListView
+                // menuItems der ListView hinzufuegen
                 ListAdapter adapter = new SimpleAdapter(getApplicationContext(), menuItems,
                         R.layout.listen_item,
                         new String[]{KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH, KEY_SUGAR, KEY_AMOUNT}, new int[]{
@@ -108,7 +118,7 @@ public class XMLFragment extends ListFragment {
 
                 setListAdapter(adapter);
 
-                // selecting single ListView item
+                // Listview waehlen
                 ListView lv = getListView();
 
 
@@ -117,7 +127,7 @@ public class XMLFragment extends ListFragment {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-                        // getting values from selected ListItem
+                        // Den Variablen die Werte zuweisen
                         String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
                         String kj = ((TextView) view.findViewById(R.id.kj)).getText().toString();
                         String kcal = ((TextView) view.findViewById(R.id.kcal)).getText().toString();
@@ -127,7 +137,7 @@ public class XMLFragment extends ListFragment {
                         String sugar_gram = ((TextView) view.findViewById(R.id.sugar_gram)).getText().toString();
                         String amount = ((TextView) view.findViewById(R.id.amount)).getText().toString();
 
-                        // Starting new intent
+                        // Neues Intent wird gestartet
                         Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
                         in.putExtra(KEY_NAME, name);
                         in.putExtra(KEY_KJ, kj);
