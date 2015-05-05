@@ -1,12 +1,10 @@
 package ernaehrung;
 
-import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
@@ -23,56 +21,6 @@ public class ErnaehrungActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_with_fab);
 
-        // Set up the white button on the lower right corner
-        // more or less with default parameter
-        final ImageView fabIconNew = new ImageView(this);
-        fabIconNew.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_new_light));
-        final FloatingActionButton rightLowerButton = new FloatingActionButton.Builder(this)
-                .setContentView(fabIconNew)
-                .build();
-
-        SubActionButton.Builder rLSubBuilder = new SubActionButton.Builder(this);
-        ImageView rlIcon1 = new ImageView(this);
-        ImageView rlIcon2 = new ImageView(this);
-        ImageView rlIcon3 = new ImageView(this);
-        ImageView rlIcon4 = new ImageView(this);
-
-        rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_chat_light));
-        rlIcon2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_camera_light));
-        rlIcon3.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_video_light));
-        rlIcon4.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_place_light));
-
-        // Build the menu with default options: light theme, 90 degrees, 72dp radius.
-        // Set 4 default SubActionButtons
-        final FloatingActionMenu rightLowerMenu = new FloatingActionMenu.Builder(this)
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon1).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon2).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon3).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon4).build())
-                .attachTo(rightLowerButton)
-                .build();
-
-        // Listen menu open and close events to animate the button content view
-        rightLowerMenu.setStateChangeListener(new FloatingActionMenu.MenuStateChangeListener() {
-            @Override
-            public void onMenuOpened(FloatingActionMenu menu) {
-                // Rotate the icon of rightLowerButton 45 degrees clockwise
-                fabIconNew.setRotation(0);
-                PropertyValuesHolder pvhR = PropertyValuesHolder.ofFloat(View.ROTATION, 45);
-                ObjectAnimator animation = ObjectAnimator.ofPropertyValuesHolder(fabIconNew, pvhR);
-                animation.start();
-            }
-
-            @Override
-            public void onMenuClosed(FloatingActionMenu menu) {
-                // Rotate the icon of rightLowerButton 45 degrees counter-clockwise
-                fabIconNew.setRotation(45);
-                PropertyValuesHolder pvhR = PropertyValuesHolder.ofFloat(View.ROTATION, 0);
-                ObjectAnimator animation = ObjectAnimator.ofPropertyValuesHolder(fabIconNew, pvhR);
-                animation.start();
-            }
-        });
-
         // Set up the large red button on the center right side
         // With custom button and content sizes and margins
         int redActionButtonSize = getResources().getDimensionPixelSize(R.dimen.red_action_button_size);
@@ -84,7 +32,7 @@ public class ErnaehrungActivity extends Activity {
         int blueSubActionButtonContentMargin = getResources().getDimensionPixelSize(R.dimen.blue_sub_action_button_content_margin);
 
         ImageView fabIconStar = new ImageView(this);
-        fabIconStar.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_important));
+        fabIconStar.setImageDrawable(getResources().getDrawable(R.drawable.ic_fitnessnutrition));
 
         FloatingActionButton.LayoutParams starParams = new FloatingActionButton.LayoutParams(redActionButtonSize, redActionButtonSize);
         starParams.setMargins(redActionButtonMargin,
@@ -123,24 +71,18 @@ public class ErnaehrungActivity extends Activity {
         ImageView lcIcon1 = new ImageView(this);
         ImageView lcIcon2 = new ImageView(this);
         ImageView lcIcon3 = new ImageView(this);
-        ImageView lcIcon4 = new ImageView(this);
-        ImageView lcIcon5 = new ImageView(this);
 
         lcIcon1.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_camera));
         lcIcon2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_picture));
         lcIcon3.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_video));
-        lcIcon4.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_location_found));
-        lcIcon5.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_headphones));
 
         // Build another menu with custom options
         final FloatingActionMenu leftCenterMenu = new FloatingActionMenu.Builder(this)
                 .addSubActionView(lCSubBuilder.setContentView(lcIcon1, blueContentParams).build())
                 .addSubActionView(lCSubBuilder.setContentView(lcIcon2, blueContentParams).build())
                 .addSubActionView(lCSubBuilder.setContentView(lcIcon3, blueContentParams).build())
-                .addSubActionView(lCSubBuilder.setContentView(lcIcon4, blueContentParams).build())
-                .addSubActionView(lCSubBuilder.setContentView(lcIcon5, blueContentParams).build())
                 .setRadius(redActionMenuRadius)
-                .setStartAngle(70)
+                .setStartAngle(0)
                 .setEndAngle(360)
                 .attachTo(leftCenterButton)
                 .build();
@@ -153,6 +95,7 @@ public class ErnaehrungActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_with_fab, menu);
+
         return true;
     }
 
@@ -165,6 +108,7 @@ public class ErnaehrungActivity extends Activity {
         if (id == R.id.action_settings) {
             return true;
         }
+        Log.d(super.onOptionsItemSelected(item) + "!!!!!!!!!!", "!!!!!!");
         return super.onOptionsItemSelected(item);
     }
 }
