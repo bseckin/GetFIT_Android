@@ -45,15 +45,10 @@
             android:name="com.packone.login.reg.login.RegisterActivity"
             android:label="GetFIT Registrierung 1/2" >
         </activity>
-        <activity android:name="menu.androidhive.navdrawer.NavigationActivity" >
-        </activity>
+        <activity android:name="menu.androidhive.navdrawer.NavigationActivity" />
         <activity
             android:name="com.packone.login.GoalActivity"
             android:label="@string/title_activity_goal" >
-        </activity>
-        <activity
-            android:name="menu.pack.selectgoal.WLifingActivity"
-            android:label="@string/title_activity_wlifing" >
         </activity>
         <activity
             android:name="com.packone.login.ProgressActivity"
@@ -82,10 +77,20 @@
             android:label="Ernährungsdatenbank" >
         </activity>
         <activity android:name="uebungsliste.BauchUebungen_Activity" />
+        <activity android:name="uebungsliste.BeineUebungen_Activity" />
+        <activity android:name="uebungsliste.BizepsUebungen_Activity" />
         <activity android:name="uebungsliste.BrustUebungen_Activity" />
+        <activity android:name="uebungsliste.ObererRueckenUebungen_Activity" />
+        <activity android:name="uebungsliste.SchulterUebungen_Activity" />
+        <activity android:name="uebungsliste.TrizepsUebungen_Activity" />
+        <activity android:name="uebungsliste.UntererRueckenUebungen_Activity" />
         <activity
             android:name="com.packone.login.reg.login.BodyInfoActivity"
             android:label="@string/title_activity_body_info" >
+        </activity>
+        <activity
+            android:name="menu.androidhive.navdrawer.KonditionhelpActivity"
+            android:label="@string/title_activity_konditionhelp" >
         </activity>
     </application>
 

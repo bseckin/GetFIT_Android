@@ -2,44 +2,44 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="@drawable/matte_hdpi" >
+    android:background="@drawable/matte_hdpi"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kondition"
             android:id="@+id/textView15"
-            android:textStyle="bold"
-            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:gravity="center"
-            android:textColor="#ffffffff" />
+            android:text="Kondition"
+            android:textColor="#ffffffff"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="421dp"
-            android:layout_weight="1.06">
+            android:layout_height="0dp"
+            android:layout_weight="6">
 
             <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
                 android:id="@+id/fat_prog"
+                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:indeterminate="false"
-                android:progressDrawable="@drawable/circular_progress_bar_blue"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
                 android:background="@drawable/circle_shape"
+                android:indeterminate="false"
                 android:max="100"
                 android:progress="1"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true" />
+                android:progressDrawable="@drawable/circular_progress_bar_blue" />
 
             <TextView
                 android:id="@+id/timer"
@@ -53,52 +53,87 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
 
             <TextView
+                android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zeit:"
-                android:id="@+id/textView12"
-                android:textSize="28dp"
-                android:textColor="#ffffffff"
-                android:gravity="center"
                 android:layout_above="@+id/button"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/fat_prog"
                 android:layout_toLeftOf="@+id/editTimer"
                 android:layout_toStartOf="@+id/editTimer"
-                android:layout_below="@+id/fat_prog"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Zeit:"
+                android:textColor="#ffffffff"
+                android:textSize="28dp" />
 
             <EditText
+                android:id="@+id/editTimer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/editTimer"
-                android:text="120"
-                android:textSize="28dp"
-                android:textColor="#ffffffff"
-                android:inputType="number"
                 android:layout_above="@+id/button"
                 android:layout_alignLeft="@+id/timer"
-                android:layout_alignStart="@+id/timer"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_weight="1" />
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/timer"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="120"
+                android:textColor="#ffffffff"
+                android:textSize="28dp" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:text="Start" />
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Start" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hilfe"
+                    android:id="@+id/btnHilfe"
+                    android:textSize="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:textIsSelectable="false"
+                    android:textColor="#ffffffff"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:longClickable="true" />
+            </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
-
 </RelativeLayout>
-<!-- From: file:/C:/Users/Berkay/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_kondition.xml -->
+<!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_kondition.xml -->

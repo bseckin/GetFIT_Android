@@ -21,7 +21,7 @@ MERGED from com.android.support:support-v4:22.1.1:20:5
 MERGED from com.github.markushi:circlebutton:1.1:7:5
 MERGED from com.etsy.android.grid:library:1.0.5:4:5
 MERGED from com.android.support:support-v4:22.1.1:20:5
-MERGED from com.oguzdev:CircularFloatingActionMenu:1.0.2:7:5
+MERGED from SQLiteLogin1:library3:unspecified:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -95,33 +95,27 @@ ADDED from AndroidManifest.xml:41:17
 	android:name
 		ADDED from AndroidManifest.xml:41:27
 activity#com.packone.login.reg.login.RegisterActivity
-ADDED from AndroidManifest.xml:44:9
+ADDED from AndroidManifest.xml:45:9
 	android:label
+		ADDED from AndroidManifest.xml:47:13
+	android:name
 		ADDED from AndroidManifest.xml:46:13
-	android:name
-		ADDED from AndroidManifest.xml:45:13
 activity#menu.androidhive.navdrawer.NavigationActivity
-ADDED from AndroidManifest.xml:48:9
-	android:name
-		ADDED from AndroidManifest.xml:48:19
-activity#com.packone.login.GoalActivity
 ADDED from AndroidManifest.xml:50:9
-	android:label
-		ADDED from AndroidManifest.xml:52:13
 	android:name
-		ADDED from AndroidManifest.xml:51:13
-activity#menu.pack.selectgoal.WLifingActivity
-ADDED from AndroidManifest.xml:54:9
+		ADDED from AndroidManifest.xml:50:19
+activity#com.packone.login.GoalActivity
+ADDED from AndroidManifest.xml:52:9
 	android:label
-		ADDED from AndroidManifest.xml:56:13
+		ADDED from AndroidManifest.xml:54:13
 	android:name
-		ADDED from AndroidManifest.xml:55:13
+		ADDED from AndroidManifest.xml:53:13
 activity#com.packone.login.ProgressActivity
-ADDED from AndroidManifest.xml:58:9
+ADDED from AndroidManifest.xml:57:9
 	android:label
-		ADDED from AndroidManifest.xml:60:13
-	android:name
 		ADDED from AndroidManifest.xml:59:13
+	android:name
+		ADDED from AndroidManifest.xml:58:13
 activity#com.packone.login.reg.login.HelpActivity
 ADDED from AndroidManifest.xml:62:9
 	android:label
@@ -129,40 +123,70 @@ ADDED from AndroidManifest.xml:62:9
 	android:name
 		ADDED from AndroidManifest.xml:63:13
 activity#com.packone.login.reg.login.RegistrierungFragenkatalogActivity
-ADDED from AndroidManifest.xml:66:9
+ADDED from AndroidManifest.xml:67:9
 	android:label
+		ADDED from AndroidManifest.xml:69:13
+	android:name
 		ADDED from AndroidManifest.xml:68:13
-	android:name
-		ADDED from AndroidManifest.xml:67:13
 activity#ernaehrung.ErnaehrungActivity
-ADDED from AndroidManifest.xml:70:9
+ADDED from AndroidManifest.xml:72:9
 	android:label
-		ADDED from AndroidManifest.xml:72:13
+		ADDED from AndroidManifest.xml:74:13
 	android:name
-		ADDED from AndroidManifest.xml:71:13
+		ADDED from AndroidManifest.xml:73:13
 activity#com.packone.login.AndroidXMLParsingActivity
-ADDED from AndroidManifest.xml:74:9
+ADDED from AndroidManifest.xml:77:9
 	android:label
-		ADDED from AndroidManifest.xml:76:13
+		ADDED from AndroidManifest.xml:79:13
 	android:name
-		ADDED from AndroidManifest.xml:75:13
+		ADDED from AndroidManifest.xml:78:13
 activity#com.packone.login.SingleMenuItemActivity
-ADDED from AndroidManifest.xml:80:9
+ADDED from AndroidManifest.xml:83:9
 	android:label
-		ADDED from AndroidManifest.xml:82:13
+		ADDED from AndroidManifest.xml:85:13
 	android:name
-		ADDED from AndroidManifest.xml:81:13
+		ADDED from AndroidManifest.xml:84:13
 activity#uebungsliste.BauchUebungen_Activity
-ADDED from AndroidManifest.xml:84:9
+ADDED from AndroidManifest.xml:88:9
 	android:name
-		ADDED from AndroidManifest.xml:84:19
+		ADDED from AndroidManifest.xml:88:19
+activity#uebungsliste.BeineUebungen_Activity
+ADDED from AndroidManifest.xml:89:9
+	android:name
+		ADDED from AndroidManifest.xml:89:19
+activity#uebungsliste.BizepsUebungen_Activity
+ADDED from AndroidManifest.xml:90:9
+	android:name
+		ADDED from AndroidManifest.xml:90:19
 activity#uebungsliste.BrustUebungen_Activity
-ADDED from AndroidManifest.xml:85:9
+ADDED from AndroidManifest.xml:91:9
 	android:name
-		ADDED from AndroidManifest.xml:85:19
+		ADDED from AndroidManifest.xml:91:19
+activity#uebungsliste.ObererRueckenUebungen_Activity
+ADDED from AndroidManifest.xml:92:9
+	android:name
+		ADDED from AndroidManifest.xml:92:19
+activity#uebungsliste.SchulterUebungen_Activity
+ADDED from AndroidManifest.xml:93:9
+	android:name
+		ADDED from AndroidManifest.xml:93:19
+activity#uebungsliste.TrizepsUebungen_Activity
+ADDED from AndroidManifest.xml:94:9
+	android:name
+		ADDED from AndroidManifest.xml:94:19
+activity#uebungsliste.UntererRueckenUebungen_Activity
+ADDED from AndroidManifest.xml:95:9
+	android:name
+		ADDED from AndroidManifest.xml:95:19
 activity#com.packone.login.reg.login.BodyInfoActivity
-ADDED from AndroidManifest.xml:86:9
+ADDED from AndroidManifest.xml:97:9
 	android:label
-		ADDED from AndroidManifest.xml:88:13
+		ADDED from AndroidManifest.xml:99:13
 	android:name
-		ADDED from AndroidManifest.xml:87:13
+		ADDED from AndroidManifest.xml:98:13
+activity#menu.androidhive.navdrawer.KonditionhelpActivity
+ADDED from AndroidManifest.xml:102:9
+	android:label
+		ADDED from AndroidManifest.xml:104:13
+	android:name
+		ADDED from AndroidManifest.xml:103:13

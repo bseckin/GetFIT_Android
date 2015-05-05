@@ -102,7 +102,7 @@ public class ErnaehrungActivity extends Activity {
         final FloatingActionButton leftCenterButton = new FloatingActionButton.Builder(this)
                 .setContentView(fabIconStar, fabIconStarParams)
                 .setBackgroundDrawable(R.drawable.button_action_red_selector)
-                .setPosition(FloatingActionButton.POSITION_LEFT_CENTER)
+                .setPosition(FloatingActionButton.POSITION_CENTER)
                 .setLayoutParams(starParams)
                 .build();
 
@@ -141,7 +141,7 @@ public class ErnaehrungActivity extends Activity {
                 .addSubActionView(lCSubBuilder.setContentView(lcIcon5, blueContentParams).build())
                 .setRadius(redActionMenuRadius)
                 .setStartAngle(70)
-                .setEndAngle(-70)
+                .setEndAngle(360)
                 .attachTo(leftCenterButton)
                 .build();
 
