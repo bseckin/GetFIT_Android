@@ -16,18 +16,18 @@
         <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-c80ca1fb15eb73b3b4699aaea30ce17bbebadef2.jar" />
     </item>
     <item
-        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\additionnal.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\additionnal-7c646687f482e535f94e796c658e0681d4e64cb8.jar" />
-    </item>
-    <item
         jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.github.markushi\circlebutton\1.1\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
         <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-6063be6ea8cf3a7711743e1b429973ca66604b0e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\libs\additionnal.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\additionnal-7c646687f482e535f94e796c658e0681d4e64cb8.jar" />
     </item>
     <item
         jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
@@ -82,7 +82,7 @@
         jar="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\SQLiteLogin1\library3\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="74a68aa5e1551cf05e0230431a2af08fb0b7a0a2">
+        sha1="84632a8521dab70af83b0fc11eb2ca7879436ce7">
         <dex dex="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\pre-dexed\debug\classes-c6fd9730ade8ba6e006cf5f048ec00078847ebf6.jar" />
     </item>
     <item

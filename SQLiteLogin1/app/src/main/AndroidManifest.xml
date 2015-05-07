@@ -41,39 +41,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".reg.login.RegisterActivity"
             android:label="GetFIT Registrierung 1/2" >
         </activity>
-
         <activity android:name="menu.androidhive.navdrawer.NavigationActivity" />
-
         <activity
             android:name=".GoalActivity"
             android:label="@string/title_activity_goal" >
         </activity>
-
         <activity
             android:name=".ProgressActivity"
             android:label="@string/title_activity_progress" >
         </activity>
-
         <activity
             android:name=".reg.login.HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
-
         <activity
             android:name=".reg.login.RegistrierungFragenkatalogActivity"
             android:label="GetFIT Registrierung 2/2" >
         </activity>
-
         <activity
             android:name="ernaehrung.ErnaehrungActivity"
             android:label="@string/title_activity_ernaehrung" >
         </activity>
-
         <activity
             android:name=".AndroidXMLParsingActivity"
             android:label="Ernährungsdatenbank" >
@@ -84,7 +76,6 @@
             android:name=".SingleMenuItemActivity"
             android:label="Ernährungsdatenbank" >
         </activity>
-
         <activity android:name="uebungsliste.BauchUebungen_Activity" />
         <activity android:name="uebungsliste.BeineUebungen_Activity" />
         <activity android:name="uebungsliste.BizepsUebungen_Activity" />
@@ -93,15 +84,17 @@
         <activity android:name="uebungsliste.SchulterUebungen_Activity" />
         <activity android:name="uebungsliste.TrizepsUebungen_Activity" />
         <activity android:name="uebungsliste.UntererRueckenUebungen_Activity" />
-
         <activity
             android:name=".reg.login.BodyInfoActivity"
             android:label="@string/title_activity_body_info" >
         </activity>
-
         <activity
             android:name="menu.androidhive.navdrawer.KonditionhelpActivity"
             android:label="@string/title_activity_konditionhelp" >
+        </activity>
+        <activity
+            android:name="menu.androidhive.navdrawer.NutritiontableActivity"
+            android:label="@string/title_activity_nutritiontable" >
         </activity>
     </application>
 

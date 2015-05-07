@@ -1,4 +1,4 @@
-package ernaehrung;
+package menu.androidhive.navdrawer;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -22,15 +21,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Nutrition.NutritionIntake;
+import ernaehrung.ErnaehrungActivity;
 import ernaehrung.factory.AErnaehrung;
 import ernaehrung.factory.Ectomorph;
 import ernaehrung.factory.Endomorph;
 import ernaehrung.factory.Ernaehrungsplan;
 import ernaehrung.factory.Mesomorph;
 
-
-public class ErnaehrungActivity extends Activity {
-
+public class NutritiontableActivity extends Activity {
     private NutritionIntake ni;
 
     private int carbs;
@@ -49,15 +47,6 @@ public class ErnaehrungActivity extends Activity {
     private float kcaltotal;
 
     private String[][] morgens;
-    private TextView fatview;
-    private TextView protview;
-    private TextView carbview;
-    private TextView calview;
-
-    private ProgressBar pfat;
-    private ProgressBar pprot;
-    private ProgressBar pcarb;
-    private ProgressBar pcal;
 
     private int _weight;
     private int _height;
@@ -85,11 +74,13 @@ public class ErnaehrungActivity extends Activity {
     private int weight;
     private int height;
     private String gender;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_ernaehrung);
+        setContentView(R.layout.activity_nutritiontable);
+
+
+
         // Calling Application class (see application tag in AndroidManifest.xml)
         final GlobalClass globalVariable = (GlobalClass) this.getApplicationContext();
 
@@ -233,30 +224,7 @@ public class ErnaehrungActivity extends Activity {
                 Float.toString(Math.round(this.kcal))}};
 
         //die progressbars werden beschriftet
-        this.fatview = (TextView) findViewById(R.id.fat_anz);
-        this.fatview.setText("0/" + Float.toString(this.fat));
 
-        this.protview = (TextView) findViewById(R.id.prot_anz);
-        this.protview.setText("0/" + Float.toString(this.protein));
-
-        this.carbview = (TextView) findViewById(R.id.carb_anz);
-        this.carbview.setText("0/" + Float.toString(this.carbs));
-
-        this.calview = (TextView) findViewById(R.id.cal_anz);
-        this.calview.setText("0/" + Float.toString(this.kcal));
-
-        //Progressbar wird resettet
-        this.pfat = (ProgressBar) findViewById(R.id.fat_prog);
-        this.pfat.setProgress(0);
-
-        this.pprot = (ProgressBar) findViewById(R.id.prot_prog);
-        this.pprot.setProgress(0);
-
-        this.pcarb = (ProgressBar) findViewById(R.id.carb_prog);
-        this.pcarb.setProgress(0);
-
-        this.pcal = (ProgressBar) findViewById(R.id.cal_prog);
-        this.pcal.setProgress(0);
 
 
         //TODO Tablelayout weg und alles mit progressbars weils schöner aussieht
@@ -321,7 +289,7 @@ public class ErnaehrungActivity extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         String[][] food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        DatabaseHandler db = new DatabaseHandler(ErnaehrungActivity.this);
+                        DatabaseHandler db = new DatabaseHandler(NutritiontableActivity.this);
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -335,15 +303,7 @@ public class ErnaehrungActivity extends Activity {
                         }
 
 
-                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
-                        new Thread(new Task("protein", getPerc(protref, protein))).start();
-                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
-                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
 
-                        fatview.setText(Math.round(100.0 * fatref) / 100.0 + "/" + Float.toString(fat));
-                        protview.setText(Math.round(100.0 * protref) / 100.0 + "/" + Float.toString(protein));
-                        carbview.setText(Math.round(100.0 * carbref) / 100.0 + "/" + Float.toString(carbs));
-                        calview.setText(Math.round(100.0 * kcalref) / 100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -355,7 +315,7 @@ public class ErnaehrungActivity extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungActivity.this);
+                        db = new DatabaseHandler(NutritiontableActivity.this);
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -368,15 +328,6 @@ public class ErnaehrungActivity extends Activity {
                             Log.d(fatref + "", "!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
-                        new Thread(new Task("protein", getPerc(protref, protein))).start();
-                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
-                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
-
-                        fatview.setText(Math.round(100.0 * fatref) / 100.0 + "/" + Float.toString(fat));
-                        protview.setText(Math.round(100.0 * protref) / 100.0 + "/" + Float.toString(protein));
-                        carbview.setText(Math.round(100.0 * carbref) / 100.0 + "/" + Float.toString(carbs));
-                        calview.setText(Math.round(100.0 * kcalref) / 100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -388,7 +339,7 @@ public class ErnaehrungActivity extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungActivity.this);
+                        db = new DatabaseHandler(NutritiontableActivity.this);
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -401,15 +352,6 @@ public class ErnaehrungActivity extends Activity {
                             Log.d(fatref + "", "!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
-                        new Thread(new Task("protein", getPerc(protref, protein))).start();
-                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
-                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
-
-                        fatview.setText(Math.round(100.0 * fatref) / 100.0 + "/" + Float.toString(fat));
-                        protview.setText(Math.round(100.0 * protref) / 100.0 + "/" + Float.toString(protein));
-                        carbview.setText(Math.round(100.0 * carbref) / 100.0 + "/" + Float.toString(carbs));
-                        calview.setText(Math.round(100.0 * kcalref) / 100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -421,7 +363,7 @@ public class ErnaehrungActivity extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungActivity.this);
+                        db = new DatabaseHandler(NutritiontableActivity.this);
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -434,15 +376,6 @@ public class ErnaehrungActivity extends Activity {
                             Log.d(fatref + "", "!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
-                        new Thread(new Task("protein", getPerc(protref, protein))).start();
-                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
-                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
-
-                        fatview.setText(Math.round(100.0 * fatref) / 100.0 + "/" + Float.toString(fat));
-                        protview.setText(Math.round(100.0 * protref) / 100.0 + "/" + Float.toString(protein));
-                        carbview.setText(Math.round(100.0 * carbref) / 100.0 + "/" + Float.toString(carbs));
-                        calview.setText(Math.round(100.0 * kcalref) / 100.0 + "/" + Float.toString(kcal));
 
                         table_layout_food.removeAllViews();
                         cols = food.length - 1;
@@ -454,7 +387,7 @@ public class ErnaehrungActivity extends Activity {
 
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungActivity.this);
+                        db = new DatabaseHandler(NutritiontableActivity.this);
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -467,22 +400,13 @@ public class ErnaehrungActivity extends Activity {
                             Log.d(fatref + "", "!!!!!!!!!!!!!!!");
                         }
 
-                        new Thread(new Task("fat", getPerc(fatref, fat))).start();
-                        new Thread(new Task("protein", getPerc(protref, protein))).start();
-                        new Thread(new Task("carb", getPerc(carbref, carbs))).start();
-                        new Thread(new Task("kcal", getPerc(kcalref, kcal))).start();
-
-                        fatview.setText(Math.round(100.0 * fatref) / 100.0 + "/" + Float.toString(fat));
-                        protview.setText(Math.round(100.0 * protref) / 100.0 + "/" + Float.toString(protein));
-                        carbview.setText(Math.round(100.0 * carbref) / 100.0 + "/" + Float.toString(carbs));
-                        calview.setText(Math.round(100.0 * kcalref) / 100.0 + "/" + Float.toString(kcal));
 
 
                         table_layout_food.removeAllViews();
                         RelativeLayout linearLayout = (RelativeLayout) findViewById(R.id.rlt);
 
                         //Sind alle Malzeiten gegessen so wird nur ein Text ausgegben
-                        TextView valueTV = new TextView(ErnaehrungActivity.this);
+                        TextView valueTV = new TextView(NutritiontableActivity.this);
                         valueTV.setText("Glüchwunsch Sie sind für heute fertig");
                         valueTV.setLayoutParams(new RelativeLayout.LayoutParams(
                                 RelativeLayout.LayoutParams.FILL_PARENT,
@@ -502,12 +426,14 @@ public class ErnaehrungActivity extends Activity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ErnaehrungActivity.this, ErnaehrungActivity.class);
+                Intent intent = new Intent(NutritiontableActivity.this, ErnaehrungActivity.class);
                 startActivity(intent);
             }
 
         });
+
     }
+
 
 
     /**
@@ -624,67 +550,4 @@ public class ErnaehrungActivity extends Activity {
         }
         return food_amount_list;
     }
-
-
-    public float getPerc(float anz, float total) {
-        return ((anz * 100) / total);
-    }
-
-
-    class Task implements Runnable {
-        String _viewart;
-        float _perc;
-
-        public Task(String viewart, float perc) {
-            this._viewart = viewart;
-            this._perc = perc;
-        }
-
-        @Override
-        public void run() {
-            if (this._viewart.equals("fat")) {
-                for (int i = pfat.getProgress(); i <= _perc; i++) {
-                    final int value = i;
-                    try {
-                        Thread.sleep(50);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    pfat.setProgress(value);
-                }
-            } else if (this._viewart.equals("protein")) {
-                for (int i = pprot.getProgress(); i <= _perc; i++) {
-                    final int value = i;
-                    try {
-                        Thread.sleep(50);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    pprot.setProgress(value);
-                }
-            } else if (this._viewart.equals("kcal")) {
-                for (int i = pcal.getProgress(); i <= _perc; i++) {
-                    final int value = i;
-                    try {
-                        Thread.sleep(50);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    pcal.setProgress(value);
-                }
-            } else if (this._viewart.equals("carb")) {
-                for (int i = pcarb.getProgress(); i <= _perc; i++) {
-                    final int value = i;
-                    try {
-                        Thread.sleep(50);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    pcarb.setProgress(value);
-                }
-
-            }
-        }
-    }
-
 }

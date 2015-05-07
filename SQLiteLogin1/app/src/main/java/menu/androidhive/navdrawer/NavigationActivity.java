@@ -54,7 +54,7 @@ public class NavigationActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d("Activity","Navigation onCreate() start");
         super.onCreate(savedInstanceState);
-
+        Log.d(savedInstanceState+"aaaaaaaaa","!!!!!!!!!!!!!");
 
         /*
          ACTIONBAR Farbe, und Textfarbe:
@@ -180,7 +180,7 @@ public class NavigationActivity extends Activity {
     /**
      * Diplaying fragment view for selected nav drawer list item
      */
-    private void displayView(int position) {
+    public void displayView(int position) {
         Log.d("Activity","Navigation displayView() start");
 
         // update the main content by replacing fragments
@@ -191,7 +191,7 @@ public class NavigationActivity extends Activity {
                 fragment = new TraningsFragment();
                 break;
             case 1: // Ernährung
-                fragment = new ErnaehrungsFragment();
+                fragment = new NutritionmenuFragment();
                 break;
             case 2: // Kondition
                 fragment = new KonditionFragment();
