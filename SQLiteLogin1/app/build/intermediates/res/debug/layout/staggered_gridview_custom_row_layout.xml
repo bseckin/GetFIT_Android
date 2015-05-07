@@ -12,7 +12,7 @@
     android:layout_height="match_parent"
     android:scaleType="centerCrop" />
     <View android:layout_width="fill_parent"
-        android:layout_height="40dip"
+        android:layout_height="50dip"
         android:layout_gravity="bottom"
         android:background="#34585c" />
 <com.etsy.android.grid.util.DynamicHeightTextView
@@ -22,7 +22,7 @@
     android:text="Uebungsbezeichnung"
     android:textColor="#FFFFFF"
     android:gravity="bottom|center_horizontal"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="15dp"
     android:textSize="15sp"
     android:textStyle="bold" />
 

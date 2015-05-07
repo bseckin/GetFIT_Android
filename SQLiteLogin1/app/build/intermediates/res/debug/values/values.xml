@@ -46,7 +46,7 @@
     <dimen name="radius_medium">72dp</dimen>
     <dimen name="radius_small">400dp</dimen>
     <dimen name="red_action_button_content_margin">36dp</dimen>
-    <dimen name="red_action_button_content_size">16dp</dimen>
+    <dimen name="red_action_button_content_size">60dp</dimen>
     <dimen name="red_action_button_margin">48dp</dimen>
     <dimen name="red_action_button_size">108dp</dimen>
     <dimen name="red_action_menu_radius">96dp</dimen>
@@ -60,7 +60,7 @@
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="M">Weiblich</string>
-    <string name="W">Maennlich</string>
+    <string name="W">Männlich</string>
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_settings_was"><item>settings</item></string>
@@ -89,10 +89,14 @@
     <string name="frage_3">3. Wie viel Erfahrung hast du im Krafttraining?</string>
     <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
     <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
-    <string name="frage_6">6. Körpertyp</string>
+    <string name="frage_6">6. Was für einen Körpertyp hast du?</string>
+    <string name="fragezeichen">Hilfe</string>
     <string name="gewichtsverlust">Gewichtsverlust</string>
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hintbenutzername"><i>Benutzername</i></string>
+    <string name="hintpassword"><i>Passwort</i></string>
     <string name="kondition">Erhöhung der Kondition – Steigerung der Ausdauer</string>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
@@ -136,11 +140,13 @@
     <string name="title_activity_login2">Login2Activity</string>
     <string name="title_activity_menu_with_fab">MenuWithFABActivity</string>
     <string name="title_activity_nutrition">NutritionActivity</string>
+    <string name="title_activity_nutritiontable">NutritiontableActivity</string>
     <string name="title_activity_progress">ProgressActivity</string>
     <string name="title_activity_registrierung_fragenkatalog">Registrierung - Der Fragenkatalog</string>
     <string name="title_activity_seekbar">SeekbarActivity</string>
     <string name="title_activity_start">GetFIT</string>
     <string name="title_fragenkatalog">.. Dein angepasster Plan!</string>
+    <string name="title_fragment_ernaehrungtable">ETable</string>
     <string name="title_section1">Lifting</string>
     <string name="title_section2">Cardio</string>
     <string name="title_section3">Nutrition</string>

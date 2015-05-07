@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.etsy.android.grid.StaggeredGridView;
 import com.packone.login.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /*
@@ -34,7 +35,10 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
 
         setTitle("Bauchübungen/Rumpf");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, generateData());
+
+        ArrayList<UebungItem> data = Bauch.getData();
+
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -58,21 +62,6 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
     }
-
-    private ArrayList<String> generateData() {
-        ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Crunches.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Sit-Ups-auf-der-Schr%C3%A4gbank.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/H%C3%BCftheben.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Crunches-mit-ausgestreckten-Armen.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Klappmesser.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Beinheben.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Abwechselndes-%C3%9Cberkreuzen-der-Beine.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Korkenzieher.jpg");
-
-        return listData;
-    }
-
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {

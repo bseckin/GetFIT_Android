@@ -31,173 +31,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff2cb38e-13c9-42ed-9ab6-e2e0de00560c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/floatingButton/floatingButton.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library2/library2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library3/library3.iml" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\.idea\libraries\CircularFloatingActionMenu_1_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.3\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.3\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.3\libs\internal_impl-21.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\aidl\android\support\v4\app\INotificationSideChannel.aidl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-hdpi-v4\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-mdpi-v4\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xhdpi-v4\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxhdpi-v4\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable-xxxhdpi-v4\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable\button_action_dark_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable\button_action_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable\button_sub_action_dark_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\drawable\button_sub_action_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\res\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\raw\sound_1.mp3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\raw\stones.mp3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\androidTest\java\com\oguzdev\circularfloatingactionmenu\library\ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\java\com\oguzdev\circularfloatingactionmenu\library\FloatingActionButton.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\java\com\oguzdev\circularfloatingactionmenu\library\FloatingActionMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\java\com\oguzdev\circularfloatingactionmenu\library\SubActionButton.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\java\com\oguzdev\circularfloatingactionmenu\library\animation\DefaultAnimationHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\java\com\oguzdev\circularfloatingactionmenu\library\animation\MenuAnimationHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-hdpi\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_blue.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_blue_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_blue_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_red.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_red_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_red_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_camera.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_camera_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_chat.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_chat_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_headphones.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_location_found.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_new.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_new_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_picture.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_picture_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_place.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_place_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_send_now.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_send_now_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_settings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_video.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi\ic_action_video_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xhdpi\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxhdpi\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\bottom_bar_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_sub_action.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_sub_action_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_sub_action_dark_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-xxxhdpi\button_sub_action_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable\button_action_dark_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable\button_action_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable\button_sub_action_dark_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable\button_sub_action_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\values\dimens.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Thumbs.db" afterPath="$PROJECT_DIR$/../Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GetFIT_Android.iml" afterPath="$PROJECT_DIR$/../GetFIT_Android.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Bauch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Beine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Bizeps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Brust.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/ObererRuecken.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Schulter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Trizps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/UebungItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/UntererRuecken.java" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\source\r\debug\at\markushi\circlebutton\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\source\r\debug\com\etsy\android\grid\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\build\generated\source\r\debug\com\oguzdev\circularfloatingactionmenu\library\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\GoalActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\java\com\packone\login\ProgressActivity.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/Thumbs.db" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/SQLiteLogin1/library3/unspecified/classes.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/SQLiteLogin1/library3/unspecified/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BauchUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BauchUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BeineUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BeineUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BizepsUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BizepsUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BrustUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/BrustUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NavigationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NavigationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/ObererRueckenUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/ObererRueckenUebungen_Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/packone/login/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/packone/login/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteLogin1.iml" afterPath="$PROJECT_DIR$/SQLiteLogin1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/compiler.xml" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/gradle.xml" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/library.iml" afterPath="$PROJECT_DIR$/library/library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v13_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v13_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/SchulterUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/SchulterUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/TrizepsUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/TrizepsUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Uebungsliste_ADAPTER.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/Uebungsliste_ADAPTER.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/uebungsliste/UntererRueckenUebungen_Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/uebungsliste/UntererRueckenUebungen_Activity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_body_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_body_info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/staggered_gridview_custom_row_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/staggered_gridview_custom_row_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SQLiteLogin1.iws" />
@@ -274,100 +143,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ErnaehrungActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java">
+      <file leaf-file-name="NutritiontableActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritiontableActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0674157" vertical-offset="1846" max-vertical-offset="2992">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3739#3807#0" expanded="true" />
-                <element signature="e#3845#3913#0" expanded="true" />
-                <element signature="e#3956#4032#0" expanded="true" />
-                <element signature="e#4077#4155#0" expanded="true" />
-                <element signature="e#4191#4259#0" expanded="true" />
-                <element signature="e#4299#4372#0" expanded="true" />
-                <element signature="e#4421#4504#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="935">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9146" max-vertical-offset="9503">
+              <caret line="538" column="17" selection-start-line="538" selection-start-column="17" selection-end-line="538" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="NutritionmenuFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritionmenuFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="442">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2482">
+              <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library3/build.gradle">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="629">
+            <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="1853">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_registrierung_fragenkatalog.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6086">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FloatingActionButton.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library3/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java">
+      <file leaf-file-name="fragment_nutritionmenu.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_nutritionmenu.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5236">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1819">
-              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+      <file leaf-file-name="fragment_menu_with_fab.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_menu_with_fab.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="374">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FloatingActionButton.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../CircularFloatingActionMenu-master.zip!/CircularFloatingActionMenu-master/library/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="5423">
-              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FloatingActionButton.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library2/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="5423">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+            <state vertical-scroll-proportion="-37.72" vertical-offset="111" max-vertical-offset="1734">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2322,7 +2171,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_konditionhelp.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/KonditionFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/library/src/main/res/drawable/button_sub_action_selector.xml" />
         <option value="$PROJECT_DIR$/library/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionMenu.java" />
@@ -2330,9 +2178,24 @@
         <option value="$PROJECT_DIR$/../../CircularFloatingActionMenu-master.zip!/CircularFloatingActionMenu-master/library/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java" />
         <option value="$PROJECT_DIR$/library2/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java" />
         <option value="$PROJECT_DIR$/library3/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/BlankFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/BlankFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_blank.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/packone/login/BlankFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NavigationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/ErnaehrungsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_ernaehrungtable.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/ErnaehrungtableFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_nutritiontable.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritiontableActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritionmenuFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2344,10 +2207,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -2375,13 +2236,23 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SQLiteLogin1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2403,9 +2274,23 @@
               <option name="myItemId" value="SQLiteLogin1" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="library3" />
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2416,6 +2301,86 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dimens.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="raw" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2430,6 +2395,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navdrawer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2450,14 +2433,110 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SQLiteLogin1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQLiteLogin1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2467,7 +2546,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Desktop/5BHIT/sdk" />
-    <property name="android.project.structure.last.selected" value="library3" />
+    <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -2475,16 +2554,16 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.21.101:5555" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     <property name="SearchEverywhereHistoryKey" value="3&#9;ACTION&#9;ExpandAllToLevel3" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="217" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="444" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CircularFloatingActionMenu-master/CircularFloatingActionMenu-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="true" />
@@ -2493,21 +2572,25 @@
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="menu.androidhive.navdrawer" />
-      <recent name="com.packone.login.reg.login" />
       <recent name="com.packone.login" />
+      <recent name="com" />
+      <recent name="com.packone.login.reg.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\raw" />
+      <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-ldpi" />
       <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable" />
+      <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xxhdpi" />
+      <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\drawable-mdpi" />
-      <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\app\src\main\res\menu" />
-      <recent name="C:\Users\Muhammed5\Documents\GitHub\GetFIT_Android\SQLiteLogin1\library\src\main\res\drawable-mdpi" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="info.androidhive.slidingmenu" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.packone.login" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2704,27 +2787,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.1703204" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30939227" sideWeight="0.6778989" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3072747" sideWeight="0.6765847" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32464713" sideWeight="0.7037838" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32464713" sideWeight="0.77405405" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15511727" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356134" sideWeight="0.69235796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.49915683" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838038" sideWeight="0.49915683" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18241042" sideWeight="0.5762162" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18241042" sideWeight="0.4227027" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1801105" sideWeight="0.5737374" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1801105" sideWeight="0.42424244" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22983426" sideWeight="0.851602" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29637527" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61777776" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53343236" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -2733,9 +2817,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33207262" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32243684" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3213898" sideWeight="0.49967343" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3026,254 +3109,52 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/ProgressActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritionmenuFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/database/Fragenkatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cardio.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/GlobalClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/XMLFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bodytype.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/GoalActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.222221" vertical-offset="0" max-vertical-offset="0">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_body_info.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/MeinKontoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.105426356" vertical-offset="0" max-vertical-offset="0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/BodyInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4992248" vertical-offset="0" max-vertical-offset="0">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="2227">
+          <caret line="81" column="3" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/packone/login/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="289" column="59" selection-start-line="289" selection-start-column="59" selection-end-line="289" selection-end-column="59" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_bodytype.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42045453" vertical-offset="0" max-vertical-offset="0">
-          <caret line="43" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_meinkonto.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/adapter/NavDrawerListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21656051" vertical-offset="0" max-vertical-offset="0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NavigationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18181819" vertical-offset="0" max-vertical-offset="0">
-          <caret line="68" column="80" selection-start-line="68" selection-start-column="80" selection-end-line="68" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ernaehrung/factory/DefiEndo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.105426356" vertical-offset="0" max-vertical-offset="0">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7411346" vertical-offset="0" max-vertical-offset="0">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/model/NavDrawerItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="816">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ernaehrung.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ernaehrungstagebuch.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ernaehrung.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/cardio.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/KonditionFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="2125">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_meinkonto.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="866">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_kondition.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="2448">
           <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_konditionhelp.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_konditionhelp.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_xml.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_xml.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/SingleMenuItemActivity.java">
@@ -3290,45 +3171,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/ErnaehrungsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7854" max-vertical-offset="11441">
-          <caret line="514" column="76" selection-start-line="514" selection-start-column="58" selection-end-line="514" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_menu_with_fab.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_with_fab.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="706">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/RegistrierungFragenkatalogActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="3043">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="60" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-55.08" vertical-offset="0" max-vertical-offset="1530">
-          <caret line="81" column="78" selection-start-line="81" selection-start-column="78" selection-end-line="81" selection-end-column="78" />
           <folding />
         </state>
       </provider>
@@ -3348,19 +3194,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../CircularFloatingActionMenu-master.zip!/CircularFloatingActionMenu-master/library/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1077" max-vertical-offset="5236">
           <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3368,23 +3205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="5423">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library3/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5236">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1819">
-          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3392,7 +3212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="442">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3400,7 +3219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="698">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3408,7 +3226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="852">
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3416,24 +3233,277 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="935">
           <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/MeinKontoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_nutrition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_nutrition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-ldpi/ic_nutrition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_nutrition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_ernaehrung.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_fitnessnutrition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/progress.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library3/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="5423">
+          <caret line="218" column="9" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library3/src/main/java/com/oguzdev/circularfloatingactionmenu/library/FloatingActionMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.75" vertical-offset="10902" max-vertical-offset="12546">
+          <caret line="659" column="49" selection-start-line="659" selection-start-column="44" selection-end-line="659" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library3/src/main/java/com/oguzdev/circularfloatingactionmenu/library/SubActionButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library3/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_menu_with_fab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_with_fab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/adapter/NavDrawerListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2560" max-vertical-offset="61744">
+          <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ernaehrung.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38857144" vertical-offset="0" max-vertical-offset="700">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_with_fab.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="700">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/packone/login/reg/login/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1819">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NavigationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="4437">
+          <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/ErnaehrungstagebuchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/TraningsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="5083">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ernaehrung/ErnaehrungActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0674157" vertical-offset="1846" max-vertical-offset="2992">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3739#3807#0" expanded="true" />
-            <element signature="e#3845#3913#0" expanded="true" />
-            <element signature="e#3956#4032#0" expanded="true" />
-            <element signature="e#4077#4155#0" expanded="true" />
-            <element signature="e#4191#4259#0" expanded="true" />
-            <element signature="e#4299#4372#0" expanded="true" />
-            <element signature="e#4421#4504#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="11390">
+          <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/ErnaehrungsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8568" max-vertical-offset="11866">
+          <caret line="531" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="702" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nutritiontable.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328592" vertical-offset="259" max-vertical-offset="1292">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ernaehrung.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="4896">
+          <caret line="34" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritiontableActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9146" max-vertical-offset="9503">
+          <caret line="538" column="17" selection-start-line="538" selection-start-column="17" selection-end-line="538" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/menu/androidhive/navdrawer/NutritionmenuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="2091">
+          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-37.72" vertical-offset="111" max-vertical-offset="1734">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="1853">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrierung_fragenkatalog.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6086">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_nutritionmenu.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="700">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_menu_with_fab.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="374">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

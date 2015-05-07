@@ -34,7 +34,10 @@ public class BrustUebungen_Activity extends Activity implements AbsListView.OnSc
 
         setTitle("Brustübungen");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, generateData());
+
+        ArrayList<UebungItem> data = Brust.getData();
+
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -58,19 +61,6 @@ public class BrustUebungen_Activity extends Activity implements AbsListView.OnSc
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
     }
-
-    private ArrayList<String> generateData() {
-        ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://www.for-fitness-friends.de/wp-content/uploads/Bankdr%C3%BCcken-420x283.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Positiv-Kurzhantel-Fliegende.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Schr%C3%A4gbankdr%C3%BCcken.jpg"); //schraegbankdrucken
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Brustpresse.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Butterfly-am-Kabelzug.jpg");
-        listData.add("http://mhstatic.de/fm/1/thumbnails/Fitness_Lexikon_Uebung_133a.jpg.2409867.jpg");
-        listData.add("http://mhstatic.de/fm/1/thumbnails/MH_0909_Liegest%C3%BCtz_A_800.jpg.2432539.jpg");
-        return listData;
-    }
-
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {

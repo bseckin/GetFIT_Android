@@ -22,7 +22,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.packone.login.reg.login.MainActivity;
-import com.packone.login.ProgressActivity;
 import com.packone.login.R;
 import java.util.ArrayList;
 import menu.androidhive.navdrawer.adapter.NavDrawerListAdapter;
@@ -264,11 +263,6 @@ public class NavigationActivity extends Activity {
         Intent intent = new Intent(NavigationActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    public void onProcess(View view) {
-        Intent intent = new Intent(NavigationActivity.this, ProgressActivity.class);
-        startActivity(intent);
     }
 
     /**

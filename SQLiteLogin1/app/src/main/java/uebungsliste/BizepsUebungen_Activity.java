@@ -33,7 +33,10 @@ public class BizepsUebungen_Activity extends Activity implements AbsListView.OnS
 
         setTitle("Bizepsübungen");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, generateData());
+
+        ArrayList<UebungItem> data = Bizeps.getData();
+
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -57,17 +60,6 @@ public class BizepsUebungen_Activity extends Activity implements AbsListView.OnS
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
     }
-
-    private ArrayList<String> generateData() {
-        ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://oi61.tinypic.com/zxwjf5.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/06/Konzentriertes-Armbeugen.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/06/Kurzhantel-Armbeugen.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Scottcurls.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/09/Schr%C3%A4gbank-Scottcurls.jpg"); //Fliegende
-        return listData;
-    }
-
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {

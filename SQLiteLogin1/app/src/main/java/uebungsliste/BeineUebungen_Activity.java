@@ -34,7 +34,10 @@ public class BeineUebungen_Activity extends Activity implements AbsListView.OnSc
 
         setTitle("Bauchübungen");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, generateData());
+
+        ArrayList<UebungItem> data = Beine.getData();
+
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -58,18 +61,6 @@ public class BeineUebungen_Activity extends Activity implements AbsListView.OnSc
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
     }
-
-    private ArrayList<String> generateData() {
-        ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://mhstatic.de/fm/1/thumbnails/Fitness_Lexikon_Uebung_122b.584955.jpg.2409847.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/08/Beinpressen.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/06/Ausfallschritt.jpg"); //schraegbankdrucken
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/08/Beinbeugen-im-Liegen-am-Ger%C3%A4t.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/08/Sitzendes-Wadenheben-am-Ger%C3%A4t.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/08/Stehendes-Wadenheben-am-Ger%C3%A4t.jpg");
-        return listData;
-    }
-
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {

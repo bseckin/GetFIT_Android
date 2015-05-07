@@ -16,7 +16,7 @@
     <!-- Es ist nicht wichtig welchen Tag er trainieren kann -> nur die Einhaltung der Reihenfolge ist wichtig) -->
     <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
     <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
-    <string name="frage_6">6. Körpertyp</string>
+    <string name="frage_6">6. Was für einen Körpertyp hast du?</string>
 
     <!-- RADIO BUTTONS VON FRAGENKATALOG -->
     <string name="gewichtsverlust">Gewichtsverlust</string>
@@ -31,12 +31,15 @@
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
     <string name="profi">Viel – Ich habe viel Erfahrung </string>
 
+    <string name="hintbenutzername"><i>Benutzername</i></string>
+    <string name="hintpassword"><i>Passwort</i></string>
+
     <string name="zwei_mal_training">2x in der Woche</string>
     <string name="drei_mal_training">3x in der Woche</string>
     <string name="vier_mal_training">mehr als 4 mal in der Woche</string>
 
     <!-- RadioButtons Registrierung -->
-    <string name="W">Maennlich</string>
+    <string name="W">Männlich</string>
     <string name="M">Weiblich</string>
 
     <!-- Nav Drawer Menu Items -->
@@ -81,10 +84,14 @@
     <string name="title_activity_menu_with_fab">MenuWithFABActivity</string>
     <string name="title_activity_body_info">Welche Körpertyp bin ich?</string>
     <string name="title_activity_konditionhelp">Kondition - Hilfestellung</string>
+
     <string name="title_fragment_ernaehrungtable">ETable</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_nutritiontable">NutritiontableActivity</string>
+
+    <string name="fragezeichen">Hilfe</string>
+
 
 </resources>
