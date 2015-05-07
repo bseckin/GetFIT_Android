@@ -33,7 +33,10 @@ public class UntererRueckenUebungen_Activity extends Activity implements AbsList
 
         setTitle("Unterer Ruecken Übungen");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, generateData());
+
+        ArrayList<UebungItem> data = UntererRuecken.getData();
+
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -60,14 +63,21 @@ public class UntererRueckenUebungen_Activity extends Activity implements AbsList
 
     private ArrayList<String> generateData() {
         ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://i62.tinypic.com/s58lr8.jpg");
-
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/07/R%C3%BCckenstrecker.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/07/Good-Mornings.jpg"); //schraegbankdrucken
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2011/07/R%C3%BCckenstrecken-im-Liegen.jpg"); //schraegbankdrucken
+         //schraegbankdrucken
         return listData;
     }
 
+    private ArrayList<String> generateTexts() {
+        ArrayList<String> listData = new ArrayList<String>();
+        listData.add("hallo");
+        listData.add("wie");
+        listData.add("geht");
+        listData.add("es");
+        listData.add("dir");
+        listData.add("du");
+        listData.add("huan");
+        return listData;
+    }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {

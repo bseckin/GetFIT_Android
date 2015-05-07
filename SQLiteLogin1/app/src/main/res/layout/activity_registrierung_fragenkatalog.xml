@@ -7,7 +7,7 @@
                   android:layout_height="match_parent"
                   tools:context=".MainActivity"
                   android:orientation="vertical"
-                  android:background="@drawable/background1"
+                  android:background="@drawable/matte_xhdpi"
         >
 
         <TextView
@@ -36,7 +36,8 @@
                 android:id="@+id/textView"
                 android:background="#ffffff"
                 android:padding="8dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="15sp" />
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -48,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/gewichtsverlust"
                     android:id="@+id/radBtn_Gewichtsverlust"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -56,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/masseaufbau"
                     android:id="@+id/radBtn_Masseaufbau"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -64,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/kondition"
                     android:id="@+id/radBtn_Kondition"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -72,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/ruecken"
                     android:id="@+id/radBtn_Ruecken_staerken"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -80,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/allgemein"
                     android:id="@+id/radBtn_Allgemein"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     />
             </RadioGroup>
 
@@ -94,7 +95,8 @@
                 android:background="#ffffffff"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="15sp" />
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -105,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/zeitdruck"
                     android:id="@+id/radBtn_zeitdruck"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -113,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/motivation"
                     android:id="@+id/radBtn_fehlendeMotivation"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -121,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/nichts"
                     android:id="@+id/radBtn_nichts"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
             </RadioGroup>
@@ -136,7 +138,8 @@
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="15sp" />
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -147,7 +150,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/anfaenger"
                     android:id="@+id/radBtn_anfaenger"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -155,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/halbprofi"
                     android:id="@+id/radBtn_halbprofi"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -163,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/profi"
                     android:id="@+id/radBtnprofi"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
             </RadioGroup>
@@ -178,7 +181,8 @@
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="15sp" />
             <RadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -189,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/zwei_mal_training"
                     android:id="@+id/radBtn_2mal"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -197,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/drei_mal_training"
                     android:id="@+id/radBtn_3mal"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
                 <RadioButton
@@ -205,7 +209,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/vier_mal_training"
                     android:id="@+id/radBtn_4mal"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:checked="false"
                     />
             </RadioGroup>
@@ -219,7 +223,8 @@
                 android:background="#FFFFFFFF"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -234,28 +239,28 @@
                     android:layout_weight="10">
 
                     <RadioButton
-                        android:layout_width="123dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Endomorph"
+                        android:text="Endomorph  -  Der molligere"
                         android:id="@+id/radBtn_Endomorph"
-                        android:textSize="12sp"
+                        android:textSize="13sp"
                         android:checked="false"
                         />
 
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ectomorph"
+                        android:text="Ectomorph  -  Der Schlanke"
                         android:id="@+id/radBtn_Ectomorph"
-                        android:textSize="12sp"
+                        android:textSize="13sp"
                         android:checked="false"
                         android:layout_marginTop="10dp" />
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Mesomorph"
+                        android:text="Mesomorph  -  Der durchnschnittliche"
                         android:id="@+id/radBtn_Mesomorph"
-                        android:textSize="12sp"
+                        android:textSize="13sp"
                         android:checked="false"
                         android:layout_marginTop="10dp" />
 
@@ -263,7 +268,7 @@
 
                 <LinearLayout
                     android:orientation="vertical"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#508F99"
                     android:layout_weight="1"
@@ -288,13 +293,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="H"
+                        android:text="@string/fragezeichen"
                         android:id="@+id/helpText"
                         android:layout_weight="1"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="15dp"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="15dp"
+                        android:textSize="14sp"
                         android:textIsSelectable="false"
                         android:linksClickable="true"
                         android:longClickable="true"
@@ -327,7 +332,8 @@
                     android:id="@+id/eT_frage5"
                     android:textSize="15sp"
                     android:checked="false"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:maxLines="3" />
             </RadioGroup>
 
 

@@ -34,30 +34,25 @@
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
         <activity
             android:name=".reg.login.MainActivity"
-            android:label="@string/title_activity_start" >
+            android:label="@string/title_activity_start"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <activity
             android:name=".reg.login.RegisterActivity"
-            android:label="GetFIT Registrierung 1/2" >
+            android:label="GetFIT Registrierung 1/2"
+            android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name="menu.androidhive.navdrawer.NavigationActivity" />
-
-        <activity
-            android:name=".GoalActivity"
-            android:label="@string/title_activity_goal" >
-        </activity>
-
-        <activity
-            android:name=".ProgressActivity"
-            android:label="@string/title_activity_progress" >
-        </activity>
+        <activity android:name="menu.androidhive.navdrawer.NavigationActivity"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".reg.login.HelpActivity"
@@ -71,7 +66,8 @@
 
         <activity
             android:name="ernaehrung.ErnaehrungActivity"
-            android:label="@string/title_activity_ernaehrung" >
+            android:label="@string/title_activity_ernaehrung"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
@@ -82,7 +78,8 @@
         <!-- Single List Item View -->
         <activity
             android:name=".SingleMenuItemActivity"
-            android:label="Ernährungsdatenbank" >
+            android:label="Ernährungsdatenbank"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity android:name="uebungsliste.BauchUebungen_Activity" />
