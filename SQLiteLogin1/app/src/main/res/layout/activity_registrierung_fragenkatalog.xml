@@ -258,7 +258,7 @@
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Mesomorph  -  Der durchnschnittliche"
+                        android:text="Mesomorph  -  Der durchschnittliche"
                         android:id="@+id/radBtn_Mesomorph"
                         android:textSize="13sp"
                         android:checked="false"

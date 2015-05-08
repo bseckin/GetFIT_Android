@@ -1,10 +1,12 @@
 package menu.androidhive.navdrawer;
 
-import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -29,7 +31,7 @@ import ernaehrung.factory.Endomorph;
 import ernaehrung.factory.Ernaehrungsplan;
 import ernaehrung.factory.Mesomorph;
 
-public class ErnaehrungsFragment extends Activity {
+public class ErnaehrungsFragment extends Fragment {
 
     private NutritionIntake ni;
 
@@ -93,19 +95,19 @@ public class ErnaehrungsFragment extends Activity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_ernaehrung);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_ernaehrung, container, false);
 
 
         // Calling Application class (see application tag in AndroidManifest.xml)
-        final GlobalClass globalVariable = (GlobalClass) this.getApplicationContext();
+        final GlobalClass globalVariable = (GlobalClass) getActivity().getApplicationContext();
 
         // Get name and email from global/application context
         final String name = globalVariable.getName();
 
         //Daten werden aus der datenbank geholt
-        DatabaseHandler db = new DatabaseHandler(this);
+        DatabaseHandler db = new DatabaseHandler(getActivity());
         List<Contact> a = db.getContactMuhi(name);
 
         for (Contact cn : a) {
@@ -122,6 +124,7 @@ public class ErnaehrungsFragment extends Activity {
          this.kcalpercview = (TextView) rootView.findViewById(R.id.cal_perc);
          this.carbpercview = (TextView) rootView.findViewById(R.id.carb_perc);
          */
+
         //Konstruktor
         this.ni = new NutritionIntake(this.weight, this.height, 18, "mittel");
         this.carbs = Math.round(ni.getCarbs());
@@ -138,99 +141,58 @@ public class ErnaehrungsFragment extends Activity {
 
 
         //TODO ??? Das Ziel muss aus der Datenbank kommen
-        if (this.typ.equals("Ectomorph")) {
+        if (this.typ.equals("Ectomorph  -  Der Schlanke")) {
 
-            if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs = Math.round(ni.getCarbs()) + 500;
-                this.fat = Math.round(ni.getFett()) + 30;
-                this.protein = Math.round(ni.getProtein()) + 50;
-                this.kcal = Math.round(ni.getGu()) + 500;
-                EctoErnaehrung = ectoplan.holePlan(this.goal);
+            this.carbs = Math.round(ni.getCarbs()) + 500;
+            this.fat = Math.round(ni.getFett()) + 30;
+            this.protein = Math.round(ni.getProtein()) + 50;
+            this.kcal = Math.round(ni.getGu()) + 500;
+            EctoErnaehrung = ectoplan.holePlan(this.goal);
 
-                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
-                //So haben wir ein dreidimensionales array
-                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
-                //2.Stelle -> Nahrungsbezeichnung
-                //3.Stelle -> Menge in gramm
-                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+            //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+            //So haben wir ein dreidimensionales array
+            //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+            //2.Stelle -> Nahrungsbezeichnung
+            //3.Stelle -> Menge in gramm
+            lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
-            } else if (goal.equals("Gewichtsverlust")) {
-                this.carbs -= 100;
-                this.fat -= 20;
-                this.protein -= 10;
-                this.kcal -= 200;
-                EctoErnaehrung = ectoplan.holePlan(this.goal);
 
-                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
-                //So haben wir ein dreidimensionales array
-                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
-                //2.Stelle -> Nahrungsbezeichnung
-                //3.Stelle -> Menge in gramm
-                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
-            }
-        } else if (this.typ.equals("Endomorph")) {
-            if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs += 100;
-                this.fat += 20;
-                this.protein += 10;
-                this.kcal += 200;
-                EctoErnaehrung = endoplan.holePlan(this.goal);
+        } else if (this.typ.equals("Endomorph - Der molligere")) {
 
-                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
-                //So haben wir ein dreidimensionales array
-                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
-                //2.Stelle -> Nahrungsbezeichnung
-                //3.Stelle -> Menge in gramm
-                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+            this.carbs += 100;
+            this.fat += 20;
+            this.protein += 10;
+            this.kcal += 200;
+            EctoErnaehrung = endoplan.holePlan(this.goal);
 
-            } else if (goal.equals("Gewichtsverlust")) {
-                this.carbs -= 100;
-                this.fat -= 20;
-                this.protein -= 10;
-                this.kcal -= 200;
-                EctoErnaehrung = endoplan.holePlan(this.goal);
+            //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+            //So haben wir ein dreidimensionales array
+            //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+            //2.Stelle -> Nahrungsbezeichnung
+            //3.Stelle -> Menge in gramm
+            lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
-                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
-                //So haben wir ein dreidimensionales array
-                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
-                //2.Stelle -> Nahrungsbezeichnung
-                //3.Stelle -> Menge in gramm
-                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
-            }
-        } else if (this.typ.equals("Mesomorph")) {
-            if (goal.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
-                this.carbs += 100;
-                this.fat += 20;
-                this.protein += 10;
-                this.kcal += 200;
-                EctoErnaehrung = mesoplan.holePlan(this.goal);
 
-                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
-                //So haben wir ein dreidimensionales array
-                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
-                //2.Stelle -> Nahrungsbezeichnung
-                //3.Stelle -> Menge in gramm
-                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+        } else if (this.typ.equals("Mesomorph  -  Der durchschnittliche")) {
 
-            } else if (goal.equals("Gewichtsverlust")) {
-                this.carbs -= 100;
-                this.fat -= 20;
-                this.protein -= 10;
-                this.kcal -= 200;
-                EctoErnaehrung = mesoplan.holePlan(this.goal);
+            this.carbs += 100;
+            this.fat += 20;
+            this.protein += 10;
+            this.kcal += 200;
+            EctoErnaehrung = mesoplan.holePlan(this.goal);
 
-                //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
-                //So haben wir ein dreidimensionales array
-                //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
-                //2.Stelle -> Nahrungsbezeichnung
-                //3.Stelle -> Menge in gramm
-                lebensmittel = EctoErnaehrung.starten();//"Pages startet"
-            }
+            //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
+            //So haben wir ein dreidimensionales array
+            //1.Stelle -> die Malzeiten frühstück, mittag, abend, ....
+            //2.Stelle -> Nahrungsbezeichnung
+            //3.Stelle -> Menge in gramm
+            lebensmittel = EctoErnaehrung.starten();//"Pages startet"
+
+
         }
 
         // Anzeige der Nährwerte
-
-
+        
         // wir erzeugen ein zwei dimensionales array für die Nutrition tabelle
         //auf der rechten seite befinden sich die werte und auf der linken seite die
         //jeweilige bezeichnung
@@ -329,7 +291,7 @@ public class ErnaehrungsFragment extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         String[][] food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        DatabaseHandler db = new DatabaseHandler(ErnaehrungsFragment.this);
+                        DatabaseHandler db = new DatabaseHandler(getActivity());
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -363,7 +325,7 @@ public class ErnaehrungsFragment extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungsFragment.this);
+                        db = new DatabaseHandler(getActivity());
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -396,7 +358,7 @@ public class ErnaehrungsFragment extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungsFragment.this);
+                        db = new DatabaseHandler(getActivity());
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -429,7 +391,7 @@ public class ErnaehrungsFragment extends Activity {
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungsFragment.this);
+                        db = new DatabaseHandler(getActivity());
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -462,7 +424,7 @@ public class ErnaehrungsFragment extends Activity {
 
                         food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
-                        db = new DatabaseHandler(ErnaehrungsFragment.this);
+                        db = new DatabaseHandler(getActivity());
                         for (int i = 0; i <= food2[0].length - 1; i++) {
                             List<Food> a = db.getFood(food2[0][i].toLowerCase());
 
@@ -487,10 +449,10 @@ public class ErnaehrungsFragment extends Activity {
 
 
                         table_layout_food.removeAllViews();
-                        RelativeLayout linearLayout = (RelativeLayout) rootView.findViewById(R.id.rlt);
+                        RelativeLayout linearLayout = (RelativeLayout) getActivity().findViewById(R.id.rlt);
 
                         //Sind alle Malzeiten gegessen so wird nur ein Text ausgegben
-                        TextView valueTV = new TextView(ErnaehrungsFragment.this);
+                        TextView valueTV = new TextView(getActivity());
                         valueTV.setText("Glüchwunsch Sie sind für heute fertig");
                         valueTV.setLayoutParams(new RelativeLayout.LayoutParams(
                                 RelativeLayout.LayoutParams.FILL_PARENT,
@@ -510,12 +472,12 @@ public class ErnaehrungsFragment extends Activity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ErnaehrungsFragment.this, ErnaehrungActivity.class);
+                Intent intent = new Intent(getActivity(), ErnaehrungActivity.class);
                 startActivity(intent);
             }
 
         });
-
+        return rootView;
     }
 
 
@@ -528,14 +490,14 @@ public class ErnaehrungsFragment extends Activity {
         // outer for loop
         for (int i = 0; i <= rows; i++) {
 
-            TableRow row = new TableRow(this);
+            TableRow row = new TableRow(getActivity());
             row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                     TableRow.LayoutParams.WRAP_CONTENT));
 
             // inner for loop
             for (int j = 0; j <= cols - 1; j++) {
 
-                TextView tv = new TextView(this);
+                TextView tv = new TextView(getActivity());
                 tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
                         TableRow.LayoutParams.WRAP_CONTENT));
                 tv.setBackgroundResource(R.drawable.cell_shape);
