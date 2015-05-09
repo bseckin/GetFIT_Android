@@ -7,24 +7,24 @@ import android.widget.TextView;
 
 
 public class SingleMenuItemActivity  extends Activity {
-	
-	// XML node keys
-	static final String KEY_NAME = "name";
-	static final String KEY_KJ = "kj";
-	static final String KEY_KCAL = "kcal";
+
+    // XML node keys
+    static final String KEY_NAME = "name";
+    static final String KEY_KJ = "kj";
+    static final String KEY_KCAL = "kcal";
     static final String KEY_FAT = "fat_gram";
     static final String KEY_PROT = "protein_gram";
     static final String KEY_KH = "kh_gram";
     static final String KEY_SUGAR = "sugar_gram";
     static final String KEY_AMOUNT = "amount";
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.single_list_item);
-        
+
         // getting intent data
         Intent in = getIntent();
-        
+
         // Get XML values from previous intent
         String name = in.getStringExtra(KEY_NAME);
         String kj = in.getStringExtra(KEY_KJ);
@@ -34,7 +34,7 @@ public class SingleMenuItemActivity  extends Activity {
         String kh_gram = in.getStringExtra(KEY_KH);
         String sugar_gram = in.getStringExtra(KEY_SUGAR);
         String amount = in.getStringExtra(KEY_AMOUNT);
-        
+
         // Displaying all values on the screen
         TextView lblName = (TextView) findViewById(R.id.name_label);
         TextView lblKj = (TextView) findViewById(R.id.kj_label);
@@ -44,7 +44,7 @@ public class SingleMenuItemActivity  extends Activity {
         TextView lblKh = (TextView) findViewById(R.id.kh_label);
         TextView lblSugar = (TextView) findViewById(R.id.sugar_label);
         TextView lblAmount = (TextView) findViewById(R.id.amount_label);
-        
+
         lblName.setText(name);
         lblKj.setText(kj);
         lblKcal.setText(kcal);

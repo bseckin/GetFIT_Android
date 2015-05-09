@@ -122,13 +122,13 @@
             android:baselineAligned="false"
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/linearLayout"
-            android:layout_weight="5">
+            android:layout_weight="4">
 
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="164dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:paddingLeft="5dp"
@@ -182,7 +182,7 @@
 
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="164dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1">
 
@@ -190,7 +190,7 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center">
 
                     <TextView
@@ -237,14 +237,14 @@
 
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="164dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1">
 
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center">
 
                     <TextView
@@ -296,14 +296,44 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="5">
+            <!-- Editext for Search -->
 
-            <TableLayout
-                android:id="@+id/tableLayout2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:shrinkColumns="*"
-                android:stretchColumns="*" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <EditText android:id="@+id/inputSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Produktnamen oder EAN-Code"
+                    android:inputType="text"
+                    android:digits="abcdefghijklmnopqrstuvwxyzöäü0123456789 "
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Suchen"
+                    android:textColor="#FFFFFF" />
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*" />
+            </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
