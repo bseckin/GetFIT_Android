@@ -1,22 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="menu.pack.selectgoal.nutritionFragment"
-    android:background="#fffbfff4">
 
+    android:background="@drawable/matte_xxhdpi"
+    tools:context="menu.androidhive.navdrawer.KonditionhelpActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <ImageView
-            android:layout_width="438dp"
-            android:layout_height="251dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/cardio"
-            android:layout_gravity="center_horizontal|top" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Durchführung"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +33,16 @@
       \n• Je nach Form absolvieren Sie dieses Intervall dann weitere 1- bis 3-mal, wieder mit jeweils 5 Wiederholungen.
       \n• Zum Ende 5 Minuten Cool-down."
             android:id="@+id/textView19"
-            android:padding="10dp" />
-    </LinearLayout>
+            android:padding="10dp"
+            android:textColor="#fffbfff4"
+            android:textSize="16sp" />
 
-</FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
