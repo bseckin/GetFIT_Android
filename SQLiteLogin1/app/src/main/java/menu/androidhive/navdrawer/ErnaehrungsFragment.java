@@ -1,7 +1,6 @@
 package menu.androidhive.navdrawer;
 
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Nutrition.NutritionIntake;
-import ernaehrung.ErnaehrungActivity;
 import ernaehrung.factory.AErnaehrung;
 import ernaehrung.factory.Ectomorph;
 import ernaehrung.factory.Endomorph;
@@ -468,19 +466,8 @@ public class ErnaehrungsFragment extends Fragment {
 
         });
 
-        mButton = (Button) rootView.findViewById(R.id.bnutrition);
-        mButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ErnaehrungActivity.class);
-                startActivity(intent);
-            }
-
-        });
         return rootView;
     }
-
-
     /**
      * @param rows
      * @param cols
