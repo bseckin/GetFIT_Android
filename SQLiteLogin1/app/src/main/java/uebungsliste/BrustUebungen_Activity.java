@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -64,6 +66,15 @@ public class BrustUebungen_Activity extends Activity implements AbsListView.OnSc
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = Brust.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+
+        if(data.get(position).getText().equals("Bankdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=MVO3G1GvwaU")));
+        if(data.get(position).getText().equals("Butterfly-am-Kabelzug")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=7rVwltgBOUI")));
+        if(data.get(position).getText().equals("Kurzhantel-Fliegende")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=A7mGtCwOCdo")));
+        if(data.get(position).getText().equals("Schrägbankdrück en")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=L82lODQWOY4")));
+        if(data.get(position).getText().equals("Brustpresse")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=aB6ouAqairg&feature=youtu.be&t=2m1s")));
+        if(data.get(position).getText().equals("Kurzhantel-Bankdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=X_gttpiWeYY")));
+        if(data.get(position).getText().equals("Liegestütze")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ZZsLRHKiAn8")));
     }
 }

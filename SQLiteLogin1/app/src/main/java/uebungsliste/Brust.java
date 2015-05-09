@@ -7,21 +7,23 @@ import java.util.ArrayList;
  */
 public class Brust {
     private static String[] images = new String[] {
-            "http://i.imgur.com/vgkRPWu.jpg",
-            "http://i.imgur.com/ZKBbtco.jpg",
             "http://i.imgur.com/8wfgRA1.jpg",
-            "http://i.imgur.com/Y4F3Lug.jpg",
+            "http://i.imgur.com/vgkRPWu.jpg",
+
+
+            "---------",
             "http://i.imgur.com/TI5O1xi.jpg",
+            "http://i.imgur.com/Y4F3Lug.jpg",
             "http://i.imgur.com/xUByAuA.jpg",
             "http://i.imgur.com/ZKBbtco.jpg"
 
     };
 
     private static String[] text = new String[] {
+            "Bankdrücken",
             "Butterfly-am-Kabelzug",
             "Kurzhantel-Fliegende",
-            "Bankdrücken",
-            "Schräbankdrücken",
+            "Schrägbankdrücken",
             "Brustpresse",
             "Kurzhantel-Bankdrücken",
             "Liegestütze"
