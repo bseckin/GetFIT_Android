@@ -6,7 +6,10 @@ package ernaehrung.factory;
 public class Endomorph extends Ernaehrungsplan{
     @Override
     protected AErnaehrung createAErnaehrung(String pZuHolenderPlan) {
+        AErnaehrung plan = null;
 
-        return null;
+        plan = new DefiEndo();
+
+        return plan;
     }
 }

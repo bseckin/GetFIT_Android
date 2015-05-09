@@ -89,13 +89,13 @@
     <orderEntry type="library" exported="" name="mail" level="project" />
     <orderEntry type="library" exported="" name="library-1.0.5" level="project" />
     <orderEntry type="library" exported="" name="circlebutton-1.1" level="project" />
-    <orderEntry type="library" exported="" name="CircularFloatingActionMenu-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-v13-22.1.1" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.3" level="project" />
     <orderEntry type="library" exported="" name="jxl-2.6" level="project" />
     <orderEntry type="library" exported="" name="activation" level="project" />
+    <orderEntry type="module" module-name="library3" exported="" />
   </component>
 </module>
 

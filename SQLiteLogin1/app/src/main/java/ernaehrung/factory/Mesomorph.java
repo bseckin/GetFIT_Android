@@ -7,6 +7,13 @@ public class Mesomorph extends Ernaehrungsplan{
 
     @Override
     protected AErnaehrung createAErnaehrung(String pZuHolenderPlan) {
-        return null;
+        AErnaehrung plan = null;
+        if (pZuHolenderPlan.equals("Masse und Muskelaufbau – für Schlanke Menschen")) {
+            plan = new MasseMeso();
+        }
+        else if (pZuHolenderPlan.equals("Gewichtsverlust")){
+            plan = new DefiMeso();
+        }
+        return plan;
     }
 }

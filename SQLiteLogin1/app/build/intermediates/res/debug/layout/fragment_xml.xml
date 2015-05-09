@@ -2,21 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/matte_xhdpi">
 
     <!-- Editext for Search -->
     <EditText android:id="@+id/inputSearch"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="Produktnamen oder EAN-Code"
-        android:inputType="textVisiblePassword"/>
+        android:inputType="text"
+        android:digits="abcdefghijklmnopqrstuvwxyzöäü0123456789 "
+        android:textColor="#FFFFFF" />
     <Button
         android:id="@+id/button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="Suchen" />
+        android:text="Suchen"
+        android:textColor="#FFFFFF" />
     <!-- Main ListView
          Always give id value as list(@android:id/list)
     -->
@@ -25,5 +29,4 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"/>
-
 </LinearLayout><!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_xml.xml -->

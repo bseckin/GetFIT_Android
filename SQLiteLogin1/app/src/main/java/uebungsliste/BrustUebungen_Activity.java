@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +15,9 @@ import com.packone.login.R;
 
 import java.util.ArrayList;
 
+/*
+ * Listet alle Uebungen fuer die Brustmuskeln auf mit dynamischen Image Loader
+ */
 public class BrustUebungen_Activity extends Activity implements AbsListView.OnScrollListener, AbsListView.OnItemClickListener {
 
     private static final String TAG = "StaggeredGridActivity";
@@ -20,31 +25,21 @@ public class BrustUebungen_Activity extends Activity implements AbsListView.OnSc
 
     private StaggeredGridView mGridView;
     private boolean mHasRequestedMore;
-    private BauchUebungenAdapter mAdapter;
+    private Uebungsliste_ADAPTER mAdapter;
 
     private ArrayList<String> mData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.gridview);
 
-        setTitle("TechnoTalkative - SGV Demo");
+        setTitle("Brustübungen");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
-        mAdapter = new BauchUebungenAdapter(this, android.R.layout.simple_list_item_1, generateData());
-        // do we have saved data?
-        /*if (savedInstanceState != null) {
-            mData = savedInstanceState.getStringArrayList(SAVED_DATA_KEY);
-        }
 
-        if (mData == null) {
-            mData = generateData();
-        }
+        ArrayList<UebungItem> data = Brust.getData();
 
-        for (String data : mData) {
-            mAdapter.add(data);
-        }*/
+        mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
@@ -67,44 +62,19 @@ public class BrustUebungen_Activity extends Activity implements AbsListView.OnSc
         Log.d(TAG, "onScroll firstVisibleItem:" + firstVisibleItem +
                 " visibleItemCount:" + visibleItemCount +
                 " totalItemCount:" + totalItemCount);
-        // our handling
-        /* (!mHasRequestedMore) {
-            int lastInScreen = firstVisibleItem + visibleItemCount;
-            if (lastInScreen >= totalItemCount) {
-                Log.d(TAG, "onScroll lastInScreen - so load more");
-                //mHasRequestedMore = true;
-                //onLoadMoreItems();
-            }
-        }*/
     }
-
-    private void onLoadMoreItems() {
-        final ArrayList<String> sampleData = generateData();
-        for (String data : sampleData) {
-            mAdapter.add(data);
-        }
-        // stash all the data in our backing store
-        mData.addAll(sampleData);
-        // notify the adapter that we can update now
-        mAdapter.notifyDataSetChanged();
-        mHasRequestedMore = false;
-    }
-
-    private ArrayList<String> generateData() {
-        ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://www.for-fitness-friends.de/wp-content/uploads/Bankdr%C3%BCcken-420x283.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Positiv-Kurzhantel-Fliegende.jpg"); //Fliegende
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Schr%C3%A4gbankdr%C3%BCcken.jpg"); //schraegbankdrucken
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Brustpresse.jpg");
-        listData.add("http://www.uebungen.ws/wp-content/uploads/2012/01/Butterfly-am-Kabelzug.jpg");
-        listData.add("http://mhstatic.de/fm/1/thumbnails/Fitness_Lexikon_Uebung_133a.jpg.2409867.jpg");
-        listData.add("http://mhstatic.de/fm/1/thumbnails/MH_0909_Liegest%C3%BCtz_A_800.jpg.2432539.jpg");
-        return listData;
-    }
-
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = Brust.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+
+        if(data.get(position).getText().equals("Bankdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=MVO3G1GvwaU")));
+        if(data.get(position).getText().equals("Butterfly-am-Kabelzug")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=7rVwltgBOUI")));
+        if(data.get(position).getText().equals("Kurzhantel-Fliegende")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=A7mGtCwOCdo")));
+        if(data.get(position).getText().equals("Schrägbankdrück en")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=L82lODQWOY4")));
+        if(data.get(position).getText().equals("Brustpresse")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=aB6ouAqairg&feature=youtu.be&t=2m1s")));
+        if(data.get(position).getText().equals("Kurzhantel-Bankdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=X_gttpiWeYY")));
+        if(data.get(position).getText().equals("Liegestütze")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ZZsLRHKiAn8")));
     }
 }

@@ -4,25 +4,15 @@
               android:layout_height="match_parent"
               tools:context=".MainActivity"
               android:orientation="vertical"
-              android:background="@drawable/bg3"
+              android:background="@drawable/matte_xhdpi"
     >
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Registrierung"
-        android:id="@+id/textView3"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
 
     <LinearLayout
         android:baselineAligned="false"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="320dp">
+        android:layout_height="320dp"
+        android:layout_marginTop="20dp">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -40,9 +30,10 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:textStyle="bold"
-                android:textColor="#fffbfff4" />
+                android:textColor="#fffbfff4"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/view_pword"
@@ -58,7 +49,8 @@
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
                 android:textColor="#fffbfff4"
-                android:text="@string/register_password" />
+                android:text="@string/register_password"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,7 +64,8 @@
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
                 android:textColor="#fffbfff4"
-                android:text="@string/register_groeße" />
+                android:text="@string/register_groeße"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,11 +75,12 @@
                 android:layout_below="@+id/view_height"
                 android:layout_alignRight="@+id/view_uname"
                 android:layout_alignEnd="@+id/view_uname"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="35dp"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
                 android:textColor="#fffbfff4"
-                android:text="@string/register_gender" />
+                android:text="@string/register_gender"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,29 +90,30 @@
                 android:id="@+id/textView"
                 android:layout_below="@+id/view_gender"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="70dp"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
-                android:textColor="#fffbfff4" />
+                android:textColor="#fffbfff4"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Email: "
                 android:id="@+id/textView2"
                 android:layout_below="@+id/textView"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
-                android:textColor="#fffbfff4" />
+                android:textColor="#fffbfff4"
+                android:textSize="20sp" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="359dp"
             android:gravity="left"
             android:layout_weight="2"
             android:paddingRight="10dp">
@@ -134,7 +129,8 @@
                 android:maxLength="15"
                 android:inputType="text|textPersonName"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -157,6 +153,7 @@
                 android:id="@+id/height"
                 android:inputType="number"
                 android:maxLength="3"
+                android:ems="5"
                 android:layout_below="@+id/pword"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -171,7 +168,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/height"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="25dp">
 
                 <RadioButton
                     android:id="@+id/radBtn_Woman"
@@ -180,7 +177,8 @@
                     android:checked="true"
                     android:text="@string/W"
                     android:textSize="15sp"
-                    />
+                    android:layout_marginTop="0dp"
+                    android:textColor="#ff5f7aff" />
 
                 <RadioButton
                     android:id="@+id/radBtn_Man"
@@ -188,7 +186,9 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="@string/M"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#ffff8acf" />
 
 
             </RadioGroup>
@@ -205,7 +205,7 @@
                 android:progressDrawable="@drawable/progressbar"
                 android:secondaryProgress="0"
 
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:indeterminate="false"
@@ -225,7 +225,8 @@
                 android:layout_marginTop="5dp"
                 android:text="MaxMustermann@hotmail.com"
                 android:inputType="textEmailAddress"
-                android:enabled="false" />
+                android:enabled="false"
+                android:visibility="invisible" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -245,7 +246,8 @@
 
     <FrameLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
 
         <Button
             android:layout_width="match_parent"

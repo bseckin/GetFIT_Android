@@ -1,0 +1,6 @@
+<root>
+  <item
+      name='com.nostra13.universalimageloader.core.ImageLoaderConfiguration.Builder com.nostra13.universalimageloader.core.ImageLoaderConfiguration.Builder discCacheSize(int)'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

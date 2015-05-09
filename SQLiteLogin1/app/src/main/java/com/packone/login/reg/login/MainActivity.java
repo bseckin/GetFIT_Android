@@ -5,8 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,7 +21,7 @@ import com.packone.login.database.DatabaseHandler;
 
 import java.util.List;
 
-import info.androidhive.slidingmenu.NavigationActivity;
+import menu.androidhive.navdrawer.NavigationActivity;
 
 
 /**
@@ -127,7 +129,17 @@ public class MainActivity extends Activity {
         });
     }
 
-
-
+    /**
+     * Wenn irgendwo im screen berührt wird, verschwindet die tastatur
+     * @param event
+     * @return
+     */
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.
+                INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        return true;
+    }
 
 }

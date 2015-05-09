@@ -1,172 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/matte_hdpi">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-    android:background="@drawable/matte_hdpi">
+    >
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <LinearLayout
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:id="@+id/linearLayout"
-            android:layout_weight="2">
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="164dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp">
-
-                <ProgressBar
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:id="@+id/fat_prog"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar_green"
-                    android:background="@drawable/circle_shape"
-                    android:max="100"
-                    android:progress="1"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Fat"
-                    android:id="@+id/textView6"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#fff" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0/360"
-                    android:id="@+id/fat_anz"
-                    android:textSize="16sp"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#ff0fff03" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="164dp"
-                android:layout_gravity="center"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Protein"
-                    android:id="@+id/textView8"
-                    android:textSize="22sp"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"
-                    android:layout_alignParentTop="true"
-                    android:textColor="#fff"/>
-
-                <ProgressBar
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:id="@+id/prot_prog"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar_blue"
-                    android:background="@drawable/circle_shape"
-                    android:max="100"
-                    android:progress="1"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true"
-                    android:paddingRight="5dp"
-                    android:paddingLeft="5dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0/360"
-                    android:id="@+id/prot_anz"
-                    android:textSize="16sp"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#ff00fffa" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="164dp"
-                android:layout_gravity="center"
-                android:layout_weight="1">
-
-                <ProgressBar
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:id="@+id/carb_prog"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:indeterminate="false"
-                    android:progressDrawable="@drawable/circular_progress_bar_violet"
-                    android:background="@drawable/circle_shape"
-                    android:max="100"
-                    android:progress="1"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:padding="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Carbs"
-                    android:id="@+id/textView9"
-                    android:textSize="22sp"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"
-                    android:layout_alignParentTop="true"
-                    android:textColor="#fff"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0/360"
-                    android:id="@+id/carb_anz"
-                    android:textSize="16sp"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="#ffdd01ff" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
-            android:id="@+id/rlt">
+            android:layout_weight="8.14"
+            android:id="@+id/rlt"
+            android:gravity="center">
 
             <LinearLayout
                 android:baselineAligned="false"
@@ -177,79 +29,311 @@
                 <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:layout_gravity="center">
-
-                    <TableLayout
-                        android:id="@+id/tableLayout2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp"
-                        android:shrinkColumns="*"
-                        android:stretchColumns="*" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:paddingRight="0dp"
                     android:paddingLeft="0dp"
                     android:padding="0dp">
 
-                    <ProgressBar
-                        android:id="@+id/cal_prog"
+                    <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:indeterminate="false"
-                        android:progressDrawable="@drawable/circular_progress_bar_red"
-                        android:background="@drawable/circle_shape"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:max="100"
-                        android:progress="1"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentBottom="true"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
-                        android:padding="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_height="fill_parent"
+                        android:gravity="center">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0/360"
-                        android:id="@+id/cal_anz"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textColor="#ffff9600" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Kal"
+                            android:id="@+id/text10"
+                            android:textSize="40sp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="false"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="244dp"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="2"></RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <ProgressBar
+                                        android:id="@+id/cal_prog"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:indeterminate="false"
+                                        android:progressDrawable="@drawable/circular_progress_bar_red"
+                                        android:background="@drawable/circle_shape"
+                                        style="?android:attr/progressBarStyleHorizontal"
+                                        android:max="100"
+                                        android:progress="1"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_margin="0dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0/360"
+                                        android:id="@+id/cal_anz"
+                                        android:textSize="20sp"
+                                        android:textAlignment="center"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:textColor="#ffff9600" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="2"></RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Cal"
-                        android:id="@+id/text10"
-                        android:textSize="40sp"
+                        android:text="Fat"
+                        android:id="@+id/textView6"
+                        android:textSize="22sp"
                         android:textStyle="bold"
-                        android:textIsSelectable="false"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:textColor="#fff"/>
+                        android:textColor="#fff" />
 
-                </RelativeLayout>
+                    <SeekBar
+                        android:id="@+id/fat_prog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:max="100"
+                        android:progress="1"
+                        android:progressDrawable="@drawable/progressbar"
+                        android:secondaryProgress="0"
+                        android:indeterminate="false"
+                        android:layout_alignTop="@+id/prot_anz"
+                        android:layout_weight="1" />
 
-                <RelativeLayout
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/360"
+                        android:id="@+id/fat_anz"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ff0fff03"
+                        android:layout_weight="10" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1.8"></RelativeLayout>
-            </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Protein"
+                        android:id="@+id/textView8"
+                        android:textSize="22sp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#fff" />
+
+                    <SeekBar
+                        android:id="@+id/prot_prog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:max="100"
+                        android:progress="1"
+                        android:progressDrawable="@drawable/progressbar"
+                        android:secondaryProgress="0"
+
+                        android:indeterminate="false"
+                        android:layout_alignTop="@+id/prot_anz"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/360"
+                        android:id="@+id/prot_anz"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ff00fffa"
+                        android:layout_weight="10" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Carbs"
+                        android:id="@+id/textView9"
+                        android:textSize="22sp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#fff" />
+
+
+                    <SeekBar
+                        android:id="@+id/carb_prog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:max="100"
+                        android:progress="1"
+                        android:progressDrawable="@drawable/progressbar"
+                        android:secondaryProgress="0"
+                        android:indeterminate="false"
+                        android:layout_alignTop="@+id/prot_anz"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/360"
+                        android:id="@+id/carb_anz"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffdd01ff"
+                        android:layout_weight="10" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5">
+            <!-- Editext for Search -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <EditText android:id="@+id/inputSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Produktnamen oder EAN-Code"
+                    android:inputType="text"
+                    android:digits="abcdefghijklmnopqrstuvwxyzöäü0123456789 "
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Suchen"
+                    android:textColor="#FFFFFF" />
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*" />
+            </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
@@ -258,25 +342,24 @@
             android:layout_weight="1">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="nutrition"
-                android:id="@+id/bnutrition"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Geschafft"
                 android:id="@+id/bgeschafft"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Geschafft"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14sp"
+                style= "@style/btnStyleTwitterblue"
                 android:layout_gravity="center_horizontal"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:textColor="#ffe4e4e4"
+                android:gravity="center_horizontal" />
+
         </RelativeLayout>
     </LinearLayout>
 
 
 </RelativeLayout>
+</ScrollView>

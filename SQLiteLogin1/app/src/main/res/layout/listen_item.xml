@@ -13,8 +13,8 @@
             android:id="@+id/name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textColor="#dc6800"
-            android:textSize="16sp"
+            android:textColor="#F71B1F"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:paddingTop="6dip"
             android:paddingBottom="2dip" />
@@ -28,19 +28,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#5d5d5d"
+                android:textColor="#FFFFFF"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="KJ: " >
+                android:text="KJ: "
+                android:textSize="16sp">
             </TextView>
             <!-- Price Label -->
             <TextView
                 android:id="@+id/kj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#acacac"
+                android:textColor="#f1f1f1"
                 android:textStyle="bold"
-                android:gravity="left">
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp">
             </TextView>
         </LinearLayout>
         <!-- Linear layout for cost and price Cost: Rs.100 -->
@@ -53,19 +56,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#5d5d5d"
+            android:textColor="#FFFFFF"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Kcal: " >
+            android:text="Kcal: "
+            android:textSize="16sp">
         </TextView>
         <!-- Price Label -->
         <TextView
             android:id="@+id/kcal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#acacac" 
+            android:textColor="#f1f1f1"
             android:textStyle="bold"
-            android:gravity="left">
+            android:gravity="left"
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp">
         </TextView>
         </LinearLayout>
         <!-- -->
@@ -78,19 +84,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#5d5d5d"
+                android:textColor="#FFFFFF"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="Fett(g): ">
+                android:text="Fett(g): "
+                android:textSize="16sp">
             </TextView>
             <!-- Price Label -->
             <TextView
                 android:id="@+id/fat_gram"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#acacac"
+                android:textColor="#f1f1f1"
                 android:textStyle="bold"
-                android:gravity="left">
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp">
             </TextView>
         </LinearLayout>
         <!-- -->
@@ -104,19 +113,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#5d5d5d"
+            android:textColor="#FFFFFF"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Protein(g): " >
+            android:text="Protein(g): "
+            android:textSize="16sp">
         </TextView>
         <!-- Price Label -->
         <TextView
             android:id="@+id/protein_gram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#acacac"
+            android:textColor="#f1f1f1"
             android:textStyle="bold"
-            android:gravity="left">
+            android:gravity="left"
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp">
         </TextView>
     </LinearLayout>
     <!-- -->
@@ -129,19 +141,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#5d5d5d"
+                android:textColor="#FFFFFF"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="Kohlenhydrate(g): " >
+                android:text="Kohlenhydrate(g): "
+                android:textSize="16sp">
             </TextView>
             <!-- Price Label -->
             <TextView
                 android:id="@+id/kh_gram"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#acacac"
+                android:textColor="#f1f1f1"
                 android:textStyle="bold"
-                android:gravity="left">
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp">
             </TextView>
         </LinearLayout>
         <!-- -->
@@ -154,19 +169,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#5d5d5d"
+                android:textColor="#FFFFFF"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="Zucker(g): " >
+                android:text="Zucker(g): "
+                android:textIsSelectable="true"
+                android:textSize="16sp">
             </TextView>
             <!-- Price Label -->
             <TextView
                 android:id="@+id/sugar_gram"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#acacac"
+                android:textColor="#f1f1f1"
                 android:textStyle="bold"
-                android:gravity="left">
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp">
             </TextView>
         </LinearLayout>
         <!-- -->
@@ -179,20 +198,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#5d5d5d"
+                android:textColor="#FFFFFF"
                 android:gravity="left"
                 android:textStyle="bold"
-                android:text="Menge(g): " >
+                android:text="Menge(g): "
+                android:textSize="16sp">
             </TextView>
             <!-- Price Label -->
             <TextView
                 android:id="@+id/amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#acacac"
+                android:textColor="#f1f1f1"
                 android:textStyle="bold"
-                android:gravity="left">
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp">
             </TextView>
         </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#008080"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
+
 </LinearLayout>

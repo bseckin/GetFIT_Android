@@ -3,21 +3,18 @@
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
-        <item>@drawable/ic_people</item>
-        <item>@drawable/ic_photos</item>
-        <item>@drawable/ic_communities</item>
-        <item>@drawable/ic_pages</item>
-        <item>@drawable/nutrition_icon</item>
+        <item>@drawable/ic_hantel</item>
+        <item>@drawable/ic_ernaehrung</item>
+        <item>@drawable/ic_run</item>
+        <item>@drawable/ic_exercise</item>
+        <item>@drawable/ic_nutrition</item>
     </array>
     <string-array name="nav_drawer_items">
-        <item>Home</item>
         <item>Training</item>
         <item>Ernährung</item>
         <item>Kondition</item>
         <item>Übungen</item>
         <item>Lebensmittel</item>
-        <item>Über GetFIT</item>
     </string-array>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/color.xml -->
     <eat-comment/>
@@ -33,7 +30,7 @@
     <color name="rounded_container_border">#3b3f44</color>
     <declare-styleable name="CircleButton"><attr format="color" name="cb_color"/><attr format="dimension" name="cb_pressedRingWidth"/></declare-styleable>
     <declare-styleable name="StaggeredGridView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/><attr format="dimension" name="item_margin"/><attr format="dimension" name="grid_paddingLeft"/><attr format="dimension" name="grid_paddingRight"/><attr format="dimension" name="grid_paddingTop"/><attr format="dimension" name="grid_paddingBottom"/></declare-styleable>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/build/intermediates/exploded-aar/com.oguzdev/CircularFloatingActionMenu/1.0.2/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/build/intermediates/exploded-aar/SQLiteLogin1/library3/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="action_button_content_margin">16dp</dimen>
     <dimen name="action_button_margin">12dp</dimen>
@@ -41,19 +38,19 @@
     <dimen name="action_menu_radius">96dp</dimen>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">400dp</dimen>
+    <dimen name="activity_vertical_margin">400dp</dimen>
     <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
-    <dimen name="blue_sub_action_button_size">48dp</dimen>
+    <dimen name="blue_sub_action_button_size">90dp</dimen>
     <dimen name="radius_large">120dp</dimen>
     <dimen name="radius_medium">72dp</dimen>
-    <dimen name="radius_small">30dp</dimen>
+    <dimen name="radius_small">400dp</dimen>
     <dimen name="red_action_button_content_margin">36dp</dimen>
-    <dimen name="red_action_button_content_size">16dp</dimen>
+    <dimen name="red_action_button_content_size">60dp</dimen>
     <dimen name="red_action_button_margin">48dp</dimen>
     <dimen name="red_action_button_size">108dp</dimen>
     <dimen name="red_action_menu_radius">96dp</dimen>
-    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/build/intermediates/exploded-aar/com.oguzdev/CircularFloatingActionMenu/1.0.2/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/build/intermediates/exploded-aar/SQLiteLogin1/library3/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="sub_action_button_content_margin">6dp</dimen>
     <dimen name="sub_action_button_size">36dp</dimen>
@@ -63,7 +60,7 @@
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="M">Weiblich</string>
-    <string name="W">Maennlich</string>
+    <string name="W">Männlich</string>
     <string name="action_logout"><item>Logout</item></string>
     <string name="action_settings"><item>Sign Out</item></string>
     <string name="action_settings_was"><item>settings</item></string>
@@ -92,11 +89,14 @@
     <string name="frage_3">3. Wie viel Erfahrung hast du im Krafttraining?</string>
     <string name="frage_4">4. Wie oft kannst du in der Woche trainieren?</string>
     <string name="frage_5">5. Wie sind Sie auf GetFIT gekommen?</string>
-    <string name="frage_6">6. Körpertyp</string>
+    <string name="frage_6">6. Was für einen Körpertyp hast du?</string>
+    <string name="fragezeichen">Hilfe</string>
     <string name="gewichtsverlust">Gewichtsverlust</string>
     <string name="halbprofi">Ein wenig – Ich kenne die Grundübungen und gehe gelegentlich ins Studio</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hintbenutzername"><i>Benutzername</i></string>
+    <string name="hintpassword"><i>Passwort</i></string>
     <string name="kondition">Erhöhung der Kondition – Steigerung der Ausdauer</string>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
@@ -120,33 +120,33 @@
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="register_email">Email:</string>
-    <string name="register_gender">Gender:</string>
+    <string name="register_gender">Geschlecht:</string>
     <string name="register_gewicht">Gewicht:</string>
     <string name="register_groeße">Größe:</string>
     <string name="register_password">Password:</string>
     <string name="register_username">Username:</string>
     <string name="ruecken">Rückenstärkung – Kräftigung des Rückens</string>
     <string name="title_activity_body">BodyActivity</string>
-    <string name="title_activity_body_info">BodyInfoActivity</string>
-    <string name="title_activity_bodytypeinfo">BodytypeinfoActivity</string>
+    <string name="title_activity_body_info">Welche Körpertyp bin ich?</string>
     <string name="title_activity_ernaehrung">ErnaehrungActivity</string>
     <string name="title_activity_goal">GoalActivity</string>
-    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_help">GetFit - Tutorial</string>
+    <string name="title_activity_konditionhelp">Kondition - Hilfestellung</string>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
     <string name="title_activity_login">Sign in</string>
     <!-- From: file:/C:/Users/Muhammed5/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_login2">Login2Activity</string>
-    <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_menu_with_fab">MenuWithFABActivity</string>
     <string name="title_activity_nutrition">NutritionActivity</string>
+    <string name="title_activity_nutritiontable">NutritiontableActivity</string>
     <string name="title_activity_progress">ProgressActivity</string>
-    <string name="title_activity_registrierung_fragenkatalog">RegistrierungFragenkatalogActivity</string>
+    <string name="title_activity_registrierung_fragenkatalog">Registrierung - Der Fragenkatalog</string>
     <string name="title_activity_seekbar">SeekbarActivity</string>
     <string name="title_activity_start">GetFIT</string>
-    <string name="title_activity_wlifing">WLifingActivity</string>
     <string name="title_fragenkatalog">.. Dein angepasster Plan!</string>
+    <string name="title_fragment_ernaehrungtable">ETable</string>
     <string name="title_section1">Lifting</string>
     <string name="title_section2">Cardio</string>
     <string name="title_section3">Nutrition</string>
