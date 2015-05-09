@@ -2,7 +2,6 @@ package menu.androidhive.navdrawer;
 
 import android.app.ListFragment;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
@@ -27,7 +26,6 @@ import com.packone.login.XMLParser;
 import com.packone.login.database.Contact;
 import com.packone.login.database.DatabaseHandler;
 import com.packone.login.database.Food;
-import com.packone.login.SingleMenuItemActivity;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -569,17 +567,7 @@ public class ErnaehrungsFragment extends ListFragment {
                         String sugar_gram = ((TextView) view.findViewById(R.id.sugar_gram)).getText().toString();
                         String amount = ((TextView) view.findViewById(R.id.amount)).getText().toString();
 
-                        // Neues Intent wird gestartet
-                        Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
-                        in.putExtra(KEY_NAME, name);
-                        in.putExtra(KEY_KJ, kj);
-                        in.putExtra(KEY_KCAL, kcal);
-                        in.putExtra(KEY_FAT, fat_gram);
-                        in.putExtra(KEY_PROT, protein_gram);
-                        in.putExtra(KEY_KH, kh_gram);
-                        in.putExtra(KEY_SUGAR, sugar_gram);
-                        in.putExtra(KEY_AMOUNT, amount);
-                        startActivity(in);
+                     
 
                         String[][] food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
                         DatabaseHandler db = new DatabaseHandler(getActivity());
