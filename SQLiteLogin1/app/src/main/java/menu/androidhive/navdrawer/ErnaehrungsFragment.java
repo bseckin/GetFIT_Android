@@ -171,9 +171,9 @@ public class ErnaehrungsFragment extends ListFragment {
         //TODO ??? Das Ziel muss aus der Datenbank kommen
         if (this.typ.equals("Ectomorph  -  Der Schlanke")) {
 
-            this.carbs = Math.round(ni.getCarbs()) + 500;
-            this.fat = Math.round(ni.getFett()) + 30;
-            this.protein = Math.round(ni.getProtein()) + 50;
+            this.carbs = Math.round(ni.getCarbs()) ;
+            this.fat = Math.round(ni.getFett()) ;
+            this.protein = Math.round(ni.getProtein()) ;
             this.kcal = Math.round(ni.getGu()) + 500;
             EctoErnaehrung = ectoplan.holePlan(this.goal);
 
