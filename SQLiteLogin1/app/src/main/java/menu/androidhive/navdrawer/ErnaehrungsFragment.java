@@ -190,7 +190,7 @@ public class ErnaehrungsFragment extends ListFragment {
             this.carbs += 100;
             this.fat += 20;
             this.protein += 10;
-            this.kcal += 200;
+            this.kcal +=  Math.round(ni.getGu());
             EctoErnaehrung = endoplan.holePlan(this.goal);
 
             //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -206,7 +206,7 @@ public class ErnaehrungsFragment extends ListFragment {
             this.carbs += 100;
             this.fat += 20;
             this.protein += 10;
-            this.kcal += 200;
+            this.kcal +=  Math.round(ni.getGu());
             EctoErnaehrung = mesoplan.holePlan(this.goal);
 
             //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt

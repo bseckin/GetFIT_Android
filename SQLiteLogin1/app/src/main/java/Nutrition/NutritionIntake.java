@@ -59,7 +59,7 @@ public class NutritionIntake {
         //1.8-1.9 	hauptsächlich stehend und gehend 	Verkäufer, Kellner, Handwerker
         //2.0-2.4 	körperlich anstrengende Arbeit 	Landwirte, Hochleistungssportler
         // man sollte 15% der energie als eiweiß, 30% als Fett und 55% als KOhlenhydrat zu sich nehemn
-        this.fett = 60;
+        this.fett = (float) (this.bmi*3.0);
         this.protein = (float) (this.bmi*1.5);
         if (this.bmi <= 25){
             this.carbs = 90;
@@ -69,6 +69,7 @@ public class NutritionIntake {
         } else if (this.bmi <= 30){
             this.carbs = 125;
         }
+        this.carbs = (float) (this.bmi*5.5);
 
     }
 
