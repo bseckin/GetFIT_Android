@@ -73,7 +73,7 @@ public class BrustUebungen_Activity extends Activity implements AbsListView.OnSc
         if(data.get(position).getText().equals("Butterfly-am-Kabelzug")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=7rVwltgBOUI")));
         if(data.get(position).getText().equals("Kurzhantel-Fliegende")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=A7mGtCwOCdo")));
         if(data.get(position).getText().equals("Schrägbankdrück en")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=L82lODQWOY4")));
-        if(data.get(position).getText().equals("Brustpresse")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=aB6ouAqairg&feature=youtu.be&t=2m1s")));
+        if(data.get(position).getText().equals("Brustpresse")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=C3r8bigrwIk")));
         if(data.get(position).getText().equals("Kurzhantel-Bankdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=X_gttpiWeYY")));
         if(data.get(position).getText().equals("Liegestütze")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ZZsLRHKiAn8")));
     }

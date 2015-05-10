@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -63,6 +65,24 @@ public class ObererRueckenUebungen_Activity extends Activity implements AbsListV
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = ObererRuecken.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+        /* Übungsnamen
+                "Einarmiges Kurzhantel Rudern auf der Flachbank",
+                "Rudern am Kabelzug",
+                "Langhantel Rudern",
+                "Latzug zur Brust",
+                "T-Bar Rudern mit der Langhantel",
+                "Klimmzüge",
+                "Enges Latziehen zur Brust"
+        */
+
+        if(data.get(position).getText().equals("Einarmiges Kurzhantel Rudern")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=uYvQ-cf-EtM")));
+        if(data.get(position).getText().equals("Rudern am Kabelzug")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=eSORDmFnmjI")));
+        if(data.get(position).getText().equals("Langhantel Rudern")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=raTfrz2O3pI")));
+        if(data.get(position).getText().equals("Latzug zur Brust")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=aDrLiFniKE4")));
+        if(data.get(position).getText().equals("T-Bar Rudern mit der Langhantel")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=MlcoD1zKsOs")));
+        if(data.get(position).getText().equals("Klimmzüge")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Ua4yifBX2t0")));
+        if(data.get(position).getText().equals("Enges Latziehen zur Brust")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=_UGioBI-8g8")));
     }
 }

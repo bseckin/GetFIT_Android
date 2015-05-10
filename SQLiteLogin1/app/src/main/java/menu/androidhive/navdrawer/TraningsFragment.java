@@ -21,8 +21,10 @@ import com.packone.login.GlobalClass;
 import com.packone.login.R;
 import trainingsplan.Trainingsplan;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
 
 import at.markushi.ui.CircleButton;
 import trainingsplan.strategy.AllgemeineFitness;
@@ -86,7 +88,7 @@ public class TraningsFragment extends Fragment {
         planEinheit = new String[][]{ this.meinPlan[1][0], this.meinPlan[1][1] };
         final int arraySize = meinPlan.length;
         Log.d("TRAININGSEINHEITEN", "==>" + arraySize);
-        Log.d("KOMPLETTER PLAN", ""+ Arrays.deepToString(meinPlan));
+        Log.d("KOMPLETTER PLAN", "" + Arrays.deepToString(meinPlan));
 
         // Tabelle erstellen
         //BuildTable(planEinheit[0].length - 1, 2, planEinheit);
@@ -108,7 +110,7 @@ public class TraningsFragment extends Fragment {
 
 
                 // nächste Trainingseinheit, wenn "FERTIG" mit dieser Einheit:
-                for(int i=anzahl; i < arraySize; i+=1){
+                for (int i = anzahl; i < arraySize; i += 1) {
                     planEinheit = new String[][]{
                             meinPlan[i][0], // Uebungsname
                             meinPlan[i][1]  // Satzzahl dazu
@@ -121,7 +123,7 @@ public class TraningsFragment extends Fragment {
                     anzahl += 1;
 
                     //Wenn alle Trainingseinheiten gemacht wurden => von neu beginnen
-                    if ( anzahl == arraySize ) anzahl = 0;
+                    if (anzahl == arraySize) anzahl = 0;
                     break;
                 }
             }
@@ -130,12 +132,36 @@ public class TraningsFragment extends Fragment {
         });
 
 
+        //zufalls tipp
+        TextView textView_tipps = (TextView)rootView.findViewById(R.id.tipp_textView);
+        textView_tipps.setText("" + erzeugeZufallsTipp());
+
+
         // LOGS
         Log.d("TrainingsFragment:", "Aktuell eingeloggter USER:" + name);
         Log.d("TF:Attribut:meinPlan:", Arrays.deepToString(this.meinPlan));
         Log.d("Array:", "rows" + this.meinPlan[0].length + "\n" + "cols:" + this.meinPlan[1].length);
 
         return rootView;
+    }
+
+    private String erzeugeZufallsTipp() {
+        ArrayList<String>  tippsList = new ArrayList<String>();
+        tippsList.add("Eine korrekte Ausführung, ist ausschlaggebend für Muskelaufbau!");
+        tippsList.add("Die Phase bei dem man das Gewicht runterlässt, heißt auch Negative!");
+        tippsList.add("Die Phase bei dem man das Gewicht wegdrückt, heißt auch Positive!");
+        tippsList.add("Nicht auf die Atmung vergessen!");
+        tippsList.add("Immer genügend Wasser trinken während des Trainings!");
+        tippsList.add("Pause zwischen den Sätzen, sollten für Muskelaufbau maximal 90 Sekunden dauern!");
+        tippsList.add("Beim Training werden Glückshormone im Gehirn ausgelöst :-)");
+        tippsList.add("Nicht aufgeben, wenn etwas nicht klappt - Übung macht den Meister!");
+        tippsList.add("Durch das Training mit Freihantel ist für eine gute Balance wichtig");
+        tippsList.add("Wählen Sie ein Gewicht, bei dem die letzten 2 Wiederholungen Sie herausfordert!");
+        tippsList.add("5-10 Minuten Aufwärmen ist Pflicht! - z.B.: wenig Gewicht mit sehr vielen Wiederholungen!");
+        tippsList.add("Auch Bauchmuskeln muss man trainieren, aber die Ernährung ist hierbei wichtiger");
+
+        Collections.shuffle(tippsList);
+        return tippsList.get(0);
     }
 
     @Override

@@ -52,11 +52,13 @@ public class Uebungsliste_ADAPTER extends ArrayAdapter<UebungItem> {
         // UNIVERSAL IMAGE LOADER SETUP
         DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
                 .cacheInMemory(true)
+                .cacheOnDisk(true)
                 .imageScaleType(ImageScaleType.EXACTLY)
                 .displayer(new FadeInBitmapDisplayer(300)).build();
 
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getContext())
                 .defaultDisplayImageOptions(defaultOptions)
+                .denyCacheImageMultipleSizesInMemory()
                 .memoryCache(new WeakMemoryCache()).build();
 
         ImageLoader.getInstance().init(config);
