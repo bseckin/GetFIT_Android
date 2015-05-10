@@ -7,16 +7,14 @@ import java.util.ArrayList;
  */
 public class UntererRuecken {
     private static String[] images = new String[] {
-            "http://i62.tinypic.com/s58lr8.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/07/R%C3%BCckenstrecker.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/07/Good-Mornings.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/07/R%C3%BCckenstrecken-im-Liegen.jpg"
+            "http://i.imgur.com/aJD4078.jpg",
+            "http://i.imgur.com/rkmAQje.jpg",
+            "http://i.imgur.com/0ydcXk4.jpg"
     };
 
     private static String[] text = new String[] {
             "Kreuzheben",
             "Rückenstrecker",
-            "Good-Mornings",
             "Rückenstrecken im Liegen"
     };
 

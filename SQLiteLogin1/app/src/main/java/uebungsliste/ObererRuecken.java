@@ -7,17 +7,17 @@ import java.util.ArrayList;
  */
 public class ObererRuecken {
     private static String[] images = new String[] {
-            "http://www.uebungen.ws/wp-content/uploads/2011/06/Einarmiges-Kurzhantel-Rudern-auf-der-Bank.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/06/Rudern-am-Kabelzug.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/06/Langhantel-Rudern.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/07/Latzug.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/06/Rudern-mit-der-T-Stange-Langhantel.jpg",
-            "http://www.sportplus.org/site/images/stories/products/SportPlus-SP-PUB-005-10100885_2.jpg",
-            "http://i.ytimg.com/vi/Um2ln8ILBQw/maxresdefault.jpg",
+            "http://i.imgur.com/YVi66qJ.jpg",
+            "http://i.imgur.com/TAW9v4T.jpg",
+            "http://i.imgur.com/BQnmPeo.jpg",
+            "http://i.imgur.com/6MCBrgJ.jpg",
+            "http://i.imgur.com/ALoz8ap.jpg",
+            "http://i.imgur.com/DqC5V5j.jpg",
+            "http://i.imgur.com/EdZOZwx.jpg",
     };
 
     private static String[] text = new String[] {
-            "Einarmiges Kurzhantel Rudern auf der Flachbank",
+            "Einarmiges Kurzhantel Rudern",
             "Rudern am Kabelzug",
             "Langhantel Rudern",
             "Latzug zur Brust",

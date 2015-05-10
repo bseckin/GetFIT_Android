@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -61,26 +63,20 @@ public class UntererRueckenUebungen_Activity extends Activity implements AbsList
                 " totalItemCount:" + totalItemCount);
     }
 
-    private ArrayList<String> generateData() {
-        ArrayList<String> listData = new ArrayList<String>();
-         //schraegbankdrucken
-        return listData;
-    }
-
-    private ArrayList<String> generateTexts() {
-        ArrayList<String> listData = new ArrayList<String>();
-        listData.add("hallo");
-        listData.add("wie");
-        listData.add("geht");
-        listData.add("es");
-        listData.add("dir");
-        listData.add("du");
-        listData.add("huan");
-        return listData;
-    }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = UntererRuecken.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+        /* Übungsnamen:
+            "Kreuzheben",
+            "Rückenstrecker",
+            "Good-Mornings",
+            "Rückenstrecken im Liegen"
+        */
+
+        if(data.get(position).getText().equals("Kreuzheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=kFrBf94S-sA")));
+        if(data.get(position).getText().equals("Rückenstrecker")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=f3mi7leyc-M")));
+        if(data.get(position).getText().equals("Rückenstrecken im Liegen")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=QHSjfbwNbhE")));
     }
 }

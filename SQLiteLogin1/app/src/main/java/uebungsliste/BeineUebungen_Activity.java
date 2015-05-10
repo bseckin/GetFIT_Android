@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -22,7 +24,6 @@ public class BeineUebungen_Activity extends Activity implements AbsListView.OnSc
     public static final String SAVED_DATA_KEY = "SAVED_DATA";
 
     private StaggeredGridView mGridView;
-    private boolean mHasRequestedMore;
     private Uebungsliste_ADAPTER mAdapter;
 
     private ArrayList<String> mData;
@@ -64,6 +65,20 @@ public class BeineUebungen_Activity extends Activity implements AbsListView.OnSc
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
-    }
+        ArrayList<UebungItem> data = Beine.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+        /* Übungsnamen
+            "Kniebeugen",
+            "Beinpresse",
+            "Ausfallschritt",
+            "Beinbeuger",
+            "Sitzendes-Wadenheben"
+        */
+
+        if(data.get(position).getText().equals("Kniebeugen")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=qaI1YMdmLhk")));
+        if(data.get(position).getText().equals("Beinpresse")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ku1KyeS0gQY")));
+        if(data.get(position).getText().equals("Ausfallschritt")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=o1e8WmRJk2w")));
+        if(data.get(position).getText().equals("Beinbeuger")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=iTtCw2XZk4c")));
+        if(data.get(position).getText().equals("Sitzendes-Wadenheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ZOBcIQ3UqDM")));
+   }
 }

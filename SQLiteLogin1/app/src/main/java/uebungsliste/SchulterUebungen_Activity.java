@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -63,6 +65,25 @@ public class SchulterUebungen_Activity extends Activity implements AbsListView.O
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = Schulter.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+
+        /*
+            "Frontheben",
+            "Kurzhantel Schulterdrücken",
+            "Military-Press",
+            "Seitheben",
+            "vorgebeugtes-seitheben",
+            "Butterfly-Reverse",
+            "Aufrechtes-Rudern"
+             */
+
+        if(data.get(position).getText().equals("Frontheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=QqEi-9PMzRg")));
+        if(data.get(position).getText().equals("Kurzhantel Schulterdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=bSLbNqUQevo")));
+        if(data.get(position).getText().equals("Military-Press")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=EEp-lpK5z84")));
+        if(data.get(position).getText().equals("Seitheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=fOS5691OE_c")));
+        if(data.get(position).getText().equals("vorgebeugtes-seitheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Lz2AAtWAE4U")));
+        if(data.get(position).getText().equals("Butterfly-Reverse")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ODd1Wobv2Tg")));
+        if(data.get(position).getText().equals("Aufrechtes-Rudern")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=GQfVMEQvqoE")));
     }
 }

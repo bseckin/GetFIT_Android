@@ -7,12 +7,11 @@ import java.util.ArrayList;
  */
 public class Beine {
     private static String[] images = new String[] {
-            "http://mhstatic.de/fm/1/thumbnails/Fitness_Lexikon_Uebung_122b.584955.jpg.2409847.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/08/Beinpressen.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/06/Ausfallschritt.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/08/Beinbeugen-im-Liegen-am-Ger%C3%A4t.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/08/Sitzendes-Wadenheben-am-Ger%C3%A4t.jpg"
-
+            "http://i.imgur.com/l10OKED.jpg",
+            "http://i.imgur.com/OstEw9G.jpg",
+            "http://i.imgur.com/YwB0P8Q.jpg",
+            "http://i.imgur.com/ENXHf1z.jpg",
+            "http://i.imgur.com/1FbuwyD.jpg"
     };
 
     private static String[] text = new String[] {
@@ -20,7 +19,7 @@ public class Beine {
             "Beinpresse",
             "Ausfallschritt",
             "Beinbeuger",
-            "Sitzendes-Wadenheben-am-Gerät"
+            "Sitzendes-Wadenheben"
     };
 
     public static ArrayList<UebungItem> getData() {

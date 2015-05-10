@@ -25,13 +25,14 @@ import java.util.Map;
  */
 public class Schulter {
     private static String[] images = new String[] {
-        "http://www.uebungen.ws/wp-content/uploads/2012/01/Frontheben.jpg",
-        "http://i.ytimg.com/vi/qEwKCR5JCog/sddefault.jpg",
-        "http://oi62.tinypic.com/25s8w29.jpg",
-        "http://i58.tinypic.com/n1f2vq.jpg",
-        "http://www.uebungen.ws/wp-content/uploads/2011/06/vorgebeugtes-seitheben.jpg",
-        "http://www.uebungen.ws/wp-content/uploads/2011/07/Butterfly-Reverse.jpg",
-        "http://www.uebungen.ws/wp-content/uploads/2011/07/Aufrechtes-Rudern.jpg"
+        "http://i.imgur.com/i5fhs3C.jpg",
+        "http://i.imgur.com/1Vbdvz8.jpg",
+        "http://i.imgur.com/r1zBzjw.jpg",
+        "http://i.imgur.com/Xs0B8Jt.jpg",
+        "http://i.imgur.com/Zo2S1MA.jpg",
+        "http://i.imgur.com/66LPGKr.jpg",
+        "http://i.imgur.com/H6A4KaP.jpg"
+
     };
 
     private static String[] text = new String[] {

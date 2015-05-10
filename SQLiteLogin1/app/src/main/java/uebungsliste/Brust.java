@@ -9,9 +9,7 @@ public class Brust {
     private static String[] images = new String[] {
             "http://i.imgur.com/8wfgRA1.jpg",
             "http://i.imgur.com/vgkRPWu.jpg",
-
-
-            "---------",
+            "http://i.imgur.com/wWfCC2G.jpg",
             "http://i.imgur.com/TI5O1xi.jpg",
             "http://i.imgur.com/Y4F3Lug.jpg",
             "http://i.imgur.com/xUByAuA.jpg",
@@ -23,8 +21,8 @@ public class Brust {
             "Bankdrücken",
             "Butterfly-am-Kabelzug",
             "Kurzhantel-Fliegende",
-            "Schrägbankdrücken",
             "Brustpresse",
+            "Schrägbankdrücken",
             "Kurzhantel-Bankdrücken",
             "Liegestütze"
     };
