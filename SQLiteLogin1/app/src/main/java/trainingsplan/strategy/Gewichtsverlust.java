@@ -171,7 +171,7 @@ public class Gewichtsverlust implements IZiel {
                     // 3te  TRAININGSEINHEIT
                     {
                             {
-                                    "Crosstrainer",
+                                    "Crosstrainer - Laufen",
                                     "Kniebeugen",
                                     "Beinpresse",
                                     "Wadenheben",

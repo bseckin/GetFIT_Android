@@ -39,9 +39,9 @@ public class Trainingsplan {
         String[][][] plan;
         // Erstellt plan je nach Ziel:
         if(erfahrung.equals(anfaenger)){
-            plan = _ziel.erstellePlan_Anfaenger(frequenz);
+            plan = get_ziel().erstellePlan_Anfaenger(frequenz);
         } else {
-            plan = _ziel.erstellePlan_Fortgeschritten(frequenz);
+            plan = get_ziel().erstellePlan_Fortgeschritten(frequenz);
         }
         return plan;
     }
