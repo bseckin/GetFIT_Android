@@ -25,9 +25,8 @@
          Always give id value as list(@android:id/list)
     -->
     <ListView
-        android:id="@+id/listitem"
+        android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:clickable="true" />
+        android:layout_marginLeft="10dp"/>
 </LinearLayout>

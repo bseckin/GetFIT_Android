@@ -70,8 +70,8 @@ public class XMLFragment extends ListFragment {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        inputSearch = (EditText)rootView.findViewById(R.id.inputSearch);
-        Button button1 = (Button)rootView.findViewById(R.id.button1);
+        inputSearch = (EditText) rootView.findViewById(R.id.inputSearch);
+        Button button1 = (Button) rootView.findViewById(R.id.button1);
 
         button1.setOnClickListener(new View.OnClickListener() {
 
@@ -80,24 +80,23 @@ public class XMLFragment extends ListFragment {
 
 
                 SEARCHED_ITEM = inputSearch.getText().toString();
-                SEARCHED_ITEM = SEARCHED_ITEM.replace(" ","+");
+                SEARCHED_ITEM = SEARCHED_ITEM.replace(" ", "+");
 
                 ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
 
                 XMLParser parser = new XMLParser();
                 String xml = parser.getXmlFromUrl(URL + "&q=" + SEARCHED_ITEM + API_KEY); // getting XML
-                Document doc = parser.getDomElement(xml); // Dom Element wird geholt
+                Document doc = parser.getDomElement(xml); // getting DOM element
 
                 NodeList nl = doc.getElementsByTagName(KEY_SHORTITEM);
 
                 if (nl != null && nl.getLength() > 0) {
-                    // durch alle Nodes loopen
+                    // looping through all item nodes <item>
                     for (int i = 0; i < nl.getLength(); i++) {
-                        // Erstelle neue HashMap
+                        // creating new HashMap
                         HashMap<String, String> map = new HashMap<String, String>();
                         Element e = (Element) nl.item(i);
-
-                        // neue Eintraege in die HashMap
+                        // adding each child node to HashMap key => value
                         map.put(KEY_NAME, parser.getCharacterDataFromElement(e, KEY_NAME));
                         map.put(KEY_KJ, parser.getValue(e, KEY_KJ));
                         map.put(KEY_KCAL, parser.getValue(e, KEY_KCAL));
@@ -107,12 +106,13 @@ public class XMLFragment extends ListFragment {
                         map.put(KEY_SUGAR, parser.getValue(e, KEY_SUGAR));
                         map.put(KEY_AMOUNT, parser.getValue(e, KEY_AMOUNT));
 
-                        // HashList zur ArrayList adden
+
+                        // adding HashList to ArrayList
                         menuItems.add(map);
                     }
                 }
 
-                // menuItems der ListView hinzufuegen
+                // Adding menuItems to ListView
                 ListAdapter adapter = new SimpleAdapter(getApplicationContext(), menuItems,
                         R.layout.listen_item,
                         new String[]{KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH, KEY_SUGAR, KEY_AMOUNT}, new int[]{
@@ -120,7 +120,7 @@ public class XMLFragment extends ListFragment {
 
                 setListAdapter(adapter);
 
-                // Listview waehlen
+                // selecting single ListView item
                 ListView lv = getListView();
 
 
@@ -129,8 +129,7 @@ public class XMLFragment extends ListFragment {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-
-                        // Den Variablen die Werte zuweisen
+                        // getting values from selected ListItem
                         String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
                         String kj = ((TextView) view.findViewById(R.id.kj)).getText().toString();
                         String kcal = ((TextView) view.findViewById(R.id.kcal)).getText().toString();
@@ -139,6 +138,7 @@ public class XMLFragment extends ListFragment {
                         String kh_gram = ((TextView) view.findViewById(R.id.kh_gram)).getText().toString();
                         String sugar_gram = ((TextView) view.findViewById(R.id.sugar_gram)).getText().toString();
                         String amount = ((TextView) view.findViewById(R.id.amount)).getText().toString();
+
 
                         // Neues Intent wird gestartet
                         Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
