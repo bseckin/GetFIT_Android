@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -65,6 +67,20 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = Bauch.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+                /*
+            "Situps",
+            "Bauchheben",
+            "Klappmesser",
+            "Beinheben",
+            "Abwechselndes überkreuzen der Beine",
+             */
+
+        if(data.get(position).getText().equals("Situps")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=WDSmlFfbgW4")));
+        if(data.get(position).getText().equals("Bauchheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=xeQn7k8nsPI")));
+        if(data.get(position).getText().equals("Klappmesser")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=y6Bv_0Shhc8")));
+        if(data.get(position).getText().equals("Beinheben")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=-rA3K2eEoRw")));
+        if(data.get(position).getText().equals("Abwechselndes überkreuzen der Beine")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=nWKTmFv76I8")));
     }
 }

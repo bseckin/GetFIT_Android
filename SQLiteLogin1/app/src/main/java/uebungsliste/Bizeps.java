@@ -10,17 +10,14 @@ public class Bizeps {
             "http://oi61.tinypic.com/zxwjf5.jpg",
             "http://www.uebungen.ws/wp-content/uploads/2011/06/Konzentriertes-Armbeugen.jpg",
             "http://www.uebungen.ws/wp-content/uploads/2011/06/Kurzhantel-Armbeugen.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/09/Scottcurls.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/09/Schr%C3%A4gbank-Scottcurls.jpg"
-
+            "http://www.uebungen.ws/wp-content/uploads/2011/09/Scottcurls.jpg"
     };
 
     private static String[] text = new String[] {
             "Langhantel-Curls",
             "Konzentrations-Curls",
             "Kurzhantel-Curls",
-            "Scottcurls",
-            "Schrägbank-Scottcurls"
+            "Scottcurls"
     };
 
     public static ArrayList<UebungItem> getData() {

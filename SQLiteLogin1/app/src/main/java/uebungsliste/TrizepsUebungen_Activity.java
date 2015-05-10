@@ -1,6 +1,8 @@
 package uebungsliste;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -34,7 +36,7 @@ public class TrizepsUebungen_Activity extends Activity implements AbsListView.On
         setTitle("Trizepsübungen");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
 
-        ArrayList<UebungItem> data = Trizps.getData();
+        ArrayList<UebungItem> data = Trizeps.getData();
 
         mAdapter = new Uebungsliste_ADAPTER(this, android.R.layout.simple_list_item_1, data);
 
@@ -63,6 +65,24 @@ public class TrizepsUebungen_Activity extends Activity implements AbsListView.On
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = Trizeps.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+
+        /*
+            "Dips",
+            "Arnold-Dips",
+            "Enges Bankdrücken",
+            "Trizeps Liegestütze",
+            "Kickbacks",
+            "Trizepsdrücken am Seilzug"
+             */
+
+        if(data.get(position).getText().equals("Dips")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=hHILQNu6sYg")));
+        if(data.get(position).getText().equals("Arnold-Dips")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=P_gLCbYOq2k")));
+        if(data.get(position).getText().equals("Enges Bankdrücken")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=mrgSY31vXLo")));
+        if(data.get(position).getText().equals("Trizeps Liegestütze")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=QGHWV8obpGQ")));
+        if(data.get(position).getText().equals("Kickbacks")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=M5hd5Tm_G6Q")));
+        if(data.get(position).getText().equals("Trizepsdrücken am Seilzug")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=ZfEW9BahpiI")));
+
     }
 }

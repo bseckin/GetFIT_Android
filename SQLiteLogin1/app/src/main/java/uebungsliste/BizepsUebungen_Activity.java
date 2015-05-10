@@ -1,5 +1,7 @@
 package uebungsliste;
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -63,6 +65,20 @@ public class BizepsUebungen_Activity extends Activity implements AbsListView.OnS
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        Toast.makeText(this, "Item Clicked: " + position, Toast.LENGTH_SHORT).show();
+        ArrayList<UebungItem> data = Bizeps.getData();
+        Toast.makeText(this, "" + data.get(position).getText(), Toast.LENGTH_SHORT).show();
+
+        /*
+            "Langhantel-Curls",
+            "Konzentrations-Curls",
+            "Kurzhantel-Curls",
+            "Scottcurls",
+            "Schrägbank-Scottcurls"
+             */
+
+        if(data.get(position).getText().equals("Langhantel-Curls")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=u2HcuquNrJA")));
+        if(data.get(position).getText().equals("Konzentrations-Curls")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=gGsNOYyuqW0")));
+        if(data.get(position).getText().equals("Kurzhantel-Curls")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=FtAz_85aVxE")));
+        if(data.get(position).getText().equals("Scottcurls")) startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=dG6Q6uir6oU")));
     }
 }

@@ -7,26 +7,19 @@ import java.util.ArrayList;
  */
 public class Bauch {
     private static String[] images = new String[] {
-            "http://www.uebungen.ws/wp-content/uploads/2011/09/Crunches.jpg",
             "http://www.uebungen.ws/wp-content/uploads/2011/09/Sit-Ups-auf-der-Schr%C3%A4gbank.jpg",
             "http://www.uebungen.ws/wp-content/uploads/2011/09/H%C3%BCftheben.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/09/Crunches-mit-ausgestreckten-Armen.jpg",
             "http://www.uebungen.ws/wp-content/uploads/2011/09/Klappmesser.jpg",
             "http://www.uebungen.ws/wp-content/uploads/2011/09/Beinheben.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/09/Abwechselndes-%C3%9Cberkreuzen-der-Beine.jpg",
-            "http://www.uebungen.ws/wp-content/uploads/2011/09/Korkenzieher.jpg"
+            "http://www.uebungen.ws/wp-content/uploads/2011/09/Abwechselndes-%C3%9Cberkreuzen-der-Beine.jpg"
     };
 
     private static String[] text = new String[] {
-            "Crunches",
             "Situps",
             "Bauchheben",
-            "Crunches-mit-ausgestreckten-Armen",
             "Klappmesser",
             "Beinheben",
-            "Abwechselndes überkreuzen der Beine",
-            "Beinheben",
-            "Korkenzieher"
+            "Abwechselndes überkreuzen der Beine"
     };
 
     public static ArrayList<UebungItem> getData() {
