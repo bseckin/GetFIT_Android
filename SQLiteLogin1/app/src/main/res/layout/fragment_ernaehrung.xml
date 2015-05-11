@@ -79,7 +79,7 @@
                                         android:layout_width="fill_parent"
                                         android:layout_height="fill_parent"
                                         android:indeterminate="false"
-                                        android:progressDrawable="@drawable/circular_progress_bar_red"
+                                        android:progressDrawable="@drawable/circular_progress_bar_blue"
                                         android:background="@drawable/circle_shape"
                                         style="?android:attr/progressBarStyleHorizontal"
                                         android:max="100"
@@ -101,7 +101,7 @@
                                         android:textAlignment="center"
                                         android:layout_centerVertical="true"
                                         android:layout_centerHorizontal="true"
-                                        android:textColor="#ffff9600" />
+                                        android:textColor="#ff00fffa"/>
                                 </RelativeLayout>
 
                                 <RelativeLayout

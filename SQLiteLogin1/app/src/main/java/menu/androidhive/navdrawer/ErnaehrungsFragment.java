@@ -171,10 +171,10 @@ public class ErnaehrungsFragment extends ListFragment {
         //TODO ??? Das Ziel muss aus der Datenbank kommen
         if (this.typ.equals("Ectomorph  -  Der Schlanke")) {
 
-            this.carbs = Math.round(ni.getCarbs()) ;
+            this.carbs = Math.round(ni.getCarbs()) +10;
             this.fat = Math.round(ni.getFett()) ;
-            this.protein = Math.round(ni.getProtein()) ;
-            this.kcal = Math.round(ni.getGu()) + 500;
+            this.protein = Math.round(ni.getProtein()) +5;
+            this.kcal = Math.round(ni.getGu()) + 100;
             EctoErnaehrung = ectoplan.holePlan(this.goal);
 
             //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -187,11 +187,11 @@ public class ErnaehrungsFragment extends ListFragment {
 
         } else if (this.typ.equals("Endomorph - Der molligere")) {
 
-            this.carbs += 100;
-            this.fat += 20;
-            this.protein += 10;
-            this.kcal +=  Math.round(ni.getGu());
-            EctoErnaehrung = endoplan.holePlan(this.goal);
+            this.carbs = Math.round(ni.getCarbs())+25;
+            this.fat = Math.round(ni.getFett())+5;
+            this.protein = Math.round(ni.getProtein())+20;
+            this.kcal = Math.round(ni.getGu())+200;
+            EctoErnaehrung = ectoplan.holePlan(this.goal);
 
             //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
             //So haben wir ein dreidimensionales array
@@ -203,11 +203,11 @@ public class ErnaehrungsFragment extends ListFragment {
 
         } else if (this.typ.equals("Mesomorph  -  Der durchschnittliche")) {
 
-            this.carbs += 100;
-            this.fat += 20;
-            this.protein += 10;
-            this.kcal +=  Math.round(ni.getGu());
-            EctoErnaehrung = mesoplan.holePlan(this.goal);
+            this.carbs = Math.round(ni.getCarbs()) ;
+            this.fat = Math.round(ni.getFett()) ;
+            this.protein = Math.round(ni.getProtein()) ;
+            this.kcal = Math.round(ni.getGu()) ;
+            EctoErnaehrung = ectoplan.holePlan(this.goal);
 
             //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
             //So haben wir ein dreidimensionales array
@@ -317,6 +317,7 @@ public class ErnaehrungsFragment extends ListFragment {
                     case 0:
 
                         food = new String[][]{lebensmittel[anzahl + 1][0], lebensmittel[anzahl + 1][1]};
+
                         String[][] food2 = new String[][]{lebensmittel[anzahl][0], lebensmittel[anzahl][1]};
 
                         DatabaseHandler db = new DatabaseHandler(getActivity());
@@ -622,7 +623,7 @@ public class ErnaehrungsFragment extends ListFragment {
                     TableRow.LayoutParams.WRAP_CONTENT));
 
             // inner for loop
-            for (int j = 0; j <= cols - 1; j++) {
+            for (int j = 0; j <= cols ; j++) {
 
                 TextView tv = new TextView(getActivity());
                 tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
