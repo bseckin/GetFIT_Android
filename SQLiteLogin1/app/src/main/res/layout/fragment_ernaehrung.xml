@@ -45,7 +45,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:text="Kal"
+                            android:text="Kalorien"
                             android:id="@+id/text10"
                             android:textSize="40sp"
                             android:textStyle="bold"
@@ -144,7 +144,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Fat"
+                        android:text="Fett(g)"
                         android:id="@+id/textView6"
                         android:textSize="22sp"
                         android:textStyle="bold"
@@ -197,7 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Protein"
+                        android:text="Protein(g)"
                         android:id="@+id/textView8"
                         android:textSize="22sp"
                         android:layout_centerHorizontal="true"
@@ -251,7 +251,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Carbs"
+                        android:text="Carbs(g)"
                         android:id="@+id/textView9"
                         android:textSize="22sp"
                         android:layout_centerHorizontal="true"
@@ -303,13 +303,38 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
 
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*" />
+
+                <Button
+                    android:id="@+id/bgeschafft"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="Geschafft"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="14sp"
+                    style= "@style/btnStyleTwitterblue"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:textColor="#ffe4e4e4"
+                    android:gravity="center_horizontal" />
+
                 <EditText android:id="@+id/inputSearch"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="Produktnamen oder EAN-Code"
                     android:inputType="text"
                     android:digits="abcdefghijklmnopqrstuvwxyzöäü0123456789 "
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button1"
@@ -318,21 +343,16 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:text="Suchen"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    android:visibility="invisible" />
 
                 <ListView
                     android:id="@android:id/list"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible" />
 
-                <TableLayout
-                    android:id="@+id/tableLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:shrinkColumns="*"
-                    android:stretchColumns="*" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -340,22 +360,6 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
-
-            <Button
-                android:id="@+id/bgeschafft"
-                android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:text="Geschafft"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textSize="14sp"
-                style= "@style/btnStyleTwitterblue"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="12dp"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:textColor="#ffe4e4e4"
-                android:gravity="center_horizontal" />
 
         </RelativeLayout>
     </LinearLayout>
