@@ -1,6 +1,9 @@
 package trainingsplan;
 
+import android.content.res.Resources;
 import android.util.Log;
+
+import com.packone.login.R;
 
 import trainingsplan.strategy.IZiel;
 
@@ -25,16 +28,12 @@ public class Trainingsplan {
      * Hier wird der eigentliche Plan GEHOLT. (erstellt wirds in der "Ziel" Klasse)
      * und als 2D-Array zurueckgegeben. ([Übung], [Satzzahl])
      *
-     * TODO ALLE PLÄNE MACHEN !!
      * @param frequenz
      * @return
      */
     public String[][][] getPlan(int frequenz, String erfahrung){
         //String anfaenger = Resources.getSystem().getString(R.string.anfaenger);
-        String anfaenger = "Keine - Ich bin Anfänger"; //@TODO SEHR STATISCH UND GESCHUMMELT
-        Log.d("Trainginsplan.java: getPlan(): ", anfaenger);
-        Log.d("Trainginsplan: getPlan(): ERFAHRUNG VON USER: ", erfahrung);
-
+        String anfaenger = "Keine - Ich bin Anfänger";
 
         String[][][] plan;
         // Erstellt plan je nach Ziel:

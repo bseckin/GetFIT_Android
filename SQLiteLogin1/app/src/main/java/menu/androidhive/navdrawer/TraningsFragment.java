@@ -303,7 +303,7 @@ public class TraningsFragment extends Fragment {
             // ALLGEMEIN KOERPERLICHE FITNESS
         if(ziel.equals(allgemeineFitness)){
             tp.set_ziel(new AllgemeineFitness());
-            tp.getPlan(frequenz, erfahrung);
+            this.meinPlan = tp.getPlan(frequenz, erfahrung);
             Log.d("TF:- AllgemeineFitness-", Arrays.deepToString(tp.getPlan(frequenz, erfahrung)));
         } // AUSDAUER
         else if (ziel.equals(ausdauer)) {

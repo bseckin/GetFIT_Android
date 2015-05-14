@@ -20,24 +20,24 @@ public class AllgemeineFitness implements IZiel{
             String[][][] plan = {
                     // --- 1te TRAININGSEINHEIT
                     {
-                        {
-                            "Kniebeugen",
-                            "Brustpresse",
-                            "Latzug breit zur Brust",
-                            "Frenchpress",
-                            "Bizepsmaschine",
-                            "Rückenstrecker",
-                            "Crunch"
-                        },
-                        {
-                            "3",
-                            "3",
-                            "3",
-                            "3",
-                            "3",
-                            "3",
-                            "3"
-                        }
+                            {
+                                "Kniebeugen",
+                                "Brustpresse",
+                                "Latzug breit zur Brust",
+                                "Frenchpress",
+                                "Bizepsmaschine",
+                                "Rückenstrecker",
+                                "Crunch"
+                            },
+                            {
+                                "3",
+                                "3",
+                                "3",
+                                "3",
+                                "3",
+                                "3",
+                                "3"
+                            }
                     },
                     // --- 2te TRAININGSEINHEIT
                     {
@@ -62,7 +62,62 @@ public class AllgemeineFitness implements IZiel{
                     }
             };
             return plan;
-        } else if ( frequenz >= 3 ) { //3x pro Woche
+        } else if ( frequenz == 3 ) { //3x pro Woche
+            // PUSH | PULL | BEINE
+            String[][][] plan = {
+                    // --- PUSH - 1te TRAININGSEINHEIT
+                    {
+                            {
+                                    "Bankdrücken Langhantel",
+                                    "Fliegende (Kurzhanteln)",
+                                    "Dips",
+                                    "Bauch - Beinheben hängend",
+                            },
+                            {
+                                    "4",
+                                    "3",
+                                    "3",
+                                    "3",
+                            }
+                    },
+                    // --- PULL - 2te  TRAININGSEINHEIT
+                    {
+                            {
+                                    "Kreuzheben",
+                                    "Rudern am Kabelzug",
+                                    "Latzug zur Brust - enger Griff",
+                                    "Reverse Flys",
+                                    "Bizeps Curls",
+                                    "Crunches",
+                            },
+                            {
+                                    "3",
+                                    "3",
+                                    "3",
+                                    "3",
+                                    "3",
+                                    "3"
+                            }
+                    },
+
+                    // --- BEINE 3te  TRAININGSEINHEIT
+                    {
+                            {
+                                    "Kniebeugen",
+                                    "Beinpresse",
+                                    "Laufband",
+                                    "Crunches"
+                            },
+                            {
+                                    "4",
+                                    "3",
+                                    "20 Minuten",
+                                    "3"
+                            }
+                    },
+            };
+            return plan;
+        }  else if ( frequenz == 4 ) { //3x pro Woche
             // PUSH | PULL | BEINE
             String[][][] plan = {
                     // --- PUSH - 1te TRAININGSEINHEIT
@@ -111,14 +166,31 @@ public class AllgemeineFitness implements IZiel{
                             {
                                     "4",
                                     "3",
-                                    "3",
                                     "20 Minuten",
                                     "3",
+                            }
+                    },
+                    // SCHULTER/ARME--- 4te  TRAININGSEINHEIT
+                    {
+                            {
+                                    "Schulterdrücken",
+                                    "Reverse Butterfly",
+                                    "Trizepsdrücken am Kabelzug",
+                                    "Stirndrücken (Kurzhantel)",
+                                    "Bizeps Hammercurls"
+                            },
+                            {
+                                    "3",
+                                    "3",
+                                    "3",
+                                    "3",
+                                    "3"
                             }
                     }
             };
             return plan;
         }
+
         return new String[0][][];
     }
 
@@ -306,7 +378,6 @@ public class AllgemeineFitness implements IZiel{
                                     "3"
                             }
                     }
-
             };
             return plan;
         }
