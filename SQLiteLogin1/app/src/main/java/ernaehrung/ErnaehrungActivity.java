@@ -89,7 +89,7 @@ public class ErnaehrungActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_ernaehrung);
+        setContentView(R.layout.fragment2_ernaehrung);
         // Calling Application class (see application tag in AndroidManifest.xml)
         final GlobalClass globalVariable = (GlobalClass) this.getApplicationContext();
 
