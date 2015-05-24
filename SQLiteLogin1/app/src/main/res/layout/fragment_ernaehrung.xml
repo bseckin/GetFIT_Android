@@ -152,19 +152,14 @@
                         android:layout_centerHorizontal="true"
                         android:textColor="#fff" />
 
-                    <SeekBar
-                        android:id="@+id/fat_prog"
-                        android:layout_width="match_parent"
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_alignParentBottom="true"
+                        android:id="@+id/fat_prog"
                         android:max="100"
-                        android:progress="1"
-                        android:progressDrawable="@drawable/progressbar"
-                        android:secondaryProgress="0"
                         android:indeterminate="false"
-                        android:layout_alignTop="@+id/prot_anz"
-                        android:layout_weight="1" />
+                        android:layout_margin="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -204,21 +199,13 @@
                         android:textStyle="bold"
                         android:layout_alignParentTop="true"
                         android:textColor="#fff" />
-
-                    <SeekBar
-                        android:id="@+id/prot_prog"
-                        android:layout_width="match_parent"
+                    <ProgressBar android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_alignParentBottom="true"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:id="@+id/prot_prog"
                         android:max="100"
-                        android:progress="1"
-                        android:progressDrawable="@drawable/progressbar"
-                        android:secondaryProgress="0"
-
                         android:indeterminate="false"
-                        android:layout_alignTop="@+id/prot_anz"
-                        android:layout_weight="1" />
+                        android:layout_margin="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -260,19 +247,14 @@
                         android:textColor="#fff" />
 
 
-                    <SeekBar
-                        android:id="@+id/carb_prog"
-                        android:layout_width="match_parent"
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_alignParentBottom="true"
+                        android:id="@+id/carb_prog"
                         android:max="100"
-                        android:progress="1"
-                        android:progressDrawable="@drawable/progressbar"
-                        android:secondaryProgress="0"
                         android:indeterminate="false"
-                        android:layout_alignTop="@+id/prot_anz"
-                        android:layout_weight="1" />
+                        android:layout_margin="10dp" />
 
 
                     <TextView
@@ -285,6 +267,7 @@
                         android:layout_centerHorizontal="true"
                         android:textColor="#ffdd01ff"
                         android:layout_weight="10" />
+
                 </LinearLayout>
 
             </RelativeLayout>

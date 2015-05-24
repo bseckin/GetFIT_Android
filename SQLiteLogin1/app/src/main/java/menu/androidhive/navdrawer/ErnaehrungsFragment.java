@@ -481,12 +481,7 @@ public class ErnaehrungsFragment extends ListFragment {
                         RelativeLayout linearLayout = (RelativeLayout) getActivity().findViewById(R.id.rlt);
 
                         //Sind alle Malzeiten gegessen so wird nur ein Text ausgegben
-                        TextView valueTV = new TextView(getActivity());
-                        valueTV.setText("Glüchwunsch Sie sind für heute fertig");
-                        valueTV.setLayoutParams(new RelativeLayout.LayoutParams(
-                                RelativeLayout.LayoutParams.FILL_PARENT,
-                                RelativeLayout.LayoutParams.WRAP_CONTENT));
-                        linearLayout.addView(valueTV);
+
                     default:
                         break;
 
