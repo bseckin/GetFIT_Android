@@ -67,6 +67,7 @@ public class RegistrierungFragenkatalogActivity extends Activity {
         EMAIL = intent.getStringExtra("email");
         GENDER = intent.getStringExtra("gender");
         HEIGHT = intent.getStringExtra("height");
+        Log.d("FRAGKAT:HEIGHT,", ""+HEIGHT);
         WEIGHT = intent.getStringExtra("weight");
     }
 

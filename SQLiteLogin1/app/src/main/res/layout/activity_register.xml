@@ -146,20 +146,44 @@
                 android:layout_marginTop="10dp"
                 android:inputType="textPassword"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1, "
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/height"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#fff"
                 android:id="@+id/height"
                 android:inputType="number"
-                android:maxLength="3"
-                android:ems="5"
+                android:maxLength="2"
                 android:layout_below="@+id/pword"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:layout_alignRight="@+id/gender"
+                android:layout_alignEnd="@+id/gender"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/textView10"
+                android:layout_toEndOf="@+id/textView10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/textView22"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/textView10"
+                android:layout_toRightOf="@+id/height"
+                android:layout_toEndOf="@+id/height" />
 
             <RadioGroup
                 android:id="@+id/gender"
@@ -241,6 +265,7 @@
                 android:layout_alignRight="@+id/email"
                 android:layout_alignEnd="@+id/email"
                 android:layout_marginRight="20dp" />
+
         </RelativeLayout>
     </LinearLayout>
 

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:hint="Produktnamen oder EAN-Code"
         android:inputType="text"
-        android:digits="abcdefghijklmnopqrstuvwxyzöäü0123456789 "
+        android:digits="abcdefghijklmnopqrstuvwxyzöäü0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÖÄÜ "
         android:textColor="#FFFFFF" />
     <Button
         android:id="@+id/button1"

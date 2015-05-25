@@ -1,9 +1,13 @@
 package uebungsliste;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
@@ -33,9 +37,14 @@ public class BauchUebungen_Activity extends Activity implements AbsListView.OnSc
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*
+         ACTIONBAR Farbe, und Textfarbe:
+          */
+        ActionBar bar = getActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#34585c")));
+        bar.setTitle(Html.fromHtml("<font color='#FFFFFF'>Bauchübungen/Rumpf</font>"));
         setContentView(R.layout.gridview);
 
-        setTitle("Bauchübungen/Rumpf");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
 
         ArrayList<UebungItem> data = Bauch.getData();

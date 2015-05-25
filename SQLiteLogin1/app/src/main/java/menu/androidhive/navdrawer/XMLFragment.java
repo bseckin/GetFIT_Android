@@ -5,13 +5,16 @@ package menu.androidhive.navdrawer;
  *  @since 5.2.2015
  */
 
+import android.app.AlertDialog;
 import android.app.ListFragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +25,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.packone.login.R;
 import com.packone.login.SingleMenuItemActivity;
@@ -73,91 +77,116 @@ public class XMLFragment extends ListFragment {
         inputSearch = (EditText) rootView.findViewById(R.id.inputSearch);
         Button button1 = (Button) rootView.findViewById(R.id.button1);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+            button1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (!isOnline()) {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), (android.R.style.Theme_Holo_Dialog)));
+                        builder.setMessage("Sie benötigen eine Internetverindung!")
+                                .setCancelable(false)
+                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        //do things
+                                    }
+                                });
+                        AlertDialog alert = builder.create();
+                        alert.show();
+                        //CharSequence text = "Kein Internet!";
+                        //Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                        //toast.show();
+                    } else {
 
-            @Override
-            public void onClick(View view) {
+                        SEARCHED_ITEM = inputSearch.getText().toString();
+                        SEARCHED_ITEM = SEARCHED_ITEM.replace(" ", "+");
+
+                        ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
+
+                        XMLParser parser = new XMLParser();
+                        String xml = parser.getXmlFromUrl(URL + "&q=" + SEARCHED_ITEM + API_KEY); // getting XML
+                        Document doc = parser.getDomElement(xml); // getting DOM element
+
+                        NodeList nl = doc.getElementsByTagName(KEY_SHORTITEM);
+
+                        if (nl != null && nl.getLength() > 0) {
+                            // looping through all item nodes <item>
+                            for (int i = 0; i < nl.getLength(); i++) {
+                                // creating new HashMap
+                                HashMap<String, String> map = new HashMap<String, String>();
+                                Element e = (Element) nl.item(i);
+                                // adding each child node to HashMap key => value
+                                map.put(KEY_NAME, parser.getCharacterDataFromElement(e, KEY_NAME));
+                                map.put(KEY_KJ, parser.getValue(e, KEY_KJ));
+                                map.put(KEY_KCAL, parser.getValue(e, KEY_KCAL));
+                                map.put(KEY_FAT, parser.getValue(e, KEY_FAT));
+                                map.put(KEY_PROT, parser.getValue(e, KEY_PROT));
+                                map.put(KEY_KH, parser.getValue(e, KEY_KH));
+                                map.put(KEY_SUGAR, parser.getValue(e, KEY_SUGAR));
+                                map.put(KEY_AMOUNT, parser.getValue(e, KEY_AMOUNT));
 
 
-                SEARCHED_ITEM = inputSearch.getText().toString();
-                SEARCHED_ITEM = SEARCHED_ITEM.replace(" ", "+");
+                                // adding HashList to ArrayList
+                                menuItems.add(map);
+                            }
+                        }
 
-                ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
+                        // Adding menuItems to ListView
+                        ListAdapter adapter = new SimpleAdapter(getApplicationContext(), menuItems,
+                                R.layout.listen_item,
+                                new String[]{KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH, KEY_SUGAR, KEY_AMOUNT}, new int[]{
+                                R.id.name, R.id.kj, R.id.kcal, R.id.fat_gram, R.id.protein_gram, R.id.kh_gram, R.id.sugar_gram, R.id.amount});
 
-                XMLParser parser = new XMLParser();
-                String xml = parser.getXmlFromUrl(URL + "&q=" + SEARCHED_ITEM + API_KEY); // getting XML
-                Document doc = parser.getDomElement(xml); // getting DOM element
+                        setListAdapter(adapter);
 
-                NodeList nl = doc.getElementsByTagName(KEY_SHORTITEM);
-
-                if (nl != null && nl.getLength() > 0) {
-                    // looping through all item nodes <item>
-                    for (int i = 0; i < nl.getLength(); i++) {
-                        // creating new HashMap
-                        HashMap<String, String> map = new HashMap<String, String>();
-                        Element e = (Element) nl.item(i);
-                        // adding each child node to HashMap key => value
-                        map.put(KEY_NAME, parser.getCharacterDataFromElement(e, KEY_NAME));
-                        map.put(KEY_KJ, parser.getValue(e, KEY_KJ));
-                        map.put(KEY_KCAL, parser.getValue(e, KEY_KCAL));
-                        map.put(KEY_FAT, parser.getValue(e, KEY_FAT));
-                        map.put(KEY_PROT, parser.getValue(e, KEY_PROT));
-                        map.put(KEY_KH, parser.getValue(e, KEY_KH));
-                        map.put(KEY_SUGAR, parser.getValue(e, KEY_SUGAR));
-                        map.put(KEY_AMOUNT, parser.getValue(e, KEY_AMOUNT));
+                        // selecting single ListView item
+                        ListView lv = getListView();
 
 
-                        // adding HashList to ArrayList
-                        menuItems.add(map);
+                        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view,
+                                                    int position, long id) {
+                                // getting values from selected ListItem
+                                String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
+                                String kj = ((TextView) view.findViewById(R.id.kj)).getText().toString();
+                                String kcal = ((TextView) view.findViewById(R.id.kcal)).getText().toString();
+                                String fat_gram = ((TextView) view.findViewById(R.id.fat_gram)).getText().toString();
+                                String protein_gram = ((TextView) view.findViewById(R.id.protein_gram)).getText().toString();
+                                String kh_gram = ((TextView) view.findViewById(R.id.kh_gram)).getText().toString();
+                                String sugar_gram = ((TextView) view.findViewById(R.id.sugar_gram)).getText().toString();
+                                String amount = ((TextView) view.findViewById(R.id.amount)).getText().toString();
+
+
+                                // Neues Intent wird gestartet
+                                Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
+                                in.putExtra(KEY_NAME, name);
+                                in.putExtra(KEY_KJ, kj);
+                                in.putExtra(KEY_KCAL, kcal);
+                                in.putExtra(KEY_FAT, fat_gram);
+                                in.putExtra(KEY_PROT, protein_gram);
+                                in.putExtra(KEY_KH, kh_gram);
+                                in.putExtra(KEY_SUGAR, sugar_gram);
+                                in.putExtra(KEY_AMOUNT, amount);
+                                startActivity(in);
+
+                            }
+                        });
                     }
                 }
-
-                // Adding menuItems to ListView
-                ListAdapter adapter = new SimpleAdapter(getApplicationContext(), menuItems,
-                        R.layout.listen_item,
-                        new String[]{KEY_NAME, KEY_KJ, KEY_KCAL, KEY_FAT, KEY_PROT, KEY_KH, KEY_SUGAR, KEY_AMOUNT}, new int[]{
-                        R.id.name, R.id.kj, R.id.kcal, R.id.fat_gram, R.id.protein_gram, R.id.kh_gram, R.id.sugar_gram, R.id.amount});
-
-                setListAdapter(adapter);
-
-                // selecting single ListView item
-                ListView lv = getListView();
-
-
-                lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view,
-                                            int position, long id) {
-                        // getting values from selected ListItem
-                        String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
-                        String kj = ((TextView) view.findViewById(R.id.kj)).getText().toString();
-                        String kcal = ((TextView) view.findViewById(R.id.kcal)).getText().toString();
-                        String fat_gram = ((TextView) view.findViewById(R.id.fat_gram)).getText().toString();
-                        String protein_gram = ((TextView) view.findViewById(R.id.protein_gram)).getText().toString();
-                        String kh_gram = ((TextView) view.findViewById(R.id.kh_gram)).getText().toString();
-                        String sugar_gram = ((TextView) view.findViewById(R.id.sugar_gram)).getText().toString();
-                        String amount = ((TextView) view.findViewById(R.id.amount)).getText().toString();
-
-
-                        // Neues Intent wird gestartet
-                        Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
-                        in.putExtra(KEY_NAME, name);
-                        in.putExtra(KEY_KJ, kj);
-                        in.putExtra(KEY_KCAL, kcal);
-                        in.putExtra(KEY_FAT, fat_gram);
-                        in.putExtra(KEY_PROT, protein_gram);
-                        in.putExtra(KEY_KH, kh_gram);
-                        in.putExtra(KEY_SUGAR, sugar_gram);
-                        in.putExtra(KEY_AMOUNT, amount);
-                        startActivity(in);
-
-                    }
-                });
-            }
-
-        });
-
+            });
         return rootView;
+    }
+
+    /**
+     * Checkt ob Internet verbindung vorhanden ist
+     * @return
+     */
+    public boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+            return true;
+        }
+        return false;
     }
 }

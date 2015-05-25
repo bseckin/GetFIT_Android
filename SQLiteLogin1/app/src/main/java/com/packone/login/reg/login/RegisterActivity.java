@@ -135,7 +135,8 @@ public class RegisterActivity extends Activity {
                                 intent.putExtra("password", mpword.getText().toString());
                                 intent.putExtra("email", memail.getText().toString());
                                 intent.putExtra("gender", radioSexButton.getText().toString());
-                                intent.putExtra("height", mheight.getText().toString());
+                                intent.putExtra("height", "1" + mheight.getText().toString());
+                                Log.d("HEIGHT", "1" + mheight.getText().toString());
                                 intent.putExtra("weight", weight.getText().toString());
 
                                 startActivity(intent);
