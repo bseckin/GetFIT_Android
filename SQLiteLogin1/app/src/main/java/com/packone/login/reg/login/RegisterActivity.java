@@ -34,10 +34,12 @@ public class RegisterActivity extends Activity {
     private RadioButton radioSexButton;
     private EditText mheight;
     private EditText weight;
+    private EditText mheight_meter;
     private SeekBar weightcontrol = null;
 
     private boolean checkInt;
     protected ArrayList<String> databaseArray;
+
 
     //TODO: - Exercise implementieren
     @Override
@@ -77,6 +79,9 @@ public class RegisterActivity extends Activity {
         memail = (EditText) findViewById(R.id.email);
         radioSexGroup = (RadioGroup) findViewById(R.id.gender);
         mheight = (EditText) findViewById(R.id.height);
+        mheight_meter = (EditText)findViewById(R.id.meter_angabe);
+
+
         checkInt = true;
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -101,6 +106,7 @@ public class RegisterActivity extends Activity {
                             || (muname.getText().toString().equals(""))
                             || (radioSexGroup.getCheckedRadioButtonId() == -1)
                             || (mheight.getText().toString().equals(""))
+                            || (mheight_meter.getText().toString().equals(""))
                             ) {
                         Context context = getApplicationContext();
                         CharSequence text = "Bitte alle Felder ausfüllen!";
@@ -135,7 +141,13 @@ public class RegisterActivity extends Activity {
                                 intent.putExtra("password", mpword.getText().toString());
                                 intent.putExtra("email", memail.getText().toString());
                                 intent.putExtra("gender", radioSexButton.getText().toString());
+                                //if(mheight_meter.getText().toString() == "1") {
                                 intent.putExtra("height", "1" + mheight.getText().toString());
+                                Log.d("GROEße", "1"+ mheight.getText().toString());
+                                //} else {
+                                //    Log.d("2 METER GROE?", "Wahnsinn!");
+                                //    intent.putExtra("height", "2" + mheight.getText().toString());
+                                //}
                                 Log.d("HEIGHT", "1" + mheight.getText().toString());
                                 intent.putExtra("weight", weight.getText().toString());
 

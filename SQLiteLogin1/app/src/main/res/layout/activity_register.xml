@@ -60,7 +60,7 @@
                 android:layout_below="@+id/view_pword"
                 android:layout_alignRight="@+id/view_pword"
                 android:layout_alignEnd="@+id/view_pword"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
                 android:textColor="#fffbfff4"
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Gewicht: "
+                android:text="Gewicht in kg:"
                 android:id="@+id/textView"
                 android:layout_below="@+id/view_gender"
                 android:layout_alignParentEnd="true"
@@ -146,17 +146,40 @@
                 android:layout_marginTop="10dp"
                 android:inputType="textPassword"/>
 
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:id="@+id/meter_angabe"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/height"
+                android:textStyle="bold"
+                android:text="1"
+                android:digits="12"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textIsSelectable="false">
+            </EditText>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1, "
+                android:text=","
                 android:textColor="#fff"
                 android:textSize="20sp"
-                android:id="@+id/textView10"
-                android:layout_alignParentStart="true"
-                android:layout_alignTop="@+id/height"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold" />
+                android:id="@+id/beistrich"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/meter_angabe"
+                android:layout_toRightOf="@+id/meter_angabe"
+                android:layout_toEndOf="@+id/height"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="5dp" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -166,24 +189,30 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:layout_below="@+id/pword"
-                android:layout_marginTop="10dp"
                 android:layout_alignRight="@+id/gender"
                 android:layout_alignEnd="@+id/gender"
                 android:textStyle="bold"
-                android:layout_toRightOf="@+id/textView10"
-                android:layout_toEndOf="@+id/textView10" />
+                android:layout_toEndOf="@+id/meter_angabe"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:gravity="left|center"
+                android:layout_toRightOf="@+id/meter_angabe"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="m"
                 android:textColor="#fff"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 android:id="@+id/textView22"
                 android:textStyle="bold"
-                android:layout_alignTop="@+id/textView10"
+                android:layout_alignTop="@+id/meter_angabe"
                 android:layout_toRightOf="@+id/height"
-                android:layout_toEndOf="@+id/height" />
+                android:layout_toEndOf="@+id/height"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="5dp" />
 
             <RadioGroup
                 android:id="@+id/gender"
