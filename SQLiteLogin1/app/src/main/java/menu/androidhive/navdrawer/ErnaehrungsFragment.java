@@ -184,13 +184,13 @@ public class ErnaehrungsFragment extends ListFragment {
             //3.Stelle -> Menge in gramm
             lebensmittel = EctoErnaehrung.starten();//"Pages startet"
 
+        } else if (this.typ.equals("Endomorph  -  Der molligere")) {
 
-        } else if (this.typ.equals("Endomorph - Der molligere")) {
 
-            this.carbs = Math.round(ni.getCarbs())+25;
-            this.fat = Math.round(ni.getFett())+5;
-            this.protein = Math.round(ni.getProtein())+20;
-            this.kcal = Math.round(ni.getGu())+200;
+            this.carbs = Math.round(ni.getCarbs()) +20;
+            this.fat = Math.round(ni.getFett()) ;
+            this.protein = Math.round(ni.getProtein()) +10;
+            this.kcal = Math.round(ni.getGu()) + 200;
             EctoErnaehrung = ectoplan.holePlan(this.goal);
 
             //Unser Array leebnsmittel wird mit den werten die wir vom ernährungs package kriegen befüllt
@@ -199,7 +199,6 @@ public class ErnaehrungsFragment extends ListFragment {
             //2.Stelle -> Nahrungsbezeichnung
             //3.Stelle -> Menge in gramm
             lebensmittel = EctoErnaehrung.starten();//"Pages startet"
-
 
         } else if (this.typ.equals("Mesomorph  -  Der durchschnittliche")) {
 
