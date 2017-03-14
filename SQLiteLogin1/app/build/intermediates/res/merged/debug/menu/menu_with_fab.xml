@@ -1,9 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.oguzdev.circularfloatingactionmenu.samples.MenuWithFABActivity" >
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never" />
-</menu>
-<!-- From: file:/C:/Users/Berkay%20Seckin%20DEW/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/menu/menu_with_fab.xml -->

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -35,9 +36,10 @@ import trainingsplan.strategy.Rueckenstaerkung;
 
 // BLUEKAI
 import com.bluekai.sdk.BlueKai;
+import com.bluekai.sdk.listeners.DataPostedListener;
 
 
-public class TraningsFragment extends Fragment {
+public class TraningsFragment extends Fragment implements DataPostedListener{
     // Attribute
     TableLayout table_layout_plan1;
     TableLayout table_layout_plan2;
@@ -61,6 +63,9 @@ public class TraningsFragment extends Fragment {
         // Get username from global/application context
         final String name = globalVariable.getName();
 
+        //BLUEKAI
+        BlueKai bk = BlueKai.getInstance(getActivity(), getActivity().getApplicationContext(), true, false, "38939", "v1", this, new Handler(), true);
+        bk.put("GETFIT", "Testdata1");
         if (savedInstanceState != null) {
             // Restore last state for checked position.
             anzahl = savedInstanceState.getInt("aktuell_plan", 0);
@@ -352,5 +357,10 @@ public class TraningsFragment extends Fragment {
             return frequenz = 4;
         }
         return frequenz;
+    }
+
+    @Override
+    public void onDataPosted(boolean b, String s) {
+        Toast.makeText(getActivity(),"BK Data Posted!",Toast.LENGTH_SHORT).show();
     }
 }
