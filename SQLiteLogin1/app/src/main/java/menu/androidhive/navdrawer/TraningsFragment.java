@@ -361,6 +361,6 @@ public class TraningsFragment extends Fragment implements DataPostedListener{
 
     @Override
     public void onDataPosted(boolean b, String s) {
-        Toast.makeText(getActivity(),"BK Data Posted!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), s,Toast.LENGTH_LONG).show();
     }
 }
