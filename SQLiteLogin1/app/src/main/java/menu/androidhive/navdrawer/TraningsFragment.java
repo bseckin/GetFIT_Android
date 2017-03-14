@@ -33,6 +33,9 @@ import trainingsplan.strategy.Gewichtsverlust;
 import trainingsplan.strategy.MasseMuskelaufbau;
 import trainingsplan.strategy.Rueckenstaerkung;
 
+// BLUEKAI
+import com.bluekai.sdk.BlueKai;
+
 
 public class TraningsFragment extends Fragment {
     // Attribute

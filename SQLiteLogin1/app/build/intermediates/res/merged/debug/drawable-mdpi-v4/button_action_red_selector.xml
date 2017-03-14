@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/button_action_red_touch"/>
+    <item android:state_pressed="false" android:drawable="@drawable/button_action_red"/>
+</selector><!-- From: file:/C:/Users/Berkay%20Seckin%20DEW/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/drawable-mdpi/button_action_red_selector.xml -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="fill_parent"
+        android:text="weightlifting"
+        android:id="@+id/blifting"
+        android:layout_gravity="left"
+        android:textStyle="bold|italic"
+        android:background="#00aced"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="fill_parent"
+        android:text="cardio"
+        android:id="@+id/bcardio"
+        android:textStyle="bold|italic"
+        android:background="#ff9900"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="fill_parent"
+        android:text="nutrition"
+        android:id="@+id/bnutrition"
+        android:layout_gravity="left"
+        android:textStyle="bold|italic"
+        android:background="#ff0000"
+        android:clickable="true"
+        android:onClick="onClick" />
+</LinearLayout><!-- From: file:/C:/Users/Berkay%20Seckin%20DEW/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/select_goal.xml -->

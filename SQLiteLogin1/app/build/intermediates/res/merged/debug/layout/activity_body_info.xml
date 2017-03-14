@@ -1,0 +1,100 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/matte_xxhdpi"
+    tools:context="com.packone.login.reg.login.BodytypeinfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Endomorph"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:background="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neigung zu Adipositas \nErkennbar sind weiche Muskulatur, kurze Arme und Beine, rundes Gesicht, kurzer Hals, glatte und weiche Haut, breite Hüften, starke Fettaufspeicherung und viele, aber dünne Haare."
+                    android:id="@+id/textView2"
+                    android:textSize="16sp"
+                    android:background="#a43b3b3b"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Mesomorph"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:background="#ffffff"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neigung zu Muskulosität Erkennbar \n sind ein mächtiger Brustkorb, dicke Haut, markante Wangenknochen und massiver Unterkiefer, Fettanlagerungen im Allgemeinen meist nur an Bauch und Hüfte, große Hände und Füße"
+                    android:id="@+id/textView4"
+                    android:textSize="16sp"
+                    android:background="#a43b3b3b"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ektomorph"
+                    android:id="@+id/textView20"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:background="#ffffff"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neigung zu Schlankheit \n Er wird charakterisiert durch kurzen Oberkörper, lange Arme und Beine, schmale Füße und Hände sowie sehr geringe Fettspeicherung. Erkennbar sind ein eher kleiner Brustkorb und schmale Schultern, meist lange"
+                    android:id="@+id/textView21"
+                    android:textSize="16sp"
+                    android:background="#a43b3b3b"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Berkay%20Seckin%20DEW/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/activity_body_info.xml -->

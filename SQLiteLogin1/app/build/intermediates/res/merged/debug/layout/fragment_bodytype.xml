@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.packone.login.reg.login.BodytypeinfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/bodytype" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Endomorph - Neigung zu Adipositas \nErkennbar sind weiche Muskulatur, kurze Arme und Beine, rundes Gesicht, kurzer Hals, glatte und weiche Haut, breite Hüften, starke Fettaufspeicherung und viele, aber dünne Haare."
+                    android:id="@+id/textView16"
+                    android:layout_weight="1"
+                    android:background="#ff36ff00" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Mesomorph - Neigung zu Muskulosität Erkennbar \n sind ein mächtiger Brustkorb, dicke Haut, markante Wangenknochen und massiver Unterkiefer, Fettanlagerungen im Allgemeinen meist nur an Bauch und Hüfte, große Hände und Füße"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:background="#ffff8300" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Ektomorph - Neigung zu Schlankheit \n Er wird charakterisiert durch kurzen Oberkörper, lange Arme und Beine, schmale Füße und Hände sowie sehr geringe Fettspeicherung. Erkennbar sind ein eher kleiner Brustkorb und schmale Schultern, meist lange"
+                    android:id="@+id/textView18"
+                    android:layout_weight="1"
+                    android:background="#ff12fffd" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Berkay%20Seckin%20DEW/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/fragment_bodytype.xml -->

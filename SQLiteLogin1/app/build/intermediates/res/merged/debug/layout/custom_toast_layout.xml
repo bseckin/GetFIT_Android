@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android1="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toast_layout_root"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#508F99"
+              android:orientation="horizontal"
+              android:padding="10dp" >
+
+    <ImageView
+        android1:id="@+id/imageView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="match_parent"
+        android1:src="@drawable/ic_whats_hot"
+        android:layout_weight="1" />
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="match_parent"
+        android1:text="Gratulation - Weiter so!"
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffffff"
+        android:layout_weight="2"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</LinearLayout><!-- From: file:/C:/Users/Berkay%20Seckin%20DEW/Documents/GitHub/GetFIT_Android/SQLiteLogin1/app/src/main/res/layout/custom_toast_layout.xml -->

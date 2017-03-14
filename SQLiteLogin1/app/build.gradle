@@ -20,27 +20,24 @@ android {
 
 dependencies {
     // Finish button
-
     //JARS hinzufuegen
     compile files('libs/activation.jar')
     compile files('libs/additionnal.jar')
     compile files('libs/mail.jar')
     compile files('libs/jxl-2.6.jar')
-
     //damit gradle und jars automatisch geupdated werden
-    compile fileTree(dir: 'libs', include: ['activation.jar'])
-    compile fileTree(dir: 'libs', include: ['additionnal.jar'])
-    compile fileTree(dir: 'libs', include: ['mail.jar'])
-    compile fileTree(dir: 'libs', include: ['jxl-2.6.jar'])
-
+    compile fileTree(include: ['activation.jar'], dir: 'libs')
+    compile fileTree(include: ['additionnal.jar'], dir: 'libs')
+    compile fileTree(include: ['mail.jar'], dir: 'libs')
+    compile fileTree(include: ['jxl-2.6.jar'], dir: 'libs')
     //Navigation für
     compile 'com.android.support:support-v4:22.1.1'
     compile 'com.android.support:support-v13:22.1.1'
     compile 'com.github.markushi:circlebutton:1.1'
     compile 'com.etsy.android.grid:library:1.0.5'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
-
     compile project(':library3')
+    compile files('libs/bluekai-2.1.5-RELEASE.jar')
 }
 
 //Fuer Finish Button
